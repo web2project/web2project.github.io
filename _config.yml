@@ -7,3 +7,5 @@ exclude: [Gemfile, Gemfile.lock, README.md]
 collections:
   pages:
     output: true
+  release-notes:
+    output: true

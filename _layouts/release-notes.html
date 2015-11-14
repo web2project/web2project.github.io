@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% if page.deprecated == true %}
+        {% include deprecated.html %}
+{% endif %}
+
+{{ content }}
