@@ -7,7 +7,7 @@ exclude: [Gemfile, Gemfile.lock, README.md]
 collections:
   modules:
     output: true
-  pages:
+  docs:
     output: true
   release-notes:
     output: true
