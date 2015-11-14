@@ -1,10 +1,12 @@
 # Site settings
-title: web2project
+title: web2project Documentation
 
 # Exclude our ruby stuff
 exclude: [Gemfile, Gemfile.lock, README.md]
 
 collections:
+  modules:
+    output: true
   pages:
     output: true
   release-notes:
