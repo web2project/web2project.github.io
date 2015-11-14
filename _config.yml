@@ -1,0 +1,10 @@
+# Site settings
+name: web2project wiki
+author: caseysoftware
+
+# Exclude our ruby stuff
+exclude: [Gemfile, Gemfile.lock, README.md]
+
+collections:
+  pages:
+    output: true
