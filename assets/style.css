@@ -639,6 +639,16 @@ code {
 }
 
 section {
-    margin-left: 275px;
-    margin-top: 75px;
+    left: 275px;
+    margin-top: 50px;
+    padding-right: 50px;
+    position: absolute;
+    width: 90%;
+}
+
+pre {
+    background-color: antiquewhite;
+    margin-left: 25px;
+    padding: 15px;
+    width: 90%;
 }
