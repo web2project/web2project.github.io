@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+'''Release Date: 01 April 2010'''
+
+'''''NOTICE:'''  This is no longer the latest version available.  Please check the sidebar at left for the latest release notes.''
+
+== Downloading web2project ==
+
+For the v1.3 Release, the only official distribution site is [https://sourceforge.net/projects/web2project/files/web2Project/v1.3%20Release/ SourceForge].
+
+All Installation instructions  have been moved to the [[Installation]] page. They will no longer be included in the Release Notes.
+
+== Reporting Problems ==
+
+Any and all issues discovered should be added to our [http://bugs.web2project.net/view_all_bug_page.php our Issue Tracking System].  Feature requests should be marked as such and not described as bugs.
+
+For more information, support, or to discussion upcoming features, please visit [http://forums.web2project.net/ our Support Forums].
+
+== New Features ==
+
+*  Moved the upgrade process out of the /install folder and into the System Admin, automatically checks to make sure the user is an Administrator
+*  Added a system message in the System Admin to notify the Administrator when an upgrade has been uploaded but not applied
+*  Added CSS "minification" to the packaging process, reduces CSS filesize by 33%
+*  Added javascript "minification" to the packaging process, reduces javascript filesize by 80%
+*  [http://bugs.web2project.net/view.php?id=89 89] - User Interface - Automatically parse URLs found in text areas (caseydk)
+*  [http://bugs.web2project.net/view.php?id=271 271] - System Admin - Upgrade Manager: Notifications (caseydk)
+
+== Fixes/Bugs Closed ==
+
+*  Adjusted the moveTask() to automatically recalculate the percent complete for both projects when a task is moved from one project to another
+*  Updated the username check on public account creation to actually work
+*  Corrected task deletion to really be recursive
+*  [http://bugs.web2project.net/view.php?id=336 336] - User Interface - Now all url's in description/info fields are parsed into links (caseydk)
+*  [http://bugs.web2project.net/view.php?id=341 341] - Tasks - asdf characters left in task logs descriptions (caseydk)
+*  [http://bugs.web2project.net/view.php?id=358 358] - Projects - Department Information is Lost (caseydk)
+*  [http://bugs.web2project.net/view.php?id=362 362] - Files - Can't edit File information without upload (caseydk)
+*  [http://bugs.web2project.net/view.php?id=365 365] - Tasks - task_priority treated as string (caseydk)
+*  [http://bugs.web2project.net/view.php?id=366 366] - Tasks - Duplicate entry in task_departments on new task submission (caseydk)
+*  [http://bugs.web2project.net/view.php?id=375 375] - Projects - Project progress ignores tasks that don't have any work hours logged (caseydk)
+*  [http://bugs.web2project.net/view.php?id=378 378] - Projects - parent project tooltip does not display description (caseydk)
+*  [http://bugs.web2project.net/view.php?id=380 380] - Contacts - Call to undefined method CContact::getUpcomingBirthdays() (caseydk)
+*  [http://bugs.web2project.net/view.php?id=381 381] - Files - After uploading the SVN version 967 of 1.22 in the names appeared to be wrong (incorrect code pages) (caseydk)
+*  [http://bugs.web2project.net/view.php?id=382 382] - Contacts - If you assign a person to a company and do not assign a person to a department it crashes. (caseydk)
+*  [http://bugs.web2project.net/view.php?id=386 386] - Contacts - Updating Conatct Date of Birth fails (caseydk)
+*  [http://bugs.web2project.net/view.php?id=387 387] - Files - File versioning (caseydk)
+*  [http://bugs.web2project.net/view.php?id=389 389] - Project Designer - Task Access not populated (caseydk)
+*  [http://bugs.web2project.net/view.php?id=397 397] - Files - w2p_textarea function messes-up accents in file_description on files/index_table.php (caseydk)
+*  [http://bugs.web2project.net/view.php?id=398 398] - Files - file_show_attr function doesn't get file version and category values (caseydk)
+
+== Misc Changes/Improvements ==
+
+*  Added more unit tests for dependencies, access control, retrieving dependent tasks, and task retrieval, not distributed with v1.3
+*  Updated the system to eliminate more PHP 5.3 E_DEPRECATED warnings, the only ones left relate to PEAR Date
+*  Added the Polish translation to core
+*  Moved the mysql files around to prepare for additional multi-database support
+*  Cleaned up some method signatures to eliminate some E_STRICT warnings
+*  Updated permissions to allow a tasklog to be added even if the user can't edit the task directly
+*  Deprecated the getDeny* functions, added functions with more logical names like canView and canDelete
+*  Added deprecation warnings to a number of functions/methods that will disappear in v2.0
+*  Cleaned up some default database values to be more consistent/logical
+*  Added timezone/daylight savings selection to the user preferences - ''this information is not currently used by the system''
+
+
+== Open/Known Issues ==
+
+*  The cascading dependencies are still not 100% but very close.  Although long chains (A->B-C->D->E) work fine and tasks with multiple dependencies work fine, there are a limited number of scenarios where dependencies do not behave as expected.
+**  One such scenario is when you have a Dynamic Task A with children chain (B->C-D->E) and Task F which is dependent on Task A.  If B, C, D or E shift, they shift the rest of the chain as expected and the Dynamic Task (A) as expected but unfortunately F does not get updated.
+*  If you upgrade from dotProject, you may have an oddity with your default theme/display as the name has changed.  If this happens, edit your preferences, change to one of the existing themes, and save.
+
+[[Category:Release Notes]]

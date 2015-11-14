@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+'''Release Date:''' 10 September 2009
+
+'''''NOTICE:'''  This is no longer the latest version available.  Please check the sidebar at left for the latest release notes.''
+
+== Downloading web2project ==
+
+For the v1.1 Release, the only official distribution site is [https://sourceforge.net/projects/web2project/files/web2Project/v1.1%20Release/ SourceForge].
+
+All Installation instructions  have been moved to the [[Installation]] page. They will no longer be included in the Release Notes.
+
+== Reporting Problems ==
+
+Any and all issues discovered should be added to our [http://bugs.web2project.net/view_all_bug_page.php our Issue Tracking System].  Feature requests should be marked as such and not described as bugs.
+
+For more information, support, or to discussion upcoming features, please visit [http://forums.web2project.net/ our Support Forums].
+
+== New Features ==
+
+*  Implemented the beginnings of the formal [[:Category:Hook System|Hook System]];
+*  Implemented [http://en.wikipedia.org/wiki/Unit_testing Unit Testing] for the system, adding new modules and tests as we go;
+*  Fleshed out the Phing build.xml file to include a phplint check, coding standards check (PEAR), and packaging for .tar.gz and .zip files;
+*  Added locales for French and Polish;
+*  [http://bugs.web2project.net/view.php?id=179 179] - Core Infrastructure - Create a hook_search
+*  [http://bugs.web2project.net/view.php?id=194 194] - Tasks - Task Log Update vs Create vs Log Date
+*  [http://bugs.web2project.net/view.php?id=219 219] - Files - Cancel File Checkouts
+
+== Fixes/Bugs Closed ==
+
+*  Fixed the version detection handling in the UpgradeManager;
+*  Fixed a problem with duplicate tasks on the Gantt chart;
+*  Suppressed the PHP 5.3 Deprecated warnings;
+*  Removed and regenerated all database indexes to ensure the proper ones exist;
+*  [http://bugs.web2project.net/view.php?id=184 184] - Projects - Length of project names is restricted
+*  [http://bugs.web2project.net/view.php?id=185 185] - Projects - Projects that are assigned to a department cannot be shown in the department view
+*  [http://bugs.web2project.net/view.php?id=192 192] - Calendar - Contact view in Company do not show Company contacts.
+*  [http://bugs.web2project.net/view.php?id=193 193] - Projects - Special Characters (i.e. German 'Umlaute') are not displayed correctly for projects
+*  [http://bugs.web2project.net/view.php?id=195 195] - Projects - Gantt Charts cannot be shown
+*  [http://bugs.web2project.net/view.php?id=196 196] - Projects - Filter for Departments does not work
+*  [http://bugs.web2project.net/view.php?id=197 197] - Departments - Two 'Projects' tabs in department view?
+*  [http://bugs.web2project.net/view.php?id=198 198] - none specified - Installation crashes with dotProject conversion
+*  [http://bugs.web2project.net/view.php?id=201 201] - Files - Unable to upload file in files module
+*  [http://bugs.web2project.net/view.php?id=202 202] - Calendar - Today View always jumps to 1070
+*  [http://bugs.web2project.net/view.php?id=206 206] - Translation/Languages - Missing abbreviations in en/system.inc
+*  [http://bugs.web2project.net/view.php?id=207 207] - Translation/Languages - Make 3rd party modules menu titles translatable w/o altering core wp2 inc files
+*  [http://bugs.web2project.net/view.php?id=208 208] - Projects - Improper UTF-8 decoding in project viewer title bar
+*  [http://bugs.web2project.net/view.php?id=209 209] - Files - Accents incorrectly UTF-8 decoded when downloading files
+*  [http://bugs.web2project.net/view.php?id=213 213] - Tasks - Todo doesn't appear since r52x
+*  [http://bugs.web2project.net/view.php?id=218 218] - Tasks - Sorting by Task Name Displays *all* Tasks at Root Level
+*  [http://bugs.web2project.net/view.php?id=220 220] - Projects - Project list garbled
+*  [http://bugs.web2project.net/view.php?id=223 223] - Projects - Multiple notification emails sent on Projects with many contacts
+*  [http://bugs.web2project.net/view.php?id=224 224] - Tasks - Task duplicated when sorting by Task Name
+*  [http://bugs.web2project.net/view.php?id=225 225] - Translation/Languages - Missing abbrevation in en/contacts.inc
+*  [http://bugs.web2project.net/view.php?id=226 226] - Projects - No server side validation for most of the required fields when creating a project
+*  [http://bugs.web2project.net/view.php?id=227 227] - Tasks - View other user's tasks/todo
+*  [http://bugs.web2project.net/view.php?id=230 230] - -- none specified --Rev 555 : install with dotproject conversion errors
+*  [http://bugs.web2project.net/view.php?id=232 232] - Projects - w2p slow loading complex projects - or - slow database queries
+*  [http://bugs.web2project.net/view.php?id=233 233] - Core Infrastructure - Rev 558 : install with dotproject conversion errors
+*  [http://bugs.web2project.net/view.php?id=235 235] - Projects - Moving Tasks to Another Project doesn't Move Children
+*  [http://bugs.web2project.net/view.php?id=236 236] - Projects - Created and Updated fields not updated.
+*  [http://bugs.web2project.net/view.php?id=239 239] - Files - PDF files cannot be accessed. Permission denied.
+*  [http://bugs.web2project.net/view.php?id=241 241] - Tasks - Creating/Editing a task in IE 8 does not work
+
+== Misc Changes/Improvements ==
+
+*  Refactored the various User Lists, Project Lists, Department Lists, etc to use methods within their respective classes to reduce duplication and centralize permissions enforcement;
+*  Hid the task_log_costcode as it shouldn't be editable, let alone displayed;
+*  Removed the trailing ?>'s from each of the purely PHP files;
+*  Removed a number of issues - such as using undeclared variables - that filled the PHP error log;
+*  Removed references to $_REQUEST where $_POST was suitable;
+*  Updated how the translations are handled for third-party modules;
+*  Removed references to now() and replaced them with db-aware functions;
+*  Upgraded the PHPMailer library to 5.0.2;
+*  Simplified the yearly calendar creation code to simply draw the month twelve times as opposed to each month once;
+*  Eliminated numerous database calls by refactoring them back to the proper classes;
+*  Misc HTML cleanup throughout;
+*  Refactored the numerous instances of pagination code to a single instance;
+*  Upgraded the ADODB library from V4.96 to V5.09, eliminated unnecessary code;
+*  Refactored header navigation creation to eliminate duplicated code;
+*  Added numerous fields to the Performance/Debug box;
+*  Cleaned up the CW2pObject bind method to handle array/object transforms better;
+*  [http://bugs.web2project.net/view.php?id=71 71] - Tasks - Cache Total Task Counts
+*  [http://bugs.web2project.net/view.php?id=80 80] - Links - Enable adding a link from within the tab
+*  [http://bugs.web2project.net/view.php?id=112 112] - Translation/Languages - loading of locale strings for tabs and crumbs
+*  [http://bugs.web2project.net/view.php?id=145 145] - none specified - Id generation for Custom Fields
+*  [http://bugs.web2project.net/view.php?id=169 169] - Tasks - Cache Time Worked
+*  [http://bugs.web2project.net/view.php?id=180 180] - Core Infrastructure - Convert all 'var' declarations to php5 equivalent
+*  [http://bugs.web2project.net/view.php?id=187 187] - Tasks - Update old tasks with Hours Worked Information
+
+== Open/Known Issues ==
+
+*  The cascading dependencies are still not 100%.  Although long chains (A->B-C->D->E) work fine and tasks with multiple dependencies work fine, there are a limited number of scenarios where dependencies do not behave as expected.
+**  One such scenario is when you have a Dynamic Task A with children chain (B->C-D->E) and Task F which is dependent on Task A.  If B, C, D or E shift, they shift the rest of the chain as expected and the Dynamic Task (A) as expected but unfortunately F does not get updated.
+
+*  At release time, the display of debugging information was left on.  Please see the Installation Notes above on how to turn them off.
+
+*  At release time, the installation package - ''both the zip and tar.gz files'' - were created without web2project being in a subdirectory.  Therefore, when you uncompress it, all the files will go into the target directory directly as opposed to within a subdirectory.  This is already fixed for the v1.2 (December 2009) release.
+
+[[Category:Release Notes]]

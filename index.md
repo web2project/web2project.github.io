@@ -7,15 +7,6 @@ layout: default
 </nav>
 
 <section id='content'>
-    {% for post in site.posts %}
-      <article class='{{ post.type }}'>
-        <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.path }}</code> {% endif %}{{ post.title }}</h2></a>
-        <section class='body'>
-          {{ post.content }}
-        </section>
-      </article>
-    {% endfor %}
-
     {% assign items = site.pages %}
     {% assign spliton = items | size | divided_by:2 %}
 
