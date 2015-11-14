@@ -637,3 +637,8 @@ code {
   padding: 15px;
   white-space: pre;
 }
+
+section {
+    margin-left: 275px;
+    margin-top: 75px;
+}

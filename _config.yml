@@ -1,6 +1,5 @@
 # Site settings
-name: web2project wiki
-author: caseysoftware
+title: web2project
 
 # Exclude our ruby stuff
 exclude: [Gemfile, Gemfile.lock, README.md]

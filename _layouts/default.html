@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>{{ site.title }}</title>
+        <title>{{ site.title }} -- {{ page.title }}</title>
         <meta charset='utf-8'/>
         <meta name='description' content='Documentation website'/>
         <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
@@ -8,6 +8,15 @@
         <link href='/assets/style.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        {{ content }}
+        <nav id='sidebar'>
+            {% include nav.html %}
+        </nav>
+        <section>
+            <article>
+                <h1>{{ page.title }}</h1>
+
+                {{ content }}
+            </article>
+        </section>
     </body>
 </html>
