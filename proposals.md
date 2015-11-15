@@ -3,7 +3,7 @@ layout: default
 title: Proposals
 ---
 
-<div class="warning">This information should be considered a "Work in Progress" and is not necessarily implemented in the system.</div>
+{% include draft.html %}
 
 ## Key words in Proposals
 

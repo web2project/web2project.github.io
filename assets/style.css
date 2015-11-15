@@ -594,6 +594,12 @@ pre {
     width: 90%;
 }
 
+.notice {
+    background-color: yellow;
+    font-style: italic;
+    padding: 15px;
+}
+
 .warning {
     background-color: pink;
     font-style: italic;

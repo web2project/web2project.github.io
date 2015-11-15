@@ -3,11 +3,11 @@ layout: default
 ---
 
 {% if page.status == 'draft' %}
-    <div class="warning">This information should be considered a "Work in Progress" and is not necessarily implemented in the system.</div>
+    {% include draft.html %}
 {% endif %}
 
 {{ content }}
 
 {% if page.status == 'draft' %}
-    <div class="warning">This information should be considered a "Work in Progress" and is not necessarily implemented in the system.</div>
+    {% include draft.html %}
 {% endif %}
