@@ -2,7 +2,8 @@
 layout: page
 title: Routing & Filesystem
 
-category: [proposal, incomplete]
+category: proposal
+status: draft
 ---
 
 = Disclaimer =

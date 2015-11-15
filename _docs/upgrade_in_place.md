@@ -2,7 +2,8 @@
 layout: page
 title: Upgrade in Place
 
-category: [proposal, incomplete]
+category: proposal
+status: draft
 ---
 
 This specification is written with WordPress's "[upgrade in place](http://codex.wordpress.org/Updating_WordPress)" system in mind. Conceptually it will be similar but we should not reuse its code due to its GPL licensing.

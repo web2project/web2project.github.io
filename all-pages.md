@@ -3,7 +3,7 @@ layout: default
 title: All Pages
 ---
 
-{% assign items = site.documents %}
+{% assign items = site.documents | sort: 'title' %}
 {% assign spliton = items | size | divided_by:2 %}
 
 <div style="float: right; width: 47%;">

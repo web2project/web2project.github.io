@@ -2,7 +2,8 @@
 layout: page
 title: API Specification
 
-category: [proposal, incomplete]
+category: proposal
+status: draft
 ---
 
 '''THIS IS A DRAFT'''

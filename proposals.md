@@ -3,7 +3,7 @@ layout: default
 title: Proposals
 ---
 
-*The pages linked in this category should be considered a "Work in Progress" or "[Straw man proposal](http://en.wikipedia.org/wiki/Straw_man_proposal)"  Anything currently included here is for the purposes of figuring out better ideas and replacing them.*
+<div class="warning">This information should be considered a "Work in Progress" and is not necessarily implemented in the system.</div>
 
 ## Key words in Proposals
 
@@ -15,7 +15,7 @@ For reference, all key words such as MUST, SHOULD, etc are used as defined in [R
 * **SHOULD NOT** This phrase, or the phrase "NOT RECOMMENDED" mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.
 * **MAY** This word, or the adjective "OPTIONAL", mean that an item is truly optional.  One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
 
-{% assign items = site.docs | where:"category","proposal" %}
+{% assign items = site.docs | where:"status","draft" %}
 {% assign spliton = items | size | divided_by:2 %}
 
 <div style="float: right; width: 47%;">

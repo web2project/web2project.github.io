@@ -2,7 +2,8 @@
 layout: page
 title: Project Budgeting
 
-category: [proposal, incomplete]
+category: proposal
+status: draft
 ---
 
 = This document is a draft. It should not be considered an implementation plan or recommendation. =

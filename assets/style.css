@@ -594,6 +594,12 @@ pre {
     width: 90%;
 }
 
+.warning {
+    background-color: pink;
+    font-style: italic;
+    padding: 15px;
+}
+
 .copyright {
     font-size: xx-small;
     margin-top: 75px;
