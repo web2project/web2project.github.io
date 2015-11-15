@@ -611,3 +611,19 @@ pre {
     margin-top: 75px;
     text-align: center;
 }
+
+.module-info {
+    background-color: lightgray;
+    float: right;
+    line-height: 25px;
+    padding: 20px;
+    width: 240px;
+}
+
+.module-info label {
+    font-weight: bold;
+}
+
+.module-info td {
+    white-space: nowrap;
+}

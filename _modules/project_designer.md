@@ -1,11 +1,19 @@
 ---
-layout: page
+layout: module
 title: Project Designer Module
 
 category: core-module
+
+module_name: Project Designer
+module_path: projectdesigner
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-== About the Project Designer Module ==
+## Module Overview
 
 The Project Designer Module was designed in web2Project as a means to streamline your daily workflow in part because it contains all the main minimum resources needed to effectively manage your [[project]] on one page.
 

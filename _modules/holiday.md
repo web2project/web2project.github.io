@@ -1,22 +1,22 @@
 ---
-layout: page
+layout: module
 title: Holiday Module
 
 category: addon-module
+
+module_name: Holiday
+module_path: holidays
+module_creator: Jacques Archimède (Eureka)
+module_devs: Jacques Archimède (Eureka)<br />& D. Keith Casey, Jr (caseysoftware)
+module_version: 1.0.0
+module_source: https://github.com/web2project/web2project-holiday
+module_download: https://github.com/web2project/web2project-holiday/archive/master.zip
 ---
 
-Module Info
- |mod_name = Holiday
- |mod_foldername = holidays
- |mod_original_dev = D. Keith Casey, Jr
- |mod_current_dev = D. Keith Casey, Jr & Jacques Archimède (Eureka)
- |mod_latest_version = 1.0
- |mod_depends_on = n/a
- |mod_download = https://github.com/eureka2/web2project-holiday
-
-== Module Overview ==
+## Module Overview
 
 This module allows you to set the working time of your company and your users based on standard calendard for your country and your region.
+
 This module integrates the [http://pear.php.net/package/Date_Holidays/ PEAR Date_Holidays package library] for calculating public holidays.
 
 The public holidays for a country is implemented as a "Driver".

@@ -1,19 +1,19 @@
 ---
-layout: page
+layout: module
 title: Mantis Integration
 
 category: addon-module
+
+module_name: Mantis Integration
+module_path:
+module_creator:
+module_devs:
+module_version: 0.9
+module_source:
+module_download:
 ---
 
-Module Info
- |mod_name = Mantis Integration
- |mod_foldername =
- |mod_original_dev =
- |mod_current_dev =
- |mod_latest_version = 0.9
- |mod_depends_on = n/a
-
-== Module Overview ==
+## Module Overview
 
 This module provides a way for a user to raise issues within Mantis in relation to a w2p project.
 

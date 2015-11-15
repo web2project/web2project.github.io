@@ -1,11 +1,19 @@
 ---
-layout: page
+layout: module
 title: Reports Module
 
 category: core-module
+
+module_name: Reports
+module_path: reports
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-== About Reports ==
+## Module Overview
 
 Reports are accessed by clicking on the Project from within the Project Queue (List) and are located in the upper left set of buttons.
 

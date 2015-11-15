@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Calendar Module
 
 category: core-module
+
+module_name: Calendar
+module_path: calendar
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Calendar
- |mod_foldername = calendar
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 The Calendar module provides the users with interfaces to manage the [[Tasks]] and Events in a chronological way.
 On this module you will find Year, Month, Week and Day displays of Tasks and Events and also the possibility to filter them accordingly.
 

@@ -1,19 +1,19 @@
 ---
-layout: page
+layout: module
 title: Project Importer
 
 category: addon-module
+
+module_name: Risk Management
+module_path: risks
+module_creator: Ivan Peevski
+module_devs: CaseySoftware, LLC
+module_version: 4.1
+module_source: https://github.com/web2project/modules-importers
+module_download: https://github.com/web2project/modules-importers/archive/master.zip
 ---
 
-Module Info
- |mod_name = Project Importer
- |mod_foldername = importers
- |mod_original_dev = CaseySoftware, LLC<br />(Ivan Peevski - cyberhorse)
- |mod_current_dev = CaseySoftware, LLC<br />(Keith Casey - caseydk)
- |mod_latest_version = 4.1
- |mod_depends_on = n/a
-
-== Module Overview ==
+## Module Overview
 
 This module provides a way for a user to import a project plan into web2project from Microsoft Project or WBS Gant Chart Pro v4.4.
 

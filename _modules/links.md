@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Links Module
 
 category: core-module
+
+module_name: Links
+module_path: links
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Links
- |mod_foldername = links
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 The links module is an alternative resource where you can store quick links for reference and assign them to [[projects]] or [[task]].
 
 This is particularly useful to store client or vendor websites, but can be used for a number of purposes including links to external project files.

@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Contacts Module
 
 category: core-module
+
+module_name: Contacts
+module_path: contacts
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Contacts
- |mod_foldername = contacts
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 The contacts module is a place to store information about users and additional contacts. When you add a new user to the database they are automatically added to the contacts page, however not all contacts need to be registered users.
 
 You can access the data in this module by clicking on the contacts link in the main navigation. You can also access contacts from the add/edit project, add/edit task, resources, and other places throughout the dynamic application.

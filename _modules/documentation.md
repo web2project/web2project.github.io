@@ -1,19 +1,19 @@
 ---
-layout: page
+layout: module
 title: Documentation Module
 
 category: addon-module
+
+module_name: Documentation
+module_path: documentation
+module_creator: Jacques Archimède (Eureka)
+module_devs: Jacques Archimède (Eureka)
+module_version: 0.2
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Documentation
- |mod_foldername = documentation
- |mod_original_dev = Jacques Archimède (Eureka)
- |mod_current_dev = Jacques Archimède (Eureka)
- |mod_latest_version = 0.2
- |mod_depends_on = n/a
-
-== Module Overview ==
+## Module Overview
 
 This module provides a way for a user to create documentation for a project.
 It uses [http://markitup.jaysalvat.com MarkitUp] as text editor.

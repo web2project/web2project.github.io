@@ -1,20 +1,20 @@
 ---
-layout: page
+layout: module
 title: Companies Module
 
 category: core-module
+
+module_name: Companies
+module_path: companies
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Companies
- |mod_foldername = companies
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-
-== Module Overview ==
 The companies module lets you provide information regarding the organizations or entities for which you will be doing [[projects]] or will serve as a way to organize the projects and its [[human resources]].
 
 Companies may have a tree of Departments associated with it, as well as a multitude of [[Contacts]] and [[Users]] (people that can log in the system and be assigned to tasks). The default company module in web2Project not only allows you to add or edit companies, but you can also classify them according to company type. You can also see what users belong to that company,current active projects, archived projects, departments, users, contacts, events and [[files]].

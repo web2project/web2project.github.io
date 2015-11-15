@@ -1,28 +1,23 @@
 ---
-layout: page
+layout: module
 title: Dokuwiki Module
 
 category: addon-module
+
+module_name: Dokuwiki
+module_path: dokuwiki
+module_creator: Klaus Buecher (opto)
+module_devs: Klaus Buecher (opto)
+module_version: 1.1
+module_source: https://github.com/opto/web2project-dokuwiki
+module_download: https://github.com/opto/web2project-dokuwiki/archive/master.zip
 ---
 
-Dokuwiki addon module:
+## Module Overview
 
-
-this module allows to associate dokuwiki pages to tasks, projects and contacts. These pages will be shown in a tab in project/task/contact view, so they are easily accessible without leaving web2project.
+This module allows to associate dokuwiki pages to tasks, projects and contacts. These pages will be shown in a tab in project/task/contact view, so they are easily accessible without leaving web2project.
 The code is at https://github.com/opto/web2project-dokuwiki, use git or the download zip button to download.
 Some more info is at http://support.web2project.net/forums/229361-module-add-on-developers/suggestions/5076082-dokuwiki-module-updated-for-3-0 and in the readme.txt
-
-Module Info
- |mod_name = Dokuwiki
- |mod_foldername = dokuwiki
- |mod_original_dev = opto<br />(Klaus Buecher)
- |mod_current_dev = opto<br />(Klaus Buecher)
-
- |mod_latest_version = 1.1
- |mod_depends_on = n/a
-
-
-== Module Overview ==
 
 This module allows to add dokuwiki pages to projects, tasks and contacts. They are displayed in a tab in the view of project or task or contact. The main dokuwiki menu item allows to browse dokuwiki without leaving the w2p context.
 

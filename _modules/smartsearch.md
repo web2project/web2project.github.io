@@ -1,11 +1,19 @@
 ---
-layout: page
+layout: module
 title: SmartSearch
 
 category: core-module
+
+module_name: Smartsearch
+module_path: smartsearch
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-== About SmartSearch ==
+## Module Overview
 
 The SmartSearch Module in web2Project allows you to perform global searches for data throughout the system. The core of the module is hidden by default from the main menu, but its function is access via the Global Search.
 

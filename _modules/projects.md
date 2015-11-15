@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Projects Module
 
 category: core-module
+
+module_name: Projects
+module_path: projects
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Projects
- |mod_foldername = projects
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 The very essence of web2Project is the ability to effectively manage projects. The Project Module is the foundation for [[Task]] and the heart of the system. Almost every other module in the system uses the project module in some sort of capacity to pull or share information.
 
 == Projects List Page (Projects Index Page) ==

@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Files Module
 
 category: core-module
+
+module_name: Files
+module_path: files
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Files
- |mod_foldername = files
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 The File Repository in web2Project is a well organized dynamic module for maintaining your assets that are associated with [[Projects]], [[Task]], or [[Events]]. The files module appears in the main navigation by default, but you can also access files via projects, project designer, and task.
 
 In the web2Project file repository you can:

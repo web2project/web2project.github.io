@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Resources
 
 category: core-module
+
+module_name: Resources
+module_path: resources
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Resources
- |mod_foldername = resources
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 The Resource Module is a useful tool when you need to allocate or track resources related to a [[project]] or [[task]]. Additional resources could include things like conference room, copiers, ect..
 
 == Resources List View (Resources Index) ==

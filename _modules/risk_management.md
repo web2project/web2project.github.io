@@ -1,19 +1,19 @@
 ---
-layout: page
+layout: module
 title: Risk Management Module
 
 category: addon-module
+
+module_name: Risk Management
+module_path: risks
+module_creator: CaseySoftware, LLC
+module_devs: CaseySoftware, LLC
+module_version: 2.0
+module_source: https://github.com/web2project/modules-risks
+module_download: https://github.com/web2project/modules-risks/archive/master.zip
 ---
 
-Module Info
- |mod_name = Risk Management
- |mod_foldername = risks
- |mod_original_dev = CaseySoftware, LLC<br />(Keith Casey - caseydk)
- |mod_current_dev = CaseySoftware, LLC<br />(Keith Casey - caseydk)
- |mod_latest_version = 1.0
- |mod_depends_on = n/a
-
-== Module Overview ==
+## Module Overview
 
 The Risk Management Module allows users to track a number of Risks and how they associate to individual Tasks or even entire Projects. It is known to work with web2project v2.2 but has not yet been tested with earlier versions. For general information on Risk Management and related concepts, please review [http://en.wikipedia.org/wiki/Risk_management Risk management].
 

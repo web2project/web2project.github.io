@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: module
 title: Tasks Module
 
 category: core-module
+
+module_name: Tasks
+module_path: tasks
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-Module Info
- |mod_name = Tasks
- |mod_foldername = tasks
- |mod_original_dev = dotProject
- |mod_current_dev = web2Project
- |mod_latest_version = ?
- |mod_depends_on = n/a
+## Module Overview
 
-== Module Overview ==
 Task are used to define the [[projects]] scope and represents the designers actual workflow. You may have 1 project with multiple tasks representing the projects details. The Task module helps you track and maintain your time and cost.
 
 You add task under a project or the project designer, but you can view and manage task in multiple areas of the system. Web2Project helps ensure that no task is ever overlooked.

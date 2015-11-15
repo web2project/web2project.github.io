@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="module-info">
+    <table>
+        <tr>
+            <td width="75%"><label>Name:</label></td><td>{{ page.module_name }}</td>
+        </tr>
+        <tr>
+            <td><label>Folder/Path:</label></td><td>{{ page.module_path }}</td>
+        </tr>
+        <tr>
+            <td><label>Creator:</label></td><td>{{ page.module_creator }}</td>
+        </tr>
+        <tr>
+            <td><label>Developer(s):</label></td><td>{{ page.module_devs }}</td>
+        </tr>
+        <tr>
+            <td><label>Latest Version:</label></td><td>{{ page.module_version }}</td>
+        </tr>
+        <tr><td><a href="{{ page.module_source }}" target="_new">Source</a></td><td><a href="{{ page.module_download }}">Download</a></td></tr>
+    </table>
+</div>
+
+{{ content }}
+
+

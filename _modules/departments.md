@@ -1,11 +1,19 @@
 ---
-layout: page
+layout: module
 title: Departments Module
 
 category: core-module
+
+module_name: Departments
+module_path: departments
+module_creator: dotProject
+module_devs: web2project
+module_version: 3.3
+module_source: https://github.com/web2project/web2project
+module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
 
-== About Departments ==
+## Module Overview
 
 Departments are a component of companies and can be found under the “view company” page within the company module. Note that the module is disabled by default, and must first be enabled. To enable the departments module:
 
