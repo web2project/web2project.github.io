@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Naming Conventions
+
+category: proposal
 ---
 
 Web2project works on the basis of ''"The easy way should also be the right way."'' A key reason that this works is because of our Naming Conventions. It allows quite a few things to "just work" without additional effort, configuration, or coding by anyone working on any module. As long as you stick to our conventions, your modules and customizations should need minimal updates between web2project releases.
@@ -106,8 +108,6 @@ Unfortunately, there are some oddball legacy modules/classes that break the abov
 
 These oddities along with a few others make our [https://github.com/caseysoftware/web2project/blob/master/includes/main_functions.php#L24 class autoloader] a huge pain. Further, the formatting helper ([https://github.com/caseysoftware/web2project/blob/master/classes/w2p/Output/HTMLHelper.class.php#L111 w2p_Output_HTMLHelper]) has so many oddball exceptions that it drives me up the wall.
 
-
-[[Category:Proposals]]
 [[Category:Add On Modules]]
 [[Category:Core Modules]]
 [[Category:Module Building Guide]]

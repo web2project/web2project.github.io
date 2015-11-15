@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Turn on Debugging
+
+category: code-review
 ---
 
 == Debugging Web2project ==
@@ -20,5 +22,3 @@ After that, navigate back to where you've had the problem. You should get an err
 To turn off debugging, set display_errors back to zero:
 
     ini_set('display_errors', 0);
-
-[[Category:Code Reviews]]

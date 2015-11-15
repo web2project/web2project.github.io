@@ -5,7 +5,6 @@ title: Links Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
 Module Info
  |mod_name = Links
  |mod_foldername = links
@@ -54,6 +53,3 @@ Insert the actual link.
 Note: The name you assign to the link will be what is shown in the links index. Clicking on the name will activate the link you assign.
 
 == Videos ==
-
-
-[[Category:Core Modules]]

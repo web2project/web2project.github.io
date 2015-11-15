@@ -5,8 +5,6 @@ title: Project Designer Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
-
 == About the Project Designer Module ==
 
 The Project Designer Module was designed in web2Project as a means to streamline your daily workflow in part because it contains all the main minimum resources needed to effectively manage your [[project]] on one page.

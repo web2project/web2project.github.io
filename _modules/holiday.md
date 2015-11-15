@@ -95,5 +95,3 @@ vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
 == Development Status ==
 
 *  v1.0 First stable release: 2011 May
-
-[[Category:Add On Modules]]

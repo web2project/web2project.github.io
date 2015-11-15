@@ -119,15 +119,6 @@ abbr[title] {
 }
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-
-b,
-strong {
-    font-weight: bold;
-}
-
-/**
  * Address styling not present in Safari 5 and Chrome.
  */
 
@@ -423,16 +414,6 @@ a:hover {
   text-decoration: underline;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-code {
-  margin: 0 0 20px;
-}
-
 code {
   font-family: 'Monaco', monospace, sans-serif;
 }
@@ -576,45 +557,6 @@ code {
   text-transform: uppercase;
 }
 
-/* GET */
-#content article.GET a h2 code {
-  color: #119bdf;
-}
-
-#content article.GET a h2 code b {
-  background: #119bdf;
-}
-
-/* POST */
-#content article.POST a h2 code {
-  color: #52ce0e;
-}
-
-#content article.POST a h2 code b {
-  background: #52ce0e;
-}
-
-/* PUT */
-#content article.PUT a h2 code {
-  color: #e08f10;
-}
-
-#content article.PUT a h2 code b {
-  background: #e08f10;
-}
-
-/* DELETE */
-#content article.DELETE a h2 code {
-  color: #e02a10;
-}
-
-#content article.DELETE a h2 code b {
-  background: #e02a10;
-}
-
-/* Reference's body */
-#content h3 {
-}
 
 #content .body {
   border-top: 1px solid #eef1f2;
@@ -643,7 +585,6 @@ section {
     margin-top: 50px;
     padding-right: 50px;
     position: absolute;
-    width: 90%;
 }
 
 pre {
@@ -651,4 +592,10 @@ pre {
     margin-left: 25px;
     padding: 15px;
     width: 90%;
+}
+
+.copyright {
+    font-size: xx-small;
+    margin-top: 75px;
+    text-align: center;
 }

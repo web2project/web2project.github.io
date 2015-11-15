@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Project Budgeting
+
+category: [proposal, incomplete]
 ---
 
 = This document is a draft. It should not be considered an implementation plan or recommendation. =
@@ -48,6 +50,3 @@ Further, the core concepts are ''probably'' similar enough for us to capture the
 #  If no costcode is selected, nothing happens.
 
 = This document is a draft. It should not be considered an implementation plan or recommendation. =
-
-[[Category:Proposals]]
-[[Category:Incomplete]]

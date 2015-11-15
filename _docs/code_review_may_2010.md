@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Code Review - May 2010
+
+category: code-review
 ---
 
 == Feedback from the tekX Code Review - 18 May 2010 ==
@@ -26,6 +28,3 @@ The Code Review was performed by [http://sebastian-bergmann.de/ Sebastian Bergma
 === includes/backcompat_functions ===
 
 *  Implementing the missing functions this way is a bad idea.. it creates a case where we have functions that look identical to the core functions but might not perform identically. It may be better to just require the library directly;
-
-[[Category:Code Reviews]]
-[[Category:Proposals]]

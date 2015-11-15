@@ -37,5 +37,3 @@ For download, use the <download as zip> button on the right, or use git for the 
 
 
 *  v1.0.0 Initial Release
-
-[[Category:Add On Modules]]

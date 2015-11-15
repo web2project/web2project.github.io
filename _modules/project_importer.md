@@ -94,5 +94,3 @@ This module is available for download here: https://github.com/web2project/modul
 *  v1.2 Update Release: 2006 October (last dotProject 2.0.x-compatible release)
 *  v1.1 Update Release: 2006 September
 *  v1.0 Initial Release: 2005 December
-
-[[Category:Add On Modules]]

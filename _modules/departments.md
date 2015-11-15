@@ -5,7 +5,6 @@ title: Departments Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
 == About Departments ==
 
 Departments are a component of companies and can be found under the “view company” page within the company module. Note that the module is disabled by default, and must first be enabled. To enable the departments module:

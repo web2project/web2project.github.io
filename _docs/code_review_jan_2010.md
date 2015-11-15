@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Code Review - Jan 2010
+
+category: code-review
 ---
 
 == Feedback from a Code Review - 29 Jan 2010 ==
@@ -74,6 +76,3 @@ A number of integer fields in the database do not currently have the unsigned ke
 See the attached files run-tests.log and logfile.xml. I'm currently getting 6 failures and 1 error on the Tasks suite and 1 error on the Projects suite. Everything else appears to pass. I'm not sure if it's due to size or complexity, but these two suites also take the longest to execute: ~100s and ~46s respectively.
 
 I don't know if you're in the school of thought that rejects code coverage reports - I know they have the potential to be misleading in terms of how well unit tests cover a codebase - but I noticed build.xml is currently configured not to include them and modified it to enable them. See the attached files build.xml.diff for the build.xml changes and the cc directory for the generated report, which claims that the tests coverage 100% of the codebase.
-
-[[Category: Code Reviews]]
-[[Category: Proposals]]

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: API Specification
+
+category: [proposal, incomplete]
 ---
 
 '''THIS IS A DRAFT'''
@@ -46,6 +48,3 @@ There are two potential implementations underway from [https://github.com/trevor
 
 
 '''THIS IS A DRAFT'''
-
-[[Category: Proposals]]
-[[Category:Incomplete]]

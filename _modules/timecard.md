@@ -14,5 +14,3 @@ Source code has been available here:
 Forum thread has been available here:
 
 * http://forums.web2project.net/viewtopic.php?p=7815
-
-[[Category: Add On Modules]]

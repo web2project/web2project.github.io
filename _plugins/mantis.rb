@@ -3,7 +3,7 @@ module Jekyll
     def mantis(input)
       output = ""
       unless input.nil?
-          output = output + '<a href="http://bugs.web2project.net/view.php?id=' + input.to_s + '" target="_new">' + input.to_s + '</a>'
+          output = output + '<a href="http://bugs.web2project.net/view.php?id=' + input.to_s + '" target="_new">Issue ' + input.to_s + '</a> - '
       end
 
       output

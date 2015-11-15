@@ -5,7 +5,6 @@ title: Calendar Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
 Module Info
  |mod_name = Calendar
  |mod_foldername = calendar
@@ -147,6 +146,3 @@ How-to use this page:
 # On the bottom of the page you have the option to send an email to the resources notifying them of the event.
 
 == Videos ==
-
-
-[[Category:Core Modules]]

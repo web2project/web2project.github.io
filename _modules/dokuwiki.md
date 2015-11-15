@@ -45,5 +45,3 @@ Please see readme.txt for detailed info.
 
 *  v1.1 Update Release: 2013 November
 *  v1.0 Initial Release: 2012
-
-[[Category:Add On Modules]]

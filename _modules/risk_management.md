@@ -50,5 +50,3 @@ This module is available for download here: https://github.com/web2project/modul
 *  v2.0 Tentative: 2012 December - https://github.com/caseysoftware/web2project-risks
 *  v1.0 2011 January - First web2project release
 *  <s>v3.0 2008 July - Last dotProject release - http://caseysoftware.com/blog/risk-management-module-v3</s>
-
-[[Category:Add On Modules]]

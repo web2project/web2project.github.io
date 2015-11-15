@@ -109,6 +109,4 @@ The list can be filtered by Company Owner or the user can type a search string t
 
 == Videos ==
 
-
-[[Category:Core Modules]]
 [http://wiki.web2project.net/video_feeds/w2p/5.Company_Basics/index.html > Company Basics]

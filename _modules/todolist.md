@@ -44,5 +44,3 @@ This module is available for download here: https://github.com/caseysoftware/web
 *  v1.1.0 Update Release: 2010 July
 *  v1.0.1 Update Release: 2010 January
 *  v1.0.0 Initial Release: 2009 December
-
-[[Category:Add On Modules]]

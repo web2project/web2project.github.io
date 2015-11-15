@@ -5,7 +5,6 @@ title: Resources
 category: core-module
 ---
 
-[[Category:Core Modules]]
 Module Info
  |mod_name = Resources
  |mod_foldername = resources
@@ -57,6 +56,3 @@ From this page you can:
 *Add Notes about the resource.
 
 == Videos ==
-
-
-[[Category:Core Modules]]

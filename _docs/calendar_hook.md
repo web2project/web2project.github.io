@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Calendar Hook
+
+category: hooks
 ---
 
 '''Available Since''': v1.1 (September 2009)

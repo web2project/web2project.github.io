@@ -5,7 +5,6 @@ title: Contacts Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
 Module Info
  |mod_name = Contacts
  |mod_foldername = contacts
@@ -83,6 +82,4 @@ If you have multiple OU's which contain users you will need to modify the Base D
 
 == Videos ==
 
-
-[[Category:Core Modules]]
 [[Category:LDAP]]

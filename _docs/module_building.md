@@ -426,6 +426,4 @@ While many modules will have a search as simple as above, more complex search pa
 
 Assuming this method exists and includes the proper values, the [[SmartSearch|Smart Search]] module will automatically call this function. No further configuration is necessary.
 
-[[Category:Incomplete]]
 [[Category:Module Building Guide]]
-[[Category:Proposals]]

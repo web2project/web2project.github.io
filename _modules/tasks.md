@@ -5,7 +5,6 @@ title: Tasks Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
 Module Info
  |mod_name = Tasks
  |mod_foldername = tasks
@@ -220,5 +219,3 @@ Also keep in mind this does have an effect on the permissions. If the task is se
 
 == Videos ==
 [http://wiki.web2project.net/video_feeds/w2p/7.Task_Basics/index.html > Task Basics]
-
-[[Category:Core Modules]]

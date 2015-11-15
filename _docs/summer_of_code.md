@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Google Summer of Code
+
+category: proposal
 ---
 
 This is the idea page for web2project. We have a variety of things here ranging from things core and vital to the future growth of the project to curiosities and oddball things that we'd like to explore.
@@ -34,5 +36,3 @@ We consider these ideas to be significantly more complex due to the concepts int
 *  Implement cross database support - I'd like to see SQL Server or Oracle to appeal to the more formal corporate/business users but Postgres would be interested too[http://bugs.web2project.net/view.php?id=191]/
 
 *  Implement Gantt Charts in Flash/Flex or jQuery[http://www.thegrubbsian.com/2010/06/11/jquery-ganttview-a-lightweight-gantt-chart-for-jquery] - These should be interactive and update the database post edit respecting the validation processes.
-
-[[Category:Proposals]]

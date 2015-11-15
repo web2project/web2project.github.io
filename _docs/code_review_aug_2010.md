@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Code Review - Aug 2010
+
+category: code-review
 ---
 
 Okay, keeping the principles in mind, here are some things that annoy me about dotProject and its interface:
@@ -18,5 +20,3 @@ Okay, keeping the principles in mind, here are some things that annoy me about d
 Bonus #6: dotProject is slow, at least on the server I had it running on.  It would sometimes take 2-3 seconds from form submission to first byte of response.  My new system is generally sub-second response, with most delays attributable to my local machine rather than the server or network.  This isn't because the database is smaller -- if anything it's a bit larger; I migrated my dotProject data for historical purposes, and have expanded the data model in some areas to track additional data.  I'm sure this has quite a lot to do with the relative degrees of complexity.  My code just doesn't have as many rabbit holes to even think about going down before returning data to the user.  Then again, I think a more formalized MVC architecture lends itself toward faster response for these kinds of systems, so that may help, and I've been diligent about indexing on my new system.  I could never get performance data out of dotProject, so I could never optimize for it.
 
 For any task, I need to track: what it is, when it's due, what the budget is, who will perform it, and the project it's a part of.  I don't care about anything else.  I might want to (someday) track dependencies again, but that matters a lot less when I'm managing 20 very small projects instead of 1 or 2 big, complicated ones.  Due dates are a surprisingly good substitute for dependency tracking in about 90% of projects I manage.  I'd drop the entire idea of putting more than one person on a task.  If you can't articulate what a specific person is responsible for, you haven't gotten to the task level yet.  I also don't bother with parent/child tasks, or "dynamic" tasks; I used to, but it was just confusing for the project workers to report their time properly.
-
-[[Category:Code Reviews]]

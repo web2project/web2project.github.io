@@ -48,6 +48,3 @@ Form this page you can:
 *Go back to the forums list page.
 
 == Videos ==
-
-
-[[Category:Core Modules]]

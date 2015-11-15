@@ -5,7 +5,6 @@ title: SmartSearch
 category: core-module
 ---
 
-[[Category:Core Modules]]
 == About SmartSearch ==
 
 The SmartSearch Module in web2Project allows you to perform global searches for data throughout the system. The core of the module is hidden by default from the main menu, but its function is access via the Global Search.

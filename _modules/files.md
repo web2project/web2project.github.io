@@ -105,5 +105,3 @@ The add folder page allows you to:
 
 == Videos ==
 [http://wiki.web2project.net/video_feeds/w2p/8.File_Basics/index.html > File Basics]
-
-[[Category:Core Modules]]

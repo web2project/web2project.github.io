@@ -46,5 +46,3 @@ This module is available for download here: https://github.com/eureka2/web2proje
 
 *  v0.2 Implementation of categories: 2011 April
 *  v0.1 Alpha Release: 2011 April
-
-[[Category:Add On Modules]]

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Routing & Filesystem
+
+category: [proposal, incomplete]
 ---
 
 = Disclaimer =
@@ -77,7 +79,3 @@ web2project module classes are a little different because they can be added or r
 For example, the '''CProject''' class will be found in ''modules/projects/project.class.php'' while '''CCompany''' will be found in ''modules/companies/companies.class.php''. Alternatively, the '''CFiles_Folder''' class ''modules/files/folders.class.php''.
 
 The [[Naming Conventions]] page covers this is greater detail.
-
-[[Category:Add On Modules]]
-[[Category:Core Modules]]
-[[Category:Incomplete]]

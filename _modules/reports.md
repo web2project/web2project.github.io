@@ -5,8 +5,6 @@ title: Reports Module
 category: core-module
 ---
 
-[[Category:Core Modules]]
-
 == About Reports ==
 
 Reports are accessed by clicking on the Project from within the Project Queue (List) and are located in the upper left set of buttons.

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Code Review - Oct 2009
+
+category: code-review
 ---
 
 == Feedback from the CodeWorks 2009 Code Review - 03 October 2009 ==
@@ -23,6 +25,3 @@ The Code Review was performed by [http://sebastian-bergmann.de/ Sebastian Bergma
 *  Use prepared statements instead of DBQuery class;
 *  <strike>Refactor the controllers to be skinny (with fat models)</strike> - Begun under v1.2, Dec 2009, continuing to present day;- Nearly complete in v3.0, Dec 2012;
 *  Separate the models from the data access layer;
-
-[[Category:Code Reviews]]
-[[Category:Proposals]]

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Desktop/Mobile Client
+
+category: [proposal, incomplete]
 ---
 
 '''THIS IS A DRAFT'''
@@ -133,6 +135,3 @@ There are a couple alternative implementations out there:
 * '''No longer available.''' There is a Yahoo Widget Engine Widget which does much of this (pictured, right).  The primary weakness is that it requires the inclusion of a php file which retrieves data from dotProject via raw SQL instead of using the built in access methods and therefore ignores all permissions.  Information:  http://widgets.yahoo.com/widgets/dotprojectnet-tasktracker [[images/yahoo-widget.jpg|align=right]]
 
 '''THIS IS A DRAFT'''
-
-[[Category: Proposals]]
-[[Category:Incomplete]]

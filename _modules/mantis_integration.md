@@ -62,5 +62,3 @@ All other activity is left within Mantis.
 == Development Status ==
 
 *  v0.9 Release: March 2010 - Initial release, converted from DP. In addition this version is only suitable for Mantis version 1.2.0 and above.
-
-[[Category:Add On Modules]]
