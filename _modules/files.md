@@ -19,15 +19,16 @@ The File Repository in web2Project is a well organized dynamic module for mainta
 
 In the web2Project file repository you can:
 
-*Create your own folders for any purpose.
-*Associate files to those folders
-*Add multiple file formats
-*View files under relative Projects and task
-*Checkout/checkin files
-*Track Revision Cycles of files.
-*View file size, type and date added.
+* Create your own folders for any purpose.
+* Associate files to those folders
+* Add multiple file formats
+* View files under relative Projects and task
+* Checkout/checkin files
+* Track Revision Cycles of files.
+* View file size, type and date added.
 
-==View Files List Page (Files Index) ==
+### View Files List Page (Files Index)
+
 [[Image:Files index.png|thumb|right|A pic of the Files module ''index''' page.]]
 When you click on the “Files” link from the main navigation menu you will see the Files List by default.
 
@@ -37,41 +38,43 @@ On the upper right hand side of the page are two buttons. The first button is us
 
 The default view of the files repository contains a table that lists the files currently in the system along with some additional information.
 
-*The first column allows you to edit the files information
-*The second column allows you to checkout/checkin the file
-*The third column will show you the checkout reason when a file is checked out.
-*The fouth column shows the files name
-*The Fith Column shows a short description
-*The sixth Column shows the version number. When you checkout and file and then check it back in, web2Project will also track the file version number. When you click the file name, you will download the latest version of the file.
-*The seventh column will show you what category the file belongs. The category is defined by tabs.
-*The eight column will show you what folder the file belongs under
-*The ninth shows who uploaded the file
-*The tenth shows the overall file size
-*The eleventh shows the file type
-*And the last column shows the date and time the file was added.
+* The first column allows you to edit the files information
+* The second column allows you to checkout/checkin the file
+* The third column will show you the checkout reason when a file is checked out.
+* The fouth column shows the files name
+* The Fith Column shows a short description
+* The sixth Column shows the version number. When you checkout and file and then check it back in, web2Project will also track the file version number. When you click the file name, you will download the latest version of the file.
+* The seventh column will show you what category the file belongs. The category is defined by tabs.
+* The eight column will show you what folder the file belongs under
+* The ninth shows who uploaded the file
+* The tenth shows the overall file size
+* The eleventh shows the file type
+* And the last column shows the date and time the file was added.
 
-== Files Add/Edit (Files addedit) ==
+### Files Add/Edit (Files addedit)
+
 [[Image:Files addedit.png|thumb|right|A pic of the Files module '''addedit''' page.]]
 
 To add a file to the file repository do one of the following:
 
 1. To add a file via the main repository click on “Files” in the main menu, then click the “New File” button located in the upper right corner.
-2. To add a file via a project click on the Files sub tab from within the project view page. If folders exist, click on the last icon on the far right side
+1. To add a file via a project click on the Files sub tab from within the project view page. If folders exist, click on the last icon on the far right side
 
 Note: If you hover your mouse over the icons a tool tip will appear telling you what function that icon serves.
 
 The add file page contacts a number of form elements that you can use to manage your files.
 
-*The folder drop down allows you to assign this file to a folder.
-*The Version text box allows you to assign a version number. By default when you are adding a file to the system it is assigned version number 1 unless you change it.
-*The category dropdown list the tabs in the files list page.
-*The project Dropdown lets you assign this file to a project. In most cases it might be easier to add a file to a project via the projects file tab.
-*When you assign the file to a project you can also assign the file to a specific task.
-*The description tab lets you add notes about the file.
-*Upload file box lets you browse and upload your file from your local computer or network.
-*The checkbox allows you to notify Assignees or task or project by email.
+* The folder drop down allows you to assign this file to a folder.
+* The Version text box allows you to assign a version number. By default when you are adding a file to the system it is assigned version number 1 unless you change it.
+* The category dropdown list the tabs in the files list page.
+* The project Dropdown lets you assign this file to a project. In most cases it might be easier to add a file to a project via the projects file tab.
+* When you assign the file to a project you can also assign the file to a specific task.
+* The description tab lets you add notes about the file.
+* Upload file box lets you browse and upload your file from your local computer or network.
+* The checkbox allows you to notify Assignees or task or project by email.
 
-== Files Folder Explorer (Folder Explorer) ==
+### Files Folder Explorer (Folder Explorer)
+
 [[Image:Files folder explorer.png|thumb|right|A pic of the Files Folder Explorer '''index'".]]
 The folder explorer in web2Project allows you to view files that are specific to that folder. You can also perform a number of functions within this view that you can do in the main file list.
 
@@ -79,18 +82,19 @@ To access the folder explorer simply click on the folder name in the File list p
 
 The icons on the upper left allow you to:
 
-*Return to the file list
-*Go to the parent folder if a parent folder exists
-*Edit the folder
+* Return to the file list
+* Go to the parent folder if a parent folder exists
+* Edit the folder
 
 The icons on the far right allow you to:
 
-*Checkout/Check-in
-*Edit
-*Duplicate
-*Delete
+* Checkout/Check-in
+* Edit
+* Duplicate
+* Delete
 
-== Files Folder Add/Edit (Folder Addedit) ==
+### Files Folder Add/Edit (Folder Addedit)
+
 [[Image:Files addedit folder.png|thumb|right|A pic of the Files Folder '''addedit'".]]
 To create a new folder in the main file module click the “New Folder” button in the upper right.
 
@@ -100,9 +104,10 @@ Note: To delete a folder click on the red X icon, to edit the folder click on th
 
 The add folder page allows you to:
 
-*Assign this folder to the root directory or as a sub-folder (child) to another folder.
-*Give the folder a name
-*Type a short description.
+* Assign this folder to the root directory or as a sub-folder (child) to another folder.
+* Give the folder a name
+* Type a short description.
 
-== Videos ==
+### Videos
+
 [http://wiki.web2project.net/video_feeds/w2p/8.File_Basics/index.html > File Basics]

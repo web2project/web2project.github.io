@@ -3,7 +3,7 @@ layout: page
 title: File Structure
 ---
 
-Building a proper module in web2project requires a handful of key files in a particular structure.  Each of which serve a specific purpose in the operation of the system.  For a module called "Todos" - ''available from the [http://sourceforge.net/projects/web2project-mod/ web2project Modules]'' - we would have the following file structure (filenames are case sensitive):
+Building a proper module in web2project requires a handful of key files in a particular structure.  Each of which serve a specific purpose in the operation of the system.  For a module called "Todos" - *available from the [web2project Modules](https://github.com/web2project)* - we would have the following file structure (filenames are case sensitive):
 
 {|
 ! Filename
@@ -13,7 +13,7 @@ Building a proper module in web2project requires a handful of key files in a par
 |-
 | /todos/ || required || Module Folder || Base folder of the module
 |-
-| &nbsp;&nbsp;&nbsp;/setup.php || required || [[Setup.php|Installation file]] || Defines the details of the module along with install/uninstall directions
+| &nbsp;&nbsp;&nbsp;/setup.php || required || [Setup.php](/docs/setup.html) || Defines the details of the module along with install/uninstall directions
 |-
 | &nbsp;&nbsp;&nbsp;/todos.class.php || required || Primary Model ||  This handles all the CRUD operations and is the only place where business logic or queries belong
 |-
@@ -33,5 +33,3 @@ Building a proper module in web2project requires a handful of key files in a par
 |-
 | &nbsp;&nbsp;&nbsp;/companies_tab.view.todolist.php || optional || Subview tab || Provides a embedded tab subview on the Company View page<br /> This {modulename}_tab.view.filename.php convention will work on any module that supports Tabbed Subviews
 |}
-
-[[Category:Module Building Guide]]

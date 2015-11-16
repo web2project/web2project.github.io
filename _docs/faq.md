@@ -3,9 +3,9 @@ layout: page
 title: FAQ
 ---
 
-Q & A gleaned from the Forums: http://forums.web2project.net/
+Q & A gleaned from the [Forums](http://forums.web2project.net/)
 
-Looking for articles/documentation about Web2Project? Check out the [[Core Modules page]] which presents documentation for each module.
+Looking for articles/documentation about Web2Project? Check out the [Core Modules page](/modules/core.html) which presents documentation for each module.
 
 ## Infrastructure
 

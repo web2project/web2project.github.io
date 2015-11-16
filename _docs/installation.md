@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Installation / Getting Started
+
+status: cleanup
 ---
 
 First of all Thank You Very Much for trying web2Project, a Free Open Source Web-Based Business-Oriented Project Management System. It's a mouthful, we know.

@@ -5,17 +5,17 @@ title: Code Review - Oct 2009
 category: code-review
 ---
 
-== Feedback from the CodeWorks 2009 Code Review - 03 October 2009 ==
+*Feedback from the CodeWorks 2009 Code Review - 03 October 2009*
 
-The Code Review was performed by [http://sebastian-bergmann.de/ Sebastian Bergmann], [http://www.slideshare.net/TheSeer Arne Blankerts], and [http://priebsch.de/en/blog/ Stefan Priebsch].
+The Code Review was performed by [Sebastian Bergmann](http://sebastian-bergmann.de/), [Arne Blankerts](http://www.slideshare.net/TheSeer), and [Stefan Priebsch](http://priebsch.de/en/blog/).
 
-=== General Feedback ===
+### General Feedback
 
 *  Drop the security sentinel where all logic is wrapped in a class and therefore not executable by a direct http call;
 *  <strike>Instead of using the explicit class loaders, an autoloader option could be useful and simplify the code</strike> - Implemented in v1.2, Dec 2009;
 *  <strike>Construct a Response Object to pass error conditions and status back and forth;</strike> - Implemented in v2.4, July 2011
 
-=== Object-Oriented Aspects ===
+### Object-Oriented Aspects
 
 *  <strike>Convert constructors to php5-style;</strike> - Implemented in v1.2, Dec 2009;
 *  <strike>Use the php5-style parent:: construct for instantiation;</strike> - Implemented in v1.2, Dec 2009;

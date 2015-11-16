@@ -3,7 +3,7 @@ layout: page
 title: Security Nonce
 ---
 
-A Nonce is used in web forms to prevent "[http://en.wikipedia.org/wiki/Replay_attack replay attacks]" or "[http://en.wikipedia.org/wiki/Cross-site_request_forgery Cross Site Request Forgery]" where an attacker can submit the same form information repeatedly. To prevent this, we generate a one-time use token that gets embedded into the form and validated upon submission. In our case, you can add this to your forms with minimal effort such as this:
+A Nonce is used in web forms to prevent "[replay attacks](http://en.wikipedia.org/wiki/Replay_attack)" or "[Cross Site Request Forgery](http://en.wikipedia.org/wiki/Cross-site_request_forgery)" where an attacker can submit the same form information repeatedly. To prevent this, we generate a one-time use token that gets embedded into the form and validated upon submission. In our case, you can add this to your forms with minimal effort such as this:
 
     $form = new w2p_Output_HTML_FormHelper($AppUI);
     ?>

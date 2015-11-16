@@ -13,19 +13,9 @@ module_source: https://github.com/web2project/modules-todos
 module_download: https://github.com/web2project/modules-todos/archive/master.zip
 ---
 
-Module Info
- |mod_name =
- |mod_foldername = todos
- |mod_original_dev = CaseySoftware, LLC
- |mod_current_dev = CaseySoftware, LLC
- |mod_latest_version = 1.1
- |mod_depends_on = n/a
-
 ## Module Overview
 
 This module provides a way for a user to create individual Todo Items - similar to Basecamp - within Web2project. A Todo Item consists of a simple name, a Due Date, an Assignee, a Project (optional), a Contact (optional), and a Category (optional). By default, these items appear in the users' iCalendar feed.
-
-This module is available for download here: https://github.com/caseysoftware/web2project-todos
 
 ## Release Notes
 
@@ -48,7 +38,7 @@ This module is available for download here: https://github.com/caseysoftware/web
 
 ## Development Status
 
-*  v1.2.0 (tentative) December 2012 - https://github.com/caseysoftware/web2project-todos
+*  v1.2.0 (tentative) December 2012
 *  v1.1.0 Update Release: 2010 July
 *  v1.0.1 Update Release: 2010 January
 *  v1.0.0 Initial Release: 2009 December

@@ -583,6 +583,7 @@ code {
 section {
     left: 275px;
     margin-top: 50px;
+    padding-bottom: 50px;
     padding-right: 50px;
     position: absolute;
 }

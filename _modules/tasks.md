@@ -21,14 +21,14 @@ You add task under a project or the project designer, but you can view and manag
 
 Where to view task:
 
-*The Task Menu
-*The Todo
-*The Today
-*The View Project Page
-*The View Task Page
-*The [[ProjectDesigner]]
+* The Task Menu
+* The Todo
+* The Today
+* The View Project Page
+* The View Task Page
+* The [[ProjectDesigner]]
 
-== Tasks List View (Tasks index page) ==
+### Tasks List View (Tasks index page)
 [[Image:tasks_index.png|thumb|right|A pic of the Tasks module '''index''' page.]]
 The Task List page is located when you click on the Task Menu. There are a number of filters you can set to change what you’re viewing.
 
@@ -46,10 +46,10 @@ The Task List page is located when you click on the Task Menu. There are a numbe
 
 On the left of the page are buttons you can use to further filter your results.
 
-*My todo
-*My Pinned Task
-*Show Inactive Task
-*Task Per User
+* My todo
+* My Pinned Task
+* Show Inactive Task
+* Task Per User
 
 At the center of the stage is a table with columns.
 
@@ -70,13 +70,14 @@ At the center of the stage is a table with columns.
 
 Also note that each task is color coded to help you identify when a task:
 
-*Is a future task
-*If it has been started on time
-*If it should have started
-*If it is overdue
-*If it is done.
+* Is a future task
+* If it has been started on time
+* If it should have started
+* If it is overdue
+* If it is done.
 
-== Tasks View Screen (Task View Page) ==
+### Tasks View Screen (Task View Page)
+
 [[Image:Tasks_view.png|thumb|right|A pic of the Tasks module '''view''' page.]]
 
 When you click on a task name it will take you to the view task page where you can view comprehensive information about the task.
@@ -161,35 +162,28 @@ Under the main window are a set of tabs.
 |Displays the extra resources for this task ( View the Resources Module for more information)
 |}
 
-== View Add/Edit Screen 1 (Details Tab) ==
+### View Add/Edit Screen 1 (Details Tab)
+
 [[Image:Tasks_addedit_1.png|thumb|right|A pic of the Tasks addedit screen '''Details''' Tab.]]
 The details view under the Edit Task page allows you to specify:
 
-*Who the task owner is, which defaults to your own name but your can specify another user.
+* Who the task owner is, which defaults to your own name but your can specify another user.
+* Set Access Permissions which will allow you to block or allow access to people
+  * Public: Everyone can view
+  * Protected: Must be an assignee and belong to the same company as the task owner
+  * Participant: Only the assignees can view
+  * Private: Only the task owner can view
+* Web Address if applicable
+* Task Parent to make this task a child of another task.
+* Move this task to another project
+* Select a task type
+* Add Contacts: Important especially if assigning permissions
+* Add a budget: Should be consistent with the overall project budget.
+* Add a description
+* Specify a location
 
-*Set Access Permissions which will allow you to block or allow access to people
-**Public: Everyone can view
-**Protected: Must be an assignee and belong to the same company as the task owner
-**Participant: Only the assignees can view
-**Private: Only the task owner can view
+### View Add/Edit Screen 2 (Dates Tab)
 
-*Web Address if applicable
-
-*Task Parent to make this task a child of another task.
-
-*Move this task to another project
-
-*Select a task type
-
-*Add Contacts: Important especially if assigning permissions
-
-*Add a budget: Should be consistent with the overall project budget.
-
-*Add a description
-
-*Specify a location
-
-== View Add/Edit Screen 2 (Dates Tab) ==
 [[Image:Tasks_addedit_2.png|thumb|right|A pic of the Tasks addedit screen '''Dates''' Tab.]]
 The dates tab lets you specify the start and end dates, expected duration and choose hours based on an 8 hour working day.
 
@@ -199,13 +193,15 @@ Note: Choose your start time in the first time field and your “end by this tim
 
 This is important especially in the design industry when a client wants the collateral by a specific time, but it also helps you keep track of your own overall schedule.
 
-== View Add/Edit Screen 3 (Dependencies Tab) ==
+### View Add/Edit Screen 3 (Dependencies Tab)
+
 [[Image:Tasks_addedit_3.png|thumb|right|A pic of the Tasks addedit screen '''Dependencies''' Tab.]]
 You can specify Dependencies in web2Project which is a great asset when you are working on larger projects that have multiple tasks that are dependant on one another.
 
 The logic is, additional components (task) must be done in order for the main objective (this task) to be complete.
 
-== View Add/Edit Screen 4 (Human Resources Tab) ==
+### View Add/Edit Screen 4 (Human Resources Tab)
+
 [[Image:Tasks_addedit_4.png|thumb|right|A pic of the Tasks addedit screen '''Human Resources''' Tab.]]
 
 Its important not to confuse Human Resources here with your companies Human Resource Department. Human Resources in web2Project are additional resources used to assist in the production on a task.
@@ -218,5 +214,5 @@ Note: You can also specify this in the project designer module.
 
 Also keep in mind this does have an effect on the permissions. If the task is set to private and you need someone to access the task it is best to have them as a resource.
 
-== Videos ==
+### Videos
 [http://wiki.web2project.net/video_feeds/w2p/7.Task_Basics/index.html > Task Basics]

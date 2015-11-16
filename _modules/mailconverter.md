@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Mailconverter
+title: Mailconverter Module
 
 category: addon-module
 
@@ -17,21 +17,18 @@ module_download: https://github.com/opto/web2project-taskimporter/archive/master
 
 This module allows to add tasks from emails. It can, for example, be utilised while travelling and when login to web2project is not possible.
 
-Emails can be used to create tasks, but also, it is possible to forward emails to be attached to the newly created task as eml file.
-Can assign the task to others, set dates, duration, priority, description.
+Emails can be used to create tasks, but also, it is possible to forward emails to be attached to the newly created task as eml file. Can assign the task to others, set dates, duration, priority, description.
 
-More info is at [http://support.web2project.net/questions/1333/announce-module-to-add-tasks-new-or-forwarded-by-e.html]
+More info is in our [Support Forums](http://support.web2project.net/questions/1333/announce-module-to-add-tasks-new-or-forwarded-by-e.html).
 
-This module is available for download here: [https://github.com/opto/web2project-taskimporter] for w2p 3.x.
-For download, use the <download as zip> button on the right, or use git for the sourcecode.
+### Release Notes
 
-== Release Notes ==
+* n/a
 
+### Known/Open Issues
 
-== Known/Open Issues ==
+* n/a
 
+### Development Status
 
-== Development Status ==
-
-
-*  v1.0.0 Initial Release
+* v1.0.0 Initial Release

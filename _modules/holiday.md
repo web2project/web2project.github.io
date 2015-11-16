@@ -19,8 +19,8 @@ This module allows you to set the working time of your company and your users ba
 
 This module integrates the [http://pear.php.net/package/Date_Holidays/ PEAR Date_Holidays package library] for calculating public holidays.
 
-The public holidays for a country is implemented as a "Driver".
-The following drivers are availables :
+The public holidays for a country is implemented as a "Driver". The following drivers are available:
+
 * Australia (Sam Wilson <sam@archives.org.au>)
 * Western Australia (Sam Wilson <sam@archives.org.au>)
 * Austria (Klemens Ullmann <klemens@ull.at>)
@@ -49,6 +49,7 @@ The following drivers are availables :
 * Venezuela (Alan Mizrahi)
 
 Some of these drivers are based on special drivers:
+
 * Christian (Carsten Lucke <luckec@tool-garage.de>)
 * Composite (Carsten Lucke <luckec@tool-garage.de>)
 * Discordian (Stephan 'Da:Sourcerer' Hohmann <webmaster@dasourcerer.net>)
@@ -58,23 +59,16 @@ Some of these drivers are based on special drivers:
 
 This module is available for download here: https://github.com/eureka2/web2project-holiday
 
-== INSTALLATION ==
+## INSTALLATION
 
-1. To install this module, please follow the standard module installation
-procedure. Download the latest version from Sourceforge and unzip
-this directory into your web2project/modules directory.
+1. To install this module, please follow the standard module installation procedure. Download the latest version from Sourceforge and unzip this directory into your web2project/modules directory.
+1. Select to System Admin -> View Modules and you should see "holiday" near the bottom of the list.
+1. On the "Holiday" row, select "install". The screen should refresh. Now select "hidden" and then "disabled" to make it display in your module navigation.
+1. Open the Date class with your favourite editor:
 
-2. Select to System Admin -> View Modules and you should see "holiday" near
-the bottom of the list.
+    vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
 
-3. On the "Holiday" row, select "install". The screen should refresh. Now
-select "hidden" and then "disabled" to make it display in your module
-navigation.
-
-4. Open the Date class with your favourite editor:
-vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
-
-5. Paste the following in the beginning of the isWorkingDay function (Line 148)
+1. Paste the following in the beginning of the isWorkingDay function (Line 148)
 
     if ($AppUI->isActiveModule('holiday')) {
         // Holiday module, check the holiday database
@@ -84,14 +78,19 @@ vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
         }
     }
 
-== Release Notes ==
 
-=== 1.0 ===
+    vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
+
+## Release Notes
+
+### 1.0
 
 * First stable release
 
-== Known/Open Issues ==
+## Known/Open Issues
 
-== Development Status ==
+* n/a
 
-*  v1.0 First stable release: 2011 May
+## Development Status
+
+* v1.0 First stable release: 2011 May

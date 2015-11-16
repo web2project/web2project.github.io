@@ -18,6 +18,7 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 This module provides a way for a user to create documentation for a project.
 It uses [http://markitup.jaysalvat.com MarkitUp] as text editor.
 Syntaxes that are recognized are:
+
 * BBcode
 * [http://www.wikicreole.org/ Creole]
 * [http://daringfireball.net/projects/markdown/ Markdown]
@@ -30,19 +31,21 @@ The engine choice is made ​​by an administrator when configuring the module.
 
 This module is available for download here: https://github.com/eureka2/web2project-documentation/archive/master.zip
 
-== Release Notes ==
+## Release Notes
 
-=== 0.2 ===
+### 0.2
 
 * Implementation of categories (Mediawiki syntax only).
 
-=== 0.1 ===
+### 0.1
 
 * Alpha release.
 
-== Known/Open Issues ==
+## Known/Open Issues
 
-== Development Status ==
+* n/a
+
+## Development Status
 
 *  v0.2 Implementation of categories: 2011 April
 *  v0.1 Alpha Release: 2011 April

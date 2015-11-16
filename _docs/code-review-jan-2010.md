@@ -5,13 +5,11 @@ title: Code Review - Jan 2010
 category: code-review
 ---
 
-== Feedback from a Code Review - 29 Jan 2010 ==
+### General Feedback
 
-The Code Review was performed by [http://matthewturland.com/ Matthew Turland]. Attachments referenced will be made available at a later time.
+The Code Review was performed by [Matthew Turland](http://matthewturland.com/). Attachments referenced will be made available at a later time.
 
-== General Feedback ==
-
-=== General Code Analysis ===
+#### General Code Analysis
 
 For a bit more in-depth analysis on this versus just a line count, I gave using Sebastian's phploc utility a shot. Installing it is just a matter of using pear channel-discover on components.ez.no and pear.phpunit.de and then doing pear install phpunit/phploc. See the attached file phploc.log for the output I get. The results look fairly promising:
 
@@ -29,8 +27,7 @@ For a bit more in-depth analysis on this versus just a line count, I gave using 
 
 * I'm not sure if you're in the process of moving more things to use OOP, but the mix of 184 methods versus 316 functions seems an odd ratio between the two paradigms.
 
-
-=== Coding Standards ===
+#### Coding Standards
 
 See the attached file phpcs.log. I just ran all PHP files through PHP_CodeSniffer using the PEAR standard with the following command run from the root trunk directory:
 
@@ -41,17 +38,15 @@ Using grep to do some analysis on the log file, I found there were 60,883 errors
     grep '| ERROR ' phpcs.log | sed 's/^\s*[0-9]\+\s\+| \(ERROR\|WARNING\)\s\+|\s\+//g' | sort -u
 
 
-=== Embedded CSS ===
+#### Embedded CSS
 
 See the attached file css.log. There are just over 400 lines where CSS styles are being embedded in markup rather than kept in stylesheets. In instances where style attribute valeues are dynamically injected using PHP, it's worth consideration to establish a convention for CSS class names and include those statically instead.
 
-
-=== Dependency Injection ===
+#### Dependency Injection
 
 Providing an extremely accurate report on this is a difficult problem partly due to the dynamic nature of PHP. The easiest way to get a rough idea is to simply comb the codebase for class files and note the instances of the "new" keyword within them using the tokenizer. See the attached script di.php, which I used to do exactly that. di.log is its corresponding console output when I run it on trunk. The results merely don't necessarily indicate areas lacking dependency injection, merely areas that might, of which there are currently 478 lines.
 
-
-=== Database Schema ===
+#### Database Schema
 
 I created the database using the command below, which appears to be equivalent to how install/manager.class.php handles it. A few errors occurred because the base install SQL file appears to already contain definitions for columns that subsequent files are also attempting to add. Modifying these by changing ADD to CHANGE may be advisable.
 
@@ -65,13 +60,13 @@ I created the database using the command below, which appears to be equivalent t
 
 All database tables are currently using MyISAM. The only reason I could see for doing this would be that some parts of the application are using fulltext search, but they aren't that I can tell from the schema. As such, I'd recommend looking at moving to using InnoDB instead and adding foreign key constraints where applicable.
 
-A number of columns have a default value of NULL. I'd be very careful with these as NULL can sometimes cause unexpected behavior. See http://ishouldbecoding.com/2008/01/20/nullification for more details on that.
+A number of columns have a default value of NULL. I'd be very careful with these as NULL can sometimes cause unexpected behavior. See http://ishouldbecoding.com/2008/01/20/nullification [dead] for more details on that.
 
 A number of integer fields in the database do not currently have the unsigned keyword when they should, as it would double their storage capacity. This command performed on a full schema dump can give you a list of those:
 
     grep int web2project.sql | grep -v unsigned
 
-=== Unit Tests ===
+#### Unit Tests
 
 See the attached files run-tests.log and logfile.xml. I'm currently getting 6 failures and 1 error on the Tasks suite and 1 error on the Projects suite. Everything else appears to pass. I'm not sure if it's due to size or complexity, but these two suites also take the longest to execute: ~100s and ~46s respectively.
 

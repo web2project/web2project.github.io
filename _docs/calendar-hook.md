@@ -5,26 +5,24 @@ title: Calendar Hook
 category: hooks
 ---
 
-'''Available Since''': v1.1 (September 2009)
+**Available Since:** v1.1 (September 2009)
 
-== Explanation ==
-
-The '''hook_calendar''' method opens a module class to make date-relevant data available to external code.  While this is only used by the Tasks and Events module in Core, other modules - including Add Ons - could implement it also.
+The **hook_calendar** method opens a module class to make date-relevant data available to external code.  While this is only used by the Tasks and Events module in Core, other modules - including Add Ons - could implement it also.
 
 This method - and more importantly the hook_calendar method - returns a list of items specifying the following fields:
 
-*  ''id'' - This is a unique id for this type of calendar item and is usually just the primary key from the module's core table. It does not have to be globally unique.
-*  ''name'' - This is the name of the calendar item. This is mapped to the iCalendar SUMMARY field.
-*  ''description'' - This is a way of describing the calendar item. If there is no equivalent field within the module, it is the easiest to duplicate the ''name'' entry here. This is mapped to the iCalendar DESCRIPTION field.
-*  ''project_id'' - If this item maps to a specific Project within web2project, this value can be included. Inclusion of this field will append a link to the Project in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
-*  ''task_id'' - If this item maps to a specific Task within web2project, this value can be included. Inclusion of this field will append a link to the Task in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
-*  ''startDate'' - This becomes the DTSTART within the iCalendar entry.
-*  ''endDate'' - This becomes the DTEND within the iCalendar entry.
-*  ''updatedDate'' - This becomes the DTSTAMP within the iCalendar entry.
+*  *id* - This is a unique id for this type of calendar item and is usually just the primary key from the module's core table. It does not have to be globally unique.
+*  *name* - This is the name of the calendar item. This is mapped to the iCalendar SUMMARY field.
+*  *description* - This is a way of describing the calendar item. If there is no equivalent field within the module, it is the easiest to duplicate the *name* entry here. This is mapped to the iCalendar DESCRIPTION field.
+*  *project_id* - If this item maps to a specific Project within web2project, this value can be included. Inclusion of this field will append a link to the Project in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
+*  *task_id* - If this item maps to a specific Task within web2project, this value can be included. Inclusion of this field will append a link to the Task in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
+*  *startDate* - This becomes the DTSTART within the iCalendar entry.
+*  *endDate* - This becomes the DTEND within the iCalendar entry.
+*  *updatedDate* - This becomes the DTSTAMP within the iCalendar entry.
 
-== Example ==
+## Example
 
-This hook is called by the ''calendar.php'' script to create the [http://en.wikipedia.org/wiki/ICalendar iCalendar] feed for the system. In the [https://github.com/caseysoftware/web2project/blob/master/modules/calendar/calendar.class.php#L598 Calendar Module], here are the methods of interest:
+This hook is called by the *calendar.php* script to create the [iCalendar](http://en.wikipedia.org/wiki/ICalendar) feed for the system. In the [Calendar Module](https://github.com/caseysoftware/web2project/blob/master/modules/calendar/calendar.class.php#L598), here are the methods of interest:
 
     public function hook_calendar($userId)
     {
@@ -66,6 +64,3 @@ This hook is called by the ''calendar.php'' script to create the [http://en.wiki
     }
 
 The calendar.php script will automatically call each active module's hook_calendar method without any additional actions from the user.
-
-[[Category:Hook System]]
-[[Category:Incomplete]]
