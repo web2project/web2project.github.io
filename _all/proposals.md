@@ -1,11 +1,9 @@
 ---
-layout: default
-title: Proposals
+layout: page
+title: All Proposals
+
+status: draft
 ---
-
-{% include draft.html %}
-
-## Key words in Proposals
 
 For reference, all key words such as MUST, SHOULD, etc are used as defined in [RFC 2119](http://tools.ietf.org/html/rfc2119). The key terms which we are concerned about are as follows:
 
@@ -16,20 +14,5 @@ For reference, all key words such as MUST, SHOULD, etc are used as defined in [R
 * **MAY** This word, or the adjective "OPTIONAL", mean that an item is truly optional.  One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
 
 {% assign items = site.docs | where:"status","draft" %}
-{% assign spliton = items | size | divided_by:2 %}
 
-<div style="float: right; width: 47%;">
-    <ul>
-        {% for item in items offset: spliton %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div style="float: left; width: 47%;">
-    <ul>
-        {% for item in items limit: spliton %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
+{% include dual-columns.md %}

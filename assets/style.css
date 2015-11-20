@@ -628,3 +628,7 @@ pre {
 .module-info td {
     white-space: nowrap;
 }
+
+.column {
+    width: 47%;
+}

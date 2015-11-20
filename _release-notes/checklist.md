@@ -1,6 +1,7 @@
 ---
 layout: release-notes
 title: Release Checklist
+status: cleanup
 ---
 
 This checklist outlines the steps required to complete an official release.  *This process does **not** get applied to the Nightly Snapshots.*

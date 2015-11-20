@@ -12,20 +12,5 @@ Anything that is available for **Release** can be downloaded from [Github](https
 To install add-on modules you need to place the source code under the /modules folder and then go to System Admin -> Modules and install them, activate and show.
 
 {% assign items = site.modules | where:"category","addon-module" %}
-{% assign spliton = items | size | divided_by:2 %}
 
-<div style="float: right; width: 47%;">
-    <ul>
-        {% for item in items offset: spliton %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div style="float: left; width: 47%;">
-    <ul>
-        {% for item in items limit: spliton %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
+{% include dual-columns.md %}

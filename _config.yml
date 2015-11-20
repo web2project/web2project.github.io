@@ -5,6 +5,8 @@ title: web2project Documentation
 exclude: [Gemfile, Gemfile.lock, README.md]
 
 collections:
+  all:
+    output: true
   modules:
     output: true
   docs:
