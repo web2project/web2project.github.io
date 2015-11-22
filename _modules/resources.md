@@ -15,7 +15,7 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-The Resource Module is a useful tool when you need to allocate or track resources related to a [[project]] or [[task]]. Additional resources could include things like conference room, copiers, ect..
+The Resource Module is a useful tool when you need to allocate or track resources related to a [Project](/modules/projects.html) or [Task](/modules/tasks.html). Additional resources could include things like conference room, copiers, ect..
 
 ### Resources List View (Resources Index)
 

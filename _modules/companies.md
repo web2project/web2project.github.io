@@ -15,9 +15,9 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-The companies module lets you provide information regarding the organizations or entities for which you will be doing [[projects]] or will serve as a way to organize the projects and its [[human resources]].
+The companies module lets you provide information regarding the organizations or entities for which you will be doing [Projects](/modules/projects.html) or will serve as a way to organize the projects and its human resources.
 
-Companies may have a tree of Departments associated with it, as well as a multitude of [[Contacts]] and [[Users]] (people that can log in the system and be assigned to tasks). The default company module in web2Project not only allows you to add or edit companies, but you can also classify them according to company type. You can also see what users belong to that company,current active projects, archived projects, departments, users, contacts, events and [[files]].
+Companies may have a tree of Departments associated with it, as well as a multitude of [Contacts](/modules/contacts.html) and [Users](/modules/user_admin.html) (people that can log in the system and be assigned to tasks). The default company module in web2Project not only allows you to add or edit companies, but you can also classify them according to company type. You can also see what users belong to that company,current active projects, archived projects, departments, users, contacts, events and [Files](/modules/files.html).
 
 ### Create a Company (Add/Edit Page)
 
@@ -48,18 +48,18 @@ To view a companies details:
 
 The company's detail page highlights important information about the company you selected. From this page you can:
 
-1.  Go Back to the company list
-1.  Edit this company
-1.  Create a new company
-1.  Create a new [[project]] for this company
-1.  View company information
-1.  View active projects
-1.  View Archived projects
-1.  View Departments
-1.  View [[users]]
-1. View [[contacts]]
-1. View [[Events]]
-1. View [[Files]]
+1. Go Back to the company list
+1. Edit this company
+1. Create a new company
+1. Create a new [Project](/modules/projects.html) for this company
+1. View company information
+1. View active projects
+1. View Archived projects
+1. View Departments
+1. View [Users](/modules/user-admin.html)
+1. View [Contacts](/modules/contacts.html)
+1. View [Events](/modules/calendar.html)
+1. View [Files](/modules/files.html)
 
 <strong>Active Projects</strong>
 

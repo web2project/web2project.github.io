@@ -72,5 +72,3 @@ This method performs cleanup for the module. If there are tables created, it sho
     return parent::remove();
 
 If you don't need a remove method, don't write one. The system will automatically run the parent method on its own.
-
-[[Category:Module Building Guide]]

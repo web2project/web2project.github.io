@@ -29,7 +29,7 @@ From the Year View you can:
 
 * Move forward and backwards in time to next or previous year
 * Click on any given month to switch to that month
-* Set [[Company]] Filters
+* Set [Company](/modules/companies.html) Filters
 * Set Event Filters
 * Switch to week view by clicking on the week icon in each month displayed.
 

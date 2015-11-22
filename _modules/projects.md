@@ -15,7 +15,7 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-The very essence of web2Project is the ability to effectively manage projects. The Project Module is the foundation for [[Task]] and the heart of the system. Almost every other module in the system uses the project module in some sort of capacity to pull or share information.
+The very essence of web2Project is the ability to effectively manage projects. The Project Module is the foundation for [Task](/modules/tasks.html) and the heart of the system. Almost every other module in the system uses the project module in some sort of capacity to pull or share information.
 
 ### Projects List Page (Projects Index Page)
 
@@ -79,15 +79,15 @@ At the bottom of the project view are sub-tabs. These tabs represent other modul
 
 By default the tabs shown here are:
 
-* [[Task]]
+* [Task](/modules/tasks.html)
 * Inactive Task
-* [[Forums]]
+* [Forums](/modules/forums.html)
 * [[Gantt Chart]]
 * Task Logs
-* [[Events]]
-* [[Files]]
-* [[History]]
-* [[Links]]
+* [Events](/modules/calendar.html)
+* [Files](/modules/files.html)
+* [History](/modules/history.html)
+* [Links](/modules/links.html)
 
 ### Projects Add/Edit (Projects addedit Page)
 

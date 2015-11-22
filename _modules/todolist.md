@@ -22,7 +22,7 @@ This module provides a way for a user to create individual Todo Items - similar 
 ### 1.1
 
 * Resolved an annoyance where deleting an item caused the browser to scroll to the top, now it stays in place as expected.
-* The Category List is now stored in the System Lookup Values as opposed to being hardcoded in the CTodo class [http://bugs.web2project.net/view.php?id=363 resolves #363].
+* [Issue 363](http://bugs.web2project.net/view.php?id=363) - The Category List is now stored in the System Lookup Values as opposed to being hardcoded in the CTodo class.
 * Updated the main controller to match the existing basic controller structure.
 * Removed a method that could be replaced with a core function.
 * Updated the contact information lookup to use the new Contact Methods structure.
@@ -33,8 +33,8 @@ This module provides a way for a user to create individual Todo Items - similar 
 
 ## Known/Open Issues
 
-*  When editing a Todo Item, the owner is not selected[http://bugs.web2project.net/view.php?id=557].
-*  When looking at a Project View, you can't see another users' Todo Items[http://bugs.web2project.net/view.php?id=523].
+*  [Issue 557](http://bugs.web2project.net/view.php?id=557) - When editing a Todo Item, the owner is not selected.
+*  [Issue 523](http://bugs.web2project.net/view.php?id=523) - When looking at a Project View, you can't see another users' Todo Items.
 
 ## Development Status
 

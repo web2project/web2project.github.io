@@ -19,7 +19,7 @@ The Project Designer Module was designed in web2Project as a means to streamline
 
 It is a panel based interface rather than the core tab interface and it reduces the need to click multiple tabs to accomplish something.  In addition its work area is somewhat customizable, and you can perform multiple actions at once.
 
-For example, you might have a project that needs multiple [[task]]. Rather than use the core task interface, you can use the project designer to add multiple task with different names at once.
+For example, you might have a project that needs multiple [Tasks](/modules/tasks.html). Rather than use the core task interface, you can use the project designer to add multiple task with different names at once.
 
 ### The Work Area
 
@@ -39,8 +39,8 @@ From this page you can also:
 * Go to core project view
 * Edit this project
 * Create a new project
-* Create an [[event]]
-* Add a new [[file]].
+* Create an [Event](/modules/calendar.html)
+* Add a new [File](/modules/files.html).
 
 ### Projects Panel
 

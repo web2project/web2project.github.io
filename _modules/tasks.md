@@ -15,7 +15,7 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-Task are used to define the [[projects]] scope and represents the designers actual workflow. You may have 1 project with multiple tasks representing the projects details. The Task module helps you track and maintain your time and cost.
+Task are used to define the [Projects](/modules/projects.html) scope and represents the designers actual workflow. You may have 1 project with multiple tasks representing the projects details. The Task module helps you track and maintain your time and cost.
 
 You add task under a project or the project designer, but you can view and manage task in multiple areas of the system. Web2Project helps ensure that no task is ever overlooked.
 
@@ -26,7 +26,7 @@ Where to view task:
 * The Today
 * The View Project Page
 * The View Task Page
-* The [[ProjectDesigner]]
+* The [ProjectDesigner](/modules/project_designer.html)
 
 ### Tasks List View (Tasks index page)
 [[Image:tasks_index.png|thumb|right|A pic of the Tasks module '''index''' page.]]
