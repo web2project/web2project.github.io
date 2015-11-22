@@ -326,7 +326,3 @@ Now you can use your active directory usernames and password to login to web2pro
 [[Image:SysAdmin_import_contact.png|thumb|right|A pic of the System Admin Import Contact page.]]
 
 The import contacts lets you import contacts from an LDAP Directory. This is more of an IT function and documentation will be forthcoming.
-
-## Videos
-
-[http://wiki.web2project.net/video_feeds/w2p/3.Administration_basics/index.html > System Administration Basics]

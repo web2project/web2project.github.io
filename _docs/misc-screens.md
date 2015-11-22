@@ -24,9 +24,3 @@ The purpose of this screen is probably obvious.  If not, you probably would bene
 [[Image:New account request screen.png|thumb|right|A pic of the '''New Account Request''' screen.]]
 
 This screen may be used for the obvious purpose of requesting login credentials from the system administrator.  It is presumed that the person using this screen was directed to it by someone within his projects' hierarchy: we do not expect people casually browsing the net to come upon this screen and request access.
-
-
-###  Videos
-[http://wiki.web2project.net/video_feeds/w2p/1.Logging_in/index.html > Logging In Video]
-
-[http://wiki.web2project.net/video_feeds/w2p/2.Navigation_Basics/index.html > Navigation Basics]

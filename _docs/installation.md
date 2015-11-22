@@ -100,28 +100,6 @@ Beware - this code is not for production use and only for use by developers who 
 
 If you are interested in the latest developments, try the [[Latest Development]]
 
-## Video Training
-
-Besides the documentation and images you will find here to help you use web2Project, we have prepared for you a set of videos to easily introduce you to web2Project:
-
-[http://wiki.web2project.net/video_feeds/w2p/1.Logging_in/index.html 1) Login Interface]
-
-[http://wiki.web2project.net/video_feeds/w2p/2.Navigation_Basics/index.html 2) Navigation Basics]
-
-[http://wiki.web2project.net/video_feeds/w2p/3.Administration_basics/index.html 3) System Administration Basics]
-
-[http://wiki.web2project.net/video_feeds/w2p/4.User_Admin/index.html 4) User Administration Basics]
-
-[http://wiki.web2project.net/video_feeds/w2p/5.Company_Basics/index.html 5) Company Basics]
-
-[http://wiki.web2project.net/video_feeds/w2p/6.Project_Basics/index.html 6) Project Basics]
-
-[http://wiki.web2project.net/video_feeds/w2p/7.Task_Basics/index.html 7) Task Basics]
-
-[http://wiki.web2project.net/video_feeds/w2p/8.File_Basics/index.html 8) File Basics]
-
-Thank you very much to Stephen Pierce for this awesome video training work.
-
 ## User Guide
 
 Movies are too fast? Then you will find a comprehensive User Guide here: [web2Project User Guide](https://leanpub.com/web2project-user-manual)

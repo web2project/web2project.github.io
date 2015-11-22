@@ -126,7 +126,3 @@ From this page you can:
 * Description
 * Notify by email
   * Note: You can set preferences by default or for specific users to have these boxes set to mark by default. When these boxes are checked an email notification is sent to all the stakeholders involved.
-
-### Videos
-
-[http://wiki.web2project.net/video_feeds/w2p/6.Project_Basics/index.html > Project Basics]

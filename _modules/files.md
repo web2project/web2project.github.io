@@ -107,7 +107,3 @@ The add folder page allows you to:
 * Assign this folder to the root directory or as a sub-folder (child) to another folder.
 * Give the folder a name
 * Type a short description.
-
-### Videos
-
-[http://wiki.web2project.net/video_feeds/w2p/8.File_Basics/index.html > File Basics]

@@ -134,6 +134,3 @@ The user log by default contains two calendars you can set to view the users log
 Active Sessions is the last tab located in the user list page. Here you can end a user session or force the user to logout.
 
 This helps when you have multiple users logged in at once and need to free system resources, or for security issues.
-
-### Videos
-[http://wiki.web2project.net/video_feeds/w2p/4.User_Admin/index.html > User Administration Basics]

@@ -95,7 +95,3 @@ You can add files to any project or task. When you add a file to a project or ta
 On this page the user can see the list of Companies which he is permitted to see.
 This list is divided by tabs and the user can choose each tab for each company type defined by the System Administrator.
 The list can be filtered by Company Owner or the user can type a search string to fine tune his search.
-
-### Videos
-
-[http://wiki.web2project.net/video_feeds/w2p/5.Company_Basics/index.html > Company Basics]

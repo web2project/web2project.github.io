@@ -213,6 +213,3 @@ For example, you are a desktop publisher working on a catalog for a company. Whi
 Note: You can also specify this in the project designer module.
 
 Also keep in mind this does have an effect on the permissions. If the task is set to private and you need someone to access the task it is best to have them as a resource.
-
-### Videos
-[http://wiki.web2project.net/video_feeds/w2p/7.Task_Basics/index.html > Task Basics]
