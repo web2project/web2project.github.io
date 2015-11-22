@@ -11,22 +11,18 @@ Most of the Controllers in the core system use a very simple structure. At prese
 
 While this may appear to just save some lines of code, the more important aspect is that the Controllers become testable and more flexible. In terms of the Constructor itself, the five parameters are: the **base object**, the **delete**, the **module name**, the **success path**, and the **error path**. The w2p_Controller_Base handles the $_POST processing, calls actual operation (save or delete), and then sets the proper return path. The key concept applied here is called [Dependency Injection](http://en.wikipedia.org/wiki/Dependency_injection).
 
-<pre class="brush:php">
+    <?php /* $Id$ $URL$ */
+    if (!defined('W2P_BASE_DIR')) {
+        die('You should not access this file directly.');
+    }
 
-<?php /* $Id$ $URL$ */
-if (!defined('W2P_BASE_DIR')) {
-    die('You should not access this file directly.');
-}
+    $delete = (int) w2PgetParam($_POST, 'del', 0);
 
-$delete = (int) w2PgetParam($_POST, 'del', 0);
-
-$controller = new w2p_Controllers_Base(
+    $controller = new w2p_Controllers_Base(
                     new CLink(), $delete, 'Links', 'm=links', 'm=links&a=addedit'
                   );
 
-$AppUI = $controller->process($AppUI, $_POST);
-$AppUI->redirect($controller->resultPath);
-
-</pre>
+    $AppUI = $controller->process($AppUI, $_POST);
+    $AppUI->redirect($controller->resultPath);
 
 **Warning:** *The above documents a feature only available as of v2.3 (March 2011). If you plan to support older web2project versions, do not use this.*

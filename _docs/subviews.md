@@ -9,7 +9,7 @@ If you want tabs for your module to appear within other modules, *do not edit th
 
 In order to have your tabs/subviews appear within other modules, there is a specific naming convention to follow:
 
-<pre>{OtherModule}_tab.[Modulaction].{BaseModule}.php</pre> where
+``{OtherModule}_tab.[Modulaction].{BaseModule}.php`` where
 
 *  OtherModule - the module where the tab should appear;
 *  BaseModule - the name of your add on module;

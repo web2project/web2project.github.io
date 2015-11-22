@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module Building Guide, Before 3.0
+title: Module Building Guide, Pre-3.0
 ---
 
 **Notice:** This is no longer the latest information available. Please check out the [Module Building Guide](/docs/module-building-guide.html) for up to date information.
@@ -111,10 +111,8 @@ The system itself will handle making this method available. When an Administrato
 
 This method performs cleanup for the module. If there are tables created, it should drop them. If there are columns added, it should remove them. If there are System Lookup Values inserted, it should delete them. As a last step, it should delete the previously created permissions with lines similar to this:
 
-<pre class="brush:php">
-$perms = $AppUI->acl();
-return $perms->unregisterModule('todos');
-</pre>
+    $perms = $AppUI->acl();
+    return $perms->unregisterModule('todos');
 
 where the only parameter is the module directory.
 
@@ -319,7 +317,7 @@ There can be any number of additional methods included of any visibility level d
 
 #### index.php
 
-This is the basic view of the module and is usually accessed by <pre>./index.php?m={ModuleName}</pre> where the todos module would be <pre>./index.php?m=todos</pre>
+This is the basic view of the module and is usually accessed by ``./index.php?m={ModuleName}`` where the todos module would be ``./index.php?m=todos``
 
 Under no circumstances should you add the header, footer, or menu to this pages. The core system generates and includes them automatically.
 
@@ -331,9 +329,7 @@ Under no circumstances should you add the header, footer, or menu to this pages.
 
 #### Intra-Module Subviews (Tabs)
 
-From our Todos example above, there are a trio of files - *companies_tab.view.todolist.php, contacts_tab.view.todolist.php, and projects_tab.view.todolist.php* - that give us Todos subviews within other modules. The naming convention is the most important part:
-
-<pre>{OtherModule}_tab.view.{BaseModule}.php</pre> where
+From our Todos example above, there are a trio of files - *companies_tab.view.todolist.php, contacts_tab.view.todolist.php, and projects_tab.view.todolist.php* - that give us Todos subviews within other modules. The naming convention is the most important part ``{OtherModule}_tab.view.{BaseModule}.php`` where
 
 *  OtherModule - This is the module where the tab should appear. In the above example, this would be companies, contacts, and projects respectively.
 *  BaseModule - This is the module itself which should be called from within the other modules.

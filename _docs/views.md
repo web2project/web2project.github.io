@@ -9,11 +9,11 @@ Under no circumstances should you add the header, footer, or menu to this pages.
 
 ### index.php
 
-This is the basic view of the module. It is usually accessed by <pre>./index.php?m={ModuleName}</pre> where the todos module would be <pre>./index.php?m=todos</pre>
+This is the basic view of the module. It is usually accessed by ``./index.php?m={ModuleName}`` where the todos module would be ``./index.php?m=todos``
 
 ### addedit.php
 
-This is the page which provides an HTML form to create or edit items. It is usually accessed by <pre>./index.php?m={ModuleName}&a=addedit</pre> where the Projects module would be <pre>./index.php?m=projects&a=addedit</pre> OR <pre>./index.php?m=projects&a=addedit&project_id={n}</pre>
+This is the page which provides an HTML form to create or edit items. It is usually accessed by ``./index.php?m={ModuleName}&a=addedit`` where the Projects module would be ``./index.php?m=projects&a=addedit`` OR ``./index.php?m=projects&a=addedit&project_id={n}``
 
 ### do_{BaseModule}_aed.php
 
@@ -27,4 +27,4 @@ This is the controller which handles processing the data submitted from the adde
 
 ### view.php
 
-This is the page which provides a page to items. It is usually accessed by <pre>./index.php?m={ModuleName}&a=view&{ModuleName}_id={n}</pre> where the Companies module would be <pre>./index.php?m=companies&a=view&company_id={n}</pre>
+This is the page which provides a page to items. It is usually accessed by ``./index.php?m={ModuleName}&a=view&{ModuleName}_id={n}`` where the Companies module would be ``./index.php?m=companies&a=view&company_id={n}``

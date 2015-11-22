@@ -153,6 +153,7 @@ code,
 kbd,
 pre,
 samp {
+    background-color: antiquewhite;
     font-family: monospace, serif;
     font-size: 1em;
 }
@@ -412,10 +413,6 @@ a {
 a:hover {
   color: #29aeef;
   text-decoration: underline;
-}
-
-code {
-  font-family: 'Monaco', monospace, sans-serif;
 }
 
 /* SIDEBAR */
