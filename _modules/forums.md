@@ -21,7 +21,8 @@ Forums are a great way to allow open discussions on just about anything. The web
 
 ### Forums List Page (Forums Index)
 
-[[Image:Forums_index.png|thumb|right|A pic of the Forums module '''index''' page.]]
+<a href="/assets/docs/forums/index.png"><img src="/assets/docs/forums/thumb-index.png" /></a>
+
 The forums list page shows all the available forums in web2Project. From this page you can:
 
 * View available forums
@@ -35,7 +36,8 @@ The forums list page shows all the available forums in web2Project. From this pa
 
 ### Forums Add/Edit Page (Forums Addedit)
 
-[[Image:Forums addedit.png|thumb|right|A pic of the Forums module '''addedit''' page.]]
+<a href="/assets/docs/forums/addedit.png"><img src="/assets/docs/forums/thumb-addedit.png" /></a>
+
 To add a new forum click on  “Forums” in the main menu, then click on the “New Forum” button in the upper right.
 
 The Add Forum page contains a simple form that you can use to create a new forum.

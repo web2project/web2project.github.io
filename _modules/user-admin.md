@@ -3,6 +3,7 @@ layout: module
 title: User Administration Module
 
 category: core-module
+status: cleanup
 
 module_name: User Administration
 module_path: users
@@ -30,7 +31,8 @@ It is recommended by default that you disallow access to this module to basic us
 
 ### Active Users
 
-[[Image:UserAdmin_Active.png|thumb|right|A pic of the User Admin module '''Active Users''' page.]]
+<a href="/assets/docs/user-admin/active.png"><img src="/assets/docs/user-admin/thumb-active.png" /></a>
+
 The active users page displays a number of filters you can use to search or display information
 
 * Enter users first, last, or user name in the search field.
@@ -50,7 +52,8 @@ The table in the center of the stage contains a number of columns.
 
 ### Inactive Users
 
-[[Image:UserAdmin_inactive.png|thumb|right|A pic of the User Admin module '''Inactive Users''' page.]]
+<a href="/assets/docs/user-admin/inactive.png"><img src="/assets/docs/user-admin/thumb-inactive.png" /></a>
+
 Inactive users are usually users who do not have a user role or permissions assigned to them
 
 By default, when a user first registers in the system they are set to an inactive state. An email is sent to the system administrator and they must assign a role to the user before the user can be active.
@@ -59,7 +62,8 @@ See Permissions for more information
 
 ### Add/Edit User Preferences
 
-[[Image:UserAdmin_addedit_user_prefs.png|thumb|right|A pic of the User Admin module '''addedit user prefs''' page.]]
+<a href="/assets/docs/user-admin/user_prefs.png"><img src="/assets/docs/user-admin/thumb-user_prefs.png" /></a>
+
 You can change the user preferences just as you can change the default user preferences for unregistered users.
 
 Changing the user specific preferences will override the default user’s preferences.
@@ -70,7 +74,7 @@ For more information see Default User Preferences in the System Administration M
 
 ### Add/Edit User
 
-[[Image:UserAdmin_addedit_user.png|thumb|right|A pic of the User Admin module '''addedit users''' page.]]
+<a href="/assets/docs/user-admin/addedit.png"><img src="/assets/docs/user-admin/thumb-addedit.png" /></a>
 
 <b>To Add a New User</b>
 
@@ -101,7 +105,8 @@ Do to security issues you can not change the password. If the user can’t remem
 
 ### View User
 
-[[Image:UserAdmin_view_user.png|thumb|right|A pic of the User Admin module '''view user''' page.]]
+<a href="/assets/docs/user-admin/view.png"><img src="/assets/docs/user-admin/thumb-view.png" /></a>
+
 Click the users login name from the user administration to access the View User page.
 
 The view user page contains a table showing the users details. From this page you can:
@@ -116,7 +121,8 @@ The view user page contains a table showing the users details. From this page yo
 
 ### User Log
 
-[[Image:UserAdmin_userlog.png|thumb|right|A pic of the User Admin module view '''user log''' page.]]
+<a href="/assets/docs/user-admin/userlog.png"><img src="/assets/docs/user-admin/thumb-userlog.png" /></a>
+
 The user log by default contains two calendars you can set to view the users login history. After setting the dates a table will display highlighting that users activity.
 
 {| border="1" cellpadding="2"
@@ -130,7 +136,8 @@ The user log by default contains two calendars you can set to view the users log
 
 ### Sessions
 
-[[Image:UserAdmin_sessions.png|thumb|right|A pic of the User Admin module view '''sessions''' page.]]
+<a href="/assets/docs/user-admin/sessions.png"><img src="/assets/docs/user-admin/thumb-sessions.png" /></a>
+
 Active Sessions is the last tab located in the user list page. Here you can end a user session or force the user to logout.
 
 This helps when you have multiple users logged in at once and need to free system resources, or for security issues.

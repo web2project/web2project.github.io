@@ -17,11 +17,12 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 The companies module lets you provide information regarding the organizations or entities for which you will be doing [Projects](/modules/projects.html) or will serve as a way to organize the projects and its human resources.
 
-Companies may have a tree of Departments associated with it, as well as a multitude of [Contacts](/modules/contacts.html) and [Users](/modules/user_admin.html) (people that can log in the system and be assigned to tasks). The default company module in web2Project not only allows you to add or edit companies, but you can also classify them according to company type. You can also see what users belong to that company,current active projects, archived projects, departments, users, contacts, events and [Files](/modules/files.html).
+Companies may have a tree of [Departments](/modules/departments.html) associated with it, as well as a multitude of [Contacts](/modules/contacts.html) and [Users](/modules/user_admin.html) (people that can log in the system and be assigned to tasks). The default company module in web2Project not only allows you to add or edit companies, but you can also classify them according to company type. You can also see what users belong to that company,current active projects, archived projects, departments, users, contacts, events and [Files](/modules/files.html).
 
 ### Create a Company (Add/Edit Page)
 
-[[Image:Companies_addedit.png|thumb|right|A pic of the Companies module '''addedit''' page.]]
+<a href="/assets/docs/companies/addedit.png"><img src="/assets/docs/companies/thumb-addedit.png" /></a>
+
 This page is used to either add a new company to the database or to edit information relating to an existing company. You will notice the drop down which provides an easy means of selecting a company's country and includes the proper ISO listing of each.
 
 Typically adding a new company is done by the system administrator.
@@ -35,7 +36,8 @@ The add/edit company interface is generally straight forward. From this view you
 
 ### View Company Detail (Detail Page)
 
-[[Image:Companies_view.png|thumb|right|A pic of the Companies module '''view''' page.]]
+<a href="/assets/docs/companies/view.png"><img src="/assets/docs/companies/thumb-view.png" /></a>
+
 This page shows the user the data related to each company, like its active projects, the contacts and users related to each company and depending on any extra add-on modules it can also provide extra information.
 It displays a view of the company in a static format and provides links, via tabs, to other functions related to the company being viewed.
 
@@ -44,7 +46,6 @@ To view a companies details:
 1. Click on the companies tab from the main menu
 1. Search for the company you wish to view by there using the filters at the top of the index page or selecting one of the tabs.
 1. Click on the company name in the company name row.
-
 
 The company's detail page highlights important information about the company you selected. From this page you can:
 
@@ -91,7 +92,6 @@ You can add files to any project or task. When you add a file to a project or ta
 
 ### List Companies (List Page)
 
-[[Image:Companies_index.png|thumb|right|A pic of the Companies module '''index''' page.]]
-On this page the user can see the list of Companies which he is permitted to see.
-This list is divided by tabs and the user can choose each tab for each company type defined by the System Administrator.
-The list can be filtered by Company Owner or the user can type a search string to fine tune his search.
+<a href="/assets/docs/companies/index.png"><img src="/assets/docs/companies/thumb-index.png" /></a>
+
+On this page the user can see the list of Companies which he is permitted to see. This list is divided by tabs and the user can choose each tab for each company type defined by the System Administrator. The list can be filtered by Company Owner or the user can type a search string to fine tune his search.

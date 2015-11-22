@@ -19,7 +19,8 @@ The very essence of web2Project is the ability to effectively manage projects. T
 
 ### Projects List Page (Projects Index Page)
 
-[[Image:Projects_index.png|thumb|right|A pic of the Projects module '''index''' page.]]
+<a href="/assets/docs/projects/index.png"><img src="/assets/docs/projects/thumb-index.png" /></a>
+
 When you click on Projects from the menu it takes you to the Projects List Page, also referred to as “The Queue”
 
 The Project Queue contains a number of filters, tabs and options that you can use to help control your workflow.
@@ -54,7 +55,8 @@ Each tab contains a table where projects are listed. Each row represents a proje
 
 ### Projects View Page (Projects View Page)
 
-[[Image:Projects_view.png|thumb|right|A pic of the Projects module '''view project''' page.]]
+<a href="/assets/docs/projects/view.png"><img src="/assets/docs/projects/thumb-view.png" /></a>
+
 Clicking on the projects name in the projects list takes you to the project view page. This page displays important information about the project and other elements related to it.
 
 The first window contains six (6) main sections.
@@ -91,7 +93,8 @@ By default the tabs shown here are:
 
 ### Projects Add/Edit (Projects addedit Page)
 
-[[Image:Projects_addedit.png|thumb|right|A pic of the Projects module '''addedit''' page.]]
+<a href="/assets/docs/projects/addedit.png"><img src="/assets/docs/projects/thumb-addedit.png" /></a>
+
 The most common way to add a new project in the system is to click on the “new project” button in the project queue.
 
 The Add/Edit Project Interface is where you add or edit projects details. This page contains a short forum with control elements that you can set for your project.

@@ -3,11 +3,11 @@ layout: default
 title: Welcome
 ---
 
-Welcome to the brand new and beautiful web2project wiki. As with all wikis, it's still under construction. Some of the documentation is excellent and useful, some is incomplete but still enlightening, and others are barebones to the point of being decorative as opposed to useful.
+<div style="float: right; margin: 15px;">
+    <script type='text/javascript' src='https://www.openhub.net/p/web2project/widgets/project_factoids?format=js'></script>
+</div>
 
-You are welcome to create an account and add any relevant information that you can think of.  For consistency, we ask that you start with basic page structure, but feel free to expand from there.
-
-Advertisements in any way shape or form are not accepted at this time.  We don't want to clutter up the pages or distract our users from their goals.  If this policy changes, it will be noted in this space.
+Welcome to the simplified web2project docs site built using Jekyll on Github pages. It's regularly under construction but unlike a wiki, you don't just create an account here and edit. Instead, you update the [Github repository](https://github.com/web2project/web2project.github.io) and changes are deployed in near-realtime.
 
 ## Third Party Coverage
 

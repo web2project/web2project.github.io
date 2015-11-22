@@ -19,7 +19,8 @@ The Resource Module is a useful tool when you need to allocate or track resource
 
 ### Resources List View (Resources Index)
 
-[[Image:Resources_index.png|thumb|right|A pic of the Resources module '''index''' page.]]
+<a href="/assets/docs/resources/index.png"><img src="/assets/docs/resources/thumb-index.png" /></a>
+
 The Resource Index page contains a set of tabs which you can define in the system administration lookup values. By default these tab represent the resource type.
 
 Tab 1: All resource
@@ -30,14 +31,14 @@ Tab3: Tools
 
 Tab4: Venue
 
-
 The first column shows the Resource ID. The second column shows the resource name, and the third column shows the maximum allocation for that resource.
 
 To create a new resource, click the new resource button on the upper right of the page.
 
 ### Resources View page (Resources view)
 
-[[Image:Resources_view.png|thumb|right|A pic of the Resources module '''view''' page.]]
+<a href="/assets/docs/resources/view.png"><img src="/assets/docs/resources/thumb-view.png" /></a>
+
 Clicking on the resource ID will take you to the resource view page which shows detailed information about the source.
 
 * Resource ID
@@ -48,7 +49,8 @@ Clicking on the resource ID will take you to the resource view page which shows 
 
 ### Resources Add/Edit Screen (Resources addedit)
 
-[[Image:Resources_addedit.png|thumb|right|A pic of the Resources module '''addedit''' page.]]
+<a href="/assets/docs/resources/addedit.png"><img src="/assets/docs/resources/thumb-addedit.png" /></a>
+
 Clicking on the "New Resource" button or the "edit resource" button will take you to the Add Resource page.
 
 From this page you can:

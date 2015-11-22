@@ -3,6 +3,7 @@ layout: module
 title: Tasks Module
 
 category: core-module
+status: cleanup
 
 module_name: Tasks
 module_path: tasks
@@ -29,7 +30,9 @@ Where to view task:
 * The [ProjectDesigner](/modules/project_designer.html)
 
 ### Tasks List View (Tasks index page)
-[[Image:tasks_index.png|thumb|right|A pic of the Tasks module '''index''' page.]]
+
+<a href="/assets/docs/tasks/index.png"><img src="/assets/docs/tasks/thumb-index.png" /></a>
+
 The Task List page is located when you click on the Task Menu. There are a number of filters you can set to change what you’re viewing.
 
 {| border="1" cellpadding="2"
@@ -78,7 +81,7 @@ Also note that each task is color coded to help you identify when a task:
 
 ### Tasks View Screen (Task View Page)
 
-[[Image:Tasks_view.png|thumb|right|A pic of the Tasks module '''view''' page.]]
+<a href="/assets/docs/tasks/view.png"><img src="/assets/docs/tasks/thumb-view.png" /></a>
 
 When you click on a task name it will take you to the view task page where you can view comprehensive information about the task.
 
@@ -164,7 +167,8 @@ Under the main window are a set of tabs.
 
 ### View Add/Edit Screen 1 (Details Tab)
 
-[[Image:Tasks_addedit_1.png|thumb|right|A pic of the Tasks addedit screen '''Details''' Tab.]]
+<a href="/assets/docs/tasks/addedit_1.png"><img src="/assets/docs/tasks/thumb-addedit_1.png" /></a>
+
 The details view under the Edit Task page allows you to specify:
 
 * Who the task owner is, which defaults to your own name but your can specify another user.
@@ -184,7 +188,8 @@ The details view under the Edit Task page allows you to specify:
 
 ### View Add/Edit Screen 2 (Dates Tab)
 
-[[Image:Tasks_addedit_2.png|thumb|right|A pic of the Tasks addedit screen '''Dates''' Tab.]]
+<a href="/assets/docs/tasks/addedit_2.png"><img src="/assets/docs/tasks/thumb-addedit_2.png" /></a>
+
 The dates tab lets you specify the start and end dates, expected duration and choose hours based on an 8 hour working day.
 
 Note: You can specify the duration in either hours or days
@@ -195,14 +200,15 @@ This is important especially in the design industry when a client wants the coll
 
 ### View Add/Edit Screen 3 (Dependencies Tab)
 
-[[Image:Tasks_addedit_3.png|thumb|right|A pic of the Tasks addedit screen '''Dependencies''' Tab.]]
+<a href="/assets/docs/tasks/addedit_3.png"><img src="/assets/docs/tasks/thumb-addedit_3.png" /></a>
+
 You can specify Dependencies in web2Project which is a great asset when you are working on larger projects that have multiple tasks that are dependant on one another.
 
 The logic is, additional components (task) must be done in order for the main objective (this task) to be complete.
 
 ### View Add/Edit Screen 4 (Human Resources Tab)
 
-[[Image:Tasks_addedit_4.png|thumb|right|A pic of the Tasks addedit screen '''Human Resources''' Tab.]]
+<a href="/assets/docs/tasks/addedit_4.png"><img src="/assets/docs/tasks/thumb-addedit_4.png" /></a>
 
 Its important not to confuse Human Resources here with your companies Human Resource Department. Human Resources in web2Project are additional resources used to assist in the production on a task.
 

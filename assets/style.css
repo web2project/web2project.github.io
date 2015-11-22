@@ -629,3 +629,8 @@ pre {
 .column {
     width: 47%;
 }
+
+article img {
+    float: right;
+    margin: 10px;
+}

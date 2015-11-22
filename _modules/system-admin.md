@@ -2,6 +2,9 @@
 layout: module
 title: System Admin Module
 
+category: core-module
+status: cleanup
+
 module_name: System Admin
 module_path: system
 module_creator: dotProject
@@ -17,7 +20,7 @@ The System Administration in web2Project is where you control many aspects of th
 
 ## System Admin List (index)
 
-[[Image:SysAdmin_index.png|thumb|right|A pic of the System Admin '''list''' page.]]
+<a href="/assets/docs/system-admin/index.png"><img src="/assets/docs/system-admin/thumb-index.png" /></a>
 
 The System Administrations main page consists of four (4) main categories highlighted in bold:
 
@@ -46,7 +49,7 @@ The System Administrations main page consists of four (4) main categories highli
 
 ## System Admin Translation Management (translate)
 
-[[Image:SysAdmin_translation.png|thumb|right|A pic of the System Admin '''translate''' page.]]
+<a href="/assets/docs/system-admin/translation.png"><img src="/assets/docs/system-admin/thumb-translation.png" /></a>
 
 You can change the default language of web2Project with the Translation Management table to meet your own individual or company’s needs.
 
@@ -58,7 +61,7 @@ Additional language packs are mostly a user supported contribution. When availab
 
 ### System Admin System Configuration 1 (systemconfig 1)
 
-[[Image:SysAdmin_sysconfig_upper.png|thumb|right|System Admin System Config '''1 of 3'''.]]
+<a href="/assets/docs/system-admin/systemconfig_1.png"><img src="/assets/docs/system-admin/thumb-systemconfig_1.png" /></a>
 
 Access the system configuration via the system administration menu item. For additional help as you configure the system simply hover your mouse over the (i) icon in web2Project to view a tool tip for that option.
 
@@ -85,7 +88,7 @@ Access the system configuration via the system administration menu item. For add
 
 ### System Admin System Configuration 2 (systemconfig 2)
 
-[[Image:SysAdmin_sysconfig_middle.png|thumb|right|System Admin System Config '''2 of 3'''.]]
+<a href="/assets/docs/system-admin/systemconfig_2.png"><img src="/assets/docs/system-admin/thumb-systemconfig_2.png" /></a>
 
 * **Show All Task Assignees** - Set this option on if you wish to show all assignee names in the project task task list or off if you would prefer to see just the main assignee name and a count in brackets of the number of other assignees.
 * **Edit Multiple Task Assignments** - Turning this option on will allow you to edit task assignments and other options (per task block) in the main Task Module view.
@@ -120,7 +123,7 @@ Access the system configuration via the system administration menu item. For add
 
 ### System Admin System Configuration 3 (systemconfig 3)
 
-[[Image:SysAdmin_sysconfig_lower.png|thumb|right|System Admin System Config '''3 of 3'''.]]
+<a href="/assets/docs/system-admin/systemconfig_3.png"><img src="/assets/docs/system-admin/thumb-systemconfig_3.png" /></a>
 
 * **LDAP Version** - LDAP Version that the LDAP host understands. If unsure, leave at the default of 3.
 * **LDAP Base DN** - The Base Distinguished Name (DN) to use for LDAP queries.
@@ -149,7 +152,7 @@ Access the system configuration via the system administration menu item. For add
 
 ## System Admin Default User Preferences (addeditpref)
 
-[[Image:SysAdmin_default_usr_prefs.png|thumb|right|A pic of the System Admin '''Default User''' preferences page.]]
+<a href="/assets/docs/system-admin/default_user_preferences.png"><img src="/assets/docs/system-admin/thumb-default_user_preferences.png" /></a>
 
 Setting the default user preferences dictates what people see and can do by default when creating a new account. It is the same is setting the individual user preferences after a user has an account.
 
@@ -171,15 +174,15 @@ From this page you can:
 
 ## System Admin System Lookup Keys (keys)
 
-[[Image:SysAdmin_sys_lookup_keys.png|thumb|right|A pic of the System Admin '''lookup keys''' page.]]
+<a href="/assets/docs/system-admin/system_lookup_keys.png"><img src="/assets/docs/system-admin/thumb-system_lookup_keys.png" /></a>
 
 System Lookup Keys and System System Lookup values are used in combination when a lookup list or custom field or pre-set selection field is used.
 
-<font color=red>Unless you are a programmer we strongly recommend that you do not modify this section!</font>
+**Warning:** *Unless you are a programmer we strongly recommend that you do not modify this section!*
 
 ## System Admin System Lookup Values (syskeys)
 
-[[Image:SysAdmin_sys_lookup_values.png|thumb|right|A pic of the System Admin '''lookup values''' page.]]
+<a href="/assets/docs/system-admin/system_lookup_values.png"><img src="/assets/docs/system-admin/thumb-system_lookup_values.png" /></a>
 
 System Lookup Values are used in combination when a lookup list or custom field or pre-set selection field is used. This includes standard drop down listings and tabs such as the projects list page.
 
@@ -193,13 +196,13 @@ It is strongly recommended you do not modify these settings unless you are comfo
 
 ## System Admin Custom Field Editor List (custom_field_editor)
 
-[[Image:SysAdmin_cus_field_editor.png|thumb|right|A pic of the System Admin Custom Field Editor '''list''' page.]]
+<a href="/assets/docs/system-admin/cfe_index.png"><img src="/assets/docs/system-admin/thumb-cfe_index.png" /></a>
 
 The Custom Field editor allows you to add custom fields to areas such as Projects, Task, Companies, and Calendar without needing to know programming.
 
 ### System Admin Custom Field Editor Add/Edit (custom_field_addedit)
 
-[[Image:SysAdmin_custom_field_addedit.png|thumb|right|A pic of the System Admin Custom Field Editor '''addedit''' page.]]
+<a href="/assets/docs/system-admin/cfe_addedit.png"><img src="/assets/docs/system-admin/thumb-cfe_addedit.png" /></a>
 
 To add custom fields click on the custom field editor link in the system administration
 
@@ -215,7 +218,7 @@ After you add your custom field you'll see it appear on the list under the modul
 
 ## System Admin Billing Code (billingcode)
 
-[[Image:SysAdmin_billing_code.png|thumb|right|A pic of the System Admin Billing Code Editor.]]
+<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" /></a>
 
 You can use billing codes to track cost in respect to time, mainly used when creating a task log for example.
 
@@ -229,7 +232,7 @@ When you store billing codes, they will be visible in the task logs cost code dr
 
 ## System Admin View Modules (viewmods)
 
-[[Image:SysAdmin_view_modules.png|thumb|right|A pic of the System Admin View Modules page.]]
+<a href="/assets/docs/system-admin/view_modules.png"><img src="/assets/docs/system-admin/thumb-view_modules.png" /></a>
 
 The view modules section allows you to view, edit, delete, change order of appearance and configure modules.
 
@@ -264,7 +267,7 @@ Visit the permissions page for more information.
 
 ## System Admin Permissions Result Table (acls_view)
 
-[[Image:SysAdmin_perm_result.png|thumb|right|A pic of the System Admin Permissions Result page.]]
+<a href="/assets/docs/system-admin/permissions.png"><img src="/assets/docs/system-admin/thumb-permissions.png" /></a>
 
 The permissions result table gives a more comprehensive look into the permissions for each. You can filter the view by user, module, or by action.
 
@@ -286,6 +289,7 @@ When you visit the page and select a filter it will display a table.
 |}
 
 ## Configure web2project to use Active Directory accounts
+
 Create a service Account, the account only needs to be a member of the domain users group in active directory in order to search ldap.
 
 Go to the System Configuration of the Systems Admin page of web2project.
@@ -323,6 +327,6 @@ Now you can use your active directory usernames and password to login to web2pro
 
 ## System Admin Import Contact (contacts_ldap)
 
-[[Image:SysAdmin_import_contact.png|thumb|right|A pic of the System Admin Import Contact page.]]
+<a href="/assets/docs/system-admin/import.png"><img src="/assets/docs/system-admin/thumb-import.png" /></a>
 
 The import contacts lets you import contacts from an LDAP Directory. This is more of an IT function and documentation will be forthcoming.

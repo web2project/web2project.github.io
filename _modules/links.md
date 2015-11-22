@@ -15,13 +15,14 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-The links module is an alternative resource where you can store quick links for reference and assign them to [[projects]] or [[task]].
+The links module is an alternative resource where you can store quick links for reference and assign them to [Projects](/modules/projects.html) or [Task](/modules/tasks.html).
 
 This is particularly useful to store client or vendor websites, but can be used for a number of purposes including links to external project files.
 
 ### Contacts List View (Links Index)
 
-[[Image:Links_index.png|thumb|right|A pic of the Links module '''index''' page.]]
+<a href="/assets/docs/links/index.png"><img src="/assets/docs/links/thumb-index.png" /></a>
+
 The links index page contains a number of tabs which can be defined via the system administration > Lookup Values. These tabs are used primarily to help you categorize all of your link resources so you can access them quickly.
 
 For each tab there is a table which contains a list of available links along with usefull information about the link.
@@ -40,7 +41,8 @@ From this page you can:
 
 ### Links Add/Edit (Links addedit)
 
-[[Image:Links_addedit.png|thumb|right|A pic of the Links module '''addedit''' page.]]
+<a href="/assets/docs/links/addedit.png"><img src="/assets/docs/links/thumb-addedit.png" /></a>
+
 To add a new link, click on the “New Link” button in the upper right corner of the Link module.
 
 From this page you can:

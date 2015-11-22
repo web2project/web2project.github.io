@@ -21,7 +21,8 @@ You can access the data in this module by clicking on the contacts link in the m
 
 ### Contacts List View (Contacts Index)
 
-[[Image:Contacts index.png|thumb|right|A pic of the Contacts module '''index''' page.]]
+<a href="/assets/docs/contacts/index.png"><img src="/assets/docs/contacts/thumb-index.png" /></a>
+
 The contacts list view is the default page for the contacts tab.
 
 From this page you can:
@@ -35,7 +36,8 @@ From this page you can:
 
 ### Contacts Add/Edit (Contacts addedit)
 
-[[Image:Contacts addedit.png|thumb|right|A pic of the Contacts module '''addedit''' page.]]
+<a href="/assets/docs/contacts/addedit.png"><img src="/assets/docs/contacts/thumb-addedit.png" /></a>
+
 Sometimes you may want to add a contact to the system rather than make the contact an actual user.  The add/edit contacts page allows you to enter user data without having to create a login.
 
 From this page you can keep detailed records about a person such as:
@@ -54,12 +56,13 @@ From this page you can keep detailed records about a person such as:
 
 
 ### Contacts Confirming Email (Contacts email confirm)
+
+<a href="/assets/docs/contacts/email_confirm.png"><img src="/assets/docs/contacts/thumb-email_confirm.png" /></a>
+
 Starting on web2Project the Contacts Confirming Email lets you notify you contacts to complete their contacts for you. <br />
 Imagine you only have the Name and Email of a contact and you'd like to have the rest of his information, then simply edit the contact record and set the Waiting Update checkbox on the top right and submit.<br />
 This will issue an email to your contact like the one seen on the image, with an URL for your contact.<br />
 This URL will lead your contact to his contact record form and he will be able to edit and add the missing information for you.
-[[Image:Contacts_confirm_email.png|thumb|right|A pic of the Contacts module '''confirm email''' page.]]
-
 
 ### Import Contacts from LDAP Active Directory
 

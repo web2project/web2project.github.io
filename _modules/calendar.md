@@ -20,7 +20,8 @@ On this module you will find Year, Month, Week and Day displays of Tasks and Eve
 
 ### View Years (Year View Page)
 
-[[Image:Calendar_view_year.png|thumb|right|A pic of the Calendar module '''view year''' page.]]
+<a href="/assets/docs/calendar/view_year.png"><img src="/assets/docs/calendar/thumb-view_year.png" /></a>
+
 The Yearly view gives the user an overall view of the Year calendar and color codes the days depending on the existence of Tasks and/or Events.
 
 It's not uncommon to have events or task that last more than a calendar month. In addition you may want to be able to recall what your schedule looked like for the year. The year view gives you the option to view your intire schedule for the year.
@@ -35,7 +36,8 @@ From the Year View you can:
 
 ### View Month (Month View Page)
 
-[[Image:Calendar_view_month.png|thumb|right|A pic of the Calendar module '''view month''' page.]]
+<a href="/assets/docs/calendar/view_month.png"><img src="/assets/docs/calendar/thumb-view_month.png" /></a>
+
 The Monthly view shows the user which Tasks and/or Events are scheduled for each day in the Month.
 
 Generally when you create an event or task in the system, this will create links within the calendar dynamically showing you the start and finish dates within that month. Each link in the calendar is dynamic, so you can click on it and it will take you to the details of that object. This is particularly useful when you want a snap shot view of what’s on the agenda for the entire month.
@@ -58,14 +60,16 @@ There are effectively two ways to move forward and backwards in time.
 
 ### View Month w/ tool tip (Month View Page)
 
-[[Image:Calendar_view_month_tt.png|thumb|right|A pic of the Calendar module '''view month w/ tool tip''' page.]]
+<a href="/assets/docs/calendar/view_month_tt.png"><img src="/assets/docs/calendar/thumb-view_month_tt.png" /></a>
+
 Besides the information shown on the Monthly Calendar if the user hovers the items on the Calendar it will give the user a complete overview over the data on a form of a tooltip.
 
 The main advantage of this tooltip function is that it displays the details of that event so you do not need to click down to a lower view. This is useful for designers or managers who need to view information on the fly.
 
 ### View Week (Week View Page)
 
-[[Image:Calendar_view_week.png|thumb|right|A pic of the Calendar module '''view week''' page.]]
+<a href="/assets/docs/calendar/view_week.png"><img src="/assets/docs/calendar/thumb-view_week.png" /></a>
+
 The Week View page gives a week perspective of the Tasks and Events set for a given Week.
 
 One area identified by some companies as a standard best practice is to view your task and events that are active for the week. In addition, if you are a designer and you wish to collaborate with another designer on a project in the system, you can use this view to see what their schedule looks like before including them as a resource.
@@ -83,7 +87,8 @@ From this page you can:
 
 ### View Day (Day View Page)
 
-[[Image:Calendar_view_day.png|thumb|right|A pic of the Calendar module '''view day''' page.]]
+<a href="/assets/docs/calendar/view_day.png"><img src="/assets/docs/calendar/thumb-view_day.png" /></a>
+
 On this interface the user will be able to see what is going on, on a given date as well as the Tasks and Events set for that date considering the available filters.
 You will find two tabs, one with the Tasks to be done on that date and another with the Events set for that date.
 
@@ -101,7 +106,8 @@ Clicking on a day within any of the calendars on the right hand side will take y
 
 ### View Today's Tasks (Today's Tasks Todo)
 
-[[Image:Calendar_today_tasks.png|thumb|right|A pic of the Calendar module '''today's tasks todo''' page.]]
+<a href="/assets/docs/calendar/today_tasks.png"><img src="/assets/docs/calendar/thumb-today_tasks.png" /></a>
+
 Here you will be able to see the Tasks that were defined to be done on this date.
 There is a set of filtering options you can use to fine tune the Tasks displayed.
 
@@ -126,12 +132,14 @@ From this page you can also move forward and backwards in time by either clickin
 
 ### View Today's Events (Today's Events Todo)
 
-[[Image:Calendar_today_events.png|thumb|right|A pic of the Calendar module '''today's events todo''' page.]]
+<a href="/assets/docs/calendar/today_events.png"><img src="/assets/docs/calendar/thumb-today_events.png" /></a>
+
 This tab will show the user the Events marked for the given date depending on the existing filters.
 
 ### Event add/edit page (Event add/edit)
 
-[[Image:Calendar_addedit2.png|thumb|right|A pic of the Calendar module '''event addedit''' page.]]
+<a href="/assets/docs/calendar/addedit.png"><img src="/assets/docs/calendar/thumb-addedit.png" /></a>
+
 With this form you will be able to create or change Events.
 You can invite other users to those events and make sure they get notified by email about those Events.
 

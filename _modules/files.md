@@ -15,7 +15,7 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-The File Repository in web2Project is a well organized dynamic module for maintaining your assets that are associated with [[Projects]], [[Task]], or [[Events]]. The files module appears in the main navigation by default, but you can also access files via projects, project designer, and task.
+The File Repository in web2Project is a well organized dynamic module for maintaining your assets that are associated with [Projects](/modules/projects.html), [Task](/modules/tasks.html), or the [Calendar](/modules/calendar.html). The files module appears in the main navigation by default, but you can also access files via projects, project designer, and task.
 
 In the web2Project file repository you can:
 
@@ -29,7 +29,8 @@ In the web2Project file repository you can:
 
 ### View Files List Page (Files Index)
 
-[[Image:Files index.png|thumb|right|A pic of the Files module ''index''' page.]]
+<a href="/assets/docs/files/index.png"><img src="/assets/docs/files/thumb-index.png" /></a>
+
 When you click on the “Files” link from the main navigation menu you will see the Files List by default.
 
 The files list page contains a number of tabs that are designed to help you better associate your files within a category. You can define these tabs to meet your own needs from within the System Administration Lookup Values.
@@ -53,7 +54,7 @@ The default view of the files repository contains a table that lists the files c
 
 ### Files Add/Edit (Files addedit)
 
-[[Image:Files addedit.png|thumb|right|A pic of the Files module '''addedit''' page.]]
+<a href="/assets/docs/files/addedit.png"><img src="/assets/docs/files/thumb-addedit.png" /></a>
 
 To add a file to the file repository do one of the following:
 
@@ -75,7 +76,8 @@ The add file page contacts a number of form elements that you can use to manage 
 
 ### Files Folder Explorer (Folder Explorer)
 
-[[Image:Files folder explorer.png|thumb|right|A pic of the Files Folder Explorer '''index'".]]
+<a href="/assets/docs/files/explorer.png"><img src="/assets/docs/files/thumb-explorer.png" /></a>
+
 The folder explorer in web2Project allows you to view files that are specific to that folder. You can also perform a number of functions within this view that you can do in the main file list.
 
 To access the folder explorer simply click on the folder name in the File list page.
@@ -95,7 +97,8 @@ The icons on the far right allow you to:
 
 ### Files Folder Add/Edit (Folder Addedit)
 
-[[Image:Files addedit folder.png|thumb|right|A pic of the Files Folder '''addedit'".]]
+[missing file!]
+
 To create a new folder in the main file module click the “New Folder” button in the upper right.
 
 To create a new folder from the project view page click the files sub-tab, then click on the green plus icon in the table.
