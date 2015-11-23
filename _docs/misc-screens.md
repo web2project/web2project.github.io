@@ -8,19 +8,19 @@ status: cleanup
 
 Here you will find discussion regarding a few screens within web2Project that do not relate specifically to one module.
 
-###  Login (login)
+###  Login
 
 <a href="/assets/docs/misc/login.png"><img src="/assets/docs/misc/thumb-login.png" /></a>
 
 The first page that a user, or perspective user, sees when he accesses the system.  This screen fulfills three functions; (1) login to the system, (2) request a new password if the existing password has been misplaced, and (3) provides a function from which a potential new user may request login credentials.
 
-###  Forgotten Password (password)
+###  Forgotten Password
 
 <a href="/assets/docs/misc/forgotten_password.png"><img src="/assets/docs/misc/thumb-forgotten_password.png" /></a>
 
 Use this screen to reset your password and regain access to the system.
 
-###  New Account Request (newuser)
+###  New Account Request
 
 <a href="/assets/docs/misc/new_account.png"><img src="/assets/docs/misc/thumb-new_account.png" /></a>
 
