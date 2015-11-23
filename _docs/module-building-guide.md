@@ -18,11 +18,17 @@ Failure to follow the recommendations in this section can lead to non-functionin
 *  A module SHOULD adhere to our custom [Naming Conventions](/docs/naming-conventions.html) for variables, methods, etc.
 *  All code within a module SHOULD adhere to the formatting specified by the [PEAR Coding Standard](http://pear.php.net/manual/en/standards.php). To evaluate your own code, please use [Code Sniffer](http://pear.php.net/package/PHP_CodeSniffer/).
 
+## Table of Contents
+
+{% assign items = site.docs | where:"category","module building guide" %}
+
+{% include dual-columns.md %}
+
+## Hooks
+
 **Available Since:** v1.1 (September 2009) - Calendar Hook, Cron Hook, Search Hook
 
 **Available Since:** v3.0 (September 2013) - Pre-Store Hook, Post-Store Hook, Pre-Create Hook, Post-Create Hook, Pre-Update Hook, Post-Update Hook, Pre-Load Hook, Post-Load Hook, Pre-Delete Hook, Post-Delete Hook.
-
-## Hooks
 
 {% assign items = site.docs | where:"category","hooks" %}
 

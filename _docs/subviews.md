@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Subviews (tabs in other modules)
+
+category: "module building guide"
 ---
 
 If you want tabs for your module to appear within other modules, *do not edit those other modules*. Instead, you should use our subview loader to get the tabs to appear automagically. No further configuration is necessary.

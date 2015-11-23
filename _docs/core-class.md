@@ -2,6 +2,7 @@
 layout: page
 title: Core Class
 
+category: "module building guide"
 status: cleanup
 ---
 

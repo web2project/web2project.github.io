@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Views, logical flow
+
+category: "module building guide"
 ---
 
 *At present, the Views are a mess. There is way too much business logic embedded in them via PHP and Javascript. In principle, the Views should have no database access (including DBQuery calls), UI components only in Javascript, and semantically clean XTHML and CSS 2.0. We're still working towards these goals and ideas/effort to support this would be appreciated.*

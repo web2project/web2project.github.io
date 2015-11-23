@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Store, logical flow
+
+category: "module building guide"
 ---
 
 As of v3.0, as long as you've followed our conventions in your module configuration, you probably don't need to write your own store() method. Calling store() on any object that extends ``w2p_Core_BaseObject`` will automatically trigger this flow;

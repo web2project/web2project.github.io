@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Delete, logical flow
+
+category: "module building guide"
 ---
 
 ### public method: delete()

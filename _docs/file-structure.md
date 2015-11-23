@@ -1,6 +1,9 @@
 ---
 layout: page
 title: File Structure
+
+category: "module building guide"
+status: cleanup
 ---
 
 Building a proper module in web2project requires a handful of key files in a particular structure.  Each of which serve a specific purpose in the operation of the system.  For a module called "Todos" - *available from the [web2project Modules](https://github.com/web2project)* - we would have the following file structure (filenames are case sensitive):

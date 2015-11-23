@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Setup.php
+
+category: "module building guide"
+status: cleanup
 ---
 
 ''Everything included here applies to web2project v3.0 and above.''

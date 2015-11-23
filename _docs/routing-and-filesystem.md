@@ -2,7 +2,7 @@
 layout: page
 title: Routing & Filesystem
 
-category: proposal
+category: "module building guide"
 status: draft
 ---
 

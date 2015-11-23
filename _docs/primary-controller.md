@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Primary Controller
+
+category: "module building guide"
 ---
 
 *Everything included here applies to web2project v2.3 and above.*

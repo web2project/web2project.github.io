@@ -2,7 +2,7 @@
 layout: page
 title: Turn on Debugging
 
-category: code-review
+category: "module building guide"
 ---
 
 Debugging in Web2project always seems more complicated than it is. That's because by default, we hide most of the error messages from regular users. After all, they don't know what the messages mean and phrases like "FATAL ERROR!! YOU'RE GOING TO DIE! RAR!" tend to make them nervous. That said, it's trivially easy to turn on debugging.
