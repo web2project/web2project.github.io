@@ -3,6 +3,7 @@ layout: module
 title: History Module
 
 category: core-module
+status: cleanup
 
 module_name: History
 module_path: history

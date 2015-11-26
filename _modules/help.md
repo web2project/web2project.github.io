@@ -3,6 +3,7 @@ layout: module
 title: Help Module
 
 category: core-module
+status: cleanup
 
 module_name: Help
 module_path: help

@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Module Building Guide, Pre-3.0
+
+deprecated: true
+status: cleanup
 ---
 
 **Notice:** This is no longer the latest information available. Please check out the [Module Building Guide](/docs/module-building-guide.html) for up to date information.

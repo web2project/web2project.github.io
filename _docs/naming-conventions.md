@@ -3,6 +3,7 @@ layout: page
 title: Naming Conventions
 
 category: "module building guide"
+status: cleanup
 ---
 
 Web2project works on the basis of *"The easy way should also be the right way."* A key reason that this works is because of our Naming Conventions. It allows quite a few things to "just work" without additional effort, configuration, or coding by anyone working on any module. As long as you stick to our conventions, your modules and customizations should need minimal updates between web2project releases.

@@ -4,6 +4,7 @@ title: Routing & Filesystem
 
 category: "module building guide"
 status: draft
+status: cleanup
 ---
 
 The goal of this page is to document how particular web2project URLs map to specific files on the filesystem.
