@@ -452,13 +452,13 @@ article img {
     margin: 10px;
 }
 
-table {
-    /*border: 1px solid lightgray;*/
-}
-
 td {
     border-right: 1px solid lightgray;
     padding: 5px;
+}
+
+tbody tr td:nth-child(1) {
+    white-space: nowrap;
 }
 
 tbody tr:nth-child(n+1) td {
