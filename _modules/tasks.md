@@ -35,17 +35,11 @@ Where to view task:
 
 The Task List page is located when you click on the Task Menu. There are a number of filters you can set to change what you’re viewing.
 
-{| border="1" cellpadding="2"
-|-valign="top"
-|width="10%"|'''USER'''
-|width="70%"|Allows you to view task specific to another user or self.
-|-valign="top"
-|'''COMPANY'''
-|View task that are specific to a client or internal company/department
-|-valign="top"
-|'''TASK FILTER'''
-|Allows you to get even more specific and narrow down your search. You can filter your task, your unfinished task, your task under projects, Task specific to your company and more!
-|}
+Filter | Description
+----- | -----
+User | View the tasks specific to a single user
+Company | View tasks specific to a single company
+Task Filter | View the tasks according to your unfinished tasks, your projects, and more
 
 On the left of the page are buttons you can use to further filter your results.
 
@@ -56,20 +50,17 @@ On the left of the page are buttons you can use to further filter your results.
 
 At the center of the stage is a table with columns.
 
-{| border="1" cellpadding="2"
-|-
-|width="200pt"|Pin
-|width="200pt"|Log
-|width="200pt"|Task Name
-|width="200pt"|Task Creator
-|width="200pt"|Assigned Users
-|width="200pt"|Start Date
-|width="200pt"|Duration
-|width="200pt"|Finnish Date
-|width="200pt"|Last Updated
-|-
-|Mark as Yours || Create a Task Log || Click to View Details || Who Owns || Who is Assigned || When it was started || How long it will last || When its going to be done || When it was last updated
-|}
+Field | Description
+----- | -----
+Pin | Mark as Yours
+Log | Create a Task Log
+Task Name | Click to View Details
+Task Creator | Who Owns
+Assigned Users | Who is Assigned
+Start Date | When it was started
+Duration | How long it will last
+Finish Date | When its going to be done
+Last Updated | When it was last updated
 
 Also note that each task is color coded to help you identify when a task:
 
@@ -92,78 +83,43 @@ Dates & Targets
 Assigned Users
 Dependencies
 Task Depending on this Task
-Desciption
+Description
 Contacts for this Task
 Contacts for the Project.
 
+### Details
 
-<b>DETAILS</b>
-{| border="1" cellpadding="2"
-|-valign="top"
-|width="10%"|'''Project'''
-|width="30%"|Name of the project this task belongs to.
-|-valign="top"
-|'''Task'''
-|The name of the current task your viewing
-|-valign="top"
-|'''Owner'''
-|The owner of the task
-|-valign="top"
-|'''Priority'''
-|Either LOW, NORMAL, HIGH
-|-valign="top"
-|'''Web Address'''
-|If the project has a URL
-|-valign="top"
-|'''MileStone'''
-|Is this task a milestone of an array? Yes or NO
-|-valign="top"
-|'''Progress'''
-|Lets you see how far along the project is in %
-|-valign="top"
-|'''Time Worked'''
-|Based of the total time recorded from task logs.
-|}
+Field | Description
+----- | -----
+Project | Name of the project this task belongs to
+Task | The name of the current task your viewing
+Owner | The owner of the task
+Priority | Either LOW, NORMAL, HIGH
+Web Address | If the project has a URL
+Milestone | Is this task a milestone of an array? Yes or NO
+Progress | Lets you see how far along the project is in %
+Time Worked | Based of the total time recorded from task logs
 
-<b>DATES & TARGETS</b>
-{| border="1" cellpadding="2"
-|-valign="top"
-|width="10%"|'''Start Date'''
-|width="30%"|Displays the date and time task started
-|-valign="top"
-|'''Finish Date'''
-|Displays the dynamic end date.
-|-valign="top"
-|'''Expected Duration'''
-|Calculated by the dates and time combined together.
-|-valign="top"
-|'''Target Budget'''
-|Each task can have a target budget which should be consistant with the project overall budget
-|-valign="top"
-|'''Task Type'''
-|Displays the task type
-|}
 
+### Dates & Targets
+
+Field | Description
+----- | -----
+Start Date | Displays the date and time task started
+Finish Date | Displays the dynamic end date
+Expected Duration | Calculated by the dates and time combined together
+Target Budget | Each task can have a target budget which should be consistent with the project overall budget
+Task Type | Displays the task type
 
 Under the main window are a set of tabs.
 
-{| border="1" cellpadding="2"
-|-valign="top"
-|width="10%"|'''Task Logs'''
-|width="30%"|Displays the logs details, summary of hours, cost code used and comments.
-|-valign="top"
-|'''Log'''
-|Allows you to enter a new task log for this task
-|-valign="top"
-|'''Files'''
-|Allows you to work with files associated to this task (See files module for more information)
-|-valign="top"
-|'''Links'''
-|View links associated with this task (see links module for more information)
-|-valign="top"
-|'''Resources'''
-|Displays the extra resources for this task ( View the Resources Module for more information)
-|}
+Field | Description
+----- | -----
+Task Logs | Displays the logs details, summary of hours, cost code used and comments
+Log | Allows you to enter a new task log for this task
+Files | Allows you to work with files associated to this task (See <a href="/modules/files.html">Files Module</a> for more information)
+Links | View links associated with this task (see <a href="/modules/links.html">Links Module</a> for more information)
+Resources | Displays the extra resources for this task ( View the <a href="/modules/resources.html">Resources Module</a> for more information)
 
 ### View Add/Edit Screen 1 (Details Tab)
 

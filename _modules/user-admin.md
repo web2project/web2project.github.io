@@ -40,15 +40,17 @@ The active users page displays a number of filters you can use to search or disp
 
 The table in the center of the stage contains a number of columns.
 
-{| border="3"
-|+ '''User Information'''
-! Icons !! Login History !! Login Name !! Real Name !! Type !! Company !! Department
-|-
+### User Information
 
-|Edit-Permissions-Delete || Displays the history || User Name || Actual Name with email icon || Type specified in add page || Company for user || User department
-
-|
-|}
+Field | Description
+----- | -----
+Icons | Edit-Permissions-Delete
+Login History | Displays the history
+Login Name | User Name
+Real Name | Actual Name with email icon
+Type | Type specified in add page
+Company | Company for user
+Department | User department
 
 ### Inactive Users
 
@@ -125,14 +127,9 @@ The view user page contains a table showing the users details. From this page yo
 
 The user log by default contains two calendars you can set to view the users login history. After setting the dates a table will display highlighting that users activity.
 
-{| border="1" cellpadding="2"
-|-
-|width="100pt"|First Name
-|width="200pt"|Last Name
-|width="300pt"|IP Adress
-|width="300pt"|Date & Time IN
-|width="300pt"|Date & Time OUT
-|}
+First Name | Last Name | IP Address | Date & Time IN | Date & Time OUT
+----- | -----
+ |
 
 ### Sessions
 

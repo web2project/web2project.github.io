@@ -188,7 +188,7 @@ System Lookup Values are used in combination when a lookup list or custom field 
 
 For example the project list page tabs are referenced in the System Lookup Values as "ProjectStatus"
 
-0|Not Defined 1|Proposed 2|In Planning 3|In Progress 4|On Hold 5|Complete 6|Template
+    0|Not Defined 1|Proposed 2|In Planning 3|In Progress 4|On Hold 5|Complete 6|Template
 
 Changing these values will change the tabs according but note: You can not modify the All Projects, Archived, or Gantt tabs as these are hardwired by default.
 
@@ -250,14 +250,11 @@ To create a user role for a group of users click on the User Roles link under th
 
 You will see a table.
 
-{| border="1" cellpadding="2"
-|-
-|width="200pt"|Icons
-|width="200pt"|Role ID
-|width="200pt"|Desciption
-|-
-|Edit-Modify-Delete || ID of Role || Description of Role
-|}
+Field | Description
+----- | -----
+Icons | Edit-Modify-Delete
+Role ID | ID of Role
+Description | Description of Role
 
 To create a new role give the role an ID in the textbox located at the bottom of the second column. Then type a brief description in the second textbox located last in the description column.
 
@@ -273,20 +270,10 @@ The permissions result table gives a more comprehensive look into the permission
 
 When you visit the page and select a filter it will display a table.
 
-{| border="1" cellpadding="2"
-|-
-|width="200pt"|User ID
-|width="200pt"|User
-|width="200pt"|User Name
-|width="200pt"|Module
-|width="200pt"|Item
-|width="200pt"|Item Name
-|width="200pt"|Action
-|width="200pt"|Allow
-|width="200pt"|ACL_ID
-|-
-|Automatic ID by System || Login ID || Actual Name || Name of Module || ID If Applicable || Name of Item || See Permissions || Allow(1) Deny (0) || ID of the ACL
-|}
+
+**Field** | User ID | User | User Name | Module | Item | Item Name | Action | Allow | ACL_ID
+----- | ----- | -----
+**Description** | Automatic ID by System | Login ID | Actual Name | Name of Module | ID If Applicable | Name of Item | See Permissions | Allow(1) Deny (0) | ID of the ACL
 
 ## Configure web2project to use Active Directory accounts
 

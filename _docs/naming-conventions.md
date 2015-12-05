@@ -35,47 +35,17 @@ There are three layers of the system that all interact together: the database, t
 
 This table reflects the latest naming convention for database fields. In all cases, these names should be used as suffixes for fields.
 
-{| class="wikitable"
-! Field name suffix
-! Example field names
-! Description
-|-
-|budget
-|project_actual_budget
-|This is a simple text field displayed with the user's preferred currency symbol. For rendering, it will always appear in the users' preferred currency format.
-|-
-|date
-|project_start_date, project_end_date
-|This is a simple text field displayed with a date picker for editing purposes. For rendering, it will always appear in the users' preferred short date format. It is not timezone sensitive aware and should not have user or system timezones applied.
-|-
-|datetime
-| (none currently in the system)
-|This is a simple text field displayed with both a date and time picker for editing purposes. It is timezone aware and is stored in the database in UTC. For rendering, it will always appear in the users' preferred long date format transformed according to their specified timezone.
-|-
-|description
-| company_description, project_description
-|This is always a dataype of 'text' and displayed in a textarea for editing purposes. For rendering, it automatically keeps all linebreaks and makes any urls clickable.
-|-
-|email
-| company_email, contact_email
-|This is a simple text field. For rendering, it is automatically made clickable with a mailto link.
-|-
-|(module names)
-| project_company, task_project, link_project
-|This is the most complex datatype currently in the system. It is usually displayed as a dropdown for editing purposes but may be handled via other means. For rendering purposes, it uses the specific suffix - company, project, department, task, user, etc - to lookup that object's name and link to it directly.
-|-
-|name
-| company_name, project_name, task_name
-|This is a simple text field. For rendering, it is made clickable to view the named object.
-|-
-|percent
-| (none currently in the system)
-|This is usually calculated automatically by the system. Where it is editable, it will be a dropdown populated by integers ranging from 0 to 100. For rendering, a percent sign is added.
-|-
-|url
-| task_related_url, project_url
-|This is a simple text field with a 'test' link button for editing purposes. For rendering, it is automatically made clickable.
-|}
+Suffix  | Example | Description
+----- | ----- | -----
+_budget | project_actual_budget | This is a simple text field displayed with the user's preferred currency symbol. For rendering, it will always appear in the users' preferred currency format.
+_date | project_start_date, project_end_date | This is a simple text field displayed with a date picker for editing purposes. For rendering, it will always appear in the users' preferred short date format. It is not timezone sensitive aware and should not have user or system timezones applied.
+_datetime | (not currently in the system) | This is a simple text field displayed with both a date and time picker for editing purposes. It is timezone aware and is stored in the database in UTC. For rendering, it will always appear in the users' preferred long date format transformed according to their specified timezone.
+_description | company_description, project_description | This is always a dataype of 'text' and displayed in a textarea for editing purposes. For rendering, it automatically keeps all linebreaks and makes any urls clickable.
+_email | company_email, contact_email | This is a simple text field. For rendering, it is automatically made clickable with a mailto link.
+(module names) | project_company, task_project, link_project | This is the most complex datatype currently in the system. It is usually displayed as a dropdown for editing purposes but may be handled via other means. For rendering purposes, it uses the specific suffix - company, project, department, task, user, etc - to lookup that object's name and link to it directly.
+_name | company_name, project_name, task_name | This is a simple text field. For rendering, it is made clickable to view the named object.
+_percent | (none currently in the system) | This is usually calculated automatically by the system. Where it is editable, it will be a dropdown populated by integers ranging from 0 to 100. For rendering, a percent sign is added.
+_url | task_related_url, project_url | This is a simple text field with a 'test' link button for editing purposes. For rendering, it is automatically made clickable.
 
 ## Module Class(es)
 
