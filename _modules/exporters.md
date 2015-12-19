@@ -3,6 +3,7 @@ layout: module
 title: Exporter Module
 
 category: addon-module
+status: cleanup
 
 module_name: Exporter Module
 module_path: exporters

@@ -3,6 +3,7 @@ layout: module
 title: Flexreports Module
 
 category: addon-module
+status: cleanup
 
 module_name: Flexreports Module
 module_path: flexreports
