@@ -1,16 +1,16 @@
 ---
 layout: module
-title: TodoList Module
+title: Helpdesk Module
 
 category: addon-module
 
-module_name: Todo Module
-module_path: todos
+module_name: Helpdesk Module
+module_path: helpdesk
 module_creator: CaseySoftware, LLC
 module_devs: CaseySoftware, LLC
 module_version: 1.1
-module_source: https://github.com/web2project/modules-todos
-module_download: https://github.com/web2project/modules-todos/archive/master.zip
+module_source: https://github.com/web2project/modules-helpdesk
+module_download: https://github.com/web2project/modules-helpdesk/archive/master.zip
 ---
 
 ## Module Overview
