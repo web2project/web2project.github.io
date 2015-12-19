@@ -9,8 +9,8 @@ module_path: flexreports
 module_creator: sasquatch58
 module_devs: sasquatch58
 module_version: 0.2
-module_source: https://github.com/caseysoftware/modules-flexreports
-module_download: https://github.com/caseysoftware/modules-flexreports/archive/master.zip
+module_source: https://github.com/sasquatch58/modules-flexreports
+module_download: https://github.com/sasquatch58/modules-flexreports/archive/master.zip
 ---
 
 Objectives
