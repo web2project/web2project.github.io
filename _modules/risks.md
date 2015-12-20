@@ -15,13 +15,29 @@ module_download: https://github.com/web2project/modules-risks/archive/master.zip
 
 ## Module Overview
 
-The Risk Management Module allows users to track a number of Risks and how they associate to individual Tasks or even entire Projects. It is known to work with web2project v2.2 but has not yet been tested with earlier versions. For general information on Risk Management and related concepts, please review [http://en.wikipedia.org/wiki/Risk_management Risk management].
-
-This module is available for download here: https://github.com/web2project/modules-risks
+The Risk Management Module allows users to track a number of Risks and how they associate to individual Tasks or even entire Projects. It is known to work with web2project v2.2 but has not yet been tested with earlier versions. For general information on Risk Management and related concepts, please review [Risk management](http://en.wikipedia.org/wiki/Risk_management).
 
 ### Release Notes
 
-#### 1.0
+#### Open Issues
+
+* The CRisk->hook_preStore() method has a hardcoded Magic Number.  The RiskStatus of 2 is assumed to be "Closed" and when a Risk is updated to have this value, the Mitigation Date will be calculated and stored.  Moving out of this state will clear the Mitigation Date.  At a later point, this Magic Number should be removed.
+* Additional reporting functionality would be useful.  Feedback in improving this module's reporting and more closely adhering to this process is welcome.
+* Additional reporting!
+* Support for the Custom Field Editor within core Web2Project.
+* The module should be scrubbed of the inline html/php nastiness.
+
+#### Updated in 2.0
+
+* Major rewrite using core web2project v3.0 functionality
+* Updated the setup class to take advantage of new w2p_Core_Setup functionality;
+* Renamed the CRiskNotes class to CRisk_Notes to take advantage of our autoloader;
+* Updated all classes (CRisk and CRiskNotes) to take advantage of the pre/post hooks, this allowed us to eliminate the store() and delete() methods;
+* Updated all controllers (do_risk_aed.php and do_risk_note_aed.php) to use the w2p_Controllers_Base class;
+* Updated the List and View views to use the HTMLHelper;
+* Deleted lots of code;
+
+#### Updated in 1.0
 
 * Initial release for web2project.
 * Added translation throughout the entire module to ensure iternationalization support.
@@ -41,6 +57,6 @@ This module is available for download here: https://github.com/web2project/modul
 
 ### Development Status
 
-* v2.0 Tentative: 2012 December - https://github.com/caseysoftware/web2project-risks
+* v2.0 2012 December
 * v1.0 2011 January - First web2project release
 * <s>v3.0 2008 July - Last dotProject release - http://caseysoftware.com/blog/risk-management-module-v3</s>
