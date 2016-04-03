@@ -47,13 +47,12 @@ Realistically, there's not much:
 * Administrators have credentials for all pieces of the website and supporting tools.
 * Administrators must provide the resources - time, money, set - to keep the site operational.
 
-## Current Team as of 29 September 2010
+## Current Team as of 31 March 2016
 
 * Administrators:
   * D. Keith Casey, Jr. - Project Lead - Austin, Texas, United States
   * Pedro Azevedo - Benevolent Dictator for Life - Aveiro, Portugal
   * Bruce Bodger - Oklahoma, United States
 * Team Members:
+  * Dr Klaus Bücher - Core Contributor - Germany
   * Trevor Morse - Test Master - Nova Scotia, Canada - Voted in 26 October 2009
-* Provisional Team Members:
-  * Benjamin Young - South Carolina, United States
