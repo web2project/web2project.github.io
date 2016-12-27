@@ -25,6 +25,6 @@ So you want to create your own Translation. The good news is that it's easy. Jus
 * On the right side you should see 2 select boxes, the first for the part of the system you're translating, the second for the language.
 * Choose the part of the system you want to translate and the new language you are translating to.
 * Translate, hit submit. That's about it.
-* We'd appreciate if you'd contribute your translation to web2project. If you want to do so, create a .zip or a .tar.gz package of the **/path/to/web2project/locales/sr** folder, head over to http://bugs.web2project.net/ create a feature request and attach the package. Thank you! :)
+* We'd appreciate if you'd contribute [your translation to web2project](https://github.com/web2project/locales). Simply follow [the directions in our README](https://github.com/web2project/locales#contributing) and your contribution will be shared with thousands. Thank you! :)
 
 If you have questions/comments check out [our forums](http://support.web2project.net/).
