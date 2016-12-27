@@ -1,6 +1,6 @@
 ---
 layout: page
-title: v4.0 Release Notes (pending)
+title: vX.X Release Notes (template)
 ---
 
 **Release Date:** XXXX
