@@ -4,6 +4,10 @@ This is the repository for all the documentation for Web2Project which currently
 
 The underlying theme for this site is https://github.com/Wiredcraft/carte
 
+If you want to run this locally yourself, check out Github's getting started documentation here: https://help.github.com/articles/using-jekyll-with-pages/ and then run:
+
+`bundle exec jekyll serve`
+
 ## Todo list
 
 * The entire site needs a good scrubbing/update
@@ -12,8 +16,6 @@ The underlying theme for this site is https://github.com/Wiredcraft/carte
 * All issues in the Release Notes should be linked back to Mantis
 
 ## Contributing
-
-If you want to run this locally yourself, check out Github's getting started documentation here: https://help.github.com/articles/using-jekyll-with-pages/
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
