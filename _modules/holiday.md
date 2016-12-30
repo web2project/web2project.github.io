@@ -64,33 +64,18 @@ This module is available for download here: https://github.com/eureka2/web2proje
 1. To install this module, please follow the standard module installation procedure. Download the latest version from Sourceforge and unzip this directory into your web2project/modules directory.
 1. Select to System Admin -> View Modules and you should see "holiday" near the bottom of the list.
 1. On the "Holiday" row, select "install". The screen should refresh. Now select "hidden" and then "disabled" to make it display in your module navigation.
-1. Open the Date class with your favourite editor:
-
-    vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
-
-1. Paste the following in the beginning of the isWorkingDay function (Line 148)
-
-    if ($AppUI->isActiveModule('holiday')) {
-        // Holiday module, check the holiday database
-        require_once W2P_BASE_DIR."/modules/holiday/holiday_functions.class.php";
-        if(HolidayFunctions::isHoliday($this)) {
-            return false;
-        }
-    }
-
-
-    vi /path/to/web2project/classes/w2p/Utilities/Date.class.php
 
 ## Release Notes
 
-### 1.0
+### Updated in 1.0
 
-* First stable release
+*  Initial release for web2project
 
-## Known/Open Issues
+### Open Issues:
 
-* n/a
+1.  No known issues.
 
-## Development Status
+### Development Status
 
-* v1.0 First stable release: 2011 May
+*  v1.0 Conversion to web2project: May 2011
+*  v0.2 Original Development for dotproject: December 2008
