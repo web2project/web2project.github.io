@@ -398,7 +398,7 @@ section {
     left: 275px;
     margin-top: 50px;
     padding-bottom: 50px;
-    padding-right: 50px;
+    padding-right: 30px;
     position: absolute;
 }
 
@@ -431,8 +431,10 @@ pre {
     background-color: lightgray;
     float: right;
     line-height: 25px;
-    padding: 20px;
-    width: 240px;
+    margin-left: 20px;
+    min-width: 275px;
+    padding: 15px;
+    width: 25%;
 }
 
 .module-info label {
@@ -440,7 +442,7 @@ pre {
 }
 
 .module-info td {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .column {
