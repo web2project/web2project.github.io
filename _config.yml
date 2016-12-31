@@ -4,6 +4,9 @@ title: web2project Documentation
 # Exclude our ruby stuff
 exclude: [Gemfile, Gemfile.lock, README.md]
 
+gems:
+  - jekyll-redirect-from
+
 collections:
   all:
     output: true
