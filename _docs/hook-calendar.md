@@ -3,6 +3,8 @@ layout: page
 title: Calendar Hook
 
 category: hooks
+
+redirect_from:  "/docs/calendar-hook.html"
 ---
 
 **Available Since:** v1.1 (September 2009)
@@ -64,3 +66,6 @@ This hook is called by the *calendar.php* script to create the [iCalendar](http:
     }
 
 The calendar.php script will automatically call each active module's hook_calendar method without any additional actions from the user.
+
+
+{% include section-hooks.md %}

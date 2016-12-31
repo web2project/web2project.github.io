@@ -3,6 +3,8 @@ layout: page
 title: Cron Hook
 
 category: hooks
+
+redirect_from:  "/docs/cron-hook.html"
 ---
 
 **Available Since**: v1.1 (September 2009)
@@ -86,3 +88,5 @@ Tasks Section (last one) / Send Task Reminders: check box ON
 **Note:** if you decide to include task/event owner on the notification you will receive the same Reminder twice, as you will be the task owner but also (by default) the assignee of the task; this option may work if you are only used to set tasks for other users without being an assignee on that tasks;
 
 **Note:** Of course, the reminders and all messages are working if you previously set a proper e-mail account on your e-mail server; proper settings must be filled on **System Admin / System Configuration / Email Settings** section;
+
+{% include section-hooks.md %}

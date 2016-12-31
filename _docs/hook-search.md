@@ -3,6 +3,8 @@ layout: page
 title: Search Hook
 
 category: hooks
+
+redirect_from:  "/docs/search-hook.html"
 ---
 
 **Available Since**: v1.1 (September 2009)
@@ -74,3 +76,5 @@ A more complex example from the [Project Module](https://github.com/web2project/
 As you should be able to tell, this code does not perform the search.  Instead, it simply tells the calling code how to search this module.
 
 Assuming this method exists and includes the proper values, the [SmartSearch](/modules/smartsearch.html) module will automatically call this function. No further configuration is necessary.
+
+{% include section-hooks.md %}
