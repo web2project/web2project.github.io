@@ -8,16 +8,44 @@ module_name: Holiday
 module_path: holidays
 module_creator: Jacques Archimède (Eureka)
 module_devs: Jacques Archimède (Eureka)<br />& D. Keith Casey, Jr (caseysoftware)
-module_version: 1.0.0
+module_version: 1.1.0
 module_source: https://github.com/web2project/web2project-holiday
-module_download: https://github.com/web2project/web2project-holiday/archive/master.zip
+module_download: https://github.com/web2project/web2project-holiday/archive/holiday-v1.1.zip
 ---
 
 ## Module Overview
 
-This module allows you to set the working time of your company and your users based on standard calendard for your country and your region.
+This module allows you to set the working time of your company and your users based on standard calendar for your country and your region.
 
-This module integrates the [http://pear.php.net/package/Date_Holidays/ PEAR Date_Holidays package library] for calculating public holidays.
+This module integrates the [PEAR Date_Holidays package library](http://pear.php.net/package/Date_Holidays/) for calculating public holidays.
+
+## INSTALLATION
+
+1. To install this module, please follow the standard module installation procedure. Download the latest version from Sourceforge and unzip this directory into your web2project/modules directory.
+1. Select to System Admin -> View Modules and you should see "holiday" near the bottom of the list.
+1. On the "Holiday" row, select "install". The screen should refresh. Now select "hidden" and then "disabled" to make it display in your module navigation.
+
+## Release Notes
+
+### Updated in 1.1
+
+*  Removed numerous methods that are now implemented in core
+*  Minor improvements to layout and CSS
+
+### Updated in 1.0
+
+*  Initial release for web2project
+
+### Open Issues:
+
+1.  No known issues.
+
+### Development Status
+
+*  v1.0 Conversion to web2project: May 2011
+*  <s>v0.2 Original Development for dotproject: December 2008</s>
+
+## Additional Notes
 
 The public holidays for a country is implemented as a "Driver". The following drivers are available:
 
@@ -56,26 +84,3 @@ Some of these drivers are based on special drivers:
 * Eastern Christian (Ken Guest <ken@linux.ie>)
 * Islamic (Eureka <eureka@dbmail.com>)
 * Jewish (Carsten Lucke <luckec@tool-garage.de>)
-
-This module is available for download here: https://github.com/eureka2/web2project-holiday
-
-## INSTALLATION
-
-1. To install this module, please follow the standard module installation procedure. Download the latest version from Sourceforge and unzip this directory into your web2project/modules directory.
-1. Select to System Admin -> View Modules and you should see "holiday" near the bottom of the list.
-1. On the "Holiday" row, select "install". The screen should refresh. Now select "hidden" and then "disabled" to make it display in your module navigation.
-
-## Release Notes
-
-### Updated in 1.0
-
-*  Initial release for web2project
-
-### Open Issues:
-
-1.  No known issues.
-
-### Development Status
-
-*  v1.0 Conversion to web2project: May 2011
-*  v0.2 Original Development for dotproject: December 2008
