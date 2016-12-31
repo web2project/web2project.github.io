@@ -7,6 +7,8 @@ This is a list of the most common Add On Modules for web2project.  Although this
 
 Anything that is available for **Release** can be downloaded from [Github](https://github.com/web2project).
 
+If you want o build your own, check out our [Module Building Guide](/docs/module-building-guide.html).
+
 ### Installing Add On Modules
 
 To install add-on modules you need to place the source code under the /modules folder and then go to System Admin -> Modules and install them, activate and show.
