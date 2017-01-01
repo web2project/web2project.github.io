@@ -9,8 +9,8 @@ module_path: holidays
 module_creator: Jacques Archimède (Eureka)
 module_devs: Jacques Archimède (Eureka)<br />& D. Keith Casey, Jr (caseysoftware)
 module_version: 1.1.0
-module_source: https://github.com/web2project/web2project-holiday
-module_download: https://github.com/web2project/web2project-holiday/archive/holiday-v1.1.zip
+module_source: https://github.com/web2project/modules-holiday
+module_download: https://github.com/web2project/modules-holiday/archive/holiday-v1.1.zip
 ---
 
 ## Module Overview
