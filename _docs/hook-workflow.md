@@ -11,7 +11,7 @@ category: hooks
 
 Immediately before or after performing an action, you may want to accomplish something else. This can be as simple as logging that an object was changed or sending an email notification or applying complex business validations or modifications.
 
-**Note:** *When you implement one of these in your module, it *must* call the parent method of the same name.*
+**Note:** *When you implement one of these in your module, it MUST call the parent method of the same name.*
 
 **Note:** *The permissions check for viewing or modifying an object are not performed until after the corresponding hook_pre method is complete. Therefore, you should never modify the database, send notifications, or display potentially sensitive information in those methods.*
 
