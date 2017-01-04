@@ -11,14 +11,15 @@ Building a proper module in web2project requires a handful of key files in a par
 
 Filename  | Status | Description | Notes
 ----- |:-----:| ----- | -----
-/todos/             | required | folder | Base folder of the module
-  setup.php         | required | [Setup Instructions](/docs/setup.html) | Defines the details of the module along with install/uninstall directions
-  todos.class.php   | required | [Primary Model](/docs/core-class.html) | Defines all the business logic and CRUD operations for the module
-  index.php         | required | [List View](/docs/views.html) | Normally shows a list of any top-level items
-  index.js          | optional |  | Javascript that gets included in the Index layout
-  addedit.php       | optional | [Add/Edit View](/docs/views.html) | View that provides a form to add or edit the item
-  addedit.js        | optional |  | Javascript that gets included in the Add/Edit layout
-  view.php          | optional | [Item View](/docs/views.html) | View that provides a page to view the item
-  view.js           | optional |  | Javascript that gets included in the view layout
-  do_todos_aed.php  | optional | [Primary Controller](/docs/primary-controller.html) | Acts as the Controller/Dispatcher for most of the primary actions
-  companies_tab.view.todolist.php | optional | [Subview](/docs/subviews.html) | Provides a embedded tab subview on the Company View page
+README.md                               | required | [Module Details](/docs/readme-reqs.html) | Information about the module, its release history, etc
+/todos/                                 | required | folder | Base folder of the module
+/todos/setup.php                        | required | [Setup Instructions](/docs/setup.html) | Defines the details of the module along with install/uninstall directions
+/todos/todos.class.php                  | required | [Primary Model](/docs/core-class.html) | Defines all the business logic and CRUD operations for the module
+/todos/index.php                        | required | [List View](/docs/views.html) | Normally shows a list of any top-level items
+/todos/index.js                         | optional |  | Javascript that gets included in the Index layout
+/todos/addedit.php                      | optional | [Add/Edit View](/docs/views.html) | View that provides a form to add or edit the item
+/todos/addedit.js                       | optional |  | Javascript that gets included in the Add/Edit layout
+/todos/view.php                         | optional | [Item View](/docs/views.html) | View that provides a page to view the item
+/todos/view.js                          | optional |  | Javascript that gets included in the view layout
+/todos/do_todos_aed.php                 | optional | [Primary Controller](/docs/primary-controller.html) | Acts as the Controller/Dispatcher for most of the primary actions
+/todos/companies_tab.view.todolist.php  | optional | [Subview](/docs/subviews.html) | Provides a embedded tab subview on the Company View page
