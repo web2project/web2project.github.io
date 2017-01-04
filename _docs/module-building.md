@@ -2,11 +2,8 @@
 layout: page
 title: Module Building Guide, Pre-3.0
 
-deprecated: true
-status: cleanup
+status: deprecated
 ---
-
-**Notice:** This is no longer the latest information available. Please check out the [Module Building Guide](/docs/module-building-guide.html) for up to date information.
 
 The goal of this page is to document a clear, repeatable way for developers to create modules to supplement and enhance the operation of the web2project system. There are numerous code samples included because sometimes showing is just as important as explaining.
 
@@ -406,5 +403,3 @@ While many modules will have a search as simple as above, more complex search pa
     }
 
 Assuming this method exists and includes the proper values, the [SmartSearch](/modules/smartsearch.md) module will automatically call this function. No further configuration is necessary.
-
-**Notice:** This is no longer the latest information available. Please check out the [Module Building Guide](/docs/module-building-guide.html) for up to date information.

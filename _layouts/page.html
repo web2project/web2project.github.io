@@ -6,7 +6,15 @@ layout: default
     {% include draft.html %}
 {% endif %}
 
+{% if page.status == 'deprecated' %}
+    {% include deprecated.html %}
+{% endif %}
+
 {{ content }}
+
+{% if page.status == 'deprecated' %}
+    {% include deprecated.html %}
+{% endif %}
 
 {% if page.status == 'draft' %}
     {% include draft.html %}
