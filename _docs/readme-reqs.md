@@ -9,7 +9,10 @@ This file gives an overview of the purpose and status of the module. Further, si
 
 ### Overview
 
-This gives an overview of the module and its intended purpose. It is written for end users but should be descriptive enough that administrators have a good idea of the features and functionality. If other software is necessary for this module to function properly, list the names and required versions here.
+*  What is the purpose of this module?
+*  Does it compare to another piece of software?
+*  What features or functionality does it provide?
+*  Does this module require any other software? Does it require specific versions?
 
 ### Install Instructions
 
