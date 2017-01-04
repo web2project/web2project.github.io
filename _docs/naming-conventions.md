@@ -15,11 +15,11 @@ There are three layers of the system that all interact together: the database, t
 * Modules MUST have a unique name;
 * The module directory MUST be lower case alphanumeric with no special characters - ex: projects, links;
 * The module's files MUST be contained within its directory within the */modules/* directory exclusively;
+* The module MUST have a file named setup.php with a setup class that extends w2p_Core_Setup;
 * The module directory SHOULD be the plural form of the module name - ex: Project -> projects, Companies -> companies;
 * The module class file SHOULD be the plural form of the module name followed by '.class.php - ex: Project -> projects.class.php, Companies -> companies.class.php;
 * The module MAY have subclasses;
 * The module's subclass file MUST be the plural form of the subclass name followed by '.class.php' - ex: File Folder -> files/folders.class.php, Task Logs -> tasks/logs.class.php;
-* The module MUST have a file named setup.php with a setup class that extends w2p_Core_Setup;
 * The module MAY have a file named configure.php which allows for module-specific settings.
 
 ## Database
