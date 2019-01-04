@@ -23,7 +23,7 @@ title: vX.X Release Notes (template)
 
 * Lines of Code: XXX (XXX of comments, XXX of code)
 * Overall Cyclomatic Complexity/LoC: XXX
-* Classes: XXX (XXX Concrete, XXX Abstract)
+* Classes: XXX (XXX Concrete, XXX Abstract, XXX Interfaces)
   * Lines of Code/Class: XXX
   * Class Constants: XXX
   * Methods:XXX (XXX static, XXX non-static)
