@@ -9,13 +9,13 @@ title: vX.X Release Notes (template)
 
 {% include reporting-problems.md %}
 
-### New Features
+## New Features
 
-### Fixes/Bugs Closed
+## Fixes/Bugs Closed
 
-### Misc Changes/Improvements
+## Misc Changes/Improvements
 
-### Open/Known Issues
+## Open/Known Issues
 
 *  If you upgrade from dotProject, you may have an oddity with your default theme/display as the name has changed.  If this happens, edit your preferences, change to one of the existing themes, and save.
 
