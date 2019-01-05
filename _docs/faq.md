@@ -9,93 +9,120 @@ Looking for articles/documentation about Web2Project? Check out the [Core Module
 
 ## Infrastructure
 
+### Why doesn't Web2Project work with PHP 5.x?
+
+The core PHP group itself ended all PHP 5.x support - including security fixes - as of January 2019. Web2project will follow suit by mid-2019. Please upgrade your PHP version to 7.2+
+
 ###  The Installer/Upgrader says I don't have GD Support. How do I add it?
 
-*  This is usually because either a) PHP was not compiled with GD support or b) GD support was enabled but Apache was not restarted.
-*  The second case is easier, simply restart Apache and check to see that it's now in the phpinfo() list.
-*  In the first case, you may have to uninstall (purge if you're using apt-get) php5-gd, install the module cleanly from scratch, and then restart Apache. [1](http://serverfault.com/questions/238948/how-to-install-php5-gd-on-ubuntu),[2](http://php.net/manual/en/image.installation.php)
+Install the php7-gd module via apt-get or your favorite package manager and restart Apache. Then it should appear in your phpinfo() list as expected.
 
-## Projects
+## Day to Day Usage
 
-### How can I create a template project and then copy it and update it for each new project?
+### Why can't my new user log in?
 
-All you need to do is create a project normally, add the tasks to it and make it a Template project by setting its Project Status to template.
-Notice there is a Template tab on the Projects List for you to see all the templates you created so far.
-You should do this to make sure that the Template project will not appear on Incomplete tasks lists and reports, though you can use any project to import tasks from.
+The Web2project permissions system assigns no privileges by default. Before a new User can log in, they must be assigned a Role in the User Administration Module. If you are looking for an advanced explanation of Permissions, please read "Permissions 201". TODO
 
-Now, if you create a new project you can go to the "Import tasks from:" combo and pick your template project from there and when you submit the project it will copy the whole task structure of your Template project into the project you are creating.
+### Help! I’ve lost my Company/Project/Task/Event and now I can’t find it on any of the lists!
 
-### Parent Projects vs Dynamic Tasks
+The most common cause of this problem is Owner-based Filtering on the list screen. Go to the relevant list and look in the upper right-hand corner for the filters. Most modules filter by Owner but some modules allow more options. Setting all of these values to “All” and you should see the full list.
 
-Project parent is used to set parenthoods of projects.
-That way you can build projects with multiple levels, and have a way to group/organize projects in a tree.
+### I just created a Task and assigned myself. Why didn’t I get an email notification?
 
-*Example:* You have a project that will be built by several different companies that will be responsible for doing specific parts of the overall (parent) project.
+Web2project assumes the creator of the Task knows the Task was created. In the System Configuration, you can change this to automatically notify the creator.
 
-Well you can say you can achieve the same thing by doing dynamic tasks or parent tasks. Not really.
-You can do that but then you would have permission problems if you'd like users of a certain company not to see tasks from another companies users.
+### How can I create a template project to reuse across projects?
 
-So multi-project structures will aid you to build projects where you can use permissions to limit the visibility of parts of the project to certain users instead of others.
+First, create your template. Create a project normally, add the tasks to it, and make it a Template project by setting its Project Status to template.
 
-### When you add a new sub project to an existing one, both display in the project table. What's the best way to view them?
+Next, notice that your Template will only appear on the Templates tab on the Project List. This will keep it out of your way in task lists, reports, and other screens. 
 
-Projects can be in different statuses so if you had to show only the parent projects you'd loose the information about the child projects and their situation across the statuses.
+Finally, when you create a new project, in the "Import tasks from:" combo box pick your template project. Once you save the project, the entire template will be cloned into this project. This does not modify or replace any existing tasks.
 
-You can see an overall gantt for a projects tree, just view one of the projects of the tree of projects and they you will see on the project information box an option that says something like "+ This Project is Part of the Following Multi-Project Structure:", now if you click the plus icon you will see the list of projects of the tree and the gantt chart for the multi-project structure.
+### How can I move a task X days later/earlier?
 
-## Tasks
+Within the Project Designer, choose your project, then select the relevant tasks. Find the box labeled "Date Move (Days)" and fill in how many days you want to shift the tasks. You can use a negative number to move them earlier.
 
-### How can I move a task in time?
+### How are Parent Projects different from Dynamic Tasks?
 
-Select them on the tasks list through the checkboxes, and move them in time a certain number of days.
+Project parent is used to package or collect a set of projects into a single view for tracking, reporting, etc. Each project will have its own due dates, assignments, and information while the parent project will roll up the lower projects and potentially add its own information. 
 
-So... select a task (by either clicking a checkbox or any portion of its line), then type 7 on the "Date Move (Days)" and hit "update", it should move that task to the next week.
-Therefore it moves already existing project tasks in day units.
-If you use a negative figure it should send the tasks back in time (so -7 means a week earlier).
+A Dynamic Task is defined entirely as the total of its subtasks' due dates and durations. It does not have its own information.
+ 
+In practice, they look and behave similarly. The biggest distinction is that Projects can be owned by different Companies and have distinct permissions while Tasks do not.
 
-### I entered some dynamic tasks but now I am editing the task to add a web url and I get an error telling me that I need to enter a start date.
+### When we have a parent/child project combination, both projects display in the projects list. Why and what's the best way to view them?
 
-You don't need to set a start or end date to dynamic tasks....dynamic tasks start and end date are automatically set by its children. Dynamic tasks, normally know as Umbrella tasks have that behavior so when you change its children they will get the start date of the first child task in time, and the end date of the last child task in time. You can see what I mean through a Gantt chart.
+Each project can have a separate status or company, potentially with separate permissions. If we only showed the top parent or root project, we could inadvertently hide all child projects.
 
-R - I understand that I don't need to set start or end date for dynamic tasks but the system is requiring that I enter one anyway.
+If you view any project directly, you can see the overall project structure and Gantt charts representing their details.
 
-A - That's the doing of a System Config. option. See on the Task section of it, and uncheck the option that is forcing you to enter tasks start and end dates.
 
-## Companies
 
-### Companies vs company owner vs Contacts
 
-In creating company owners, that person must have an account.. but …I don't want to create a new account for my clients. Which is better - create their accounts and simply not tell them they have one...or assign a contact as a company owner.
 
-Yes, that would do as they would be inactive users and therefore they wouldn't be able to log in
-
-## Calendar
-
-### To see project tasks in the calender do I enter the task details again under events?
-
-The tasks are filtered on a company basis, so you can use the Company filter on the Calendar to see the tasks relating to each Company. And no, you do not need to add the tasks as events as far as calendar is concerned.
-
-## Reports
-
-### I clicked "Make PDF" and Submit. I get the report on screen but it's not in PDF format
+### In the Reports Module, I checked "Make PDF" and hit submit but it's still a web page. Where's my PDF?
 
 At the bottom of the generated list you'll see the link "View PDF File". Click there and the PDF will then be generated.
 
+## Customizing the System
 
-## Email
+### How can I customize Web2project to match my organization’s theme/style?
 
-Certain changes (e.g. task updates) allow automatic sending of emails to task assignees, if their email addresses have been registered in user admin. The email configuration varies from server to server and from mail server to mail server, but to use Google's SMTP, it's as simple as:
+Although many of the aspects are properly defined in the CSS, the current Web2project release is still rather difficult to theme. Regardless, the most commonly changed aspects (header, footer, and login page) are available within the `/style/_common` within your installation. You can learn more about theming in Chapter TODO
 
-**SMTP Host:** smtp.gmail.com
+### Where can I find add-on modules, customizations, language packs, etc?
 
-**SMTP Username:** mygmailusername
+Many add-on modules are available from our [Github project](https://github.com/web2project) and many were written by the Web2project community. All translations are available in our [locales repository](https://github.com/web2project/locales). If you don’t see the translation you need, please consider writing your own and sharing it with the community.
 
-**SMTP Password:** mygmailpassword
+### My date is in a screwy format! How do I fix it?
 
-**SMTP Port:** 25
+You just need to change your system preferences. Select "My Info" in the upper right-hand corner and then "edit preferences" just above your profile. This will allow you to choose a date format. In addition, if you want to change the defaults for future users, within the System Admin, select "Default User Preferences". This will allow you to edit the same details for all users created after this time. By design, it does not edit existing users’ preferences, this is not an error.
 
-**SMTP Secure:** TLS
+### I’ve just installed a Module and I don’t see it. Where is it?
+ 
+Before a Module will appear in the navigation, you must first install it and then activate it. Occasionally, you'll also need to perform specific steps or provide additional configuration information. Most module include a `README` file which describes this process in detail.
 
-**SMTP Server Timeout:** 30
+### What does the Public Module do?
 
-**Email Transport:** SMTP
+Nothing, it exists purely for public messages like “Access Denied”. It should never appear on your navigation menu.
+
+## Development
+
+### How do I get the code from Github?
+
+You can either clone the repository from our [Github repository](https://github.com/web2project/web2project) or download the code in [zip format](https://github.com/web2project/web2project/archive/master.zip) if you prefer.
+
+#### Can I use the latest development version in production?
+
+Technically, yes, but we don't recommend it. When there are architecture or UI changes, there are often times when the codebase is unstable and not suitable for production use. If you choose to use it anyway, you do so at your own risk.
+
+### OMG. I found a bug, what do I do!?
+
+Please visit the [Web2project bug tracker](http://bugs.web2project.net/) and check to see if the issue has been reported or even resolved. If it's been fixed, the bug report should link to the fix which you may be able to apply yourself. If it has not been reported, please do so and be as descriptive as possible. Remember, if we don't get enough information to reproduce it, we can't fix it. Finally, if it's already been reported and there's not a fix, you can track and monitor any bug report. That will email you whenever there's a change.
+
+### When I look in the Web2project bug list, it says my issue is fixed in development, but Github master is still broken!
+
+In Github, the master branch is always considered stable and usually identical to the latest release. All development is done on a development branch. The two branches are merged just before the next release. If you *need* these fixes, you may be able to merge them into your master branch, but please be careful.
+
+### Where else can I get support and help with Web2project?
+
+There are a variety of locations available. First and foremost, there are the [Web2project Support Forums](http://support.web2project.net). Questions and comments can be posted there freely and anyone in the community can answer you. Alternatively, there are many recommendations and explanations available on the [Web2project Wiki](http://wiki.web2project.net/). 
+
+### Web2project is great! How can I support the project?
+
+There are a variety of ways to show your support:
+
+* First of all, you or your organization can donate to the project using the information from our [Support Web2project page](http://support.web2project.net/page/support-web2project.html).
+* You can be an active part of the community by submitting bug reports, sharing patches, testing release candidates, answering questions in the forums, convincing your boss to evaluate the tool, or generally let us know how you are using Web2project and what we can do to make things even better.
+* Finally, you can tell others about the project and get them to do any or all of the above.
+
+### Web2project is great, but it doesn’t do X. How can I get it to do X?
+
+Before you do anything else, search in both the [Support Forums](http://support.web2project.net) and in the [issue tracking system](http://bugs.web2project.net) - and see if someone else has figured it out, submitted it, discussed it, or already exists and you just missed it. Alternatively, one of the benefits of Open Source software is that you can always do it yourself. At any time, you can get the latest code and write any extensions or customizations you choose. If you create modifications and patches that are relevant to core, you can submit patches via Github Pull Requests and may see your contributions in the next release.
+
+### Why are you writing this manual and what are you getting out of this?
+
+Keith Casey and CaseySoftware, LLC have been deeply involved with Web2project since its inception and led the community effort throughout its lifetime. This manual is one aspect of this effort and will hopefully encourage additional organizations to use Web2project and improve the overall system and the community as a whole. Any and all proceeds from this book will be used to support the project’s infrastructure.
+
+If you are interested in additional training, support, or custom development, please feel free to contact us at [CaseySoftware.com](CaseySoftware.com).
