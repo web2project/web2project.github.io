@@ -9,13 +9,15 @@ Looking for articles/documentation about Web2project? Check out the [Core Module
 
 ## Infrastructure
 
-### Why doesn't Web2project work with PHP 5.x?
+### Why doesn't Web2project work with PHP 5.x? 
 
 The core PHP group itself ended all PHP 5.x support - including security fixes - as of January 2019. Web2project will follow suit by mid-2019. Please upgrade your PHP version to 7.2+
 
 ###  The Installer/Upgrader says I don't have GD Support. How do I add it?
 
 Install the php7-gd module via apt-get or your favorite package manager and restart Apache. Then it should appear in your phpinfo() list as expected.
+
+<hr />
 
 ## Day to Day Usage
 
@@ -57,13 +59,11 @@ Each project can have a separate status or company, potentially with separate pe
 
 If you view any project directly, you can see the overall project structure and Gantt charts representing their details.
 
-
-
-
-
 ### In the Reports Module, I checked "Make PDF" and hit submit but it's still a web page. Where's my PDF?
 
 At the bottom of the generated list you'll see the link "View PDF File". Click there and the PDF will then be generated.
+
+<hr />
 
 ## Customizing the System
 
@@ -87,6 +87,8 @@ Before a Module will appear in the navigation, you must first install it and the
 
 Nothing, it exists purely for public messages like “Access Denied”. It should never appear on your navigation menu.
 
+<hr />
+
 ## Development
 
 ### How do I get the code from Github?
@@ -104,6 +106,10 @@ Please visit the [Web2project bug tracker](http://bugs.web2project.net/) and che
 ### When I look in the Web2project bug list, it says my issue is fixed in development, but Github master is still broken!
 
 In Github, the master branch is always considered stable and usually identical to the latest release. All development is done on a development branch. The two branches are merged just before the next release. If you *need* these fixes, you may be able to merge them into your master branch, but please be careful.
+
+<hr />
+
+## Ongoing Support
 
 ### Where else can I get support and help with Web2project?
 
