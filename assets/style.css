@@ -466,3 +466,9 @@ tbody tr td:nth-child(1) {
 tbody tr:nth-child(n+1) td {
     border-bottom: 1px solid lightgray;
 }
+
+.icon {
+    float: left;
+    margin: 10px;
+    padding-left: 20px;
+}
