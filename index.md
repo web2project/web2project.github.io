@@ -11,6 +11,14 @@ This guide was initially written in reference to Web2project v3.3.0 and has been
 
 From here, most people want the [Installation Guide](/docs/installation.html).
 
-*All screenshots were taken from the production system currently in use by CaseySoftware, LLC using the default Web2project style. Sensitive information has been obscured on purpose.*
+## Conventions used in this Guide
 
-**Note:** *This docs site was built using Jekyll on Github pages. To submit changes, please file a pull request against the [Github repository](https://github.com/web2project/web2project.github.io). We will review and merge changes as appropriate.*
+Web2project is an Open Source project. Therefore, development moves unevenly between holidays, personal commitments, new organizations adopting it, and everything else. As a result, there are always various versions of Web2project available for download in addition to the master/release branch. Sometimes these versions change behavior or system settings so to make these points clear, we've added this notation:
+
+{% include icon-warn.html %} We use the Warning Icon to denote places where you can misconfigure or damage your data by accident. Before you make this change, read the carefully and follow the directions precisely.
+
+{% include icon-question.html %} We use the Question Icon to denote common or frequently asked questions. While we work to resolve and simplify these items, there are just some complicated concepts that we have to capture and apply.
+
+{% include icon-discussion.html %} We use the Discussion Icon to designate features discussed or planned for future development but have little supporting functionality in the system. We include them here to provide context and explanation for the roadmap.
+
+{% include icon-info.html %} We use the Info Icon to denote features available in development. The development version always has the latest and greatest features, fixes, and functionality but has not been tested as official releases have been. Unless you are a PHP developer or willing to live with instability, we do not recommend using this code in production systems. Consider it a preview of work to come.
