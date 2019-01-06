@@ -5,11 +5,11 @@ title: FAQ
 
 Q & A gleaned from the [Forums](http://forums.web2project.net/)
 
-Looking for articles/documentation about Web2Project? Check out the [Core Modules page](/modules/core.html) which presents documentation for each module.
+Looking for articles/documentation about Web2project? Check out the [Core Modules page](/modules/core.html) which presents documentation for each module.
 
 ## Infrastructure
 
-### Why doesn't Web2Project work with PHP 5.x?
+### Why doesn't Web2project work with PHP 5.x?
 
 The core PHP group itself ended all PHP 5.x support - including security fixes - as of January 2019. Web2project will follow suit by mid-2019. Please upgrade your PHP version to 7.2+
 

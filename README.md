@@ -1,6 +1,6 @@
-# Web2Project's Documentation Site
+# Web2project's Documentation Site
 
-This is the repository for all the documentation for Web2Project which currently resides at http://docs.web2project.net
+This is the repository for all the documentation for Web2project which currently resides at http://docs.web2project.net
 
 The underlying theme for this site is https://github.com/Wiredcraft/carte
 
