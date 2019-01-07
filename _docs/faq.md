@@ -81,7 +81,7 @@ You just need to change your system preferences. Select "My Info" in the upper r
 
 ### I’ve just installed a Module and I don’t see it. Where is it?
  
-Before a Module will appear in the navigation, you must first install it and then activate it. Occasionally, you'll also need to perform specific steps or provide additional configuration information. Most module include a `README` file which describes this process in detail.
+Before a Module will appear in the navigation, you must first install it and then activate it. Occasionally, you'll also need to perform specific steps or provide additional configuration information. Most modules include a `README` file which describes this process in detail.
 
 ### What does the Public Module do?
 
