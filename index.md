@@ -15,7 +15,7 @@ From here, most people want the [Installation Guide](/docs/installation.html).
 
 Web2project is an Open Source project. Therefore, development moves unevenly between holidays, personal commitments, new organizations adopting it, and everything else. As a result, there are always various versions of Web2project available for download in addition to the master/release branch. Sometimes these versions change behavior or system settings so to make these points clear, we've added this notation:
 
-{% include icon-warn.html %} We use the Warning Icon to denote places where you can misconfigure or damage your data by accident. Before you make this change, read the carefully and follow the directions precisely.
+{% include icon-warn.html %} We use the Warning Icon to denote places where you can misconfigure or damage your data by accident. Before you make this change, read carefully and follow the directions precisely.
 
 {% include icon-question.html %} We use the Question Icon to denote common or frequently asked questions. While we work to resolve and simplify these items, there are just some complicated concepts that we have to capture and apply.
 
