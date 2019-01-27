@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Setting up Web2project
-
+title: Installing and Upgrading Web2project
 ---
 
 Installing Web2project is the same as installing any other PHP project and has minimal requirements. The definitive version of this [Installation Guide](https://docs.web2project.net/docs/installation.html) is available online but this section should be the same.
@@ -27,7 +26,7 @@ These requirements have been tested and validated. Web2project may work with oth
 9. If the Installer could not create the `config.php` file, copy and paste it to create your own.
 10. Log into your system with the provided username and password.
 11. Change your username and password.
-12. Proceed to [Getting Started](#getting-started) or the [Frequently Asked Questions](#faq) as you need.
+12. Proceed to [Getting Started](/docs/getting-started.html) or the [Frequently Asked Questions](/docs/faq.html) as you need.
 13. Add a cron job to run system maintenance tasks such as sending email notices, etc. The easiest approach is to request the URL below via a cron job: 
 
 > `wget -O - -q http://{web2project-install}/queuescanner.php`
