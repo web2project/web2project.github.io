@@ -10,6 +10,8 @@ gems:
 collections:
   all:
     output: true
+  howto:
+    output: true
   modules:
     output: true
   docs:
