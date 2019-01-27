@@ -472,3 +472,7 @@ img.icon {
     margin: 10px;
     padding-left: 20px;
 }
+
+h3 ~ p {
+    margin-left: 25px;
+}
