@@ -17,6 +17,21 @@ The core PHP group itself ended all PHP 5.x support - including security fixes -
 
 Install the php7-gd module via apt-get or your favorite package manager and restart Apache. Then it should appear in your phpinfo() list as expected.
 
+### Is there any ongoing maintenance I should perform on Web2project?
+
+First, you should make sure to upgrade as we release new versions. That is the best way to make sure any security issues are resolved quickly with minimal risk.
+
+Second, if you are queuing email notifications, you must create a scheduled task to poll the system to send those emails. On Linux or Unix based systems, that can be as simple as this cronjob which will generate messages every ten minutes.
+
+`*/10	* * * *	wget –O - -w http://{web2project-install}/queuescanner.php`
+
+### How do I back up Web2project safely?
+
+To make sure you back up the entire system, you need to backup both the database and the file uploads.
+
+* The simplest way to backup the database is to use MySQL's build in mysqldump command. For further information on this utility and its usage, please reference the MySQL Users’ Manual. 
+* To backup the file uploads, we recommend compressing the entire `files` folder. For more fine-grained backup practices, the numbered folders within `files` correspond to Project Id's. 
+
 <hr />
 
 ## Day to Day Usage
