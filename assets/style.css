@@ -469,8 +469,7 @@ tbody tr:nth-child(n+1) td {
 
 img.icon {
     float: left;
-    margin: 10px;
-    padding-left: 20px;
+    margin: 5px 10px 10px 10px;
 }
 
 h3 ~ p {
