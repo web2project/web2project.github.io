@@ -3,7 +3,7 @@ layout: page
 title: Getting Started with Web2project
 ---
 
-{% include icon-warn.html %} After you install, you must  log in as admin and change the default password. You system is not secure until you change the default admin password.
+{% include icon-warn.html %} After you install, you must log in as admin and change the default password. You system is not secure until you change the default admin password.  
 
 ### The Admin Account
 
