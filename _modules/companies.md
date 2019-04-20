@@ -25,17 +25,17 @@ Companies may have a tree of [Departments](/modules/departments.html) associated
 
 ### Create a Company
 
-To create a Company, you can either select the Company module from the navigation and click the “new company” button or you can select “Company” from the “New Item” dropdown.
-
 <a href="/assets/docs/companies/addedit.png"><img src="/assets/docs/companies/thumb-addedit.png" /></a>
+
+To create a Company, you can either select the Company module from the navigation and click the “new company” button or you can select “Company” from the “New Item” dropdown.
 
 Most of the fields are self-explanatory and allow you to fill in basic contact information on the Company. The more important fields are 'Company Owner' and 'Type' which both drive the 'Company List' screen. The 'Company Owner' does grant any permissions, it is used only for filtering. The 'Type' is used to categorize each company into a selected tab and is also used for filtering.
 
 ### View Company Detail
 
-This page shows the user the data related to each company, such as its active projects, the related contacts and users, and depending on any extra add-on modules it can also provide extra information. The most common action here is to create a new Project but the tabs below give you access to other modules. 
-
 <a href="/assets/docs/companies/view.png"><img src="/assets/docs/companies/thumb-view.png" /></a>
+
+This page shows the user the data related to each company, such as its active projects, the related contacts and users, and depending on any extra add-on modules it can also provide extra information. The most common action here is to create a new Project but the tabs below give you access to other modules. 
 
 By default, the tabs include:
 
