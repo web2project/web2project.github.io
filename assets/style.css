@@ -456,7 +456,7 @@ article img {
 
 td {
     border-right: 1px solid lightgray;
-    padding: 5px;
+    /*padding: 5px;*/
 }
 
 tbody tr td:nth-child(1) {
