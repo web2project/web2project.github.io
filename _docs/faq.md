@@ -128,7 +128,7 @@ In Github, the master branch is always considered stable and usually identical t
 
 ### Where else can I get support and help with Web2project?
 
-There are a variety of locations available. First and foremost, there are the [Web2project Support Forums](http://support.web2project.net). Questions and comments can be posted there freely and anyone in the community can answer you. Alternatively, there are many recommendations and explanations available on the [Web2project Wiki](http://wiki.web2project.net/). 
+There are a variety of locations available. First and foremost, there are the [Web2project Support Forums](http://support.web2project.net). Questions and comments can be posted there freely and anyone in the community can answer you. Alternatively, there are many recommendations and explanations available in the [Web2project Documentation](http://docs.web2project.net/). 
 
 ### Web2project is great! How can I support the project?
 
