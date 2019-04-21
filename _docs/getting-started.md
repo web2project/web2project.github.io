@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Getting Started with Web2project
----
-
-{% include icon-warn.html %} After you install, you must log in as admin and change the default password. You system is not secure until you change the default admin password.  
+---  
 
 ### The Admin Account
+
+{% include icon-warn.html %} After you install, you must log in as admin and change the default password. You system is not secure until you change the default admin password.
 
 To change the password, log in and select User Admin from the navigation menu to see all active users in your system. Simply click the username and then click the "change password" button in the upper right corner. This will show a small popup screen allowing you to set a new password.
 
