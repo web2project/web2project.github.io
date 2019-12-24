@@ -42,7 +42,7 @@ The Monthly view shows the user which Tasks and/or Events are scheduled for each
 
 Generally when you create an event or task in the system, this will create links within the calendar dynamically showing you the start and finish dates within that month. Each link in the calendar is dynamic, so you can click on it and it will take you to the details of that object. This is particularly useful when you want a snap shot view of what’s on the agenda for the entire month.
 
-Depending on how the administrator has the system configured, you can use filters to view calendar details for other [Departments](/modules/departments.html) or [Users](/modules/user-admin.html), in addition to your own.
+Depending on how the administrator has the system configured, you can use filters to view calendar details for other [Departments](/modules/departments.html) or [Users](/modules/users.html), in addition to your own.
 
 From this page you can:
 
