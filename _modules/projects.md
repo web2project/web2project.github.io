@@ -31,7 +31,8 @@ Creating your first Project is a deceptively simple task. Clicking “Project”
 * The rest of the fields available are purely for display purposes and not related to the current functionality of the system. For example, the Target and Actual Budgets are available for editing but are not updated or tracked anywhere in the system. The two URLs (URL, Staging URL) are references to external websites which might be relevant to a project. They will not normally point to websites or pages internal to your Web2project.
 * Finally, your new Project must be saved by clicking “submit”. If for some reason, you have made a mistake in creating your project, you can edit or even delete it from the View Project page if you have the proper permissions.
 
-I> There are five major features currently implemented concerning Project Templates.
+{% include icon-info.html %} There are five major features currently implemented concerning Project Templates.
+
 First, there are two primary date options:
 Selecting an Offset Date allows you to specify an arbitrary date in the future for the project to begin and Web2project will sequentially schedule all start and end dates into the future from this point.
 Selecting an End Date does the exact opposite. After choosing an End Date for your project, Web2project will schedule all tasks from the end of the project backwards into the past resulting in an estimated start date.
