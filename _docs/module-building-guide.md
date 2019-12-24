@@ -17,6 +17,8 @@ Failure to follow the recommendations in this section will lead to poor modules,
 *  A module SHOULD adhere to our [Naming Conventions](/docs/naming-conventions.html) for variables, methods, etc.
 *  All code within a module SHOULD adhere to the formatting specified by the [PSR-4 Coding Standard](http://www.php-fig.org/psr/psr-4/). To evaluate your own code, please use [Code Sniffer](http://pear.php.net/package/PHP_CodeSniffer/).
 
+To see the details of this guide in action, check out the [Todo Module](https://github.com/web2project/modules-todos) as an example.
+
 ## Table of Contents
 
 {% assign items = site.docs | where:"category","module building guide" %}
