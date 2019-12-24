@@ -1,9 +1,9 @@
 
 ---
 
-## Available Hooks
+## Extending the System
 
-Hooks are how we provide access to specific features and functionality in a standardized way. While no hooks are required in your custom module, they're generally useful.
+Hooks are how we extend the system by allowing you to connect into specific processes and actions in standard, consistent ways with minimal effort without modifying Web2project core. This ensures you can accomplish what you need and your modules remain compatible through Web2project upgrades.
 
 {% assign items = site.docs | where:"category","hooks" %}
 
