@@ -41,7 +41,7 @@ Next, there are three different import options:
 “Import related files” does exactly what it describes. This comes in useful when you have forms, checklists, etc attached to specific Tasks. These files are automatically copied to the new project without further action. Your files are copied and the originals are not affected in any way.
 “Import related forums” does exactly what it describes. These forums – but not postings – are copied to the new project without further action. Your forums are copied and the originals are not affected in any way.
 
-I> At the time of this writing, all budgetary fields are merely for documentation purposes and are not used for tracking, evaluation, or reporting in any way.
+{% include icon-info.html %} At the time of this writing, all budgetary fields are merely for documentation purposes and are not used for tracking, evaluation, or reporting in any way.
 
 ### View your Projects (Projects Index Page)
 
