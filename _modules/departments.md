@@ -15,7 +15,9 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-Departments are a component of companies and can be found under the “view company” page within the company module. Note that the module is disabled by default, and must first be enabled. To enable the departments module:
+Departments are simply groupings within a Company. There can be an unlimited number of departments for any company and departments can have sub-departments. Since a department is so similar to a Company, it has many of the same fields and is treated in an almost identical manner. Since a Department has no meaning without a parent Company, the Department module should only be accessed through the listing on a Company’s View page. 
+
+Note that the module is disabled by default, and must first be enabled. To enable the departments module:
 
 * Go to system admin
 * Click 'View Modules'
@@ -29,7 +31,7 @@ When you click on the department tab in the view company page you will see a lis
 * Edit a department
 * View how many users are assigned to each department.
 
-### Add/Edit Departments
+### Create a Department
 
 To add a new department to a company you must first be in the View Company Page and click on the department tab, then click the “New Department” button.
 
