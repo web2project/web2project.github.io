@@ -19,21 +19,6 @@ The contacts module is a place to store information about users and additional c
 
 You can access the data in this module by clicking on the contacts link in the main navigation. You can also access contacts from the add/edit project, add/edit task, resources, and other places throughout the dynamic application.
 
-### Contacts List View (Contacts Index)
-
-<a href="/assets/docs/contacts/index.png"><img src="/assets/docs/contacts/thumb-index.png" /></a>
-
-The contacts list view is the default page for the contacts tab.
-
-From this page you can:
-
-1.	Search for contacts using a search field.
-1.	Download a CSV of specific or entire list.
-1.	View contact name, company, phone, email and location
-1.	Email the contact
-1.	Edit the contact
-1.	Send an instant message and more
-
 ### Contacts Add/Edit (Contacts addedit)
 
 <a href="/assets/docs/contacts/addedit.png"><img src="/assets/docs/contacts/thumb-addedit.png" /></a>
@@ -54,6 +39,28 @@ From this page you can keep detailed records about a person such as:
 * Instant Messenger(s)
 * General Notes
 
+### Attach Contacts to Projects / Tasks
+
+Reporting and information sharing with external project stakeholders is absolutely required for successful project management. To facilitate this, Web2project offers the flexibility of giving the project manager the ability to attach Contacts to specific projects or even individual Tasks within a Project. From that time on, whenever a the Project or Task are updated, the user updating the information can choose to notify the Contacts. Alternatively, this notification can be set as a global default within the System Admin.
+
+### Contacts List View (Contacts Index)
+
+<a href="/assets/docs/contacts/index.png"><img src="/assets/docs/contacts/thumb-index.png" /></a>
+
+The contacts list view is the default page for the contacts tab.
+
+From this page you can:
+
+1.	Search for contacts using a search field.
+1.	Download a CSV of specific or entire list.
+1.	View contact name, company, phone, email and location
+1.	Email the contact
+1.	Edit the contact
+1.	Send an instant message and more
+
+### View a specific Contact (Contact View Page)
+
+TODO
 
 ### Contacts Confirming Email (Contacts email confirm)
 
