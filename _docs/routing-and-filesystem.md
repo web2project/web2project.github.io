@@ -7,13 +7,11 @@ status: draft
 status: cleanup
 ---
 
-The goal of this page is to document how particular web2project URLs map to specific files on the filesystem.
-
 ### Module Url Structure -> File Structure
 
 The general pattern is ```web2project/index.php?m={modulename}&a={action}&id={id}``` where **{modulename}** is the directory, **{action}** is the file, and **{id}** is the specific item you're editing.
 
-From here forward, the Company module will serve as our example due to its simplicity. This is a list of all the files within the module directory:
+In this section, we'll use the relatively simple Company to walk through the mechanics. This is a list of all the files within the module directory:
 
     /companies/
        addedit.php
@@ -52,12 +50,18 @@ Url  | Maps to | Description
 
 web2project implements [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) from the PHP Framework Interoperability Group therefore all classes are structured as w2p_Namespace_Class with the '.class.php' suffix. For example, the class **w2p_Core_BaseObject** will be found in *classes/w2p/Core/BaseObject.class.php* while **w2p_Database_Query** will be found in *classes/w2p/Database/Query.class.php*.
 
-If you follow our naming convention, any classes you add will automatically be loaded without any additional effort or configuration.
+It is unlikely that you will need to add core classes to Web2project but if you follow our naming convention, they will automatically be loaded without any additional effort or configuration.
 
 #### Modules
 
-web2project module classes are a little different because they can be added or removed as needed. In this case, the class file modules/{plural modulename}/{plural modulename}.class.php will contain the C{singular modulename} class. A subclass within the module will be have an underscore (_) as a separator which turns C{plural modulename}_{singular subclass}.php into modules/{plural modulename}/{plural subclass}.class.php
+Web2project module classes are a little different because they can be added or removed as needed. In general, the class file will map directly from the module name. The pattern is:
 
-For example, the **CProject** class will be found in *modules/projects/project.class.php* while **CCompany** will be found in *modules/companies/companies.class.php*. Alternatively, the **CFiles_Folder** class *modules/files/folders.class.php*.
+`modules/{plural modulename}/{plural modulename}.class.php`
 
-The [Naming Conventions](/docs/naming-conventions.html) page covers this is greater detail.
+and the contained class will be `C{modulename}`. In the case of the Company module, this makes the file `modules/companies/companies.class.php` with the corresponding `CCompany` class. A subclass within the module will be follow this pattern:
+
+`modules/{plural modulename}/{plural subclass}.class.php`
+
+and the contained class will be `C{plural modulename}_{singular subclass}` using an underscore as a separator between the classes.
+
+Beyond that, the [Naming Conventions](/docs/naming-conventions.html) section fills in the rest of the detail.
