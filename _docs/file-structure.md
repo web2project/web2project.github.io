@@ -6,14 +6,13 @@ category: "module building guide"
 status: cleanup
 ---
 
-Building a proper module in web2project requires a handful of key files in a particular structure.  Each of which serve a specific purpose in the operation of the system.  For a module called ``Todos`` - *available from the [web2project Modules](https://github.com/web2project)* - we would have the following file structure (filenames are case sensitive):
-
+Building a module in web2project requires a handful of key files in a specific structure. Each of which serve a key purpose in the operation of the system. For a module called "Todos" - available from the web2project Modules - we would have the following file structure (filenames are case sensitive):
 
 Filename  | Status | Description | Notes
 ----- |:-----:| ----- | -----
-README.md                               | required | [Module Details](/docs/readme-reqs.html) | Information about the module, its release history, etc
 /todos/                                 | required | folder | Base folder of the module
-/todos/setup.php                        | required | [Setup Instructions](/docs/setup.html) | Defines the details of the module along with install/uninstall directions
+/todos/README.md                        | required | [Module Details](/docs/readme-reqs.html) | Information about the module, its release history, etc
+/todos/setup.php                        | required | [Setup Instructions](/docs/setup.html) | Contains and executes the install/uninstall logic
 /todos/todos.class.php                  | required | [Primary Model](/docs/core-class.html) | Defines all the business logic and CRUD operations for the module
 /todos/index.php                        | required | [List View](/docs/views.html) | Normally shows a list of any top-level items
 /todos/index.js                         | optional |  | Javascript that gets included in the Index layout

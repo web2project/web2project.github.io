@@ -21,6 +21,10 @@ You should include at least one paragraph on what the module is, the problem it 
 
 Required. How does one go about installing this module? If it's the default process, just note it. You don't have to re-include the steps here.
 
+### Usage
+
+Recommended. How does someone use this module?
+
 ### Release Notes
 
 Optional. When included, this should note improvements, new features, and bug fixes broken out by version.
