@@ -23,9 +23,9 @@ The Calendar module provides the users with interfaces to manage the [Tasks](/mo
 
 The base view of the Calendar Module is a simple month view similar to Outlook or Google Calendar. It always defaults to the current month displaying all of the Users’ Tasks and Events. This view is filtered according to two aspects: Company and Ownership. At any time, a User can change the Company filter from any one to all of them. This gives a quick review on a per-customer basis with no additional effort. The Ownership filter allows a User to change their view based on All Events, Events I Created, and My Events. By changing the combination of these two aspects, Users can look at the information from a variety of angles and determine a great deal about most projects.
 
-I> In many cases, even filtering Events and Tasks by Company will still display too much information to be useful. Therefore, you can also filter by a specific Project.
+{% include icon-info.html %} In many cases, even filtering Events and Tasks by Company will still display too much information to be useful. Therefore, you can also filter by a specific Project.
 
-D> To make life simpler for all involved, it is currently planned to implement iCal output for any active Web2project user. This will provide a simple way to monitor a calendar from within a third–party application such as Google Calendar, Apple iCalendar, or Outlook.
+{% include icon-discussion.html %} To make life simpler for all involved, it is currently planned to implement iCal output for any active Web2project user. This will provide a simple way to monitor a calendar from within a third–party application such as Google Calendar, Apple iCalendar, or Outlook.
 
 From the Month View, a user can click on the button on the far left of any line. This will take the User to a Week View based on the selected Company. It breaks down the week into a simple layout similar to a weekly planner. The Ownership filter is still available but in order to change the Company, the User must go back to the Month view.
 
@@ -33,7 +33,7 @@ From the Month View, a user can click on the button on the far left of any line.
 
 Creating an Event in Web2project can be done at anytime from anywhere in the system by selecting “New Event” in the upper right hand corner. You simply name the event, give a brief description, select the relevant project, invite members, at set the recurrence schedule. If you set a recurring event, Web2project will automatically add it to all invitee’s calendars and email a notification immediately.
 
-Q> Although every Event can be attached to a Project, there is no Events tab on the View Project screen. It will likely be developed in Head and released as a patch at a later date.
+{% include icon-question.html %} Although every Event can be attached to a Project, there is no Events tab on the View Project screen. It will likely be developed in Head and released as a patch at a later date.
 
 <a href="/assets/docs/events/addedit.png"><img src="/assets/docs/events/thumb-addedit.png" /></a>
 
@@ -85,7 +85,7 @@ From this page you can:
 
 Clicking on a day within any of the calendars on the right hand side will take you to the day view for that month.
 
-#### View Week (Week View Page)
+#### View a Week (Week View Page)
 
 <a href="/assets/docs/events/view_week.png"><img src="/assets/docs/events/thumb-view_week.png" /></a>
 
@@ -104,7 +104,7 @@ From this page you can:
   * Events you created.
 * You can also move forward and backwards in weeks.
 
-#### View Month (Month View Page)
+#### View a Month (Month View Page)
 
 <a href="/assets/docs/events/view_month.png"><img src="/assets/docs/events/thumb-view_month.png" /></a>
 
@@ -128,7 +128,7 @@ There are effectively two ways to move forward and backwards in time.
 * Click the arrow icons at the top of the calendar (Located on the right and left site top)
 * On the bottom of the page you'll see the previous and next month quick links.
 
-#### View Years (Year View Page)
+#### View a Year (Year View Page)
 
 <a href="/assets/docs/events/view_year.png"><img src="/assets/docs/events/thumb-view_year.png" /></a>
 
