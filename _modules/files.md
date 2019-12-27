@@ -15,6 +15,8 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
+Once your project begins, you will likely want to attach information from individual files. Common additions are contracts, requirements, technical specifications, relevant standards, or any of a plethora of other things. While these can be handled in a third-party Document Management System or a wiki, it is often better to have a single location for pulling all this information together into a single interface for review, comment, update, or perusal.
+
 The File Repository in web2Project is a well organized dynamic module for maintaining your assets that are associated with [Projects](/modules/projects.html), [Task](/modules/tasks.html), or the [Calendar](/modules/calendar.html). The files module appears in the main navigation by default, but you can also access files via projects, project designer, and task.
 
 In the web2Project file repository you can:
@@ -26,6 +28,18 @@ In the web2Project file repository you can:
 * Checkout/checkin files
 * Track Revision Cycles of files.
 * View file size, type and date added.
+
+### Attach a File
+
+The three ways of getting to this module are all effectively the same. The fastest is to select “New File” from the “New Item” dropdown in the upper right corner of any screen. Alternatively, you can select the File module from the main navigation and then click on the “New File” button. Finally, you can select a particular project or task, click on the Files tab, and then click on “Attach a file”.
+
+You can then select a Category of the File – default options are “Document” and “Application” – assign a specific Project/Task, and fill in a description. The primary benefit of attaching the file through an individual Project or Task is that this information will automatically be filled in on this screen. Regardless, if you attach a file and associate it with a Project or Task, the owner will immediately be notified of the new file available.
+
+### Check-in / Check-out / Update
+
+As most projects progress, new versions of documents become available, documents change, and old information becomes less relevant. In order to handle this, Web2project has a simple versioning feature with checkin/checkout functionality. A user simply clicks on the “co” column to checkout the file. They fill in a comment and download it immediately. When their modifications are complete, they click on the “co” column again, fill in a new comment, denote whether this is a major or minor revision, and save.
+
+The previous version of the file is kept untouched and the new file is displayed. Older versions of every file are kept for archival purposes and are denoted in the version column with a number in parentheses. By clicking on this number, all previous versions of the file are displayed and available for download. This protects files from being lost either due to malicious or accidental actions.
 
 ### View Files List Page (Files Index)
 
@@ -96,8 +110,6 @@ The icons on the far right allow you to:
 * Delete
 
 ### Files Folder Add/Edit (Folder Addedit)
-
-[missing file!]
 
 To create a new folder in the main file module click the “New Folder” button in the upper right.
 
