@@ -15,26 +15,12 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
+One of the simple ways to improve tracking of your Project is to ensure that all relevant discussion, communications, etc are attached to the Project. To make this process easier, Web2project has a simple threaded forum system built-in. It is not as advanced or flexible as some systems such as phpBB or vBulletin but since it is part of Web2project, it will automatically have the same look and feel in addition to all the security and permissions benefits.
+
 The Forum Module in web2Project is an optional added feature designed specifically to help improve communication and collaboration.
 
-Forums are a great way to allow open discussions on just about anything. The web2Project forum module takes the methodology of standard forum usage to a whole new level because you can associate forums to specific projects.
 
-### Forums List Page (Forums Index)
-
-<a href="/assets/docs/forums/index.png"><img src="/assets/docs/forums/thumb-index.png" /></a>
-
-The forums list page shows all the available forums in web2Project. From this page you can:
-
-* View available forums
-* Edit a forum
-* See if a forum has unread topics
-* Choose to watch a forum for updates.
-* Click on a forum name to enter that forum
-* View who created the forum
-* View how many topics and replies are in the forum
-* View the time and date of the last post.
-
-### Forums Add/Edit Page (Forums Addedit)
+### Create or Edit a Forum (Forums Addedit)
 
 <a href="/assets/docs/forums/addedit.png"><img src="/assets/docs/forums/thumb-addedit.png" /></a>
 
@@ -51,3 +37,22 @@ Form this page you can:
 * Enter a brief description.
 * Delete a the forum.
 * Go back to the forums list page.
+
+### Forums List Page (Forums Index)
+
+<a href="/assets/docs/forums/index.png"><img src="/assets/docs/forums/thumb-index.png" /></a>
+
+The forums list page shows all the available forums in web2Project. From this page you can:
+
+* View available forums
+* Edit a forum
+* See if a forum has unread topics
+* Choose to watch a forum for updates.
+* Click on a forum name to enter that forum
+* View who created the forum
+* View how many topics and replies are in the forum
+* View the time and date of the last post.
+
+### Forum / Thread Watch
+
+The most important aspect of the entire Forum module is the ability to set “Watches”. When an individual sets a watch on a thread or an entire forum, Web2project will automatically notify them each and every time there is a new comment. This ensures that the relevant information gets to the interested people as fast as possible with minimal effort.
