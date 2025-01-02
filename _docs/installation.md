@@ -9,25 +9,26 @@ Installing Web2project is the same as installing any other PHP project and has m
 
 These requirements have been tested and validated. Web2project may work with other versions or systems but they are not formally supported. These requirements apply regardless of whether you're installing, upgrading, or converting.
 
-* PHP 7.x+
+* PHP 8.x+
+* Mysql 8.x+
 * Apache 2.x+ or IIS 7.x+
-* Mysql 5.x+
 
 ## Install Instructions
 
 1. Uncompress your web2project archive (often named `web2project.tar.gz` or `web2project.zip`) 
-2. Upload the resulting folder to a web-accessible directory on your web server. Note the resulting URL as this will be your new web2project installation.
-3. Create a mysql database and a user with full access to the database. Save these database name and credentials as you will need them later.
-4. Point your browser to the URL noted above.
-5. The Installer should detect that you are creating a fresh installation.
-6. Confirm that your web server meets the minimum requirements. If it does not, resolve those issues. If it does, continue.
-7. Use the database name and credentials from above to configure the database connection.
-8. Select "Install Db & Write Cfg." The system should create all database tables and configure the base system.
-9. If the Installer could not create the `config.php` file, copy and paste it to create your own.
-10. Log into your system with the provided username and password.
-11. Change your username and password.
-12. Proceed to [Getting Started](/docs/getting-started.html) or the [Frequently Asked Questions](/docs/faq.html) as you need.
-13. Add a cron job to run system maintenance tasks such as sending email notices, etc. The easiest approach is to request the URL below via a cron job: 
+1. Upload the resulting folder to a web-accessible directory on your web server. Note the resulting URL as this will be your new web2project installation.
+1. Create a mysql database and a user with full access to the database. Save these database name and credentials as you will need them later.
+1. From the command line within the server, run `composer install` or the equivalent for your system.
+1. Point your browser to the URL noted above.
+1. The Installer should detect that you are creating a fresh installation.
+1. Confirm that your web server meets the minimum requirements. If it does not, resolve those issues. If it does, continue.
+1. Use the database name and credentials from above to configure the database connection.
+1. Select "Install Db & Write Cfg." The system should create all database tables and configure the base system.
+1. If the Installer could not create the `config.php` file, copy and paste it to create your own.
+1. Log into your system with the provided username and password.
+1. Change your username and password.
+1. Proceed to [Getting Started](/docs/getting-started.html) or the [Frequently Asked Questions](/docs/faq.html) as you need.
+1. Add a cron job to run system maintenance tasks such as sending email notices, etc. The easiest approach is to request the URL below via a cron job: 
 
 > `wget -O - -q http://{web2project-install}/queuescanner.php`
 
