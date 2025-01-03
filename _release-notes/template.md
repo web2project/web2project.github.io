@@ -22,13 +22,20 @@ title: vX.X Release Notes (template)
 {% include metrics-phing.md %}
 
 * Lines of Code: XXX (XXX of comments, XXX of code)
-* Overall Cyclomatic Complexity/LoC: XXX
-* Classes: XXX (XXX Concrete, XXX Abstract, XXX Interfaces)
+* Cyclomatic Complexity:
+  * Per Class: XXX (min: XXX, max: XXX)
+  * Per Method: XXX (min: XXX, max: XXX)
+  * Per Line of Code: XXX
+* Interfaces: XXX
+* Traits: XXX
+* Classes: XXX (XXX Concrete, XXX Abstract)
   * Lines of Code/Class: XXX
   * Class Constants: XXX
   * Methods:XXX (XXX static, XXX non-static)
+    * Public: XXX
+    * Protected: XXX
+    * Private: XXX
   * Lines of Code/Method: XXX
-  * Cyclomatic Complexity/Number of Methods: XXX
 * Functions: XXX
 * Constants: XXX
 * Test Classes: XXX
