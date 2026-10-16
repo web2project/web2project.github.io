@@ -19,13 +19,13 @@ The links module is an alternative resource where you can store quick links for 
 
 This is particularly useful to store client or vendor websites, but can be used for a number of purposes including links to external project files.
 
-### Contacts List View (Links Index)
+### Links List View (Links Index)
 
 <a href="/assets/docs/links/index.png"><img src="/assets/docs/links/thumb-index.png" /></a>
 
 The links index page contains a number of tabs which can be defined via the system administration > Lookup Values. These tabs are used primarily to help you categorize all of your link resources so you can access them quickly.
 
-For each tab there is a table which contains a list of available links along with usefull information about the link.
+For each tab there is a table which contains a list of available links along with useful information about the link.
 
 From this page you can:
 
@@ -47,12 +47,12 @@ To add a new link, click on the “New Link” button in the upper right corner 
 
 From this page you can:
 
-Return to the links index
-Give the link a name
-Assign the link a category (Tab)
-Assign to a project (Optional)
-Assign to a task (Optional)
-Type a description
-Insert the actual link.
+* Return to the links index
+* Give the link a name
+* Assign the link a category (Tab)
+* Assign to a project (Optional)
+* Assign to a task (Optional)
+* Type a description
+* Insert the actual link.
 
 Note: The name you assign to the link will be what is shown in the links index. Clicking on the name will activate the link you assign.
