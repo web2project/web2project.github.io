@@ -20,7 +20,7 @@ Which modules appear depends on your permissions and on which modules are active
 
 ### The Admin Account
 
-{% include icon-warn.html %} After you install, you must log in as admin and change the default password. You system is not secure until you change the default admin password.
+{% include icon-warn.html %} After you install, you must log in as admin and change the default password. Your system is not secure until you change the default admin password.
 
 To change the password, log in and open *My Info* from the user menu at the top right. Select the "change password" link at the top of the page. This shows a small popup window allowing you to set a new password. To change another user's password, select User Admin in the sidebar, click the username, and use the same link.
 
