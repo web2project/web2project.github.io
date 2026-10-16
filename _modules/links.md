@@ -15,44 +15,41 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-The links module is an alternative resource where you can store quick links for reference and assign them to [Projects](/modules/projects.html) or [Task](/modules/tasks.html).
+The links module is where you store quick links for reference and attach them to [Projects](/modules/projects.html) or [Tasks](/modules/tasks.html).
 
-This is particularly useful to store client or vendor websites, but can be used for a number of purposes including links to external project files.
+This is particularly useful to store client or vendor websites, but can be used for a number of purposes including links to external project files. Links attached to a project or task also appear on that project's or task's Links tab.
 
 ### Links List View (Links Index)
 
 <a href="/assets/docs/links/index.png"><img src="/assets/docs/links/thumb-index.png" /></a>
 
-The links index page contains a number of tabs which can be defined via the system administration > Lookup Values. These tabs are used primarily to help you categorize all of your link resources so you can access them quickly.
+Select Links in the sidebar to see the list. It has an "All Links" tab and one tab per link category. The categories are the *LinkType* lookup values in System Admin; a new installation has Unknown, Document and Application. They help you sort your links so you can find them quickly.
 
-For each tab there is a table which contains a list of available links along with useful information about the link.
+At the top of the page are a search box, a **Filter** drop-down to show one project's links, and the "New link" button.
 
-From this page you can:
+By default the list has these columns:
 
-* Add a new link
-* View existing links
-* Edit a link.
-* View the project the link(s) are assigned to
-* View a short description
-* View the category
-* View the task (if any)
-* View who owns the links
-* View the date and time the link was added.
+* An edit icon, and an open icon that opens the link in a new window
+* **Link Name**: click it to open the link
+* **Description**
+* **Category**
+* **Project Name** and **Task Name**: what the link is attached to, if anything
+* **Owner**: who created it
+* **Date**: when it was added
 
 ### Links Add/Edit (Links addedit)
 
 <a href="/assets/docs/links/addedit.png"><img src="/assets/docs/links/thumb-addedit.png" /></a>
 
-To add a new link, click on the “New Link” button in the upper right corner of the Link module.
+To add a new link, choose "New Link" from the "New Item" menu, or use the "New link" button on the Links list or on a task's page.
 
-From this page you can:
+The form has these fields:
 
-* Return to the links index
-* Give the link a name
-* Assign the link a category (Tab)
-* Assign to a project (Optional)
-* Assign to a task (Optional)
-* Type a description
-* Insert the actual link.
+* **Link Name**: what is shown in the list
+* **Created By**: the link's owner
+* **Category**: puts the link on one of the list's tabs
+* **Project** and **Task**: optional; attach the link to a project and one of its tasks
+* **Description**
+* **URL**: the address. If you leave off the `http://` or `https://`, Web2project adds `http://`.
 
-Note: The name you assign to the link will be what is shown in the links index. Clicking on the name will activate the link you assign.
+When you edit a link, the "delete link" link at the top of the form removes it.
