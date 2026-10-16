@@ -37,4 +37,4 @@ The Login/Logouts filter shows the sessions that administrators ended from the A
 
 ### History on a project
 
-Projects also have a History tab. It shows the same list with the Projects filter, so it lists changes to all the projects you can see, not only the one you are viewing.
+Projects also have a History tab, which lists the changes to that project.
