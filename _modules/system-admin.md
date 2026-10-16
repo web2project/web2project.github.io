@@ -72,7 +72,7 @@ The settings are grouped by area. Hover over the (i) icon next to each setting f
 * **Debug Level** and **Show Debug Messages**: see [Turn on Debugging](/docs/turn-on-debugging.html). Leave them at 0 and off on a live system.
 * **Enable Gantt Charts**: turns the Gantt charts on or off. They need PHP's `gd` extension.
 * **Host Locale**: the default language for the site.
-* **Log Changes**: records changes in the History module.
+* **Log Changes**: no longer used. Changes are recorded in the History module whenever that module is active.
 * **Page Size**: the number of records per page in long lists.
 * **Page Title**: shown in the browser's title bar.
 * **Memory Limit for Gantt**: raises PHP's memory limit while drawing Gantt charts, for example `64M` or `128M`.
