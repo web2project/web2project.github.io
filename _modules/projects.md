@@ -79,7 +79,7 @@ Below that are the tabs. The tabs that appear depend on which modules are active
 * Tasks (All): active and inactive tasks together, in tree order
 * Gantt Chart
 * Task Logs: the logs of the project's tasks, filtered by user or cost code, and optionally hiding inactive or complete tasks
-* [Events](/modules/calendar.html)
+* [Events](/modules/events.html)
 * [Files](/modules/files.html)
 * [Forums](/modules/forums.html)
 * [History](/modules/history.html)

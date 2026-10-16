@@ -39,7 +39,7 @@ From this page you can also:
 * Go to core project view
 * Edit this project
 * Create a new project
-* Create an [Event](/modules/calendar.html)
+* Create an [Event](/modules/events.html)
 * Add a new [File](/modules/files.html).
 
 ### Projects Panel

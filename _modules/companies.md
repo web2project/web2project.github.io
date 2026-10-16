@@ -44,7 +44,7 @@ By default, the tabs include:
 1. View [Departments](/modules/departments.html)
 1. View [Users](/modules/users.html)
 1. View [Contacts](/modules/contacts.html)
-1. View [Events](/modules/calendar.html)
+1. View [Events](/modules/events.html)
 1. View [Files](/modules/files.html)
 
 <strong>Active Projects</strong>
