@@ -15,48 +15,42 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-The Resource Module is a useful tool when you need to allocate or track resources related to a [Project](/modules/projects.html) or [Task](/modules/tasks.html). Additional resources could include things like conference room, copiers, ect..
+The Resources module lets you allocate and track things other than people on a [Task](/modules/tasks.html): conference rooms, copiers, vehicles, equipment and so on.
 
-### Resources List View (Resources Index)
+{% include icon-info.html %} The Resources module is installed but turned off by default. To use it, go to System Admin → View Modules, activate Resources and set it to "visible" so it appears in the navigation. v5.0 fixes adding and editing resources: on earlier versions saving failed with "Unknown column 'resource_description'" on new installs. If you upgraded, run *Apply System Updates* first.
 
-<a href="/assets/docs/resources/index.png"><img src="/assets/docs/resources/thumb-index.png" /></a>
+### Resources List (Resources Index)
 
-The Resource Index page contains a set of tabs which you can define in the system administration lookup values. By default these tab represent the resource type.
+The Resources list has an "All Resources" tab and one tab per resource type. The types are the *ResourceTypes* lookup values in System Admin → System Lookup Values, so you can add, rename or remove them there. A new install starts with "All resources", "Equipment", "Tool" and "Venue"; an upgraded system keeps the types it had.
 
-Tab 1: All resource
+By default the list has these columns:
 
-Tab 2: Equipment
+* **Identifier**: your own code for the resource. Click it to open the resource.
+* **Resource Name**
+* **Max Alloc %**: the most the resource can be booked at once
+* **Type**
+* **Notes**
 
-Tab3: Tools
+To create a new resource, select the "New Resource" button at the top of the page.
 
-Tab4: Venue
+### Resource View
 
-The first column shows the Resource ID. The second column shows the resource name, and the third column shows the maximum allocation for that resource.
+The resource view shows the resource's **Identifier**, **Name**, **Type**, **Percent Allocation** (its maximum allocation) and **Description**. The links at the top go back to the list or to editing the resource.
 
-To create a new resource, click the new resource button on the upper right of the page.
+### Add or Edit a Resource
 
-### Resources View page (Resources view)
+The form has these fields:
 
-<a href="/assets/docs/resources/view.png"><img src="/assets/docs/resources/thumb-view.png" /></a>
+* **Resource Identifier**: a short code of your choosing
+* **Resource Name**
+* **Type**: one of the *ResourceTypes* values
+* **Max Allocation**: in percent, 100 by default
+* **Notes**
 
-Clicking on the resource ID will take you to the resource view page which shows detailed information about the source.
+### Assigning Resources to Tasks
 
-* Resource ID
-* Name of Resource
-* Type
-* Max Allocation
-* Description
+When the module is active, the task form has an **Other resources** tab. Select a resource from **Resources**, choose a percentage, and add it to **Assigned to Task** with the ">" button; "<" removes it. The assignments are saved with the task. (Before v5.0 they were not saved at all.)
 
-### Resources Add/Edit Screen (Resources addedit)
+The task view has a matching **Other resources** tab listing each assigned resource's type, name and allocation. A resource booked for more than its maximum allocation is marked **OVERALLOCATED**.
 
-<a href="/assets/docs/resources/addedit.png"><img src="/assets/docs/resources/thumb-addedit.png" /></a>
-
-Clicking on the "New Resource" button or the "edit resource" button will take you to the Add Resource page.
-
-From this page you can:
-
-* Manually create an ID for the resource
-* Give the resource a name
-* Assign the type of resource
-* Maximum Allocation
-* Add Notes about the resource.
+Deleting a task removes its resource assignments.
