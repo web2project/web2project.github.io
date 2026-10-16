@@ -86,4 +86,4 @@ The [v5.0 release notes](/release-notes/5.0.0-rc1.html) list every change.
 
 > `wget -O - -q http://{web2project-install}/queuescanner.php`
 
-{% include icon-warn.html %} If you run into any problems, we recommend that you overwrite your new `config.php` with the dotProject version and restore the dotProject database the issue and then delete `config.php` to try again.
+{% include icon-warn.html %} If you run into any problems, we recommend that you overwrite your new `config.php` with the dotProject version and restore the dotProject database. Then resolve the issue and try again.
