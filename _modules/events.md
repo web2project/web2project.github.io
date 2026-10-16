@@ -17,54 +17,47 @@ module_download: https://github.com/web2project/web2project/releases
 
 One of the most useful things of any collaboration system is a single shared Calendar for all users. This is useful for coordinating schedules, reviewing priorities, and even determining individual availability. Web2project offers this basic functionality and quite a bit more combining the Events, Tasks, and offering a variety of filtered display options.
 
-The Calendar module provides the users with interfaces to manage the [Tasks](/modules/tasks.html) and Events in a chronological way. Further, this module gives you the ability to view and filter Events according to Project or Company in addition to displaying by Day, Week, Month, and Year.
+The Calendar module provides the users with interfaces to manage the Tasks and Events in a chronological way. Further, this module gives you the ability to view and filter Events by Company and by who created or was invited to them, in addition to displaying by Day, Week, Month, and Year.
 
 ### Basic Display
 
-The base view of the Calendar Module is a simple month view similar to Outlook or Google Calendar. It always defaults to the current month displaying all of the Users’ Tasks and Events. This view is filtered according to two aspects: Company and Ownership. At any time, a User can change the Company filter from any one to all of them. This gives a quick review on a per-customer basis with no additional effort. The Ownership filter allows a User to change their view based on All Events, Events I Created, and My Events. By changing the combination of these two aspects, Users can look at the information from a variety of angles and determine a great deal about most projects.
+The base view of the Calendar Module is a simple month view similar to Outlook or Google Calendar. It always defaults to the current month displaying all of the Users’ Tasks and Events. This view is filtered according to two aspects: Company and Ownership. At any time, a User can change the Company filter from any one to all of them. This gives a quick review on a per-customer basis with no additional effort. The *Event Filter* allows a User to change their view based on All Events for selected Company, Events I Created, and My Events for selected Company. By changing the combination of these two aspects, Users can look at the information from a variety of angles and determine a great deal about most projects.
 
-{% include icon-info.html %} In many cases, even filtering Events and Tasks by Company will still display too much information to be useful. Therefore, you can also filter by a specific Project.
+The links at the top of each calendar page switch between the year, month, week and day views.
 
-{% include icon-discussion.html %} To make life simpler for all involved, it is currently planned to implement iCal output for any active Web2project user. This will provide a simple way to monitor a calendar from within a third–party application such as Google Calendar, Apple iCalendar, or Outlook.
+{% include icon-info.html %} Every user has a private *Calendar Feed* link on their page in User Admin (open *My Info* from the user menu to find yours). Calendar applications such as Google Calendar, Apple Calendar or Outlook can subscribe to it to show your Web2project events and tasks. If the link is shared by mistake, select “regenerate feed url” to replace it.
 
-From the Month View, a user can click on the button on the far left of any line. This will take the User to a Week View based on the selected Company. It breaks down the week into a simple layout similar to a weekly planner. The Ownership filter is still available but in order to change the Company, the User must go back to the Month view.
+From the Month View, a user can click on the button on the far left of any line. This will take the User to a Week View based on the selected Company. It breaks down the week into a simple layout similar to a weekly planner. The Company and Event filters are available here too.
 
 ### Creating an Event / Recurring Events
 
-Creating an Event in Web2project can be done at anytime from anywhere in the system by selecting “New Event” in the upper right hand corner. You simply name the event, give a brief description, select the relevant project, invite members, at set the recurrence schedule. If you set a recurring event, Web2project will automatically add it to all invitee’s calendars and email a notification immediately.
+Creating an Event in Web2project can be done at anytime from anywhere in the system by selecting “New Event” from the *New Item* menu at the top of the page, or with the “New event” button on any calendar view. You simply name the event, give a brief description, select the relevant project, invite people, and set the recurrence schedule. Invited people see the event on their calendars, and if you tick *Mail Attendees* they receive an e-mail about it.
 
-{% include icon-question.html %} Although every Event can be attached to a Project, there is no Events tab on the View Project screen. It will likely be developed in Head and released as a patch at a later date.
+Events attached to a project appear on that project's Events tab, and a company's events on the company's Events tab.
 
 <a href="/assets/docs/events/addedit.png"><img src="/assets/docs/events/thumb-addedit.png" /></a>
 
 With this form you will be able to create or edit Events. You can invite other users to those events and make sure they get notified by email about those Events.
 
-Events can be associated with projects, task, meetings, or anything else relative to your daily workflow. You can access the add/edit events page from the Day View.
+Events can be associated with projects, meetings, or anything else relative to your daily workflow.
 
 How-to use this page:
 
-* Enter a name or title for the event.
-* Define the type of event.
-  * Note: This can be modified under the System Administration > System Look-up values to meet your needs
-* Associate this event to a project
-* Determine whether or not this is a private entry
-* Set start and finish date
-  * Note: These will determine how it displays on the calendar view
-* You can recur this event to repeat weekly ect...
-* Assign internal resources
-  * Note: To assign internal resources, click to highlight the name then select the arrow icon located under the box.
-* Type a description
-* Specify a time
-  * This will replicate to the day view timeline
-* On the bottom of the page you have the option to send an email to the resources notifying them of the event.
+* Enter a **Name** for the event.
+* Choose its **Type**.
+  * Note: The types can be changed under System Admin → System Lookup Values (*EventType*) to meet your needs
+* Choose the **Event Owner**.
+* Associate this event with a **Project**.
+* Tick **Private Entry** to hide it from other users.
+* Set the **Start Date** and **End Date**, with their times.
+  * Note: These determine where it appears on the calendar views, including the day view's timeline
+* Choose how often it **Recurs** and how many times, and whether it falls **Only on Working Days**.
+* Invite **People**: select names and use the arrow buttons to move them to *Invited to Event*.
+* Type a **Description**.
+* Fill in any custom fields set up for the Calendar.
+* Tick **Mail Attendees** to send the invited people an e-mail about the event.
 
-### Viewing all Events 
-
-#### View Today's Events (Today's Tasks Todo)
-
-<a href="/assets/docs/events/today_events.png"><img src="/assets/docs/events/thumb-today_events.png" /></a>
-
-This tab will show the user the Events marked for the given date depending on the existing filters.
+### Viewing all Events
 
 #### View a Specific Day's Events (Day View Page)
 
@@ -78,8 +71,8 @@ The day view is probably one of the most detailed views in the calendar. By defa
 From this page you can:
 
 * View all your events for the day
-* Access the Task-Today panel
-* Schedule a new event by clicking on the "new event" tab located on the upper right.
+* Switch between the Events and Tasks tabs
+* Schedule a new event with the "New event" button
 * Set a company filter
 * Move forward and backwards in time for the day, week or month
 
@@ -95,13 +88,13 @@ One area identified by some companies as a standard best practice is to view you
 
 From this page you can:
 
-* Switch to month view
+* Switch to the year, month or day view
 * Click on a day and switch to day view
 * View the weekly calendar for a company
-* Change Event Filter
-  * All Events
-  * Your events (This includes events assigned to you that you may not have created)
-  * Events you created.
+* Change the Event Filter
+  * All Events for selected Company
+  * My Events for selected Company (this includes events you were invited to but didn't create)
+  * Events I Created
 * You can also move forward and backwards in weeks.
 
 #### View a Month (Month View Page)
@@ -119,7 +112,7 @@ From this page you can:
 * Click on a task or event and view details
 * Change to Week View by clicking on the box icon on the left
 * Go forward and backwards in month views
-* Switch to year view by clicking on the "year view calendar
+* Switch to year view with the "year view" link
 * Set company filters
 * Set Event Filters.
 
@@ -134,7 +127,7 @@ There are effectively two ways to move forward and backwards in time.
 
 The Yearly view gives the user an overall view of the Year calendar and color codes the days depending on the existence of Tasks and/or Events.
 
-It's not uncommon to have events or task that last more than a calendar month. In addition you may want to be able to recall what your schedule looked like for the year. The year view gives you the option to view your intire schedule for the year.
+It's not uncommon to have events or task that last more than a calendar month. In addition you may want to be able to recall what your schedule looked like for the year. The year view gives you the option to view your entire schedule for the year.
 
 From the Year View you can:
 
