@@ -89,7 +89,7 @@ The settings are grouped by area. Hover over the (i) icon next to each setting f
 
 ### User Authentication Settings
 
-* **User Authentication Method**: `sql` (the web2project database), `ldap`, or `pn` (PostNuke).
+* **User Authentication Method**: "Standard web2Project" (the web2project database), "LDAP" or "PostNuke".
 * **Postnuke login also allows Standard Login**: with PostNuke authentication, also accept web2project logins.
 
 ### Budgeting
@@ -131,8 +131,8 @@ See [Active Directory](#configure-web2project-to-use-active-directory-accounts) 
 ### Email Settings
 
 * **Email Prefix**: added to the start of every e-mail subject.
-* **Email Transport**: `php` (PHP's `mail()`) or `smtp`.
-* **SMTP Host**, **SMTP Port** (25 by default) and **SMTP Secure** (none, TLS or SSL).
+* **Email Transport**: "PHP Default" (PHP's `mail()`) or "SMTP".
+* **SMTP Host**, **SMTP Port** (25 by default) and **SMTP Secure** ("(None)", "TLS" or "SSL").
 * **Host requires login**, **SMTP Username** and **SMTP Password**.
 * **SMTP Server Timeout**: in seconds.
 * **SMTP Debug**: shows the SMTP conversation on screen. Leave it off on a live system.
@@ -146,7 +146,7 @@ See [Active Directory](#configure-web2project-to-use-active-directory-accounts) 
 
 ### Session Handling Settings
 
-* **Session Handler**: `app` stores sessions in the database (the default); `php` uses PHP's own sessions.
+* **Session Handler**: "web2Project Extended Sessions" stores sessions in the database (the default); "PHP Default" uses PHP's own sessions.
 * **Session Idle Time** (default `2d`) and **Session Maximum Lifetime** (default `1m`): in seconds unless followed by `h`, `d`, `m` or `y`. Only one letter is allowed, so `28h` is valid and `2d4h` is not.
 * **Scan Event Queue on Session Garbage Collection**: processes the event queue when old sessions are cleaned up, as an alternative to cron.
 
@@ -158,7 +158,7 @@ See [Active Directory](#configure-web2project-to-use-active-directory-accounts) 
 
 * **Overallocation Checking**: an unfinished feature. Leave it off.
 * **Check Task Dates**: requires start and end dates on every task.
-* **Default Company Filter** and **Default Task Filter**: the filters the Tasks list starts with.
+* **Default Company Filter** ("All Companies" or "Active User's Company") and **Default Task Filter**: the filters the Tasks list starts with.
 * **Edit Multiple Task Assignments**: lets users change assignments for a block of tasks from the Tasks list.
 * **Restrict Task Time Editing**: only the task owner, the project owner or an administrator can change task times.
 * **Show All Task Assignees**: lists every assignee in task lists instead of the first one and a count.

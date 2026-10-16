@@ -60,7 +60,7 @@ or from the command line, which works even if the web server blocks the URL:
 
 ## Sessions
 
-Sessions are stored in the database by default (System Admin → System Configuration → *Session Handler*: `app`). Two settings control how long they last:
+Sessions are stored in the database by default (System Admin → System Configuration → *Session Handler*: "web2Project Extended Sessions"). Two settings control how long they last:
 
 * **Session Idle Time** (default `2d`): logs a user out after this long without a request.
 * **Session Maximum Lifetime** (default `1m`): logs a user out this long after logging in, active or not.
