@@ -277,37 +277,22 @@ When you visit the page and select a filter it will display a table.
 
 ## Configure web2project to use Active Directory accounts
 
-Create a service Account, the account only needs to be a member of the domain users group in active directory in order to search ldap.
+First, create a service account in Active Directory. It only needs to be a member of the Domain Users group to search the directory.
 
-Go to the System Configuration of the Systems Admin page of web2project.
+Then go to System Admin → System Configuration and set:
 
-Under "User Authentication Settings"
+* **User Authentication Settings**
+  * User Authentication Method: LDAP
+* **Users**
+  * Activate External User Creation: off (optional, but recommended)
+* **LDAP Settings**
+  * LDAP also allows standard login: on, so the admin account keeps working
+  * LDAP Host: the IP address or fully qualified name of a domain controller, for example `dc.peanutbutter.com`
+  * LDAP Port: 389, the default port for Active Directory
+  * LDAP Version: 3
+  * LDAP Base DN: your domain, for example `DC=peanutbutter,DC=com` for peanutbutter.com
+  * LDAP Search User: the full path to the service account, for example `CN=project,CN=Users,DC=peanutbutter,DC=com`. Use OU for an organizational unit and CN for a container; CN=Users is the default "Users" folder created when you install Active Directory.
+  * LDAP Search User Password: the service account's password
+  * LDAP User Filter: `sAMAccountName=%USERNAME%`
 
-User Authentication Method: LDAP (Change to LDAP)
-
-Under "Users"
-
-Activate External User Creation: Deselect the checkbox (This is not required)
-
-Under "LDAP Settings"
-LDAP also allows standard login: (check the box)
-
-LDAP Base DN : DC= peanutbutter,DC=com
-This would be your domain name in my example I used peanutbutter.com
-
-LDAP Host: dc.peanutbutter.com
-Use the IP address or fully qualified domain controller name. example: dc.peanutbutter.com
-
-LDAP Port: 389 (This default port used by AD)
-
-LDAP Search User Password: Password for the user entered below
-
-LDAP Search User: Use the user you created as the service account. You must use the full AD path to that user account. Be sure to use OU for an organizational unit and CN for a Container, CN would be used if your users were in the default "User" folder created when you install Active Directory.
-
-LDAP Search User : CN=project,CN=Users,DC=peanutbutter,DC=com
-
-LDAP User Filter : sAMAccountName=%USERNAME%
-
-LDAP Version: 3
-
-Now you can use your active directory usernames and password to login to web2project.
+Now your users can log in with their Active Directory usernames and passwords. The first time someone logs in, web2project creates their user account and contact, with no role; give them a role in User Admin before they can do anything.
