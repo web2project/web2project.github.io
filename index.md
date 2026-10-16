@@ -7,7 +7,7 @@ title: Welcome
     <script type='text/javascript' src='https://www.openhub.net/p/web2project/widgets/project_factoids?format=js'></script>
 </div>
 
-This guide was initially written in reference to Web2project v3.3.0 and has been updated to incorporate the features, fixes, and changes through the latest master development. While much of it will be applicable to the entire 3.x series, you may notice certain differences in functionality, user interface, and features. As we release new major versions of Web2project, we will work to update this manual in a timely manner.
+This guide is written in reference to Web2project v5.0.0, which introduced a new Bootstrap interface and removed a number of long-deprecated features. Much of it also applies to earlier releases, but you may notice differences in functionality, user interface, and features; the [release notes](/release-notes/index.html) list what changed in each version. As we release new major versions of Web2project, we will work to update this manual in a timely manner.
 
 From here, most people want the [Installation Guide](/docs/installation.html).
 

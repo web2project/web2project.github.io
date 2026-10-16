@@ -8,7 +8,7 @@ module_name: Files
 module_path: files
 module_creator: dotProject
 module_devs: web2project
-module_version: 3.3
+module_version: 5.0
 module_source: https://github.com/web2project/web2project
 module_download: http://github.com/web2project/web2project/archive/master.zip
 ---
