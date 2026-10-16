@@ -19,7 +19,9 @@ The contacts module is a place to store information about users and additional c
 
 You can access the data in this module by clicking on the contacts link in the main navigation. You can also access contacts from the add/edit project, add/edit task, resources, and other places throughout the dynamic application.
 
-### Contacts Add/Edit (Contacts addedit)
+### Creating a Contact (Contact Add/Edit Page)
+
+Creating your first contact is simple. Select Contacts from the top navigation and then click “new contact”. The information available is common to most address books where you can specify their name, company, and the exact name displayed for them. Alternatively, if your contact has sent you a vCard – normally attached to an email or available from their website – you can import that directly. In this case, Web2project will attempt to automatically attach the contact to an existing Company already within the system and if it is not found, simply create a new Company to represent it. Web2project looks for an exact match, so a difference between “Inc.” and “Incorporated” can cause a duplicate company to be created. This can be corrected by simply editing the Contact and assigning the proper Company.
 
 <a href="/assets/docs/contacts/addedit.png"><img src="/assets/docs/contacts/thumb-addedit.png" /></a>
 
@@ -43,7 +45,7 @@ From this page you can keep detailed records about a person such as:
 
 Reporting and information sharing with external project stakeholders is absolutely required for successful project management. To facilitate this, Web2project offers the flexibility of giving the project manager the ability to attach Contacts to specific projects or even individual Tasks within a Project. From that time on, whenever a the Project or Task are updated, the user updating the information can choose to notify the Contacts. Alternatively, this notification can be set as a global default within the System Admin.
 
-### Contacts List View (Contacts Index)
+### View your Contact List (Contact Index Page)
 
 <a href="/assets/docs/contacts/index.png"><img src="/assets/docs/contacts/thumb-index.png" /></a>
 
@@ -58,36 +60,14 @@ From this page you can:
 1.	Edit the contact
 1.	Send an instant message and more
 
-### View a specific Contact (Contact View Page)
-
-TODO
-
-### Contacts Confirming Email (Contacts email confirm)
+### Confirming Email (Contacts email confirm)
 
 <a href="/assets/docs/contacts/email_confirm.png"><img src="/assets/docs/contacts/thumb-email_confirm.png" /></a>
 
-Starting on web2Project the Contacts Confirming Email lets you notify you contacts to complete their contacts for you. <br />
-Imagine you only have the Name and Email of a contact and you'd like to have the rest of his information, then simply edit the contact record and set the Waiting Update checkbox on the top right and submit.<br />
-This will issue an email to your contact like the one seen on the image, with an URL for your contact.<br />
-This URL will lead your contact to his contact record form and he will be able to edit and add the missing information for you.
+The Contacts Confirming Email lets you ask your contacts to complete their own contact details for you.
 
-### Import Contacts from LDAP Active Directory
+Imagine you only have the Name and Email of a contact and you'd like to have the rest of their information. Simply edit the contact record, tick the Waiting Update checkbox and save.
 
-Create a service Account, the account only needs to be a member of the domain users group in active directory in order to search ldap.
+This sends an email to your contact like the one in the image, with a link for your contact.
 
-Go to Import Contacts from LDAP Directory
-These are my setting, you would replace them to match your environment.
-
-Server: 10.10.10.10
-Protocol: Version 3
-Bind Name: CN=project,CN=Users,DC=peanutbutter,DC=com
-Bind Password: (password for the user account used in Bind Name above)
-Base DN: OU=111,OU=Cary,OU=WRUsers,DC=peanutbutter,DC=com
-Filter: (objectclass=Person)
-
-Bind Name: must contain the full path to the user account you will be using to search ldap
-For the "Base DN" be sure to use OU for an organizational unit and CN for a Container, CN would be used if your users were in the default "User" folder created when you install Active Directory. As an example if I wanted to import from that directory you would use this.
-Base DN: CN=Users,DC=wrinternal01,DC=com
-If I want to import the contacts from and organizational unit you created you would use this as an example.
-Base DN: OU=MYUsers,DC=wrinternal01,DC=com
-If you have multiple OU's which contain users you will need to modify the Base DN and import each one separately, if you know of a better way please tack it on to this post.
+The link leads your contact to their contact record form, where they can edit and add the missing information for you.
