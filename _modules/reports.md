@@ -15,46 +15,44 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-Reports are accessed by clicking on the Project from within the Project Queue (List) and are located in the upper left set of buttons.
+The Reports module summarises hours, costs and task status across your projects. Open a project and select the "reports" link at the top of the project view, or use the same link in ProjectDesigner. The Reports module isn't in the main navigation by default; to add it under *Tools*, go to System Admin → View Modules and switch Reports from "hidden" to "visible".
 
-### Daily Report
-This is a detailed time sheet/report created from task logs for a particular project. You can Select the date range for the report, as well as all users or a particular user, All tasks or particular tasks (sets of tasks). The report will output to a CSV file or a PDF File.
+The reports index lists every report with a short description. At the top of every report is a **Projects** drop-down: choose one project or "All". Most reports then ask for a period (**For period** … **to**, with a calendar for each date) and show their results on the page when you select "submit".
 
-### Hour Summary Report
-Shows total hours for each user. This report shows total hours for each user on the selected project. You can select the date range for the report as well as nominate the user (or all users) and generate the output as a PDF or a CSV file.
-
-### Task Summary Report
-A detailed report for each task. This report provides a detailed summary of all tasks active during the nominated date range. Again you can select a range of tasks, all or a particular user and output to CSV or PDF.
-
-### Weekly Report
-Shows total hours of each day for users including subtotal. This report provides an hourly summary within the nominated date range, per user or for all users. You can output to CSV or PDF.
-
-### Tasks Sorted by User
-This report shows the tasks allocated to users. You can select all or an individual user, nominate the date range and indicate the number of task levels (parent / child tasks). This report also allows you to include all projects in the database, and display allocated hours/weeks.
-
-### Tasks end date
-This report shows tasks end dates (real and theoretical). You can select the range, the user name and whether or not you wish to include all active projects. There are no alternative output options.
-
-### Upcoming
-This report lists tasks to be completed in the next week. Selecting this report will automatically generate a PDF file.
-
-### User performance
-This report that shows the amount of hours worked by a user against those allocated in tasks. You will be able to nominate a date range, whether or not to include all projects and whether or not to include all tasks (regardless of date / status). User efficiency is based around a users actual vs estimated times. If the user performs the work in less time than that defined for the task they will be more than 100% effective. If they take longer, then they will be less than 100% effective.
-
-### Task Log
-This report lists the user task logs. You can nominate the date range, the required user, whether or not to include all projects and/or tasks, as well as ignoring anything with zero hours assigned against it. You can output to PDF.
+{% include icon-info.html %} v5.0 removed PDF output, and the reports don't offer CSV downloads. To keep a copy, use your browser's *Print → Save as PDF*. The old Daily, Hour Summary, Task Summary, Weekly, Upcoming, Completed and Overdue reports are no longer included.
 
 ### Allocated user hours
-This report shows how many hours a user has allocated in the specified period of time. Again you can specify the date range, choose to include all projects, nominate the user and show the assigned percentage.
+Shows how many hours each user has allocated in the period, by day or by week, against their total capacity. Options: **Log All Projects**, **Use assigned percentage**, **Hide non-working days**, and **Tasks created by**.
 
-### Task List
-This report provides a Projects Task List. Along with date ranges and the ability to include all tasks (completed / incomplete) you can output this report to a PDF. There are also a set of standard selection options: Show Previous Month, Week or Day, Next Day, Week or Month. You can also nominate a value against these, for example making the value 2 and then selecting Previous Month would show the previous 2 months.
+### Budgets by Project and Budget Category
+For a company (**For Company**), compares each project's budget per budget category with what has been used and what remains. Option: **Active Projects Only**.
+
+### Costs By Project
+For a company, compares each project's target budget with its actual cost, with the project owner, start and finish dates. Option: **Active Projects Only**.
+
+### Costs By Task
+For the selected project, compares each task's target budget with its actual cost, with the task owner, start and finish dates.
 
 ### Overall Report
-This report provides an overall snapshot of all projects. In this case you have the date range, the ability to nominate all projects to be included and the ability to output to a PDF.
-
-### Overdue
-This report lists all tasks currently overdue. This report goes straight to PDF generation.
+Totals the hours logged in the period for each company's projects, split by billing code, with a grand total. Option: **Log All** to ignore the period.
 
 ### Project Statistics
-This report provides Project Statistics including Task Assignees and their statistics, summary of Task Statuses, Project Assignee Details and Document Space utilised.
+For the selected project: task counts by status (complete, in progress, not started, past due), the hours worked by each task assignee, the project team, and the space used by the project's files. Tasks without an assignee are counted under "No Assignee". This report has no options.
+
+### Tasks end date
+Lists each task's end date with its last activity date, owner, hours allocated and percentage done, for tasks ending in the period.
+
+### Task List
+Lists the tasks of the selected project, or of all projects, with their start and end dates, description, assignees and completion. Besides the period, the *Default Actions* buttons pick a period for you: Previous or Next Day, Week or Month. The **value for the previous buttons** box multiplies them, so 2 with "Previous Month" shows the last two months. Option: **Log All** to include every task regardless of date.
+
+### Task Log with Cost Codes
+Lists the task logs in the period with their creator, hours, description and billing code, and totals them. Options: **Company**, **User** (or all users), **Log All** to ignore the period, and **Ignore 0 hours**.
+
+### Task Log Valued
+The same as *Task Log with Cost Codes*, plus the cost and amount of each log based on its billing code.
+
+### Tasks sorted by user
+Shows the tasks allocated to each user or to one user. Options: **Levels to display** (how deep into subtasks to go), **Use the period** to limit the tasks to the dates above, and **Display allocated hours/week**.
+
+### User performance
+Compares the hours each user worked with the hours allocated to them. Option: **Log All**. User efficiency is based on actual versus estimated time for completed tasks: a user who finishes in less time than the task allowed is more than 100% efficient, and one who takes longer is less than 100%.
