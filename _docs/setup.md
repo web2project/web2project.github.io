@@ -3,16 +3,15 @@ layout: page
 title: Setup.php
 
 category: "module building guide"
-status: cleanup
 ---
 
-''Everything included here applies to web2project v3.0 and above.''
+*Everything included here applies to web2project v3.0 and above, including v5.0.*
 
-=== Installation - setup.php ===
+## Installation - setup.php
 
-This file handles the '''installation''', '''upgrade''', and '''removal''' of the module. Failure to perform the proper actions in the right order will result in a non-functioning module or worse, a module which functions perfectly but no one can see/use due to permissions oddities. Everyone wants to use and appreciate your work, so please follow these standards. Every setup.php file should have two primary pieces:
+This file handles the **installation**, **upgrade**, and **removal** of the module. Failure to perform the proper actions in the right order will result in a non-functioning module or worse, a module which functions perfectly but no one can see/use due to permissions oddities. Everyone wants to use and appreciate your work, so please follow these standards. Every setup.php file should have two primary pieces:
 
-==== $config array ====
+### $config array
 
 This describes the basic information on the module. After installation, this becomes a row in the modules table.
 
@@ -31,13 +30,13 @@ This describes the basic information on the module. After installation, this bec
     $config['permissions_item_field'] = 'todo_id';    // this is the field used for permissions check, almost always the primary key
     $config['permissions_item_label'] = 'todo_title'; // this is the field used to name the item, the projects table would use project_name
 
-==== Setup Class ====
+### Setup Class
 
-This class - normally called ''CSetup{ModuleName}''* - is the core of the the installation process. It usually has up to four public methods and any number of private or protected methods.
+This class - normally called *CSetup{ModuleName}*\* - is the core of the the installation process. It usually has up to four public methods (`install()`, `upgrade()`, `remove()` and `configure()`) and any number of private or protected methods.
 
-''* You can name this class anything you want assuming: a) it is a unique name within web2project and b) you specify the name in the config array specified above.''
+\* *You can name this class anything you want assuming: a) it is a unique name within web2project and b) you specify the name in the config array specified above. It extends `w2p_System_Setup`.*
 
-===== public method: install() =====
+#### public method: install()
 
 This method should create any and all database tables necessary. If there are System Lookup Values or changes to other tables, those actions should be performed here too. Your last step should always be to call the parent method with this line:
 
@@ -45,11 +44,11 @@ This method should create any and all database tables necessary. If there are Sy
 
 If you don't need an install method, don't write one. The system will automatically run the parent method on its own.
 
-===== public method: upgrade() =====
+#### public method: upgrade()
 
 The bulk of this method is a simple switch statement that should accept the current version of the module and apply any and all updates - including database changes, System Lookup Values, etc - that must be applied.
 
-The system itself will handle making this method available. When an Administrator visits ''System Admin -> View Modules'', the system scans the directories within and compares the version specified in the '''$config''' array with the version number for that module currently in the modules table.
+The system itself will handle making this method available. When an Administrator visits *System Admin → View Modules*, the system scans the directories within and compares the version specified in the **$config** array with the version number for that module currently in the modules table.
 
     public function upgrade($old_version) {
         switch ($old_version) {
@@ -61,17 +60,35 @@ The system itself will handle making this method available. When an Administrato
                 $this->addCategories();
             default:
                 //do nothing
-            }
-            return true;
         }
+        return true;
     }
 
-''If you don't need an upgrade method, don't write one.''
+*If you don't need an upgrade method, don't write one.*
 
-===== public method: remove() =====
+#### public method: remove()
 
 This method performs cleanup for the module. If there are tables created, it should drop them. If there are columns added, it should remove them. If there are System Lookup Values inserted, it should delete them. Your last step should always be to call the parent method with this line:
 
     return parent::remove();
 
 If you don't need a remove method, don't write one. The system will automatically run the parent method on its own.
+
+#### public method: configure()
+
+If `$config['mod_config']` is `true`, View Modules shows a "configure" link for the module, which calls this method. Use it to show or save the module's settings. If you don't need it, don't write one; the parent method does nothing.
+
+### Requirements
+
+A module can list what it needs in `$config['requirements']`. The installer checks them before installing the module:
+
+    $config['requirements'] = array(
+        array('require' => 'web2project', 'comparator' => '>=', 'version' => '5'),
+        array('require' => 'php',         'comparator' => '>=', 'version' => '8.0'),
+        array('require' => 'curl',        'comparator' => 'exists'),
+    );
+
+### Notes for v5.0
+
+* Since v5.0 the core upgrader reports SQL errors instead of hiding them, and many servers run MySQL in strict mode. Test your `install()` and `upgrade()` on a strict-mode server.
+* If `mod_setup_class` or `mod_main_class` names a class alias that v5.0 removed, the module won't load. See [Updating Add On Modules for v5.0](/docs/upgrading-modules-to-5.html).
