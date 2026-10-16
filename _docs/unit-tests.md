@@ -3,58 +3,72 @@ layout: page
 title: Unit Tests
 ---
 
-**Warning:** *DO NOT run these tests on a web2project installation that has important data. The unit tests for web2project are destructive and will remove some data from your database.*
+**Applies to**: v5.0.0 and later
 
-We suggest running these tests against a fresh install of web2project* to test functionality and compatibility with your modules using a backup of your data... *they should never be run on Production.*
+**Warning:** *DO NOT run these tests on a web2project installation that has important data. The unit tests for web2project are destructive and will write and remove data in your database. They should never be run on Production.*
 
- * A few tests may fail if you have set your timezone in web2project or php.ini
+Run the tests against a separate, freshly installed test database. A few tests may fail if you have set your time zone in web2project or php.ini.
 
 ## What you need
 
-* Fully Functional installation of [web2project](http://www.web2project.net)
-* PHP 5.2+ due to dependencies in the PHPUnit database extenstions
-* Phing - [Install Instructions](http://phing.info/trac/wiki/Users/Download):
-  * pear channel-discover pear.phing.info
-  * pear install phing/phing (2.4.6 is the latest version confirmed as compatible)
-    * Make sure PHING_HOME is set in [your environment](http://www.phing.info/docs/guide/stable/chapters/Setup.html#Unix)
-    * Running the following command on a GNU/Linux worked fine: export PHING_HOME=$(pear config-get data_dir)'/phing'
-* PHPUnit - [Install Instructions](http://www.phpunit.de/manual/current/en/installation.html)
-  * Prior to web2project v3.0, you must use PHPUnit 3.5 (3.5.15 is the latest version confirmed as compatible)
-  * To use PHPUnit 3.6.x, I had to upgrade phpunit/PHP_CodeCoverage (to v1.1.1), phing/phing (to v2.4.9), phpunit/PHPUnit (to v3.6.7), phpunit/DBUnit (to v1.1.1), and [apply the patch described here](https://github.com/sebastianbergmann/dbunit/pull/51/files)
-  * If you are upgrading from a previous version of PHPUnit, quite often you will have to [follow these instructions](http://sebastian-bergmann.de/archives/899-PHPUnit-3.5-Upgrading-Woes.html)
-* VersionControl_SVN - [Install Instructions](http://pear.php.net/package/VersionControl_SVN/download/0.3.1/)
-* Command line access to the server running web2project
+* A working development copy of web2project, from a clone of the [GitHub repository](https://github.com/web2project/web2project)
+* PHP 8.2 or later on the command line (PHPUnit 11 needs it, even though web2project itself runs on PHP 8.0)
+* [Composer](https://getcomposer.org/)
+* MySQL or MariaDB, and command line access to the server
+
+PHPUnit, Phing and the code metrics tools are Composer development dependencies, so you don't need to install them separately.
+
+## Set up
+
+1. From the web2project folder, install the development dependencies:
+
+        composer install
+
+1. Create a separate database for testing and install web2project into it with the installer, keeping the default `admin` / `passwd` login. The tests log in with it.
+1. Point `includes/config.php` at the test database (the `dbname` setting). The tests use the same configuration file as the application, so switch it back before you use the system again, or keep a separate copy of web2project for testing.
+
+The test runs in this release used an empty server `sql_mode`. Test under your server's default (strict) mode before relying on the results there.
 
 ## How to run the tests
 
-If you want to get down and dirty and get the tests running, simply make your way to the unit_tests directory under the directory where you installed web2project and run the following command.
+From the `unit_tests` folder, run PHPUnit with the bundled configuration:
 
-    phing run-tests
+    cd unit_tests
+    ../vendor/bin/phpunit -c phpunit.xml
 
-This will take a little bit of time, hopefully only a few seconds and give you the results on your system. The names of the tests should be pretty self-explanatory and any errors that come up will give you details on where to look and figure out the problems if any do show up.
+To run one file or folder, add its path:
 
-**Warning:** *The unit tests for web2project are destructive and will write and remove data from your database. Please DO NOT run these tests on a web2project installation that has data that you do not want to lose. They should never be run on Production.*
+    ../vendor/bin/phpunit -c phpunit.xml classes/w2p/Utilities
+
+This takes a little while and gives you the results on your system. The names of the tests should be pretty self-explanatory, and any errors that come up give you details on where to look.
+
+At the v5.0 release the suite runs 509 tests with 7 errors and 15 failures; those are known and listed in the [release notes](/release-notes/5.0.0-rc1.html). A change shouldn't add to them.
 
 ## Test Structure
 
-If you would like to dig deeper into the unit tests and possibly contribute below is the directory and file structure. All of the tests are written using the PEAR coding standard [which can be found here](http://pear.php.net/manual/en/standards.php)
+If you would like to dig deeper into the unit tests and possibly contribute, below is the directory and file structure. Each test class extends `CommonSetup`, which loads web2project, logs in as `admin` and extends PHPUnit's `TestCase`.
 
-    unit_tests/classes/
+    unit_tests/CommonSetup.php
+    unit_tests/phpunit.xml
 
-Contains all the tests for the classes in web2project named [class].test.php. Each file in the directory contains a single class named [class]_Test and extends the PHPUnit_Framework_TestCase if not database testing is to be done or PHPUnit_Extensions_Database_TestCase if database testing is necessary.
+The bootstrap and the PHPUnit configuration. `phpunit.xml` runs every test below the `unit_tests` folder.
 
-    unit_tests/db_files/
+    unit_tests/classes/w2p/
 
-Contains all the database files for seeding tests and for comparison when tests have been completed. They are all in the XML Dataset format for the PHPUnit database extensions described here (http://www.phpunit.de/manual/current/en/database.html#database.datasets.xml) and are named either as [class,module,include]Seed.xml or as the name of the test that uses it for comparison.
-
-    unit_tests/includes/
-
-Contains all the tests for the includes in web2project named [include].test.php. Each file in the directory contains a single class named [include]_Test and extends the PHPUnit_Framework_TestCase if not database testing is to be done or PHPUnit_Extensions_Database_TestCase if database testing is necessary.
+Tests for the core classes in `classes/w2p`, in folders that match the class names (for example `Utilities` for `w2p_Utilities_*`). `Mocks` holds the mock objects the tests share.
 
     unit_tests/modules/
 
-Contains all the tests for the modules in web2project named [module].test.php. Each file in the directory contains a single class named [module]_Test and extends the PHPUnit_Framework_TestCase if not database testing is to be done or PHPUnit_Extensions_Database_TestCase if database testing is necessary.
+Tests for the module classes, one folder per module (`companies`, `projects`, `tasks` and so on).
 
-    unit_tests/reports/
+    unit_tests/includes/
 
-Contains the html reports of the unit tests results after the tests have been run. Can be viewed from a browser as an easier to understand version of the results that you will see when running the tests from the command line.
+Tests for `includes/main_functions.php` and `includes/cleanup_functions.php`.
+
+    unit_tests/src/
+
+Tests for the e-mail classes (`w2p_Output_EmailManager` and the e-mail templates).
+
+    unit_tests/build.xml
+
+The Phing build file for code metrics and release packaging. See [Overall Code Metrics](/docs/code-metrics.html) and the [Release Checklist](/release-notes/checklist.html).
