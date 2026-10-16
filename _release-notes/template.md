@@ -5,6 +5,10 @@ title: vX.X Release Notes (template)
 
 **Release Date:** XXXX
 
+<div style="background-color: AntiqueWhite; font-style: italic; padding: 15px;">
+    <strong>Note:</strong> The primary goals of this release were XXX. Changes that affect upgrades or Add On modules: XXX.
+</div>
+
 {% include download-github.md %}
 
 {% include reporting-problems.md %}
@@ -17,7 +21,8 @@ title: vX.X Release Notes (template)
 
 ## Open/Known Issues
 
-*  If you upgrade from dotProject, you may have an oddity with your default theme/display as the name has changed.  If this happens, edit your preferences, change to one of the existing themes, and save.
+* XXX
+* The unit test suite runs XXX tests with XXX errors and XXX failures.
 
 {% include metrics-phing.md %}
 
@@ -38,6 +43,3 @@ title: vX.X Release Notes (template)
   * Lines of Code/Method: XXX
 * Functions: XXX
 * Constants: XXX
-* Test Classes: XXX
-  * Test Methods: XXX
-* XXX% duplicated lines of code (~XXX)
