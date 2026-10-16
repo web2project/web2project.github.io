@@ -3,7 +3,7 @@ layout: page
 title: Latest Development
 ---
 
-**ATTENTION:** This is the place where development takes place. We recommend that you only use the master branch (linked below) for production.
+**ATTENTION:** This is the place where development takes place. For production, download a release from the [releases page](https://github.com/web2project/web2project/releases) instead.
 
 For those interested in the most current code, there are two options to get hold of it:
 

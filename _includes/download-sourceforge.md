@@ -1,4 +1,3 @@
-
 ## Downloading & Installing
 
-The only official distribution site is [Sourceforge](https://sourceforge.net/projects/web2project/files/web2Project/). Check out the [Installation](/docs/installation.html) page to get started.
+This release was originally distributed through Sourceforge. All current and past releases are now available from [GitHub](https://github.com/web2project/web2project/releases). Check out the [Installation](/docs/installation.html) page to get started.

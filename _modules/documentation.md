@@ -10,7 +10,7 @@ module_creator: Jacques Archimède (Eureka)
 module_devs: Jacques Archimède (Eureka)
 module_version: 0.2
 module_source: https://github.com/web2project/web2project
-module_download: http://github.com/web2project/web2project/archive/master.zip
+module_download: https://github.com/web2project/web2project/releases
 ---
 
 ## Module Overview
