@@ -20,9 +20,7 @@ Many fields and icons in Web2project show a short explanation when you hover ove
 For anything else, select the **Help** icon (a question mark) in the bar at the top of every page. On narrow screens it is in the user menu. It opens a small window with links to where to find help:
 
 * the [Web2project documentation](https://docs.web2project.net/), this site, which explains each module and feature;
-* the community support forums, for questions;
-* the bug tracker, for known problems and suggestions.
-
-{% include icon-warn.html %} In v5.0 the Help window still points to the old support forums and bug tracker, which are offline. Ask questions in [GitHub Discussions](https://github.com/orgs/web2project/discussions) and report problems in the [issue tracker](https://github.com/web2project/web2project/issues) instead.
+* [GitHub Discussions](https://github.com/orgs/web2project/discussions), for questions;
+* the [issue tracker](https://github.com/web2project/web2project/issues), for known problems and suggestions.
 
 The Help window's text comes from `locales/{language}/help.php`, so a translation can provide its own version. The Help module is active but hidden from the sidebar by default; the icon in the header works either way.
