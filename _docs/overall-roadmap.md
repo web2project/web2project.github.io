@@ -5,7 +5,7 @@ title: Overall Roadmap
 
 ## General Ideas
 
-* Build a sample project for the base installation [Issue 260](http://bugs.web2project.net/view.php?id=260)
+* Build a sample project for the base installation [Issue 260](https://github.com/web2project/web2project/issues)
 * Test web2project on IIS for inclusion in Microsoft's Web App Gallery and Web Platform Installer - 30 September 2009
 * Send jpGraph and its Gantt charts to oblivion - 09 September 2009
 * Go for the Real Dates, Task Dependencies, different dependency types. There is some heavy discussion about this subject in [our Forums](http://web2project.net/forums/viewtopic.php?t=1005). - 09 September 2009
