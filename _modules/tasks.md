@@ -3,7 +3,6 @@ layout: module
 title: Tasks Module
 
 category: core-module
-status: cleanup
 
 module_name: Tasks
 module_path: tasks
@@ -16,171 +15,132 @@ module_download: http://github.com/web2project/web2project/archive/master.zip
 
 ## Module Overview
 
-After you have your first Project, the next thing to do is begin creating the Tasks. This is where the real features of Web2project begin to come into play. The simplest and most direct route is to simply create all the tasks with start and end dates and be done with it. Alternatively, dependency can be meticulously planned, late task notifications activated, dynamic tasks used extensively for rollup reporting, and task logs used for time tracking to turn Web2project into a centralized project management and collaboration hub. Depending on the needs of your organization, you can choose either of these alternatives or anywhere in between to fit your needs.
+After you have your first Project, the next thing to do is begin creating the Tasks. This is where the real features of Web2project begin to come into play. The simplest and most direct route is to simply create all the tasks with start and end dates and be done with it. Alternatively, dependencies can be meticulously planned, late task reminders activated, dynamic tasks used extensively for rollup reporting, and task logs used for time tracking to turn Web2project into a centralized project management and collaboration hub. Depending on the needs of your organization, you can choose either of these alternatives or anywhere in between.
 
-Task are used to define the [Project's](/modules/projects.html) scope and represents the designers actual workflow. You may have 1 project with multiple tasks representing the projects details. The Task module helps you track and maintain your time and cost.
+Tasks define a [Project's](/modules/projects.html) scope and represent the actual work. One project usually has many tasks. The Tasks module helps you track and maintain your time and cost.
 
 ### Creating Tasks
 
-<a href="/assets/docs/tasks/addedit_1.png"><img src="/assets/docs/tasks/thumb-addedit_1.png" /></a>
+On a project or task page, select "New Task", or choose "New Task" from the "New Item" menu at the top of any page. The top of the form always shows the task's **Name**, **Status**, **Priority**, **Progress** and **Milestone** settings. Below it are four tabs:
 
-On any Project or Task screen, clicking the “new task” button will bring a user to the New Task screen. There are five main aspects of every task:
+* **Details**: the **Task Owner**, **Task Parent**, **Description**, **Task Type**, **Access**, **Department**, **Contacts** and a related **URL**. You can also move the task to another project (**Move to project**) and choose whether other users may add task logs for the assignees (**Allow users to add task logs for others**). For simple task tracking, the only important field is the Description, since it gives the assignees an overview of the work. For more advanced tracking, the parent task matters for how tasks are displayed and for Dynamic (roll-up) Task calculations. When *Display Budget Information* is on, the **Target Budgets** per category and **Total Target Budget** are here too.
+* **Dates**: the **Start Date**, **Finish Date** and **Expected Duration**, with a **Calculate** button that works out one from the others using the working days and **Daily Working Hours**. Once set, the task appears on the Calendar. For Dynamic tasks, these dates and the duration come from the child tasks.
+* **Dependencies**: where the advanced project management features start. **Dependency Tracking** makes the start date move as the predecessor tasks move. To choose predecessors, select tasks from **All Tasks** and add them to **Dependencies**. **Set task start date based on dependency** takes the latest end date of all the predecessors as this task's start date. **Dynamic Task** turns this task into a roll-up of the tasks beneath it. **Do not track this task** stops the tasks that depend on this one from moving when its dates change.
+* **Human Resources**: the users who will do the work, each with a percentage of their time. **Notify Assignees of Task by Email** and **Additional Email Comments** control the e-mail sent when you save.
 
-* Overview – This consists of the priority, percent complete, status, and milestone. The implications of these options are covered below. This overview is available regardless of which task is displayed.
-* Details – The Details tab allows a user to describe the task, assign the owner,
-choose its parent task, and even categorize it into a relevant work classification via a Task Type. For simple task tracking, the only important information here is the Description as it will give the assigned individuals an overview of the required work. For more advanced task tracking, choosing a parent task becomes important for task display and for Dynamic (roll-up) Task calculations. The Target Budget is another field used predominantly for information purposes only, it is not used in any calculations or projections.
-* Dates – The Dates tab allows a user can specify the start, end, and duration of a specific task. Once this information is set, the task will appear on the Calendar where
-appropriate. For either simple or advanced project management, this screen is used effectively the same. The only difference is that for Dynamic (Roll-up) Tasks, these dates and duration will be adjusted as child tasks are created. 
-* Dependencies – The Dependencies tab is where many of the advanced project management features begin to become available. For simple task tracking/Todo management, the Dependency tab can be ignored but the options available here
-are central for all advanced project management. The first option available activates Dependency Tracking. This will ensure that the start date for this task shifts accordingly as early predecessor tasks shift or projects are delayed. To choose these predecessor tasks, a user simply selects the relevant tasks from the left box, pushes the “>” button. This will copy the task to the right box. This list can have tasks added or removed at any time.
+If the Resources module is active, there is also an **Other resources** tab for assigning equipment, rooms and other [Resources](/modules/resources.html).
 
-<a href="/assets/docs/tasks/addedit_2.png"><img src="/assets/docs/tasks/thumb-addedit_2.png" /></a>
-
-The “Set task start date based on dependency” does exactly what it describes. It takes all of the dependencies selected and finds the latest of all End Dates to determine the earliest Start Date for this new task. Finally, there is an option to create Dynamic (Roll-up) Tasks which are used to represent groups of tasks. By choosing this option, any start date, end date, or duration information attached to this task will be calculated from all the tasks beneath it.
-
-{% include icon-info.html %} One of the new system settings available allows for Dependency Tracking to be turned on once globally for all Tasks. It can be deactivated on individual Tasks as needed.
-
-The options available on the Dependencies tab create four types of tasks which are denoted distinctly throughout the system. Some of these automatically handle quite a few things for you while some do not. All of these tasks appear on the Calendar and on individual assignees Todo lists.
-
-<a href="/assets/docs/tasks/addedit_3.png"><img src="/assets/docs/tasks/thumb-addedit_3.png" /></a>
+The options on the Dependencies tab create four types of tasks which are denoted distinctly throughout the system. Some of these automatically handle quite a few things for you while some do not. All of them appear on the Calendar and on the assignees' task lists.
 
 * First, there are basic tasks. These have fixed start and end dates, have fixed durations, and are updated by the assignees as time goes on. No information – other than percent complete – will change about these tasks without a user making the specific change by hand.
-* Next, there are dependency-driven tasks. Although the duration of these are fixed, their start and end dates are driven entirely by the predecessors. Therefore, if you have Task D which is dependent on Tasks A, B, and C being complete, the dates for Task D will shift as the dates for A, B, and C shift without a user editing D themselves. Since many screens are sorted by date – such as users’ Todo lists, Calendars, and the various Task lists – dependency-driven tasks will to shift around as necessary.
-* Next, there are dynamic or rollup tasks. Each of these tasks represent all of their child tasks in a single line with a simple “summary” of the lower-level data. This summary consists of the sum of all durations, the earliest start date, and the latest end date. Therefore, as various child tasks are edited or shift based on dependencies, these dynamic tasks will shift accordingly. The benefit of these tasks are that instead of having to monitor or report on each of the individual tasks, this higher level task can be used. The more detailed tasks are still available for review if necessary.
-* Finally, there are milestones. Most organizations tend to associate milestones with special events such as delivery dates, launch dates, or specific meetings. Therefore, a milestone is normally associated a task that is simply complete or not complete and not tracked to the same detail as other tasks. Web2project by default will set the duration of milestones to zero hours.
+* Next, there are dependency-driven tasks. Although the duration of these is fixed, their start and end dates are driven entirely by the predecessors. If Task D depends on Tasks A, B, and C being complete, the dates for Task D will shift as the dates for A, B, and C shift without a user editing D. Since many screens are sorted by date – such as My Tasks, the Calendar, and the task lists – dependency-driven tasks will shift around as necessary.
+* Next, there are dynamic or rollup tasks. Each of these represents all of its child tasks in a single line with a "summary" of the lower-level data: the sum of all durations, the earliest start date, and the latest end date. As child tasks are edited, moved to another parent or project, or shift based on dependencies, the dynamic tasks shift accordingly. Instead of having to monitor or report on each of the individual tasks, the higher level task can be used, and the detailed tasks are still available for review.
+* Finally, there are milestones. Most organizations associate milestones with special events such as delivery dates, launch dates, or specific meetings. A milestone is normally simply complete or not complete and isn't tracked in the same detail as other tasks. Web2project sets the duration of milestones to zero hours.
 
-Human Resources – The final aspect of creating a task is assigning it to the individuals who will be performing the work.
-
-<a href="/assets/docs/tasks/addedit_4.png"><img src="/assets/docs/tasks/thumb-addedit_4.png" /></a>
-
-{% include icon-discussion.html %} One of the open questions within project management circles and within Web2project itself is “What does it mean when a user is 50% assigned to a task?” This could mean either that the person should perform 50% of the work or that the person should spend 50% of their time on the task. This question can have a major impact on scheduling, timelines, etc. Therefore, Web2project makes no distinction either way and leaves it up to the user to decide which practice to follow. This question will be answered in order to implement the Resource Management aspects of Web2project v3.
-
-When you are done filling in any of this information, all of the assigned people – other than the task creator – will immediately receive an email sharing this information along with a direct link to this task. This is to ensure that proper information is immediately available to the relevant individuals.
+{% include icon-discussion.html %} One of the open questions within project management circles and within Web2project itself is "What does it mean when a user is 50% assigned to a task?" This could mean either that the person should perform 50% of the work or that the person should spend 50% of their time on the task. This question can have a major impact on scheduling and timelines. Web2project makes no distinction either way and leaves it up to you to decide which practice to follow.
 
 ### Email Notifications
 
-There are three types of email notifications based on Web2project Tasks. The first type is the notification sent when a task is created or edited. This notification contains the task description, the due date, and a link back to the task screen. By default, this notification is sent to all task assignees other than the task creator. System administrators can choose to automatically notify the creator.
+There are three types of email notifications based on Web2project Tasks.
 
-The second type of notification comes when the assignees log time against a task. These notifications go immediately to the task creator and include the entire task log the user entered. Alternatively, when there are multiple assignees to a single task, the assignee can choose to send this update to the other assignees. When collaboration and cooperation is necessary on a task, this is a simple way for multiple people to coordinate and share information quickly without requiring the other team members to log in.
+The first is the notification sent when a task is created or edited with *Notify Assignees of Task by Email* ticked. It contains the task description, the due date, and a link back to the task. By default it goes to all task assignees other than the task owner; each user can change that with the *Task Notification Method* preference.
 
-Finally, the third type of notification is for late tasks. This causes Web2project to create a simple reminder email for each late task every day for 100 days. This can only be turned on via the system admin and is activated globally for all users on all tasks. Since this notification is not triggered by a user’s action, the queuescanner script must be enabled. For further information, please see the section entitled Maintenance Tasks.
+The second comes when someone logs time against a task. The task log form lets the user choose who gets the update: the task creator, the task assignees, the task contacts, the project contacts, the user assigned to the log, and any extra recipients. When collaboration is necessary on a task, this is a simple way for people to coordinate and share information without requiring the other team members to log in. The boxes that start ticked come from the *Task Log Email Defaults* preference.
 
-### Tasks List View (Tasks index page)
+The third is the task reminder. When *Send Task Reminders* is on (System Admin → System Configuration), Web2project e-mails the assignees before a task is due and every day it is overdue, up to the *Maximum number of reminders to send* (100 by default). It applies to all users on all tasks. Since reminders aren't triggered by a user's action, the `queuescanner.php` cron job must be running; see [Server and Database Configuration](/docs/server-configuration.html#scheduled-tasks-cron).
 
-<a href="/assets/docs/tasks/index.png"><img src="/assets/docs/tasks/thumb-index.png" /></a>
+### Tasks List (Tasks index page)
 
-The Task List page is located when you click on the Task Menu. There are a number of filters you can set to change what you’re viewing.
+Select Tasks from the navigation to see the Tasks list. There are a number of filters at the top of the page.
 
 Filter | Description
 ----- | -----
-User | View the tasks specific to a single user
-Company | View tasks specific to a single company
-Task Filter | View the tasks according to your unfinished tasks, your projects, and more
+User | View the tasks for a single user, if you can see other users
+Company | View tasks for all companies or for one company
+Task Filter | My Tasks, My Unfinished Tasks, All Unfinished Tasks, My Projects, All Tasks for my Company, All Tasks (unassigned), All Tasks That I Am Owner, All Tasks I Have Created, or All Tasks
 
-On the left of the page are buttons you can use to further filter your results.
+The links above the list lead to:
 
-* My todo
-* My Pinned Task
-* Show Inactive Task
-* Task Per User
+* **my todo**: your own task list (also *My Tasks* in the header)
+* **my pinned tasks** / **all tasks**: only the tasks you have pinned, or everything again
+* **show all tasks** / **show active tasks**: include or leave out inactive tasks
+* **tasks per user**: tasks grouped by assignee
 
-At the center of the stage is a table with columns.
+The tasks are grouped under their projects, with subtasks indented below their parents. By default the list has these columns:
 
 Field | Description
 ----- | -----
-Pin | Mark as Yours
-Log | Create a Task Log
-Task Name | Click to View Details
-Task Creator | Who Owns
-Assigned Users | Who is Assigned
-Start Date | When it was started
+Edit, Pin and Log icons | Edit the task, pin it to your pinned list, or add a task log
+Percent | How complete the task is
+P | The task's priority
+U | Your own priority for the task
+Task Name | Click to view the task
+Owner | The task owner
+Assignees | Who is assigned
+Start Date | When it starts
 Duration | How long it will last
-Finish Date | When its going to be done
-Last Updated | When it was last updated
+Finish Date | When it is due
 
-Also note that each task is color coded to help you identify when a task:
+Each row is colour-coded by its dates and progress. The key below the list shows the colours:
 
-* Is a future task
-* If it has been started on time
-* If it should have started
-* If it is overdue
-* If it is done.
+* **Future Task** (white): it hasn't started yet
+* **Started and on time** (light blue)
+* **Should have started** (yellow): its start date has passed but no progress is recorded
+* **Overdue** (red)
+* **Done** (green)
+* **Inactive** (grey)
 
-### Tasks View Screen (Task View Page)
+### Viewing a Task (Task View Page)
 
-<a href="/assets/docs/tasks/view.png"><img src="/assets/docs/tasks/thumb-view.png" /></a>
+Clicking a task's name opens the task view. The buttons at the top add a new task log, link, file or subtask, and the links lead to the project, to editing or deleting the task, and, for a task that represents a subproject, to that subproject.
 
-When you click on a task name it will take you to the view task page where you can view comprehensive information about the task.
+The top of the page has these sections:
 
-The main view page consist of eight (8) main categories.
+* **Details**: project, task parent, owner, priority, web address, milestone, progress and time worked (the total of the task logs).
+* **Dates and Targets**: start date, finish date, expected duration and task type.
+* **Finances**: when *Display Budget Information* is on, the target budgets and the actual costs from task logs.
+* **Assigned Users**, **Dependencies** and **Tasks depending on this Task**.
+* **Departments**, **Task Contacts** and **Project Contacts**.
+* **Description**.
 
-Details
-Dates & Targets
-Assigned Users
-Dependencies
-Task Depending on this Task
-Description
-Contacts for this Task
-Contacts for the Project.
+Below that are the tabs:
 
-### Details
-
-Field | Description
+Tab | Description
 ----- | -----
-Project | Name of the project this task belongs to
-Task | The name of the current task your viewing
-Owner | The owner of the task
-Priority | Either LOW, NORMAL, HIGH
-Web Address | If the project has a URL
-Milestone | Is this task a milestone of an array? Yes or NO
-Progress | Lets you see how far along the project is in %
-Time Worked | Based of the total time recorded from task logs
-
-
-### Dates & Targets
-
-Field | Description
------ | -----
-Start Date | Displays the date and time task started
-Finish Date | Displays the dynamic end date
-Expected Duration | Calculated by the dates and time combined together
-Target Budget | Each task can have a target budget which should be consistent with the project overall budget
-Task Type | Displays the task type
-
-Under the main window are a set of tabs.
-
-Field | Description
------ | -----
-Task Logs | Displays the logs details, summary of hours, cost code used and comments
-Log | Allows you to enter a new task log for this task
-Files | Allows you to work with files associated to this task (See <a href="/modules/files.html">Files Module</a> for more information)
-Links | View links associated with this task (see <a href="/modules/links.html">Links Module</a> for more information)
-Resources | Displays the extra resources for this task ( View the <a href="/modules/resources.html">Resources Module</a> for more information)
+Task Logs | The task's logs, with hours, cost code and comments
+Log | Add a new task log. When you edit a log, this tab is called Edit Log
+Child Tasks | The subtasks, when the task has any
+Files | The task's files (see the [Files Module](/modules/files.html))
+Links | The task's links (see the [Links Module](/modules/links.html))
+Other resources | The resources assigned to the task, when the Resources module is active (see the [Resources Module](/modules/resources.html))
 
 ### Gantt Charts
 
-The Gantt Chart is the center of nearly every project management system and no system could be considered complete without it. As you create tasks and dependencies, the system itself will handle the display and reordering to create the traditional waterfall pattern. To view the Gantt Chart, on any active project, click the Gantt Chart tab.
+The Gantt Chart is the center of nearly every project management system. As you create tasks and dependencies, the system handles the display and ordering to create the traditional waterfall pattern. To view the Gantt Chart, open a project and select the Gantt Chart tab. The charts need PHP's `gd` extension and *Enable Gantt Charts* turned on in System Configuration.
 
 There are four key aspects to all Gantt Charts within Web2project:
-* Tasks – A task on the chart will always appear as a bar shaded according to the task status. If the task is in progress – but not complete – it will appear in blue. As work is performed on this task and the percent complete is updated, a black bar will overlay the bar covering more and more of it. Finally, once the task is complete, the bar turns completely grey.
-* Dynamic Tasks – A dynamic task represents a series of other tasks as a rollup and does not have a duration itself. In order to represent this clearly, these tasks become a bar with a carat at each end and tasks below.
-* Dependencies – Dependencies are represented by arrows connecting tasks from one to another. Due to the day-based display of the chart, a task which ends on the same day that a future task begins may display an arrow going backwards. This is not necessarily an error.
-* Milestones – A milestone – regardless of its duration is designated with a black diamond on a single date.
+
+* Tasks – A task appears as a bar from its start to its end date. As the percent complete is updated, a progress bar fills more and more of it.
+* Dynamic Tasks – A dynamic task represents a series of other tasks as a rollup. It is drawn as a thin black bar with a triangle at each end, above the tasks it contains.
+* Dependencies – Dependencies are represented by arrows connecting tasks from one to another. Due to the day-based display of the chart, a task which ends on the same day that a later task begins may display an arrow going backwards. This is not necessarily an error.
+* Milestones – A milestone, regardless of its duration, is a diamond on a single date. It is green when complete, red when its date has passed, blue when not started and orange when in progress.
+
+To keep a copy of a chart, use your browser's *Print → Save as PDF*; v5.0 removed the built-in PDF export.
 
 ### Task Logs / Reporting {#reporting-module}
 
-Whenever a User wishes to log time against the task, they can view the Task and click “New Log” or they can click “Log” from the Todo List screen. Either route gives a simple interface for the user to update the progress, the hours worked, to select a costcode, and attach a comment. Web2project requires a comment of some type to be logged, but there are no requirements in terms of the number of characters or form of the comment. The primary options available here are the email notifications. These three options determine who gets the status update. By default, only the Task Owner is notified but by selecting “Task Assignees”, “Task Contacts”, or “Project Contacts”, the respective group can be notified immediately upon update.
+Whenever a User wishes to log time against the task, they can open the task and select "New Log" or the Log tab, or select the log icon on a task list. Either route gives a simple form to record the **Date**, **Progress**, **Hours Worked** (with a Start/Stop timer if you want to time the work), a **Billing Code**, a **Summary**, a **Description**, a **Reference** and a **URL**, and to update the **Task end date**. The e-mail options decide who gets the update, as described under Email Notifications above.
 
-Once the log is saved, these comments become a part of the ongoing project log, appear in many of the reports throughout the system, and are immediately sent to the Task Owner and group(s) selected. In addition, the percent complete of any parent tasks and of the overall project will change to reflect the new information. Therefore, anyone else viewing the project can immediately see the updated information and have a complete view of the project.
+Once the log is saved, it becomes part of the ongoing project log, appears in many of the reports throughout the system, and is sent to whoever was selected. The percent complete of any parent tasks and of the overall project changes to reflect the new information, so anyone viewing the project immediately sees the updated information.
 
-For organizations which require extensive reporting or accountability – especially common in legal, governmental, or medical areas, this model becomes useful for tracking projects closely and even on a daily basis. For others, this may be unnecessary noise and can be distracting. Therefore, the default for this notification can be set by the System Administrator and adjusted on a per-task update basis by the individual user.
+For organizations which require extensive reporting or accountability – especially common in legal, governmental, or medical areas – this model is useful for tracking projects closely, even daily. For others, the notifications may be unnecessary noise. Therefore, the defaults are set by the System Administrator in the default user preferences and can be adjusted by each user and on each log.
 
-### Todo List
+### My Tasks (Todo List)
 
-The most commonly used interface in the entire system is the “Todo List”. The default installation has this as all users’ first screen after Login. The columns represent the Task name, the color-coded Project name, and finally the color-coded date information. The color-coded date information is by far the most important aspect and represents the status of the Task itself. The four colors represent “Future Tasks” (white), “Started and on time” (green), “Should have started” (peach), and “Overdue” (red). This is an efficient way to monitor all your assigned open tasks and review deadlines across all Tasking. With the proper permissions, you can also choose to view other users’ lists.
+*My Tasks* in the header, or "my todo" on the Tasks list, shows the open tasks assigned to you. Each row has the edit, pin and log icons, then the percent complete, the task's priority (P), your own priority (U), the task name, the project name, the start date, the duration, the finish date and how many days the task is **Due In**. The dates are colour-coded with the same key as the Tasks list, which is an efficient way to monitor all your open tasks and deadlines across projects. With the proper permissions, you can also view other users' lists.
 
 ### Costcode Management
 
-Costcodes – called Billing Codes, Project Codes, etc by some organizations – are a simple method of allowing different users to track their time against specific types of tasks on individual task log entries. Some of this information can be used to track the type of work performed – such as administrative work versus development work – or even between different developers with differing billing rates. The Billing-code Management in the System Admin section goes into greater detail on configuring this information for your users.
+Costcodes – called Billing Codes, Project Codes, etc by some organizations – are a simple method of allowing different users to track their time against specific types of tasks on individual task log entries. Some of this information can be used to track the type of work performed – such as administrative work versus development work – or even between different developers with differing billing rates. The [Billing Code Table](/modules/system-admin.html#billing-code-table-billingcode) in System Admin is where you set them up, and [Project Budgeting](/docs/project-budgeting.html) explains how they feed the budget figures.
 
-{% include icon-discussion.html %} There has been quite a bit of discussion and development towards supporting detailed budget tracking and concepts such as Earned Value Management within Web2project. Although none of these efforts are currently available to the general public, consistent usage of Costcodes are vital to tracking the relevant information.
+{% include icon-discussion.html %} There has been quite a bit of discussion and development towards supporting detailed budget tracking and concepts such as Earned Value Management within Web2project. Consistent use of Costcodes is vital to tracking the relevant information.
