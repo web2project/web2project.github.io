@@ -21,4 +21,4 @@ Web2project is an Open Source project. Therefore, development moves unevenly bet
 
 {% include icon-discussion.html %} We use the Discussion Icon to designate features discussed or planned for future development but have little supporting functionality in the system. We include them here to provide context and explanation for the roadmap.
 
-{% include icon-info.html %} We use the Info Icon to denote features available in development. The development version always has the latest and greatest features, fixes, and functionality but has not been tested as official releases have been. Unless you are a PHP developer or willing to live with instability, we do not recommend using this code in production systems. Consider it a preview of work to come.
+{% include icon-info.html %} We use the Info Icon for notes worth knowing before you go further, such as a module that is turned off by default or a feature that changed or was removed in the current version.
