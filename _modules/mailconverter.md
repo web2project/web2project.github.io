@@ -19,7 +19,7 @@ This module allows to add tasks from emails. It can, for example, be utilised wh
 
 Emails can be used to create tasks, but also, it is possible to forward emails to be attached to the newly created task as eml file. Can assign the task to others, set dates, duration, priority, description.
 
-More info is in our [Support Forums](http://support.web2project.net/questions/1333/announce-module-to-add-tasks-new-or-forwarded-by-e.html).
+Ask about it in [Discussions](https://github.com/orgs/web2project/discussions).
 
 ### Release Notes
 

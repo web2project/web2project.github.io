@@ -19,4 +19,4 @@ Alternatively, you can check out code using git from our Github repository. You 
 
 _It is entirely possible that these versions may break your code base, or even your database. Remember to back up database and your code before applying the upgrade._
 
-Some more hints are in this [forum post](http://forums.web2project.net/viewtopic.php?f=9&t=8337).
+Ask questions about the development code in [Discussions](https://github.com/orgs/web2project/discussions).

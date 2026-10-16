@@ -15,6 +15,4 @@ module_download: http://web2project-mod.svn.sourceforge.net/viewvc/web2project-m
 
 Timecard Module is a web2project module for time card entry.
 
-Forum thread has been available here:
-
-* http://forums.web2project.net/viewtopic.php?p=7815
+The forum thread for this module was on the old web2project forums, which are offline. Ask about it in [Discussions](https://github.com/orgs/web2project/discussions).
