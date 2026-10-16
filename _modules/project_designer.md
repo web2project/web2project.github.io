@@ -15,15 +15,17 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-The Project Designer Module was designed in web2Project as a means to streamline your daily workflow in part because it contains all the main minimum resources needed to effectively manage your [[project]] on one page.
+The Project Designer Module was designed in Web2project as a means to streamline your daily workflow in part because it contains all the main minimum resources needed to effectively manage your [project](/modules/projects.html) on one page.
 
-It is a panel based interface rather than the core tab interface and it reduces the need to click multiple tabs to accomplish something.  In addition its work area is somewhat customizable, and you can perform multiple actions at once.
+It is a panel based interface rather than the core tab interface and it reduces the need to click multiple tabs to accomplish something.
+
+{% include icon-info.html %} ProjectDesigner is active but hidden from the sidebar by default. Open it from a project with the “design this project” link at the top of the project page, or set it to “visible” under System Admin → View Modules. The *Use ProjectDesigner to View Projects by Default.* setting in System Configuration opens every project in ProjectDesigner instead.  In addition its work area is somewhat customizable, and you can perform multiple actions at once.
 
 For example, you might have a project that needs multiple [Tasks](/modules/tasks.html). Rather than use the core task interface, you can use the project designer to add multiple task with different names at once.
 
 ### The Work Area
 
-By default the Project Designer Module work area contains six (6) panels which you can expand or collapse.
+By default the Project Designer Module work area contains six (6) panels: Project, Gantt Chart, Tasks, Actions, Add Tasks and Files. You can expand or collapse each of them.
 
 To expand or collapse panels do one of the following:
 
@@ -48,7 +50,7 @@ The first panel is the projects panel. This is the same is the core project view
 
 ### Gantt Chart Panel
 
-The second panel is the Gantt Chart for this project. It shows all the task for this project in a date view timeline. For more information on web2Project Gantt Charts see core modules.
+The second panel is the Gantt Chart for this project. It shows all the task for this project in a date view timeline. For more information on Web2project Gantt Charts see core modules.
 
 ### Task Panel
 
@@ -74,15 +76,15 @@ The third panel is the task panel which displays a list of task for this project
 
 The actions panel lets you change important elements related to your task. In addition, you can change the elements of multiple task at once.
 
-To change the properties of a task or multiple task you must have to task panel open, and click that task checkbox on the far right side of that row.
+To change the properties of a task or multiple tasks you must have the task panel open, and click that task's checkbox on the far right side of its row.
 
 Once you have the task selected choose from a number of options in the actions panel
 
 * Change the start and end dates.
 * Assign a new task owner
-* Set a new priorty
+* Set a new priority
 * Change the access permission
-* Move the task up a number of days
+* Move the tasks a number of working days later, or earlier with a negative number (*Date Move (Working Days)*)
 * Assign additional users
 * Give the task a new type
 * Set the progress
@@ -104,9 +106,9 @@ Click the green plus (+) icon multiple times to add multiple task
 Enter a Task Name for each row
 Click on the (+) icon to add a description
 Select the start and end dates
-Choose duration, priorty, type, access and extra options.
+Choose duration, priority, type, access and extra options.
 Click "add" to add multiple task at once to the project.
 
 ### Files Panel
 
-The files panel list all the folders and files for the project. See core modules File Module for more information.
+The files panel lists the files attached to the project and its tasks. See the [Files Module](/modules/files.html) for more information.
