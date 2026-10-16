@@ -33,6 +33,7 @@ This module provides a way for a user to import a project plan into web2project 
 
 #### Open Issues
 
+*  Version 4.2 hasn't been updated for web2project v5.0. The WBS importer still calls `db_insert_id()`, which v5.0 removed, when it creates new users, so that import stops with an error. The Microsoft Project importer doesn't use the removed functions but hasn't been tested on v5.0. See [Updating Add On Modules for v5.0](/docs/upgrading-modules-to-5.html).
 *  The module should be scrubbed of the inline html/php nastiness.
 *  Currently, the module it uses the PHP4 style of event-based parsing for the XML document and should be converted to use PHP5's SimpleXML parser.  It will cause the module to be smaller, easier to maintain, and probably more flexible over all.  This will not happen any time soon as it breaks PHP4 compatibility.
 
