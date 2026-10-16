@@ -12,7 +12,7 @@ This is the code that does the bulk of the work within the module. The naming co
 
 Further, most Models will extend the core **w2p_Core_BaseObject** class. While this may initially look like a [God Object](http://en.wikipedia.org/wiki/God_object), it only consolidates the data access and validation of objects, not all kinds of unrelated aspects. The core class of some Modules don't need this data access directly so they won't extend this object.
 
-One example is the [Project Importer Module](/modules/project-importer.html) which instead calls the appropriate classes on its own. In that sort of case, the rest of this information on the Model does not apply.
+One example is the [Project Importer Module](/modules/importers.html) which instead calls the appropriate classes on its own. In that sort of case, the rest of this information on the Model does not apply.
 
 ### public method: __construct()
 
@@ -76,11 +76,11 @@ This public method simply returns the object with only the fields from the corre
 
 ### Other methods
 
-There can be any number of additional methods included of any visibility level desired on the core class. Other than the ones specified above, absolutely no others are necessary. Though, we have quite a few pieces of built-in functionality that you can use by implementing some of the [Hook System](/docs/module-building-guide.html#hooks). For example:
+There can be any number of additional methods included of any visibility level desired on the core class. Other than the ones specified above, absolutely no others are necessary. Though, we have quite a few pieces of built-in functionality that you can use by implementing some of the [Hook System](/docs/module-building-guide.html#extending-the-system). For example:
 
-*  If your module needs to be searchable, use the [Search Hook](/docs/search-hook.html).
-*  If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/cron-hook.html).
-*  If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/calendar-hook.html).
+*  If your module needs to be searchable, use the [Search Hook](/docs/hook-search.html).
+*  If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/hook-cron.html).
+*  If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/hook-calendar.html).
 *  If your module should perform actions before the system attempts to store an object regardless of whether it's a Create or Update, you can use the [[preStore_Hook]].
 *  If your module should perform actions before the object is stored but only on object creation, you can use the [[preCreate_Hook]].
 *  If your module should perform actions before the object is stored but only on object update, you can use the [[preUpdate_Hook]].

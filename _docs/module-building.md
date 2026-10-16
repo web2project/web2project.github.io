@@ -135,7 +135,7 @@ Further, most Models will extend the core w2p_Core_BaseObject class. While this 
 
 **Note:** *As of 2.0, w2p_Core_BaseObject replaces CW2pObject. CW2pObject will be removed in the 4.0 release. All new modules should extend w2p_Core_BaseObject.*
 
-One example is the [Project Importer](/modules/project-importer.html) which instead calls the appropriate classes on its own. In that sort of case, the rest of this information on the Model does not apply.
+One example is the [Project Importer](/modules/importers.html) which instead calls the appropriate classes on its own. In that sort of case, the rest of this information on the Model does not apply.
 
 #### public method: __construct()
 
@@ -280,11 +280,11 @@ This method fully loads the specific object with all of the fields provided by j
 
 #### Other methods
 
-There can be any number of additional methods included of any visibility level desired on the core class. Other than the ones specified above, absolutely no others are necessary. Though, we have quite a few pieces of built-in functionality that you can use by implementing some of the [Hook System](/docs/module-building-guide.html#hooks). For example:
+There can be any number of additional methods included of any visibility level desired on the core class. Other than the ones specified above, absolutely no others are necessary. Though, we have quite a few pieces of built-in functionality that you can use by implementing some of the [Hook System](/docs/module-building-guide.html#extending-the-system). For example:
 
-*  If your module needs to be searchable, use the [Search Hook](/docs/search-hook.html).
-*  If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/cron-hook.html).
-*  If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/calendar-hook.html).
+*  If your module needs to be searchable, use the [Search Hook](/docs/hook-search.html).
+*  If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/hook-cron.html).
+*  If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/hook-calendar.html).
 *  If your module should perform actions before the system attempts to store an object regardless of whether it's a Create or Update, you can use the [[preStore_Hook]].
 *  If your module should perform actions before the object is stored but only on object creation, you can use the [[preCreate_Hook]].
 *  If your module should perform actions before the object is stored but only on object update, you can use the [[preUpdate_Hook]].
@@ -369,7 +369,7 @@ The calendar.php script will automatically call each active module's hook_calend
 
 ### Search Hook
 
-It is possible to make any portion of any module searchable automatically within web2project. The key to this process is to understand the [Search Hook](/docs/search-hook.html). By defining a public method called "hook_search" in your module's primary class, you tell the [SmartSearch](/modules/smartsearch.md) module how it should search your module. While this can be a complicated search involving numerous joins of supporting data - see the Projects module for an example - it can be quite simple also. To continue our example of a "Todos" module from above, the code could look like:
+It is possible to make any portion of any module searchable automatically within web2project. The key to this process is to understand the [Search Hook](/docs/hook-search.html). By defining a public method called "hook_search" in your module's primary class, you tell the [SmartSearch](/modules/smartsearch.html) module how it should search your module. While this can be a complicated search involving numerous joins of supporting data - see the Projects module for an example - it can be quite simple also. To continue our example of a "Todos" module from above, the code could look like:
 
     public function hook_search() {
         $search['table'] = 'todos';
@@ -402,4 +402,4 @@ While many modules will have a search as simple as above, more complex search pa
         return $search;
     }
 
-Assuming this method exists and includes the proper values, the [SmartSearch](/modules/smartsearch.md) module will automatically call this function. No further configuration is necessary.
+Assuming this method exists and includes the proper values, the [SmartSearch](/modules/smartsearch.html) module will automatically call this function. No further configuration is necessary.
