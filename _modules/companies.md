@@ -21,60 +21,42 @@ Creating companies is one of the most important but often misinterpreted aspects
 
 For organizations who have stricter information security requirements such as those who perform services for other companies, you'll need a more complex model quickly. In that scenario, it is usually better to create a distinct Company for each customer. These Companies then serve as the foundation for permissions and information protection throughout the system.
 
-Companies may have a tree of [Departments](/modules/departments.html) associated with it, as well as a multitude of [Contacts](/modules/contacts.html) and [Users](/modules/users.html) (people that can log in the system and be assigned to tasks). The default company module in Web2project not only allows you to add or edit companies, but you can also classify them according to company type. You can also see what users belong to that company, current active projects, archived projects, departments, users, contacts, events and [Files](/modules/files.html).
+Companies may have a tree of [Departments](/modules/departments.html) associated with it, as well as a multitude of [Contacts](/modules/contacts.html) and [Users](/modules/users.html) (people that can log in the system and be assigned to tasks). You can classify each company by type, and see its active and archived projects, departments, users, contacts, events and [Files](/modules/files.html) in one place.
 
 ### Create a Company
 
 <a href="/assets/docs/companies/addedit.png"><img src="/assets/docs/companies/thumb-addedit.png" /></a>
 
-To create a Company, you can either select the Company module from the navigation and click the “new company” button or you can select “Company” from the “New Item” dropdown.
+To create a Company, choose "New Company" from the "New Item" menu at the top of any page, or select Companies in the sidebar and then the "New company" button.
 
-Most of the fields are self-explanatory and allow you to fill in basic contact information on the Company. The more important fields are 'Company Owner' and 'Type' which both drive the 'Company List' screen. The 'Company Owner' does not grant any permissions; it is used only for filtering. The 'Type' is used to categorize each company into a selected tab and is also used for filtering.
+The form has the company's **Name**, **Email**, **Phone1**, **Phone2** and **Fax**, its address (**Address1**, **Address2**, **City**, **State**, **Zip** and **Country**), a **URL**, the **Owner**, the **Type** and a **Description**, plus any custom fields set up for Companies. The **Owner** does not grant any permissions; it is used only for filtering. The **Type** puts the company on one of the tabs of the Companies list and is also used for filtering.
 
 ### View a Company
 
 <a href="/assets/docs/companies/view.png"><img src="/assets/docs/companies/thumb-view.png" /></a>
 
-This page shows the user the data related to each company, such as its active projects, the related contacts and users, and depending on any extra add-on modules it can also provide extra information. The most common action here is to create a new Project but the tabs below give you access to other modules.
+Clicking a company's name opens its page. The top of the page shows the company's details: name, owner, email, phones, fax, address, URL, type, description and custom fields.
 
-By default, the tabs include:
+The buttons at the top add a new contact, project or, when the Departments module is active, department to this company. The links lead back to the list, to editing the company and to deleting it. A company can only be deleted while it has no projects, departments, users or contacts.
 
-1. View Active Projects
-1. View Archived projects
-1. View [Departments](/modules/departments.html)
-1. View [Users](/modules/users.html)
-1. View [Contacts](/modules/contacts.html)
-1. View [Events](/modules/events.html)
-1. View [Files](/modules/files.html)
+Below the details are the tabs. The tabs that appear depend on which modules are active and on your permissions:
 
-**Active Projects**
-
-The Active Projects tab displays a list of projects which are active regardless of the particular Project Type, Status, or percent complete. By default, the list includes the project's Name, Owner, Start Date, Status, and Budget. 
-
-**Archived Projects**
-
-The Archived Projects tab displays a list of inactive projects. By default, the list includes the project's Name, Owner, Start Date, Status, and Budget.
-
-**Departments**
-
-The Departments tab lists the departments within the company and the user count for each. You can also click on the "New Department" button to add a new department to that company. Click on any department name to view its detail.
-
-**Contacts**
-
-The Contacts tab lists all the contacts within the company including their name, email, and phone number.
-
-**Events**
-
-The Events tab displays all the events assigned to the company including their Name, Start Time, and End Time.
-
-**Files**
-
-The Files tab displays all the files assigned to any project or task within the company. These files also appear under their assigned projects or tasks. Click on any file to download it.
+Tab | Shows
+----- | -----
+Active Projects | The company's active projects: priority (P), Name, Owner, Started, End and Status
+Archived Projects | The company's inactive projects, with the same columns
+Departments | The company's departments and the number of users in each, when the Departments module is active
+Users | The users who belong to the company: Username, Name and Type
+Contacts | The company's contacts: Name, Job Title, Email, Phone and Department
+Events | Events attached to the company: Starting Time, Ending Time, Type and Name
+Files | The files of the company's projects and tasks, with the same columns and links as the [Files](/modules/files.html) list
 
 ### List Companies
 
 <a href="/assets/docs/companies/index.png"><img src="/assets/docs/companies/thumb-index.png" /></a>
 
-This page is a simple list of Companies filtered according to the user's permissions. This list is divided into Company Types which are defined in the System Administration module. The overall company list can be filtered by Company Owner or the user can type a search string to fine tune his search.
+The Companies list shows the companies you are allowed to see. It has an "All Companies" tab and one tab per company type. The types are the *CompanyType* lookup values in System Admin; a new installation has Not Applicable, Client, Vendor, Supplier, Consultant, Government and Internal.
 
-{% include icon-question.html %} Whenever you can't find a company, check the Owner filter and change the dropdown to 'All'. If the company does not appear, the only alternatives are that you don’t have permission to view it or it is not in the system.
+At the top of the page are a search box, the **Owner** filter and the "New company" button. The columns are **Company Name**, the number of **Active Projects** and **Archived Projects** you can see, and **Type**.
+
+{% include icon-question.html %} Whenever you can't find a company, check the Owner filter and change the dropdown to 'All', and clear the search box. If the company does not appear, the only alternatives are that you don’t have permission to view it or it is not in the system.
