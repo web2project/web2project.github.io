@@ -25,6 +25,8 @@ For example, you might have a project that needs multiple [Tasks](/modules/tasks
 
 ### The Work Area
 
+<a href="/assets/docs/projectdesigner/index.png"><img src="/assets/docs/projectdesigner/thumb-index.png" /></a>
+
 By default the Project Designer Module work area contains six (6) panels: Project, Gantt Chart, Tasks, Actions, Add Tasks and Files. You can expand or collapse each of them.
 
 To expand or collapse panels do one of the following:
@@ -46,13 +48,19 @@ From this page you can also:
 
 ### Projects Panel
 
+<a href="/assets/docs/projectdesigner/project.png"><img src="/assets/docs/projectdesigner/thumb-project.png" /></a>
+
 The first panel is the projects panel. This is the same is the core project view page and shows detailed information about the project and its overall scope.
 
 ### Gantt Chart Panel
 
+<a href="/assets/docs/projectdesigner/gantt.png"><img src="/assets/docs/projectdesigner/thumb-gantt.png" /></a>
+
 The second panel is the Gantt Chart for this project. It shows all the task for this project in a date view timeline. For more information on Web2project Gantt Charts see core modules.
 
 ### Task Panel
+
+<a href="/assets/docs/projectdesigner/tasks.png"><img src="/assets/docs/projectdesigner/thumb-tasks.png" /></a>
 
 The third panel is the task panel which displays a list of task for this project regardless if you used the project designer to create the task or not.
 
@@ -73,6 +81,8 @@ The third panel is the task panel which displays a list of task for this project
 * Collapse the group (When you have lots of task, click the blue arrow on the left side to collapse all parents.
 
 ### Actions Panel
+
+<a href="/assets/docs/projectdesigner/actions.png"><img src="/assets/docs/projectdesigner/thumb-actions.png" /></a>
 
 The actions panel lets you change important elements related to your task. In addition, you can change the elements of multiple task at once.
 
@@ -99,6 +109,8 @@ Once you click the update button, all the task you selected in the task panel wi
 
 ### Add Task Panel
 
+<a href="/assets/docs/projectdesigner/addtasks.png"><img src="/assets/docs/projectdesigner/thumb-addtasks.png" /></a>
+
 The add task panel allows you to add multiple task at once.
 
 Click the green plus (+) icon to add a task.
@@ -110,5 +122,7 @@ Choose duration, priority, type, access and extra options.
 Click "add" to add multiple task at once to the project.
 
 ### Files Panel
+
+<a href="/assets/docs/projectdesigner/files.png"><img src="/assets/docs/projectdesigner/thumb-files.png" /></a>
 
 The files panel lists the files attached to the project and its tasks. See the [Files Module](/modules/files.html) for more information.

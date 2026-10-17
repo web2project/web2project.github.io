@@ -21,6 +21,8 @@ The Resources module lets you allocate and track things other than people on a [
 
 ### Resources List (Resources Index)
 
+<a href="/assets/docs/resources/index.png"><img src="/assets/docs/resources/thumb-index.png" /></a>
+
 The Resources list has an "All Resources" tab and one tab per resource type. The types are the *ResourceTypes* lookup values in System Admin → System Lookup Values, so you can add, rename or remove them there. A new install starts with "All resources", "Equipment", "Tool" and "Venue"; an upgraded system keeps the types it had.
 
 By default the list has these columns:
@@ -35,9 +37,13 @@ To create a new resource, select the "New Resource" button at the top of the pag
 
 ### Resource View
 
+<a href="/assets/docs/resources/view.png"><img src="/assets/docs/resources/thumb-view.png" /></a>
+
 The resource view shows the resource's **Identifier**, **Name**, **Type**, **Percent Allocation** (its maximum allocation) and **Description**. The links at the top go back to the list or to editing the resource.
 
 ### Add or Edit a Resource
+
+<a href="/assets/docs/resources/addedit.png"><img src="/assets/docs/resources/thumb-addedit.png" /></a>
 
 The form has these fields:
 
@@ -48,6 +54,8 @@ The form has these fields:
 * **Notes**
 
 ### Assigning Resources to Tasks
+
+<a href="/assets/docs/tasks/addedit_5.png"><img src="/assets/docs/tasks/thumb-addedit_5.png" /></a> <a href="/assets/docs/resources/task_tab.png"><img src="/assets/docs/resources/thumb-task_tab.png" /></a>
 
 When the module is active, the task form has an **Other resources** tab. Select a resource from **Resources**, choose a percentage, and add it to **Assigned to Task** with the ">" button; "<" removes it. The assignments are saved with the task. (Before v5.0 they were not saved at all.)
 

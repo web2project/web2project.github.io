@@ -19,6 +19,8 @@ System Admin is where you control the system's core settings and general mainten
 
 ## System Admin Index
 
+<a href="/assets/docs/system-admin/index.png"><img src="/assets/docs/system-admin/thumb-index.png" /></a>
+
 The System Admin page is split into these sections:
 
 **System Status**
@@ -54,15 +56,21 @@ The System Admin page is split into these sections:
 
 ## Apply System Updates
 
+<a href="/assets/docs/system-admin/upgrade.png"><img src="/assets/docs/system-admin/thumb-upgrade.png" /></a>
+
 After you upgrade, *Apply System Updates* runs the database migrations that haven't been applied yet. It lists any SQL errors it hits; a clean upgrade reports none. See the [Installation Guide](/docs/installation.html#upgrade-instructions).
 
 ## Translation Management (translate)
+
+<a href="/assets/docs/system-admin/translation.png"><img src="/assets/docs/system-admin/thumb-translation.png" /></a>
 
 Translation Management lets you edit the strings of each installed language, module by module. It only saves to languages and modules that are installed, and the `locales/` folder must be writable by the web server while you work. Full details are in [Translation Management](/docs/translation-management.html).
 
 Additional language packs are mostly contributed by users and are available from the [locales repository](https://github.com/web2project/locales).
 
 ## System Configuration (systemconfig)
+
+<a href="/assets/docs/system-admin/systemconfig_1.png"><img src="/assets/docs/system-admin/thumb-systemconfig_1.png" /></a> <a href="/assets/docs/system-admin/systemconfig_2.png"><img src="/assets/docs/system-admin/thumb-systemconfig_2.png" /></a> <a href="/assets/docs/system-admin/systemconfig_3.png"><img src="/assets/docs/system-admin/thumb-systemconfig_3.png" /></a>
 
 The settings are grouped by area. Hover over the (i) icon next to each setting for a short description.
 
@@ -168,6 +176,8 @@ See [Active Directory](#configure-web2project-to-use-active-directory-accounts) 
 
 ## Default User Preferences (addeditpref)
 
+<a href="/assets/docs/system-admin/default_user_preferences.png"><img src="/assets/docs/system-admin/thumb-default_user_preferences.png" /></a>
+
 These are the preferences new users start with. Changing them doesn't change existing users; each user can change their own under *Preferences* in the user menu at the top right, and an administrator can change them from User Admin.
 
 * Locale
@@ -187,11 +197,15 @@ v5.0 removed the "User Interface Style" preference, because there is now only on
 
 ## System Lookup Keys (keys)
 
+<a href="/assets/docs/system-admin/system_lookup_keys.png"><img src="/assets/docs/system-admin/thumb-system_lookup_keys.png" /></a>
+
 System Lookup Keys and System Lookup Values are used together to build drop-down lists, tabs and similar pre-set choices.
 
 **Warning:** *Unless you are a programmer we strongly recommend that you do not modify this section!*
 
 ## System Lookup Values (syskeys)
+
+<a href="/assets/docs/system-admin/system_lookup_values.png"><img src="/assets/docs/system-admin/thumb-system_lookup_values.png" /></a>
 
 System Lookup Values hold the choices themselves. This includes standard drop-down lists and tabs such as those on the Projects list.
 
@@ -207,6 +221,8 @@ It is strongly recommended you do not modify these settings unless you are comfo
 
 ## Custom Field Editor (customfields)
 
+<a href="/assets/docs/system-admin/cfe_index.png"><img src="/assets/docs/system-admin/thumb-cfe_index.png" /></a> <a href="/assets/docs/system-admin/cfe_addedit.png"><img src="/assets/docs/system-admin/thumb-cfe_addedit.png" /></a>
+
 The Custom Field Editor lets you add your own fields to Companies, Projects, Tasks, Calendar (events), Contacts and Users without programming.
 
 * Select the add icon next to the module.
@@ -218,6 +234,8 @@ The Custom Field Editor lets you add your own fields to Companies, Projects, Tas
 The new field appears on that module's add/edit form and view.
 
 ## Billing Code Table (billingcode)
+
+<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" /></a>
 
 Billing codes put a cost on time, mainly when creating a task log. Each code has:
 
@@ -231,9 +249,13 @@ Saved codes appear in the task log's cost code drop-down. This page is only link
 
 ## Setup Budgets (budgeting)
 
+<a href="/assets/docs/system-admin/budgeting.png"><img src="/assets/docs/system-admin/thumb-budgeting.png" /></a>
+
 Sets budget amounts per company, period and billing category. See [Project Budgeting](/docs/project-budgeting.html).
 
 ## View Modules (modules)
+
+<a href="/assets/docs/system-admin/view_modules.png"><img src="/assets/docs/system-admin/thumb-view_modules.png" /></a>
 
 View Modules lists the installed and available modules. From here you can install, activate or disable, upgrade, configure and remove modules, change their order, and choose whether each appears in the navigation.
 
@@ -243,6 +265,8 @@ View Modules lists the installed and available modules. From here you can instal
 * Add On modules are uploaded with *Select a module to upload*, if the `modules` folder is writable, or copied into `modules/` by hand. Check them against [Updating Add On Modules for v5.0](/docs/upgrading-modules-to-5.html) first.
 
 ## User Roles (roles)
+
+<a href="/assets/docs/system-admin/roles.png"><img src="/assets/docs/system-admin/thumb-roles.png" /></a> <a href="/assets/docs/system-admin/role_permissions.png"><img src="/assets/docs/system-admin/thumb-role_permissions.png" /></a>
 
 Roles are an asset to the comprehensive permissions system built into web2Project. You can specify roles for specific types of users or users groups to allow or deny access to various features within web2Project.
 
@@ -265,6 +289,8 @@ After you create a role, click on the lock icon to add permissions to it.
 Visit the permissions page for more information.
 
 ## System Admin Permissions Result Table (acls_view)
+
+<a href="/assets/docs/system-admin/permissions.png"><img src="/assets/docs/system-admin/thumb-permissions.png" /></a>
 
 The permissions result table gives a more comprehensive look into the permissions for each. You can filter the view by user, module, or by action.
 

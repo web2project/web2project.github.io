@@ -21,6 +21,8 @@ The History module keeps a record of what changes in Web2project: each time some
 
 ### Viewing the History
 
+<a href="/assets/docs/history/index.png"><img src="/assets/docs/history/thumb-index.png" /></a>
+
 The History page lists the recorded changes, oldest first, split into pages. Use the **Changes to** filter at the top to choose which changes to show: "Show all", one module at a time (Projects is selected at first), or "Login/Logouts".
 
 The columns are:
@@ -36,5 +38,7 @@ You only see changes to items you are allowed to view.
 The Login/Logouts filter shows the sessions that administrators ended from the Active Sessions tab in User Admin. Ordinary logins and logouts are recorded in the [User Log](/modules/users.html) instead.
 
 ### History on a project
+
+<a href="/assets/docs/history/project_tab.png"><img src="/assets/docs/history/thumb-project_tab.png" /></a>
 
 Projects also have a History tab, which lists the changes to that project.

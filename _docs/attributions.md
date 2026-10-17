@@ -19,4 +19,4 @@ All code, libraries, icons, graphics, and children are property of their respect
 
 ## Screenshots
 
-All screenshots were taken from the production system currently in use by CaseySoftware, LLC using the default Web2project style. Sensitive information has been obscured on purpose.
+The module screenshots were taken from a v5.0 demonstration system filled with made-up sample data (the "Build Family Home - 1420 Cedar Lane" project). The scripts that build that system and retake the screenshots are in the web2project repository under `dev/demo-data/`. Screenshots of Add On modules and third-party tools come from their authors.

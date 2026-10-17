@@ -21,6 +21,8 @@ Tasks define a [Project's](/modules/projects.html) scope and represent the actua
 
 ### Creating Tasks
 
+<a href="/assets/docs/tasks/addedit_1.png"><img src="/assets/docs/tasks/thumb-addedit_1.png" /></a> <a href="/assets/docs/tasks/addedit_2.png"><img src="/assets/docs/tasks/thumb-addedit_2.png" /></a> <a href="/assets/docs/tasks/addedit_3.png"><img src="/assets/docs/tasks/thumb-addedit_3.png" /></a> <a href="/assets/docs/tasks/addedit_4.png"><img src="/assets/docs/tasks/thumb-addedit_4.png" /></a>
+
 On a project or task page, select "New Task", or choose "New Task" from the "New Item" menu at the top of any page. The top of the form always shows the task's **Name**, **Status**, **Priority**, **Progress** and **Milestone** settings. Below it are four tabs:
 
 * **Details**: the **Task Owner**, **Task Parent**, **Description**, **Task Type**, **Access**, **Department**, **Contacts** and a related **URL**. You can also move the task to another project (**Move to project**) and choose whether other users may add task logs for the assignees (**Allow users to add task logs for others**). For simple task tracking, the only important field is the Description, since it gives the assignees an overview of the work. For more advanced tracking, the parent task matters for how tasks are displayed and for Dynamic (roll-up) Task calculations. When *Display Budget Information* is on, the **Target Budgets** per category and **Total Target Budget** are here too.
@@ -29,6 +31,8 @@ On a project or task page, select "New Task", or choose "New Task" from the "New
 * **Human Resources**: the users who will do the work, each with a percentage of their time. **Notify Assignees of Task by Email** and **Additional Email Comments** control the e-mail sent when you save.
 
 If the Resources module is active, there is also an **Other resources** tab for assigning equipment, rooms and other [Resources](/modules/resources.html).
+
+<a href="/assets/docs/tasks/addedit_5.png"><img src="/assets/docs/tasks/thumb-addedit_5.png" /></a>
 
 The options on the Dependencies tab create four types of tasks which are denoted distinctly throughout the system. Some of these automatically handle quite a few things for you while some do not. All of them appear on the Calendar and on the assignees' task lists.
 
@@ -50,6 +54,8 @@ The second comes when someone logs time against a task. The task log form lets t
 The third is the task reminder. When *Send Task Reminders* is on (System Admin → System Configuration), Web2project e-mails the assignees before a task is due and every day it is overdue, up to the *Maximum number of reminders to send* (100 by default). It applies to all users on all tasks. Since reminders aren't triggered by a user's action, the `queuescanner.php` cron job must be running; see [Server and Database Configuration](/docs/server-configuration.html#scheduled-tasks-cron).
 
 ### Tasks List (Tasks index page)
+
+<a href="/assets/docs/tasks/index.png"><img src="/assets/docs/tasks/thumb-index.png" /></a>
 
 Select Tasks from the navigation to see the Tasks list. There are a number of filters at the top of the page.
 
@@ -92,6 +98,8 @@ Each row is colour-coded by its dates and progress. The key below the list shows
 
 ### Viewing a Task (Task View Page)
 
+<a href="/assets/docs/tasks/view.png"><img src="/assets/docs/tasks/thumb-view.png" /></a>
+
 Clicking a task's name opens the task view. The buttons at the top add a new task log, link, file or subtask, and the links lead to the project, to editing or deleting the task, and, for a task that represents a subproject, to that subproject.
 
 The top of the page has these sections:
@@ -116,6 +124,8 @@ Other resources | The resources assigned to the task, when the Resources module 
 
 ### Gantt Charts
 
+<a href="/assets/docs/tasks/gantt.png"><img src="/assets/docs/tasks/thumb-gantt.png" /></a>
+
 The Gantt Chart is the center of nearly every project management system. As you create tasks and dependencies, the system handles the display and ordering to create the traditional waterfall pattern. To view the Gantt Chart, open a project and select the Gantt Chart tab. The charts need PHP's `gd` extension and *Enable Gantt Charts* turned on in System Configuration.
 
 There are four key aspects to all Gantt Charts within Web2project:
@@ -129,6 +139,8 @@ To keep a copy of a chart, use your browser's *Print → Save as PDF*; v5.0 remo
 
 ### Task Logs / Reporting {#reporting-module}
 
+<a href="/assets/docs/tasks/log.png"><img src="/assets/docs/tasks/thumb-log.png" /></a>
+
 Whenever a User wishes to log time against the task, they can open the task and select "New Log" or the Log tab, or select the log icon on a task list. Either route gives a simple form to record the **Date**, **Progress**, **Hours Worked** (with a Start/Stop timer if you want to time the work), a **Billing Code**, a **Summary**, a **Description**, a **Reference** and a **URL**, and to update the **Task end date**. The e-mail options decide who gets the update, as described under Email Notifications above.
 
 Once the log is saved, it becomes part of the ongoing project log, appears in many of the reports throughout the system, and is sent to whoever was selected. The percent complete of any parent tasks and of the overall project changes to reflect the new information, so anyone viewing the project immediately sees the updated information.
@@ -137,9 +149,13 @@ For organizations which require extensive reporting or accountability – especi
 
 ### My Tasks (Todo List)
 
+<a href="/assets/docs/tasks/todo_tasks.png"><img src="/assets/docs/tasks/thumb-todo_tasks.png" /></a> <a href="/assets/docs/tasks/todo_gantt.png"><img src="/assets/docs/tasks/thumb-todo_gantt.png" /></a>
+
 *My Tasks* in the header, or "my todo" on the Tasks list, shows the open tasks assigned to you. Each row has the edit, pin and log icons, then the percent complete, the task's priority (P), your own priority (U), the task name, the project name, the start date, the duration, the finish date and how many days the task is **Due In**. The dates are colour-coded with the same key as the Tasks list, which is an efficient way to monitor all your open tasks and deadlines across projects. With the proper permissions, you can also view other users' lists.
 
 ### Costcode Management
+
+<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" /></a>
 
 Costcodes – called Billing Codes, Project Codes, etc by some organizations – are a simple method of allowing different users to track their time against specific types of tasks on individual task log entries. Some of this information can be used to track the type of work performed – such as administrative work versus development work – or even between different developers with differing billing rates. The [Billing Code Table](/modules/system-admin.html#billing-code-table-billingcode) in System Admin is where you set them up, and [Project Budgeting](/docs/project-budgeting.html) explains how they feed the budget figures.
 

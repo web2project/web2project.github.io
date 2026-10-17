@@ -29,6 +29,8 @@ So you want to create your own Translation. The good news is that it's easy. Jus
 * When you're done, make the folder read-only for the web server again.
 * We'd appreciate if you'd contribute [your translation to web2project](https://github.com/web2project/locales). Simply follow [the directions in our README](https://github.com/web2project/locales#contributing) and your contribution will be shared with thousands. Thank you! :)
 
+<a href="/assets/docs/system-admin/translation.png"><img src="/assets/docs/system-admin/thumb-translation.png" /></a>
+
 The editor only saves to languages that already have a folder in `locales/` and to installed modules.
 
 ## Translation file format

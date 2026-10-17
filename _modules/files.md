@@ -35,6 +35,8 @@ There are three ways to get to the upload form and they are all effectively the 
 
 ### Files List (Files Index)
 
+<a href="/assets/docs/files/index.png"><img src="/assets/docs/files/thumb-index.png" /></a>
+
 When you select "Files" from the main navigation you will see the Files list.
 
 At the top of the page are the "New File" button and three filters:
@@ -62,6 +64,8 @@ Long lists are split into pages, and the page links keep your current project, c
 Downloads go through `fileviewer.php`, which checks that you are logged in and allowed to see the file. See [Security Notes](/docs/security-notes.html) for how to make sure files can't be downloaded any other way.
 
 ### Add or Edit a File (Files addedit)
+
+<a href="/assets/docs/files/addedit.png"><img src="/assets/docs/files/thumb-addedit.png" /></a>
 
 The form has these fields:
 

@@ -66,6 +66,8 @@ How-to use this page:
 On this interface the user will be able to see what is going on, on a given date as well as the Tasks and Events set for that date considering the available filters.
 You will find two tabs, one with the Tasks to be done on that date and another with the Events set for that date.
 
+<a href="/assets/docs/events/today_tasks.png"><img src="/assets/docs/events/thumb-today_tasks.png" /></a>
+
 The day view is probably one of the most detailed views in the calendar. By default it will list events you have scheduled for that day in 15 minute time intervals.
 
 From this page you can:
@@ -104,6 +106,8 @@ From this page you can:
 The Monthly view shows the user which Tasks and/or Events are scheduled for each day in the Month.
 
 Generally when you create an event or task in the system, this will create links within the calendar dynamically showing you the start and finish dates within that month. Each link in the calendar is dynamic, so you can click on it and it will take you to the details of that object. This is particularly useful when you want a snap shot view of what’s on the agenda for the entire month.
+
+<a href="/assets/docs/events/view_month_tt.png"><img src="/assets/docs/events/thumb-view_month_tt.png" /></a>
 
 Depending on how the administrator has the system configured, you can use filters to view calendar details for other [Departments](/modules/departments.html) or [Users](/modules/users.html), in addition to your own.
 
