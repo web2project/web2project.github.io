@@ -25,6 +25,18 @@ This module integrates the [PEAR Date_Holidays package library](http://pear.php.
 1. Select to System Admin -> View Modules and you should see "holiday" near the bottom of the list.
 1. On the "Holiday" row, select "install". The screen should refresh. Now select "hidden" and then "disabled" to make it display in your module navigation.
 
+## Usage
+
+The module adds two tabs.
+
+<a href="/assets/docs/holiday/company_working_time.jpg"><img src="/assets/docs/holiday/thumb-company_working_time.jpg" /></a>
+
+**Company working time** sets the working calendar for everyone. Choose a **Standard calendar** (the public holidays of a country, with an optional **Standard calendar filter** for a region), tick the **Working days in the week**, set the **Working times**, and select "save". To mark individual days, drag the mouse pointer over them on the year calendar, Ctrl-click to add or remove single days, and choose "Add to public holidays" or "Add to working days". The key shows calendar and company workdays and holidays.
+
+<a href="/assets/docs/holiday/user_holidays.jpg"><img src="/assets/docs/holiday/thumb-user_holidays.jpg" /></a>
+
+**User vacations/holidays** does the same for one person. Choose the user, or "[My vacations/holidays]", select the days and choose "Add to user holidays" or "Add to working days".
+
 ## Release Notes
 
 ### Updated in 1.1

@@ -19,6 +19,8 @@ The very essence of web2Project is the ability to effectively manage projects. T
 
 ### Creating a Project
 
+<a href="/assets/docs/projects/addedit.png"><img src="/assets/docs/projects/thumb-addedit.png" /></a>
+
 Select "Projects" in the navigation and then "New Project", or choose "New Project" from the "New Item" menu at the top of any page.
 
 * First, give your Project a distinctive **Name**, a **Short Name** and a **Color Identifier**. These help distinguish it throughout the system for both you and your users.
@@ -37,6 +39,8 @@ Select "Projects" in the navigation and then "New Project", or choose "New Proje
 {% include icon-info.html %} **Project templates.** Create a project with status "Template" and add its tasks. When you create a new project and pick the template under *Import tasks from*, web2project copies every task with its parent, dependencies and assignees, and moves the dates so the earliest task starts on the new project's start date. The template itself isn't changed. You can import into an existing project too; existing tasks are kept. Within CaseySoftware, the most common template is a "Phase Template" covering a development phase from Requirements Discovery to Delivery, imported once per phase.
 
 ### Projects List (Projects Index Page)
+
+<a href="/assets/docs/projects/index.png"><img src="/assets/docs/projects/thumb-index.png" /></a>
 
 Selecting Projects from the navigation takes you to the Projects list.
 
@@ -60,6 +64,8 @@ Other project lists, such as the Projects tab on a department or a user, also sh
 Click a column heading to sort by it. Long lists are split into pages, and the page links keep your sort order.
 
 ### Viewing a Project (Projects View Page)
+
+<a href="/assets/docs/projects/view.png"><img src="/assets/docs/projects/thumb-view.png" /></a>
 
 Clicking a project's name opens the project view. The links at the top lead back to the projects list, to editing the project, to [Reports](/modules/reports.html) and to ProjectDesigner.
 

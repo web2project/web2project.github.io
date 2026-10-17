@@ -18,6 +18,8 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 
 ## Install Instructions
 
+<a href="/assets/docs/installer/welcome.png"><img src="/assets/docs/installer/thumb-welcome.png" /></a> <a href="/assets/docs/installer/requirements.png"><img src="/assets/docs/installer/thumb-requirements.png" /></a> <a href="/assets/docs/installer/database.png"><img src="/assets/docs/installer/thumb-database.png" /></a> <a href="/assets/docs/installer/finished.png"><img src="/assets/docs/installer/thumb-finished.png" /></a>
+
 1. Download the latest release from [GitHub](https://github.com/web2project/web2project/releases) and uncompress it.
 1. Upload the resulting folder to a web-accessible directory on your web server. Note the resulting URL as this will be your new web2project installation.
 1. Create a MySQL database and a user with full access to the database. Save these database name and credentials as you will need them later.
@@ -42,6 +44,8 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 
 
 ## Upgrade Instructions
+
+<a href="/assets/docs/system-admin/upgrade.png"><img src="/assets/docs/system-admin/thumb-upgrade.png" /></a>
 
 1. Back up your database and `files` folder. You can never have too many backups.
 2. Download the latest release from [GitHub](https://github.com/web2project/web2project/releases) and uncompress it.

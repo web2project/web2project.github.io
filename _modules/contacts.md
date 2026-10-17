@@ -42,6 +42,8 @@ To create a login for an existing contact, open the contact and select "create u
 
 #### Importing a vCard
 
+<a href="/assets/docs/contacts/vcard_import.png"><img src="/assets/docs/contacts/thumb-vcard_import.png" /></a>
+
 If someone has sent you a vCard – normally attached to an email or available from their website – select "Import vCard" on the Contacts list and upload the `.vcf` file. One file can hold several contacts. Web2project fills in the name, title, birthday, e-mail, phone numbers, address and notes. It doesn't match the vCard's organization to a company; the organization name is added to the end of Address2, so edit the contact afterwards and choose its Company.
 
 Each contact also has an "export vCard" icon on the list, to download that contact as a `.vcf` file.

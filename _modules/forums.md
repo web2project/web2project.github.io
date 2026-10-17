@@ -57,6 +57,8 @@ The forums list page shows all the available forums in Web2project. From this pa
 
 ### Forum / Thread Watch
 
+<a href="/assets/docs/forums/view.png"><img src="/assets/docs/forums/thumb-view.png" /></a> <a href="/assets/docs/forums/thread.png"><img src="/assets/docs/forums/thumb-thread.png" /></a>
+
 The most important aspect of the entire Forum module is the ability to set “Watches”. When an individual sets a watch on a thread or an entire forum, Web2project will automatically notify them each and every time there is a new comment. This ensures that the relevant information gets to the interested people as fast as possible with minimal effort. An administrator can also make everyone watch new forums with the module's “configure” link under System Admin → View Modules.
 
 Forums attached to a project also appear on that project's Forums tab.

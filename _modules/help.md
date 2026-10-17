@@ -17,6 +17,8 @@ module_download: https://github.com/web2project/web2project/releases
 
 Many fields and icons in Web2project show a short explanation when you hover over them. In System Configuration, every setting has an (i) icon with a description.
 
+<a href="/assets/docs/help/window.png"><img src="/assets/docs/help/thumb-window.png" /></a>
+
 For anything else, select the **Help** icon (a question mark) in the bar at the top of every page. On narrow screens it is in the user menu. It opens a small window with links to where to find help:
 
 * the [Web2project documentation](https://docs.web2project.net/), this site, which explains each module and feature;
