@@ -10,8 +10,6 @@ If you want to run this locally yourself, check out Github's getting started doc
 
 ## Todo list
 
-* The entire site needs a good scrubbing/update
-* All images are circa 2007 and need to be updated under the new themes
 * All tables need to be updated, they were originally written for MediaWiki
 
 ## Contributing
