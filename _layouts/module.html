@@ -23,6 +23,14 @@ layout: default
     </table>
 </div>
 
+{% if page.status == 'cleanup' %}
+    {% include cleanup.html %}
+{% endif %}
+
 {{ content }}
+
+{% if page.status == 'cleanup' %}
+    {% include cleanup.html %}
+{% endif %}
 
 

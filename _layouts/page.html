@@ -10,7 +10,15 @@ layout: default
     {% include deprecated.html %}
 {% endif %}
 
+{% if page.status == 'cleanup' %}
+    {% include cleanup.html %}
+{% endif %}
+
 {{ content }}
+
+{% if page.status == 'cleanup' %}
+    {% include cleanup.html %}
+{% endif %}
 
 {% if page.status == 'deprecated' %}
     {% include deprecated.html %}

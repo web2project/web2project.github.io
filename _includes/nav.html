@@ -1,19 +1,19 @@
 <h1>{{ site.title }}</h1>
 <ul id='links'>
 
-    <li><a href="/">Home</a></li>
-    <li><a href="/docs/installation.html">Install Instructions</a></li>
-    <li><a href="/docs/getting-started.html">Getting Started</a></li>
-    <li><a href="/docs/server-configuration.html">Server Configuration</a></li>
-    <li><a href="/docs/security-notes.html">Security Notes</a></li>
-    <li><a href="/release-notes/5.0.0-rc3.html">v5.0.0 RC3 Release Notes</a></li>
-    <li><a href="/modules/core.html">Core Modules</a></li>
-    <li><a href="/modules/add-on.html">Add On Modules</a></li>
-    <li><a href="/docs/module-building-guide.html">Module Building Guide</a></li>
-    <li><a href="/docs/faq.html">FAQ</a></li>
-    <li><a href="/all/proposals.html">Proposals/RFCs</a></li>
-    <li><a href="/docs/join-the-team.html">Join the Team</a></li>
-    <li><a href="/all/pages.html">All Pages</a></li>
+    <li><a href="/"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}>Home</a></li>
+    <li><a href="/docs/installation.html"{% if page.url == '/docs/installation.html' %} class="active"{% endif %}>Install Instructions</a></li>
+    <li><a href="/docs/getting-started.html"{% if page.url == '/docs/getting-started.html' %} class="active"{% endif %}>Getting Started</a></li>
+    <li><a href="/docs/server-configuration.html"{% if page.url == '/docs/server-configuration.html' %} class="active"{% endif %}>Server Configuration</a></li>
+    <li><a href="/docs/security-notes.html"{% if page.url == '/docs/security-notes.html' %} class="active"{% endif %}>Security Notes</a></li>
+    <li><a href="/release-notes/5.0.0-rc3.html"{% if page.url == '/release-notes/5.0.0-rc3.html' %} class="active"{% endif %}>v5.0.0 RC3 Release Notes</a></li>
+    <li><a href="/modules/core.html"{% if page.url == '/modules/core.html' %} class="active"{% endif %}>Core Modules</a></li>
+    <li><a href="/modules/add-on.html"{% if page.url == '/modules/add-on.html' %} class="active"{% endif %}>Add On Modules</a></li>
+    <li><a href="/docs/module-building-guide.html"{% if page.url == '/docs/module-building-guide.html' %} class="active"{% endif %}>Module Building Guide</a></li>
+    <li><a href="/docs/faq.html"{% if page.url == '/docs/faq.html' %} class="active"{% endif %}>FAQ</a></li>
+    <li><a href="/all/proposals.html"{% if page.url == '/all/proposals.html' %} class="active"{% endif %}>Proposals/RFCs</a></li>
+    <li><a href="/docs/join-the-team.html"{% if page.url == '/docs/join-the-team.html' %} class="active"{% endif %}>Join the Team</a></li>
+    <li><a href="/all/pages.html"{% if page.url == '/all/pages.html' %} class="active"{% endif %}>All Pages</a></li>
   {% for category in site.categories %}
   <li><h2>{{ category | first }}</h2>
     <ul>
@@ -26,4 +26,4 @@
   </li>
 {% endfor %}
 </ul>
-<img src="https://static.scarf.sh/a.png?x-pxid=dc10e573-3ce9-482d-b5a5-ceba21a7589b" />
+<img src="https://static.scarf.sh/a.png?x-pxid=dc10e573-3ce9-482d-b5a5-ceba21a7589b" width="1" height="1" alt="" />

@@ -475,3 +475,90 @@ img.icon {
 h3 ~ p {
     margin-left: 25px;
 }
+
+/* Site logo (was an inline style in the default layout) */
+.site-logo {
+    float: right;
+    margin: 20px;
+    max-width: 40%;
+}
+
+/* Cleanup banner, a sibling of .notice (draft) and .warning (deprecated) */
+.cleanup {
+    background-color: lightskyblue;
+    font-style: italic;
+    padding: 15px;
+}
+
+/* Thumbnails sit in a row instead of floating into the text beside them */
+article a > img[src*="/thumb-"] {
+    border: 1px solid lightgray;
+    display: inline-block;
+    float: none;
+    margin: 0 8px 8px 0;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* Keep wide code blocks and tables inside the content column */
+section {
+    max-width: calc(100% - 305px);
+}
+
+pre {
+    box-sizing: border-box;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+article table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Current page in the sidebar */
+#sidebar ul li a.active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Narrow screens: stack the sidebar above the content */
+@media (max-width: 800px) {
+    #sidebar {
+        float: none;
+        height: auto;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    section {
+        margin: 20px 16px 0;
+        max-width: none;
+        padding: 0 0 30px;
+        position: static;
+    }
+
+    .site-logo {
+        float: none;
+        margin: 12px 16px 0;
+        max-width: 160px;
+    }
+
+    .module-info {
+        float: none;
+        margin: 0 0 16px;
+        min-width: 0;
+        width: auto;
+    }
+
+    pre {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    h3 ~ p {
+        margin-left: 0;
+    }
+}
