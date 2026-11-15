@@ -21,7 +21,7 @@ This module integrates the [PEAR Date_Holidays package library](http://pear.php.
 
 ## INSTALLATION
 
-1. To install this module, please follow the standard module installation procedure. Download the latest version from Sourceforge and unzip this directory into your web2project/modules directory.
+1. To install this module, please follow the standard module installation procedure. Download the latest version from the [modules-holiday repository](https://github.com/web2project/modules-holiday) and unzip this directory into your web2project/modules directory.
 1. Select to System Admin -> View Modules and you should see "holiday" near the bottom of the list.
 1. On the "Holiday" row, select "install". The screen should refresh. Now select "hidden" and then "disabled" to make it display in your module navigation.
 
