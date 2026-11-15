@@ -19,6 +19,7 @@ From your module's folder, these searches find the most common problems:
 grep -rnE "\b(db_[a-z_]+|w2Psession[A-Za-z]+|showtask(_pd|_pr)?|findchild(_pd|_pr)?|w2PgetUsername(FromID)?|getProjects|canTaskAccess)\s*\(" .
 grep -rnE "\b(CAppUI|CDate|DBQuery|CTitleBlock|CTabBox_core|CInfoTabBox|CConfig|CPreferences|CustomFields|CW2pObject|Mail|w2Pacl|CTaskLog|CForumMessage|CFileFolder|CRole|CSysKey|CSysVal|CCalendar|CAdmin_User)\b" .
 grep -rn "w2p_Core_\(Config\|Dispatcher\|Event\|EventQueue\|HookHandler\|Module\|Preferences\|Setup\|UpgradeManager\)\|w2p_API_iCalendar" .
+grep -rn '\$.ajax\|\$.post\|fetch(' .
 ```
 
 Then replace each match using the tables below.
@@ -136,6 +137,15 @@ strJpGraph() | none
 w2p_check_url(), findchilddept_comp(), showchilddept_comp(), show_st_project(), find_proj_child(), contextHelp(), w2PcontextHelp(), cleanText(), showFVar(), resource_presave(), resource_postsave(), the clash_* functions (clash_process(), clash_mail(), clash_accept(), clear_clash(), clash_cancel()) and __extract_from_tasks6().
 
 ## Other changes that affect modules
+
+### Form tokens (CSRF)
+
+Every `dosql` POST and every `a=do_*` / `a=domodsql` request must carry the session's form token as `__nonce`. Without it, the request is redirected with "Your form has expired or did not come from this site". The failure is silent for scripts: an AJAX call gets the whole redirect page back.
+
+* **POST forms:** nothing to do. `w2p_add_form_tokens()` adds the token to every `<form method="post">`.
+* **AJAX posts** (`$.ajax`, `$.post`, `fetch`) to a `dosql` handler, and forms built in JavaScript: send the token yourself, for example `__nonce: '<?php echo $AppUI->getFormToken(); ?>'`, as `modules/system/customfields/addedit.php` does.
+* **GET links that change data:** append `&__nonce=` plus the token, or better, make them POST forms.
+* **Handlers that change data outside `dosql`/`do_*`**, for example a configure page that saves on POST, must call `$AppUI->checkFormToken()` themselves.
 
 ### One theme: Bootstrap 5.3
 
