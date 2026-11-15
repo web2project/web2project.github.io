@@ -19,7 +19,7 @@ layout: default
         <tr>
             <td><label>Latest Version:</label></td><td>{{ page.module_version }}</td>
         </tr>
-        <tr><td><a href="{{ page.module_source }}" target="_new">Source</a></td><td><a href="{{ page.module_download }}">Download</a></td></tr>
+        <tr><td>{% if page.module_source %}<a href="{{ page.module_source }}" target="_new">Source</a>{% endif %}</td><td>{% if page.module_download %}<a href="{{ page.module_download }}">Download</a>{% endif %}</td></tr>
     </table>
 </div>
 

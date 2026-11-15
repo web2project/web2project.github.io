@@ -17,7 +17,9 @@ module_download:
 
 This module provides a way for a user to raise issues within Mantis in relation to a w2p project.
 
-This module was distributed through the old web2project forums, which are offline. Ask about it in [Discussions](https://github.com/orgs/web2project/discussions).
+<div class="warning">
+    <strong>Unavailable:</strong> This module was only distributed through the old web2project forums, which are offline, and there is no repository for it in the web2project organization. If you have a copy, please share it in <a href="https://github.com/orgs/web2project/discussions">Discussions</a>.
+</div>
 
 ### How does it work ?
 
