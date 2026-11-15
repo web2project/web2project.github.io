@@ -1,16 +1,12 @@
 # Web2project's Documentation Site
 
-This is the repository for all the documentation for Web2project which currently resides at http://docs.web2project.net
+This is the repository for all the documentation for web2project which currently resides at https://docs.web2project.net
 
 The underlying theme for this site is https://github.com/Wiredcraft/carte
 
-If you want to run this locally yourself, check out Github's getting started documentation here: https://help.github.com/articles/using-jekyll-with-pages/ and then run:
+If you want to run this locally yourself, check out GitHub's getting started documentation here: https://help.github.com/articles/using-jekyll-with-pages/ and then run:
 
 `bundle exec jekyll serve`
-
-## Todo list
-
-* All tables need to be updated, they were originally written for MediaWiki
 
 ## Contributing
 

@@ -20,10 +20,12 @@ Return Type: Null
 
 We do not support the PHP4-style method of object constructor where the class name can be used as the constructor. In most cases, a module's constructor will be as simple as this:
 
-    public function __construct()
-    {
-        parent::__construct('todos', 'todo_id');
-    }
+```
+public function __construct()
+{
+    parent::__construct('todos', 'todo_id');
+}
+```
 
 The two parameters are the primary table of the module and that table's primary key. Nothing further will be needed normally.
 
@@ -41,26 +43,30 @@ This public method performs object validation and returns a boolean denoting if 
 
 **Note:** *The w2p_Core_BaseObject provides a default isValid() method which always return true. If you don't need specific validations, you don't need to add your own.*
 
-    public function isValid()
-    {
-        $baseErrorMsg = get_class($this) . '::store-check failed - ';
+```
+public function isValid()
+{
+    $baseErrorMsg = get_class($this) . '::store-check failed - ';
 
-        if ('' == trim($this->link_name)) {
-            $this->_error['link_name'] = $baseErrorMsg . 'link name is not set';
-        }
-        if (7 >= strlen(trim($this->link_url))) {
-            $this->_error['link_url'] = $baseErrorMsg . 'link url is not set';
-        }
-        if (0 == (int) $this->link_owner) {
-            $this->_error['link_owner'] = $baseErrorMsg . 'link owner is not set';
-        }
-
-        return (count($this->_error)) ? false : true;
+    if ('' == trim($this->link_name)) {
+        $this->_error['link_name'] = $baseErrorMsg . 'link name is not set';
     }
+    if (7 >= strlen(trim($this->link_url))) {
+        $this->_error['link_url'] = $baseErrorMsg . 'link url is not set';
+    }
+    if (0 == (int) $this->link_owner) {
+        $this->_error['link_owner'] = $baseErrorMsg . 'link owner is not set';
+    }
+
+    return (count($this->_error)) ? false : true;
+}
+```
 
 If you need the resulting validation errors, you can get the error array with the following code:
 
-    $errorArray = $item->getError();
+```
+$errorArray = $item->getError();
+```
 
 ### public method: load()
 
@@ -78,16 +84,16 @@ This public method simply returns the object with only the fields from the corre
 
 There can be any number of additional methods included of any visibility level desired on the core class. Other than the ones specified above, absolutely no others are necessary. Though, we have quite a few pieces of built-in functionality that you can use by implementing some of the [Hook System](/docs/module-building-guide.html#extending-the-system). For example:
 
-*  If your module needs to be searchable, use the [Search Hook](/docs/hook-search.html).
-*  If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/hook-cron.html).
-*  If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/hook-calendar.html).
-*  If your module should perform actions before the system attempts to store an object regardless of whether it's a Create or Update, you can use the [[preStore_Hook]].
-*  If your module should perform actions before the object is stored but only on object creation, you can use the [[preCreate_Hook]].
-*  If your module should perform actions before the object is stored but only on object update, you can use the [[preUpdate_Hook]].
-*  If your module should perform actions after the object is successfully stored regardless of whether it's a Create or Update, you can use the [[postStore_Hook]].
-*  If your module should perform actions after the object is successfully stored but only on object creation, you can use the [[postCreate_Hook]].
-*  If your module should perform actions after the object is successfully stored but only on object update, you can use the [[postUpdate_Hook]].
-*  If your module should perform actions before the system attempts to delete an object, you can use the [[preDelete_Hook]].
-*  If your module should perform actions after the object is successfully deleted, you can use the [[postDelete_Hook]].
-*  If your module should perform actions before the system attempts to load an object, you can use the [[preLoad_Hook]].
-*  If your module should perform actions after the object is successfully loaded, you can use the [[postLoad_Hook]].
+* If your module needs to be searchable, use the [Search Hook](/docs/hook-search.html).
+* If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/hook-cron.html).
+* If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/hook-calendar.html).
+* If your module should perform actions before the system attempts to store an object regardless of whether it's a Create or Update, you can use the [hook_preStore](/docs/hook-workflow.html).
+* If your module should perform actions before the object is stored but only on object creation, you can use the [hook_preCreate](/docs/hook-workflow.html).
+* If your module should perform actions before the object is stored but only on object update, you can use the [hook_preUpdate](/docs/hook-workflow.html).
+* If your module should perform actions after the object is successfully stored regardless of whether it's a Create or Update, you can use the [hook_postStore](/docs/hook-workflow.html).
+* If your module should perform actions after the object is successfully stored but only on object creation, you can use the [hook_postCreate](/docs/hook-workflow.html).
+* If your module should perform actions after the object is successfully stored but only on object update, you can use the [hook_postUpdate](/docs/hook-workflow.html).
+* If your module should perform actions before the system attempts to delete an object, you can use the [hook_preDelete](/docs/hook-workflow.html).
+* If your module should perform actions after the object is successfully deleted, you can use the [hook_postDelete](/docs/hook-workflow.html).
+* If your module should perform actions before the system attempts to load an object, you can use the [hook_preLoad](/docs/hook-workflow.html).
+* If your module should perform actions after the object is successfully loaded, you can use the [hook_postLoad](/docs/hook-workflow.html).

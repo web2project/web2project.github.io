@@ -10,14 +10,14 @@ This specification is written with WordPress's "[upgrade in place](http://codex.
 
 ## Considerations
 
-*  The system MUST determine that a new version is available.
-*  The system SHOULD only download the updated/new files and not the entire package.
-*  The system SHOULD work if the local files are writable by the webserver user.
-*  The system SHOULD apply core updates with no additional configuration.
-*  The system SHOULD apply updates to its modules with no additional configuration.
-*  The system SHOULD apply updates to its Add On modules with no additional configuration.
-*  The system MUST always set reasonable (non-breaking) defaults for any new/modified configuration settings.
-*  The system MUST remove deleted files.
+* The system MUST determine that a new version is available.
+* The system SHOULD only download the updated/new files and not the entire package.
+* The system SHOULD work if the local files are writable by the webserver user.
+* The system SHOULD apply core updates with no additional configuration.
+* The system SHOULD apply updates to its modules with no additional configuration.
+* The system SHOULD apply updates to its Add On modules with no additional configuration.
+* The system MUST always set reasonable (non-breaking) defaults for any new/modified configuration settings.
+* The system MUST remove deleted files.
 
 ## WordPress's Flow
 
@@ -26,7 +26,7 @@ This specification is written with WordPress's "[upgrade in place](http://codex.
 * Disable plugins
 * Ready to Update
 * Automatic Update
-* Manual Update - ''aka what we do now''
+* Manual Update - *aka what we do now*
   * Replace WordPress files
   * Remove .maintenance file
   * Update your installation

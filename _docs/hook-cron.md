@@ -12,43 +12,49 @@ redirect_from:  "/docs/cron-hook.html"
 The **hook_cron** method opens a module class to interact with activities which are Schedule-able.
 The method has no parameters: CClass::hook_cron() (by comparison to implementations in some of the classes).
 
-At the time of this writing, this is only used to modify update keys in the Contacts module, other modules - including Add Ons - could implement it also.  One suggested area for use is the Event Queue and email reminders which are still implemented the old ways.
+At the time of this writing, this is only used to modify update keys in the Contacts module, other modules - including Add Ons - could implement it also. One suggested area for use is the Event Queue and email reminders which are still implemented the old ways.
 
 To enable this (and older Event Queue) within your system, set up a "cronjob" (on Linux, Unix, or OS X) or "Scheduled Task" (in Windows) to perform the following:
 
-    wget -O - -q http://{web2project installation}/queuescanner.php
+```
+wget -O - -q http://{web2project installation}/queuescanner.php
+```
 
 ## Example
 
 One such example of programmatically calling each of the active hooks within the system can be found in ./queuescanner.php (the code below is based on r420):
 
-    $AppUI = new CAppUI;
-    $AppUI->setUserLocale();
-    $moduleList = $AppUI->getLoadableModuleList();
-    foreach ($moduleList as $module) {
-        include_once ($AppUI->getModuleClass($module['mod_directory']));
-        $object = new $module['mod_main_class']();
-        if (method_exists($object, 'hook_cron')) {
-            $object->hook_cron();
-        }
+```
+$AppUI = new CAppUI;
+$AppUI->setUserLocale();
+$moduleList = $AppUI->getLoadableModuleList();
+foreach ($moduleList as $module) {
+    include_once ($AppUI->getModuleClass($module['mod_directory']));
+    $object = new $module['mod_main_class']();
+    if (method_exists($object, 'hook_cron')) {
+        $object->hook_cron();
     }
+}
+```
 
 As of web2project v3.0, the Hook System is even easier. Here is the same example from the [queuescanner.php](https://github.com/web2project/web2project/blob/master/queuescanner.php#L24):
 
-    $hooks = new w2p_Core_HookHandler($AppUI);
-    $hooks->process('cron');
+```
+$hooks = new w2p_Core_HookHandler($AppUI);
+$hooks->process('cron');
+```
 
-To be specific, this code gets a list of all active modules in the system and loops over them.  During the loop, this attempts to instantiate an object of that class and checks the object for the 'hook_cron' method.  If the method exists, the system calls it.  In this particular example, the results of calling the hook are not processed in any way.  For sanity's sake, a hook should return FALSE if an error occurred and TRUE or the result if the method executed successfully.
+To be specific, this code gets a list of all active modules in the system and loops over them. During the loop, this attempts to instantiate an object of that class and checks the object for the 'hook_cron' method. If the method exists, the system calls it. In this particular example, the results of calling the hook are not processed in any way. For sanity's sake, a hook should return FALSE if an error occurred and TRUE or the result if the method executed successfully.
 
-The primary benefit of this implementation is that as additional modules (Core or Add On) are added to the system and activated, there's no further registration or configuration process.  If the class implements the requested hook, it's automatically added for process.  If the class does not implement the hook, it is skipped as expected.
+The primary benefit of this implementation is that as additional modules (Core or Add On) are added to the system and activated, there's no further registration or configuration process. If the class implements the requested hook, it's automatically added for process. If the class does not implement the hook, it is skipped as expected.
 
-While there may be other drawbacks, the primary is the memory footprint required.  If the underlying classes or methods are large or complex, it's possible that PHP's memory footprint could become quite large.
+While there may be other drawbacks, the primary is the memory footprint required. If the underlying classes or methods are large or complex, it's possible that PHP's memory footprint could become quite large.
 
 ----
 
 ## Step by step example of setting a Task scheduler job in WINDOWS environment:
 
-* go to http://users.ugent.be/~bpuype/wget/ and download wget 1.11.4 from that link; you can download wget from other sources too;
+* go to [users.ugent.be/~bpuype/wget](http://users.ugent.be/~bpuype/wget/) and download wget 1.11.4 from that link; you can download wget from other sources too;
 * copy wget.exe inside the /WINDOWS folder;
 * go to Control Panel / Scheduled Tasks
 * click Add Scheduled Task
