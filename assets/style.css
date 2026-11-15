@@ -479,7 +479,7 @@ h3 ~ p {
 /* Site logo (was an inline style in the default layout) */
 .site-logo {
     float: right;
-    margin: 20px;
+    margin: 20px 0 10px 20px;
     max-width: 40%;
 }
 
