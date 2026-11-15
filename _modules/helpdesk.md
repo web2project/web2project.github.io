@@ -76,7 +76,7 @@ Configure needs edit rights on System Admin.
 * **Search Fields On Item List:** which filters the list page shows.
 * **Notification Email Options:**
   * whether new tickets e-mail by default
-  * whether watchers and the requestor hear about every log or only status changes
+  * whether watchers and the requester hear about every log or only status changes
   * the address for new unassigned tickets
   * the e-mail subject and header
 

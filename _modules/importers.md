@@ -15,44 +15,44 @@ module_download: https://github.com/web2project/modules-importers/archive/master
 
 ## Module Overview
 
-This module provides a way for a user to import a project plan into web2project from Microsoft Project or WBS Gant Chart Pro v4.4.
+This module provides a way for a user to import a project plan into web2project from Microsoft Project or WBS Gantt Chart Pro v4.4.
 
 ### Usage
 
-1. Within Microsoft Project, open your project as usual.  In the File Menu, select "Save AS ...".  Under file-type, choose "xml" and save your file.
-1.  Within Web2project, select "Project Import" from your module navigation.
-1.  Select "Browse", select the file you saved in Step 1, and select "Import Data".
-1.  Your screen should now show a summary of the imported project with all the relevant Company, Project, Task, and Assignment information.
-1.  If a matching Company was found, the Importer will automatically assign it.  Alternatively, if there was no matching Company, you can choose one or allow the Importer to create a new one.
-1.  Input a Project Name.  If the imported name is already in use, the module will note it here.
-1.  Assign the usernames who match your resources.  Any users not mapped to current Web2project users will automatically be created in an Inactive state.
-1.  Adjust the task assigments as necessary.  By default, the percent allocations from the MS Project file will be used.
-1.  Select "import" below.
+1. Within Microsoft Project, open your project as usual. In the File Menu, select "Save AS ...". Under file-type, choose "xml" and save your file.
+1. Within web2project, select "Project Import" from your module navigation.
+1. Select "Browse", select the file you saved in Step 1, and select "Import Data".
+1. Your screen should now show a summary of the imported project with all the relevant Company, Project, Task, and Assignment information.
+1. If a matching Company was found, the Importer will automatically assign it. Alternatively, if there was no matching Company, you can choose one or allow the Importer to create a new one.
+1. Input a Project Name. If the imported name is already in use, the module will note it here.
+1. Assign the usernames who match your resources. Any users not mapped to current web2project users will automatically be created in an Inactive state.
+1. Adjust the task assignments as necessary. By default, the percent allocations from the MS Project file will be used.
+1. Select "import" below.
 
 ### Release Notes
 
 #### Open Issues
 
-*  Version 4.2 hasn't been updated for web2project v5.0. The WBS importer still calls `db_insert_id()`, which v5.0 removed, when it creates new users, so that import stops with an error. The Microsoft Project importer doesn't use the removed functions but hasn't been tested on v5.0. See [Updating Add On Modules for v5.0](/docs/upgrading-modules-to-5.html).
-*  The module should be scrubbed of the inline html/php nastiness.
-*  Currently, the module it uses the PHP4 style of event-based parsing for the XML document and should be converted to use PHP5's SimpleXML parser.  It will cause the module to be smaller, easier to maintain, and probably more flexible over all.  This will not happen any time soon as it breaks PHP4 compatibility.
+* Version 4.2 hasn't been updated for web2project v5.0. The WBS importer still calls `db_insert_id()`, which v5.0 removed, when it creates new users, so that import stops with an error. The Microsoft Project importer doesn't use the removed functions but hasn't been tested on v5.0. See [Updating Add On Modules for v5.0](/docs/upgrading-modules-to-5.html).
+* The module should be scrubbed of the inline html/php nastiness.
+* Currently, the module it uses the PHP4 style of event-based parsing for the XML document and should be converted to use PHP5's SimpleXML parser. It will cause the module to be smaller, easier to maintain, and probably more flexible over all. This will not happen any time soon as it breaks PHP4 compatibility.
 
 #### 4.2
 
-*  Added numerous notes on areas to cleanup & simplify in future versions;
-*  Applied proper theming to all form fields;
-*  Fixed the Contact lookups to work more often;
-*  Fixed the Task Assignees to allow existing users (not just newly imported users) to be assigned to Tasks;
-*  Fixed the Task Assignees to respect permissions and limit the selection only to Users who can actually view Tasks;
-*  Fixed the "View the project here" link;
-*  Fixed the Work Breakdown Structure id for the WBS Pro file format;
-*  Refactored the flow of the module to the 'proper' structure now specified in the web2project Module Building Guide;
-*  Refactored the post-upload step to a clean redirect with the preview;
-*  Removed the references to the raw $_FILES;
-*  Updated the class structures to standardize look & feel;
-*  Updated the deprecated DBQuery to the new w2p_Database_Query class;
-*  Updated the project/task processing to be timezone aware;
-*  Updated the status messages to use the AppUI status messages instead of echo;
+* Added numerous notes on areas to cleanup & simplify in future versions;
+* Applied proper theming to all form fields;
+* Fixed the Contact lookups to work more often;
+* Fixed the Task Assignees to allow existing users (not just newly imported users) to be assigned to Tasks;
+* Fixed the Task Assignees to respect permissions and limit the selection only to Users who can actually view Tasks;
+* Fixed the "View the project here" link;
+* Fixed the Work Breakdown Structure id for the WBS Pro file format;
+* Refactored the flow of the module to the 'proper' structure now specified in the web2project Module Building Guide;
+* Refactored the post-upload step to a clean redirect with the preview;
+* Removed the references to the raw $_FILES;
+* Updated the class structures to standardize look & feel;
+* Updated the deprecated DBQuery to the new w2p_Database_Query class;
+* Updated the project/task processing to be timezone aware;
+* Updated the status messages to use the AppUI status messages instead of echo;
 
 #### 4.1
 
@@ -75,8 +75,8 @@ This module provides a way for a user to import a project plan into web2project 
 ### Development Status
 
 * v4.1 Update Release: 2010 September
-* v4.0 Major  Release: 2010 April
+* v4.0 Major Release: 2010 April
 * v3.2 Update Release: 2009 October
 * <s>v3.1 Update Release: 2009 September</s>
-* v3.0 Major  Release: 2008 September
+* v3.0 Major Release: 2008 September
 * *All versions prior to v3.0 are only compatible with dotProject - http://docs.dotproject.net/index.php?title=Project_Importer*

@@ -11,12 +11,11 @@ title: Overall Roadmap
 * Go for the Real Dates, Task Dependencies, different dependency types. There is some heavy discussion about this subject in [our Forums](https://github.com/orgs/web2project/discussions). - 09 September 2009
 * Start hammering on the Resource Calendaring, now that we got the calendars working full steam ahead - related to the "Real Dates" point above - 09 September 2009
 * Build a proper dashboard for post user login - 09 September 2009
-* Add cross-platform database support for: Postgres, Oracle, and SQl Server - 30 September 2009
+* Add cross-platform database support for: Postgres, Oracle, and SQL Server - 30 September 2009
 * Implement an ORM option (Propel? Doctrine?) to simplify cross-platform database support, upgrading, etc - 30 September 2009
 * Ideas outlined in [Areas for improvement](/docs/code-review-oct-2009.html)
 * Refactor Gantt chart creation to simplify Pedro's "oblivion" point - 10 December 2009
-* Add cross-platform database support for: Postgres, Oracle, and SQl Server -, carried from v1.1 wishlist: 30 September 2009
-* Implement a Migrations tool (Doctrine?) to simplify cross-platform database support, upgrading, etc -, carried from v1.1 wishlist: 30 September 2009
+* Implement a Migrations tool (Doctrine?) to simplify cross-platform database support, upgrading, etc - 30 September 2009 (carried from the v1.1 wishlist)
 
 ## v1.3 Roadmap
 

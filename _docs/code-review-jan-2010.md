@@ -31,16 +31,20 @@ For a bit more in-depth analysis on this versus just a line count, I gave using 
 
 See the attached file phpcs.log. I just ran all PHP files through PHP_CodeSniffer using the PEAR standard with the following command run from the root trunk directory:
 
-    for file in `find . -name "*.php" -not -wholename "*/lib/*"`; do phpcs --standard=PEAR $file >> phpcs.log; done
+```
+for file in `find . -name "*.php" -not -wholename "*/lib/*"`; do phpcs --standard=PEAR $file >> phpcs.log; done
+```
 
 Using grep to do some analysis on the log file, I found there were 60,883 errors and 5,570 warnings across the 318 files analyzed. 26,552 of these are related to tabs being used instead of spaces for indentation, so that's some potentially low-hanging fruit. Another 2,245 refer to comments or docblock tags. Some, like class and method names, will obviously be a bit trickier to implement without breaking things. The command below can be used to give you a rough idea of what the other common issues are.
 
-    grep '| ERROR ' phpcs.log | sed 's/^\s*[0-9]\+\s\+| \(ERROR\|WARNING\)\s\+|\s\+//g' | sort -u
+```
+grep '| ERROR ' phpcs.log | sed 's/^\s*[0-9]\+\s\+| \(ERROR\|WARNING\)\s\+|\s\+//g' | sort -u
+```
 
 
 #### Embedded CSS
 
-See the attached file css.log. There are just over 400 lines where CSS styles are being embedded in markup rather than kept in stylesheets. In instances where style attribute valeues are dynamically injected using PHP, it's worth consideration to establish a convention for CSS class names and include those statically instead.
+See the attached file css.log. There are just over 400 lines where CSS styles are being embedded in markup rather than kept in stylesheets. In instances where style attribute values are dynamically injected using PHP, it's worth consideration to establish a convention for CSS class names and include those statically instead.
 
 #### Dependency Injection
 
@@ -50,13 +54,15 @@ Providing an extremely accurate report on this is a difficult problem partly due
 
 I created the database using the command below, which appears to be equivalent to how install/manager.class.php handles it. A few errors occurred because the base install SQL file appears to already contain definitions for columns that subsequent files are also attempting to add. Modifying these by changing ADD to CHANGE may be advisable.
 
-    $ for file in `find ./install/sql/mysql -name "0*.sql" | sort`; do mysql -u root --password=*** web2project < $file; done
+```
+$ for file in `find ./install/sql/mysql -name "0*.sql" | sort`; do mysql -u root --password=*** web2project < $file; done
 
-    ERROR 1060 (42S21) at line 9: Duplicate column name 'task_log_created'
+ERROR 1060 (42S21) at line 9: Duplicate column name 'task_log_created'
 
-    ERROR 1060 (42S21) at line 6: Duplicate column name 'task_created'
+ERROR 1060 (42S21) at line 6: Duplicate column name 'task_created'
 
-    ERROR 1060 (42S21) at line 16: Duplicate column name 'project_created'
+ERROR 1060 (42S21) at line 16: Duplicate column name 'project_created'
+```
 
 All database tables are currently using MyISAM. The only reason I could see for doing this would be that some parts of the application are using fulltext search, but they aren't that I can tell from the schema. As such, I'd recommend looking at moving to using InnoDB instead and adding foreign key constraints where applicable.
 
@@ -64,7 +70,9 @@ A number of columns have a default value of NULL. I'd be very careful with these
 
 A number of integer fields in the database do not currently have the unsigned keyword when they should, as it would double their storage capacity. This command performed on a full schema dump can give you a list of those:
 
-    grep int web2project.sql | grep -v unsigned
+```
+grep int web2project.sql | grep -v unsigned
+```
 
 #### Unit Tests
 

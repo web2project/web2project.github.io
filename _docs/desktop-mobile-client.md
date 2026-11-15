@@ -32,7 +32,7 @@ It would be nice if the client:
 
 * was not dependent on a continuous internet connection;
 * automatically synchronized with the core web2project system without user interaction;
-* worked on Ubunutu 9.10 and above - using plugins/extensions/runtimes as appropriate;
+* worked on Ubuntu 9.10 and above - using plugins/extensions/runtimes as appropriate;
 * took on the native look & feel of the underlying operating system;
 * notified the user when the client was not able to retrieve/submit information to the central system;
 * used the specified project_color field to designate project names;
@@ -44,7 +44,7 @@ It would be nice if the client:
 * allowed for translation modules, better if the appropriate web2project translation could be used;
 * provided an update mechanism within the client itself;
 * provided a mechanism to retrieve/update multiple installations of web2project;
-* provided a way to attach files within the comments area and have them automatically uploaded/attached to the appropriate task withing the core system;
+* provided a way to attach files within the comments area and have them automatically uploaded/attached to the appropriate task within the core system;
 * displayed a list of upcoming events (Calendar module);
 * offered visibility into additional modules - such as TodoList - that uses date-based information;
 

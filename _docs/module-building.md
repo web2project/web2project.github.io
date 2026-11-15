@@ -11,16 +11,16 @@ As this guide becomes standardized, functionality will be added in the core syst
 
 ## Expectations
 
-*  All input MUST be filtered before it is used in **any** capacity to help prevent security vulnerabilities such as [SQL injection](http://en.wikipedia.org/wiki/SQL_injection) and [Cross Site Scripting](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
-*  A module MUST NOT have raw SQL statements.
-*  A module MUST NOT have references to the w2p_Database_Query class/object outside of the module's core class and (optional) subclasses.
-*  A module SHOULD use core web2project function/method/API calls instead of copy/pasting logic into your own module.
-*  A module SHOULD adhere to our custom [Naming Conventions](/docs/naming-conventions.html) for variables, methods, etc.
-*  All code within a module SHOULD adhere to the formatting specified by the [PEAR Coding Standard](http://pear.php.net/manual/en/standards.php). To evaluate your own code, please use [Code Sniffer](http://pear.php.net/package/PHP_CodeSniffer/).
+* All input MUST be filtered before it is used in **any** capacity to help prevent security vulnerabilities such as [SQL injection](http://en.wikipedia.org/wiki/SQL_injection) and [Cross Site Scripting](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
+* A module MUST NOT have raw SQL statements.
+* A module MUST NOT have references to the w2p_Database_Query class/object outside of the module's core class and (optional) subclasses.
+* A module SHOULD use core web2project function/method/API calls instead of copy/pasting logic into your own module.
+* A module SHOULD adhere to our custom [Naming Conventions](/docs/naming-conventions.html) for variables, methods, etc.
+* All code within a module SHOULD adhere to the formatting specified by the [PEAR Coding Standard](http://pear.php.net/manual/en/standards.php). To evaluate your own code, please use [Code Sniffer](http://pear.php.net/package/PHP_CodeSniffer/).
 
 ## File Structure
 
-Building a proper module in web2project requires a handful of key files in a particular structure.  Each of which serve a specific purpose in the operation of the system.  For a module called "Todos" - *available from the [http://sourceforge.net/projects/web2project-mod/ web2project Modules]* - we would have the following file structure (filenames are case sensitive):
+Building a proper module in web2project requires a handful of key files in a particular structure. Each of which serve a specific purpose in the operation of the system. For a module called "Todos" - *available from the [http://sourceforge.net/projects/web2project-mod/ web2project Modules]* - we would have the following file structure (filenames are case sensitive):
 
 Filename  | Status | Description | Notes
 ----- |:-----:| ----- | -----
@@ -44,31 +44,35 @@ This file handles the **installation**, **upgrade**, and **removal** of the modu
 
 This describes the basic information on the module. After installation, this becomes a row in the modules table.
 
-    $config = array();
-    $config['mod_name']        = 'TodoList';          // name of the module
-    $config['mod_version']     = '1.1.0';             // the version number
-    $config['mod_directory']   = 'todos';             // tells web2project where to find this module
-    $config['mod_setup_class'] = 'CSetupTodoList';    // the name of the PHP setup class
-    $config['mod_type']        = 'user';              // 'core' for modules included in w2p itself, 'user' for other modules
-    $config['mod_ui_name']	   = $config['mod_name']; // the name that is shown in the main menu of the User Interface
-    $config['mod_ui_icon']     = '';                  // name of a related icon
-    $config['mod_description'] = 'Todo List';         // some description of the module
-    $config['mod_config']      = false;               // show 'configure' link in viewmods
-    $config['mod_main_class']  = 'CTodo';             // the module class that actually does the work
-    $config['permissions_item_table'] = 'todos';      // this is the table the system should check for permissions
-    $config['permissions_item_field'] = 'todo_id';    // this is the field used for permissions check, almost always the primary key
-    $config['permissions_item_label'] = 'todo_title'; // this is the field used to name the item, the projects table would use project_name
+```
+$config = array();
+$config['mod_name']        = 'TodoList';          // name of the module
+$config['mod_version']     = '1.1.0';             // the version number
+$config['mod_directory']   = 'todos';             // tells web2project where to find this module
+$config['mod_setup_class'] = 'CSetupTodoList';    // the name of the PHP setup class
+$config['mod_type']        = 'user';              // 'core' for modules included in w2p itself, 'user' for other modules
+$config['mod_ui_name']	   = $config['mod_name']; // the name that is shown in the main menu of the User Interface
+$config['mod_ui_icon']     = '';                  // name of a related icon
+$config['mod_description'] = 'Todo List';         // some description of the module
+$config['mod_config']      = false;               // show 'configure' link in viewmods
+$config['mod_main_class']  = 'CTodo';             // the module class that actually does the work
+$config['permissions_item_table'] = 'todos';      // this is the table the system should check for permissions
+$config['permissions_item_field'] = 'todo_id';    // this is the field used for permissions check, almost always the primary key
+$config['permissions_item_label'] = 'todo_title'; // this is the field used to name the item, the projects table would use project_name
+```
 
 #### Setup Class
 
-This class - normally called *CSetup{ModuleName}* - is the core of the the installation process. It consists of four public methods and any number of private or protected methods.
+This class - normally called *CSetup{ModuleName}* - is the core of the installation process. It consists of four public methods and any number of private or protected methods.
 
 #### public method: install()
 
 This method should create any and all database tables necessary. If there are System Lookup Values or changes to other tables, those actions should be performed here too. In most modules, this method will end with lines similar to this:
 
-    $perms = $AppUI->acl();
-    return $perms->registerModule('Todolist', 'todos');
+```
+$perms = $AppUI->acl();
+return $perms->registerModule('Todolist', 'todos');
+```
 
 The two parameters are the name and the path of the module respectively. These lines make sure the module is "permissionable" in the System/User Admin.
 
@@ -78,26 +82,30 @@ The bulk of this method is a simple switch statement that should accept the curr
 
 The system itself will handle making this method available. When an Administrator visits *System Admin -> View Modules*, the system scans the directories within and compares the version specified in the **$config** array with the version number for that module currently in the modules table.
 
-    public function upgrade($old_version) {
-        switch ($old_version) {
-            case '0.5':
-            case '0.5.0':
-            case '1.0.0':
-            case '1.0.1':
-                //todo add categories
-                $this->addCategories();
-            default:
-                //do nothing
-        }
-        return true;
+```
+public function upgrade($old_version) {
+    switch ($old_version) {
+        case '0.5':
+        case '0.5.0':
+        case '1.0.0':
+        case '1.0.1':
+            //todo add categories
+            $this->addCategories();
+        default:
+            //do nothing
     }
+    return true;
+}
+```
 
 #### public method: remove()
 
 This method performs cleanup for the module. If there are tables created, it should drop them. If there are columns added, it should remove them. If there are System Lookup Values inserted, it should delete them. As a last step, it should delete the previously created permissions with lines similar to this:
 
-    $perms = $AppUI->acl();
-    return $perms->unregisterModule('todos');
+```
+$perms = $AppUI->acl();
+return $perms->unregisterModule('todos');
+```
 
 where the only parameter is the module directory.
 
@@ -107,23 +115,25 @@ The primary controller of a module is actually relatively "dumb" in the sense th
 
 #### v2.3 and later
 
-As of v2.3 (March 2011), well over half of the Controllers in the core system use a much simpler structure.  At present, this cleanup covers the Companies, Departments, FileFolders (within Files), Forums, and Links Modules. Unfortunately, not all Controllers fall into this model but we'll deal with the more complex cases as we find them. To be clear, there are no Permissions/ACL checks within any of the Controllers. All of those checks should happen within the Model's methods itself. This ensures that as other interfaces for the system are made available, all appropriate permissions are respected without additional effort.
+As of v2.3 (March 2011), well over half of the Controllers in the core system use a much simpler structure. At present, this cleanup covers the Companies, Departments, FileFolders (within Files), Forums, and Links Modules. Unfortunately, not all Controllers fall into this model but we'll deal with the more complex cases as we find them. To be clear, there are no Permissions/ACL checks within any of the Controllers. All of those checks should happen within the Model's methods itself. This ensures that as other interfaces for the system are made available, all appropriate permissions are respected without additional effort.
 
 While this may appear to just save some lines of code, the more important aspect is that the Controllers become testable and more flexible. In terms of the Constructor itself, the five parameters are: the **base object**, the **delete**, the **module name**, the **success path**, and the **error path**. The w2p_Controller_Base handles the $_POST processing, calls actual operation (save or delete), and then sets the proper return path. The key concept applied here is called [Dependency Injection](http://en.wikipedia.org/wiki/Dependency_injection).
 
-    <?php /* $Id$ $URL$ */
-    if (!defined('W2P_BASE_DIR')) {
-        die('You should not access this file directly.');
-    }
+```
+<?php /* $Id$ $URL$ */
+if (!defined('W2P_BASE_DIR')) {
+    die('You should not access this file directly.');
+}
 
-    $delete = (int) w2PgetParam($_POST, 'del', 0);
+$delete = (int) w2PgetParam($_POST, 'del', 0);
 
-    $controller = new w2p_Controllers_Base(
-                        new CLink(), $delete, 'Links', 'm=links', 'm=links&a=addedit'
-                      );
+$controller = new w2p_Controllers_Base(
+                    new CLink(), $delete, 'Links', 'm=links', 'm=links&a=addedit'
+                  );
 
-    $AppUI = $controller->process($AppUI, $_POST);
-    $AppUI->redirect($controller->resultPath);
+$AppUI = $controller->process($AppUI, $_POST);
+$AppUI->redirect($controller->resultPath);
+```
 
 **Warning:** *The above documents a feature only available as of v2.3 (March 2011). If you plan to support older web2project versions, do not use this.*
 
@@ -141,10 +151,12 @@ One example is the [Project Importer](/modules/importers.html) which instead cal
 
 We do not support the PHP4-style method of object constructor where the class name can be used as the constructor. In most cases, a module's constructor will be as simple as this:
 
-    public function __construct()
-    {
-        parent::__construct('todos', 'todo_id');
-    }
+```
+public function __construct()
+{
+    parent::__construct('todos', 'todo_id');
+}
+```
 
 The two parameters are the primary table of the module and that table's primary key. Nothing further will be needed normally.
 
@@ -152,23 +164,25 @@ The two parameters are the primary table of the module and that table's primary 
 
 This public method performs object validation and returns an array listing the errors. Under no circumstances should it change the underlying data. Some modules - like Todos - perform no validation at all while others - like Projects, Links, or Tasks - perform extensive validations. At the time of this writing (July 2010), the Tasks' check() method is a bad example as it does modify the underlying data. Here is a good example from the Links module:
 
-    public function check() {
-        // ensure the integrity of some variables
-        $errorArray = array();
-        $baseErrorMsg = get_class($this) . '::store-check failed - ';
+```
+public function check() {
+    // ensure the integrity of some variables
+    $errorArray = array();
+    $baseErrorMsg = get_class($this) . '::store-check failed - ';
 
-        if ('' == trim($this->link_name)) {
-            $errorArray['link_name'] = $baseErrorMsg . 'link name is not set';
-        }
-        if (7 >= strlen(trim($this->link_url))) {
-            $errorArray['link_url'] = $baseErrorMsg . 'link url is not set';
-        }
-        if (0 == (int) $this->link_owner) {
-            $errorArray['link_owner'] = $baseErrorMsg . 'link owner is not set';
-        }
-
-        return $errorArray;
+    if ('' == trim($this->link_name)) {
+        $errorArray['link_name'] = $baseErrorMsg . 'link name is not set';
     }
+    if (7 >= strlen(trim($this->link_url))) {
+        $errorArray['link_url'] = $baseErrorMsg . 'link url is not set';
+    }
+    if (0 == (int) $this->link_owner) {
+        $errorArray['link_owner'] = $baseErrorMsg . 'link owner is not set';
+    }
+
+    return $errorArray;
+}
+```
 
 #### public method: isValid()
 
@@ -182,55 +196,59 @@ This is the simplest implementation. It is based on the assumption that storing 
 
 *While this specific snippet is from the Todos Module, you'll find identical snippets in the Companies, Contacts, Links, and a few other modules.*
 
-    // This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
-    public function store()
-    {
-        // other code before this snipped for simplicity
-        if ($this->{$this->_tbl_key} && $perms->checkModuleItem($this->_tbl_module, 'edit', $this->{$this->_tbl_key})) {
-            if (($msg = parent::store())) {
-                $this->_error['store'] = $msg;
-            } else {
-                $stored = true;
-            }
+```
+// This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
+public function store()
+{
+    // other code before this snipped for simplicity
+    if ($this->{$this->_tbl_key} && $perms->checkModuleItem($this->_tbl_module, 'edit', $this->{$this->_tbl_key})) {
+        if (($msg = parent::store())) {
+            $this->_error['store'] = $msg;
+        } else {
+            $stored = true;
         }
-        if (0 == $this->{$this->_tbl_key} && $perms->checkModuleItem($this->_tbl_module, 'add')) {
-            if (($msg = parent::store())) {
-                $this->_error['store'] = $msg;
-            } else {
-                $stored = true;
-            }
-        }
-
-        if ($stored) {
-            // if there is any logic based on the success of your store() call, put it here.
-        }
-        return $stored;
     }
+    if (0 == $this->{$this->_tbl_key} && $perms->checkModuleItem($this->_tbl_module, 'add')) {
+        if (($msg = parent::store())) {
+            $this->_error['store'] = $msg;
+        } else {
+            $stored = true;
+        }
+    }
+
+    if ($stored) {
+        // if there is any logic based on the success of your store() call, put it here.
+    }
+    return $stored;
+}
+```
 
 Alternatively, if the store permission is based on the permissions of another module or object, we need a slightly different structure. In this example, permissions to store the FileFolder object are dependent on the Files module.
 
-    // This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
-    public function store()
-    {
-        // other code before this snipped for simplicity
+```
+// This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
+public function store()
+{
+    // other code before this snipped for simplicity
 
-        if ($this->{$this->_tbl_key} && $perms->checkModuleItem('files', 'edit', $this->{$this->_tbl_key})) {
-            if (($msg = parent::store())) {
-                $this->_error['store'] = $msg;
-            } else {
-                $stored = true;
-            }
+    if ($this->{$this->_tbl_key} && $perms->checkModuleItem('files', 'edit', $this->{$this->_tbl_key})) {
+        if (($msg = parent::store())) {
+            $this->_error['store'] = $msg;
+        } else {
+            $stored = true;
         }
-        if (0 == $this->{$this->_tbl_key} && $perms->checkModuleItem('files', 'add')) {
-            if (($msg = parent::store())) {
-                $this->_error['store'] = $msg;
-            } else {
-                $stored = true;
-            }
-        }
-
-        // other code after this snipped for simplicity
     }
+    if (0 == $this->{$this->_tbl_key} && $perms->checkModuleItem('files', 'add')) {
+        if (($msg = parent::store())) {
+            $this->_error['store'] = $msg;
+        } else {
+            $stored = true;
+        }
+    }
+
+    // other code after this snipped for simplicity
+}
+```
 
 #### public method: delete()
 
@@ -240,35 +258,39 @@ This is the simplest implementation. It is based on the assumption that deleting
 
 *While this specific snippet is from the Todos Module, you'll find identical snippets in the Companies, Contacts, Links, and a few other modules.*
 
-    // This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
-    public function delete()
-    {
-        $perms = $AppUI->acl();
+```
+// This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
+public function delete()
+{
+    $perms = $AppUI->acl();
 
-        if ($perms->checkModuleItem($this->_tbl_module, 'delete', $this->{$this->_tbl_key})) {
-            if ($msg = parent::delete()) {
-                return $msg;
-            }
-            return true;
+    if ($perms->checkModuleItem($this->_tbl_module, 'delete', $this->{$this->_tbl_key})) {
+        if ($msg = parent::delete()) {
+            return $msg;
         }
-        return false;
+        return true;
     }
+    return false;
+}
+```
 
 Alternatively, if the delete permission is based on the permissions of another module or object, we need a slightly different structure. In this example, permissions to delete the FileFolder object are dependent on the Files module.
 
-    // This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
-    public function delete()
-    {
-        $perms = $AppUI->acl();
+```
+// This snippet should be considered deprecated as of web2project v3.0. The more correct sample is below.
+public function delete()
+{
+    $perms = $AppUI->acl();
 
-        if ($perms->checkModuleItem('files', 'delete', $this->{$this->_tbl_key})) {
-            if ($msg = parent::delete()) {
-                return $msg;
-            }
-            return true;
+    if ($perms->checkModuleItem('files', 'delete', $this->{$this->_tbl_key})) {
+        if ($msg = parent::delete()) {
+            return $msg;
         }
-        return false;
+        return true;
     }
+    return false;
+}
+```
 
 #### public method: load()
 
@@ -282,19 +304,19 @@ This method fully loads the specific object with all of the fields provided by j
 
 There can be any number of additional methods included of any visibility level desired on the core class. Other than the ones specified above, absolutely no others are necessary. Though, we have quite a few pieces of built-in functionality that you can use by implementing some of the [Hook System](/docs/module-building-guide.html#extending-the-system). For example:
 
-*  If your module needs to be searchable, use the [Search Hook](/docs/hook-search.html).
-*  If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/hook-cron.html).
-*  If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/hook-calendar.html).
-*  If your module should perform actions before the system attempts to store an object regardless of whether it's a Create or Update, you can use the [[preStore_Hook]].
-*  If your module should perform actions before the object is stored but only on object creation, you can use the [[preCreate_Hook]].
-*  If your module should perform actions before the object is stored but only on object update, you can use the [[preUpdate_Hook]].
-*  If your module should perform actions after the object is successfully stored regardless of whether it's a Create or Update, you can use the [[postStore_Hook]].
-*  If your module should perform actions after the object is successfully stored but only on object creation, you can use the [[postCreate_Hook]].
-*  If your module should perform actions after the object is successfully stored but only on object update, you can use the [[postUpdate_Hook]].
-*  If your module should perform actions before the system attempts to delete an object, you can use the [[preDelete_Hook]].
-*  If your module should perform actions after the object is successfully deleted, you can use the [[postDelete_Hook]].
-*  If your module should perform actions before the system attempts to load an object, you can use the [[preLoad_Hook]].
-*  If your module should perform actions after the object is successfully loaded, you can use the [[postLoad_Hook]].
+* If your module needs to be searchable, use the [Search Hook](/docs/hook-search.html).
+* If your module generates time-based events - like an email reminder - you can use [Cron Hook](/docs/hook-cron.html).
+* If your module should add date-based information to the iCalendar feed, you can use the [Calendar Hook](/docs/hook-calendar.html).
+* If your module should perform actions before the system attempts to store an object regardless of whether it's a Create or Update, you can use the [[preStore_Hook]].
+* If your module should perform actions before the object is stored but only on object creation, you can use the [[preCreate_Hook]].
+* If your module should perform actions before the object is stored but only on object update, you can use the [[preUpdate_Hook]].
+* If your module should perform actions after the object is successfully stored regardless of whether it's a Create or Update, you can use the [[postStore_Hook]].
+* If your module should perform actions after the object is successfully stored but only on object creation, you can use the [[postCreate_Hook]].
+* If your module should perform actions after the object is successfully stored but only on object update, you can use the [[postUpdate_Hook]].
+* If your module should perform actions before the system attempts to delete an object, you can use the [[preDelete_Hook]].
+* If your module should perform actions after the object is successfully deleted, you can use the [[postDelete_Hook]].
+* If your module should perform actions before the system attempts to load an object, you can use the [[preLoad_Hook]].
+* If your module should perform actions after the object is successfully loaded, you can use the [[postLoad_Hook]].
 
 ### Views
 
@@ -316,8 +338,8 @@ Under no circumstances should you add the header, footer, or menu to this pages.
 
 From our Todos example above, there are a trio of files - *companies_tab.view.todolist.php, contacts_tab.view.todolist.php, and projects_tab.view.todolist.php* - that give us Todos subviews within other modules. The naming convention is the most important part ``{OtherModule}_tab.view.{BaseModule}.php`` where
 
-*  OtherModule - This is the module where the tab should appear. In the above example, this would be companies, contacts, and projects respectively.
-*  BaseModule - This is the module itself which should be called from within the other modules.
+* OtherModule - This is the module where the tab should appear. In the above example, this would be companies, contacts, and projects respectively.
+* BaseModule - This is the module itself which should be called from within the other modules.
 
 Assuming these files are named properly, the core web2project engine will automatically add these tabs wherever apply. No further configuration is necessary.
 
@@ -333,37 +355,39 @@ Assuming these files are named properly, the core web2project engine will automa
 
 This hook is called by the *calendar.php* script to create the [iCalendar](http://en.wikipedia.org/wiki/ICalendar) feed for the system. In the Todos module, here are the methods of interest:
 
-    public function hook_calendar($userId) {
-        return $this->getOpenTodoItems($userId);
-    }
-    public function getOpenTodoItems($userId, $days = 30) {
-        $q = new DBQuery();
-        $q->addQuery('todo_id as id');
-        $q->addQuery('todo_title as name');
-            $q->addQuery('todo_title as description');
-            $q->addQuery('todo_project_id as project_id');
-        $q->addQuery("DATE_FORMAT(todo_due, '%Y/%m/%d') as startDate");
-        $q->addQuery("DATE_FORMAT(".$q->dbfnDateAdd('todo_due', 1, 'DAY').", '%Y/%m/%d') as endDate");
-        $q->addQuery("DATE_FORMAT(todo_updated, '%Y/%m/%d') as updatedDate");
-        $q->addTable('todos');
-        $q->addWhere("todo_due > now()");
-        $q->addWhere("todo_due < DATE_ADD(CURDATE(), INTERVAL $days DAY)");
-        $q->addWhere("todo_user_id = $userId");
-        $q->addWhere("todo_status = 1");
-        $q->addOrder('todo_due');
-        return $q->loadList();
-    }
+```
+public function hook_calendar($userId) {
+    return $this->getOpenTodoItems($userId);
+}
+public function getOpenTodoItems($userId, $days = 30) {
+    $q = new DBQuery();
+    $q->addQuery('todo_id as id');
+    $q->addQuery('todo_title as name');
+        $q->addQuery('todo_title as description');
+        $q->addQuery('todo_project_id as project_id');
+    $q->addQuery("DATE_FORMAT(todo_due, '%Y/%m/%d') as startDate");
+    $q->addQuery("DATE_FORMAT(".$q->dbfnDateAdd('todo_due', 1, 'DAY').", '%Y/%m/%d') as endDate");
+    $q->addQuery("DATE_FORMAT(todo_updated, '%Y/%m/%d') as updatedDate");
+    $q->addTable('todos');
+    $q->addWhere("todo_due > now()");
+    $q->addWhere("todo_due < DATE_ADD(CURDATE(), INTERVAL $days DAY)");
+    $q->addWhere("todo_user_id = $userId");
+    $q->addWhere("todo_status = 1");
+    $q->addOrder('todo_due');
+    return $q->loadList();
+}
+```
 
 This method - and more importantly the hook_calendar method - returns a list of items specifying the following fields:
 
-*  *id* - This is a unique id for this type of calendar item and is usually just the primary key from the module's core table. It does not have to be globally unique.
-*  *name* - This is the name of the calendar item. This is mapped to the iCalendar SUMMARY field.
-*  *description* - This is a way of describing the calendar item. If there is no equivalent field within the module, it is the easiest to duplicate the *name* entry here. This is mapped to the iCalendar DESCRIPTION field.
-*  *project_id* - If this item maps to a specific Project within web2project, this value can be included. Inclusion of this field will append a link to the Project in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
-*  *task_id* - If this item maps to a specific Task within web2project, this value can be included. Inclusion of this field will append a link to the Task in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
-*  *startDate* - This becomes the DTSTART within the iCalendar entry.
-*  *endDate* - This becomes the DTEND within the iCalendar entry.
-*  *updatedDate* - This becomes the DTSTAMP within the iCalendar entry.
+* *id* - This is a unique id for this type of calendar item and is usually just the primary key from the module's core table. It does not have to be globally unique.
+* *name* - This is the name of the calendar item. This is mapped to the iCalendar SUMMARY field.
+* *description* - This is a way of describing the calendar item. If there is no equivalent field within the module, it is the easiest to duplicate the *name* entry here. This is mapped to the iCalendar DESCRIPTION field.
+* *project_id* - If this item maps to a specific Project within web2project, this value can be included. Inclusion of this field will append a link to the Project in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
+* *task_id* - If this item maps to a specific Task within web2project, this value can be included. Inclusion of this field will append a link to the Task in the iCalendar DESCRIPTION field and add an ATTACH field with the same link.
+* *startDate* - This becomes the DTSTART within the iCalendar entry.
+* *endDate* - This becomes the DTEND within the iCalendar entry.
+* *updatedDate* - This becomes the DTSTAMP within the iCalendar entry.
 
 The calendar.php script will automatically call each active module's hook_calendar method without any additional actions from the user.
 
@@ -371,35 +395,39 @@ The calendar.php script will automatically call each active module's hook_calend
 
 It is possible to make any portion of any module searchable automatically within web2project. The key to this process is to understand the [Search Hook](/docs/hook-search.html). By defining a public method called "hook_search" in your module's primary class, you tell the [SmartSearch](/modules/smartsearch.html) module how it should search your module. While this can be a complicated search involving numerous joins of supporting data - see the Projects module for an example - it can be quite simple also. To continue our example of a "Todos" module from above, the code could look like:
 
-    public function hook_search() {
-        $search['table'] = 'todos';
-        $search['table_alias'] = 't';
-        $search['table_module'] = 'todos';
-        $search['table_key'] = $search['table_alias'].'.todo_id'; // primary key in searched table
-        $search['table_link'] = 'index.php?m=todos&todo_id='; // first part of link
-        $search['table_title'] = 'Todos';
-        $search['table_orderby'] = 'todo_title';
-        $search['search_fields'] = array('todo_title');
-        $search['display_fields'] = array('todo_title');
-        return $search;
-    }
+```
+public function hook_search() {
+    $search['table'] = 'todos';
+    $search['table_alias'] = 't';
+    $search['table_module'] = 'todos';
+    $search['table_key'] = $search['table_alias'].'.todo_id'; // primary key in searched table
+    $search['table_link'] = 'index.php?m=todos&todo_id='; // first part of link
+    $search['table_title'] = 'Todos';
+    $search['table_orderby'] = 'todo_title';
+    $search['search_fields'] = array('todo_title');
+    $search['display_fields'] = array('todo_title');
+    return $search;
+}
+```
 
 While many modules will have a search as simple as above, more complex search patterns are possible. The hook_search for the Contacts Module searches a variety of fields within the contacts table in addition to a field within a joined table.
 
-    public function hook_search() {
-        $search['table'] = 'contacts';
-        $search['table_alias'] = 'c';
-        $search['table_module'] = 'contacts';
-        $search['table_key'] = 'c.contact_id';
-        $search['table_link'] = 'index.php?m=contacts&a=view&contact_id='; // first part of link
-        $search['table_title'] = 'Contacts';
-        $search['table_orderby'] = 'contact_last_name,contact_first_name';
-        $search['table_groupby'] = 'c.contact_id';
-        $search['search_fields'] = array('contact_first_name', 'contact_last_name', 'contact_title', 'contact_company', 'contact_type', 'contact_address1', 'contact_address2', 'contact_city', 'contact_state', 'contact_zip', 'contact_country', 'contact_notes', 'cm.method_value');
-        $search['display_fields'] = $search['search_fields'];             // If the search and display fields are identical, you can do this. Otherwise, build out a separate array.
-        $search['table_joins'] = array(array('table' => 'contacts_methods', 'alias' => 'cm', 'join' => 'c.contact_id = cm.contact_id'));
+```
+public function hook_search() {
+    $search['table'] = 'contacts';
+    $search['table_alias'] = 'c';
+    $search['table_module'] = 'contacts';
+    $search['table_key'] = 'c.contact_id';
+    $search['table_link'] = 'index.php?m=contacts&a=view&contact_id='; // first part of link
+    $search['table_title'] = 'Contacts';
+    $search['table_orderby'] = 'contact_last_name,contact_first_name';
+    $search['table_groupby'] = 'c.contact_id';
+    $search['search_fields'] = array('contact_first_name', 'contact_last_name', 'contact_title', 'contact_company', 'contact_type', 'contact_address1', 'contact_address2', 'contact_city', 'contact_state', 'contact_zip', 'contact_country', 'contact_notes', 'cm.method_value');
+    $search['display_fields'] = $search['search_fields'];             // If the search and display fields are identical, you can do this. Otherwise, build out a separate array.
+    $search['table_joins'] = array(array('table' => 'contacts_methods', 'alias' => 'cm', 'join' => 'c.contact_id = cm.contact_id'));
 
-        return $search;
-    }
+    return $search;
+}
+```
 
 Assuming this method exists and includes the proper values, the [SmartSearch](/modules/smartsearch.html) module will automatically call this function. No further configuration is necessary.
