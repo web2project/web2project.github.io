@@ -36,7 +36,6 @@ The form has these fields:
 * **Contact Methods**: any number of extra phone numbers, e-mail addresses, web addresses and instant messenger accounts. The available methods are the *ContactMethods* lookup values in System Admin.
 * **Contact Notes**
 * **Private Entry**, to hide the contact from everyone but you
-* **Awaiting Update**, to ask the contact to fill in their own details (see below)
 
 To create a login for an existing contact, open the contact and select "create user".
 
@@ -69,14 +68,4 @@ From this page you can:
 
 The contact's page shows all their details and contact methods. The links at the top lead back to the list and let you edit or delete the contact, or view the user account if there is one. A contact that belongs to a user can't be deleted.
 
-### Asking a contact to update their details (Contacts email confirm)
-
-<a href="/assets/docs/contacts/email_confirm.png"><img src="/assets/docs/contacts/thumb-email_confirm.png" alt="Contacts: e-mail confirmation" /></a>
-
-You can ask a contact to complete their own contact details for you.
-
-Imagine you only have the Name and Email of a contact and you'd like to have the rest of their information. Simply edit the contact record, tick **Awaiting Update** and save.
-
-This sends an email to your contact like the one in the image, with a private link. The link leads your contact to their contact record form, where they can edit and add the missing information without logging in.
-
-On the Contacts list, an icon on the card shows whether the request is still waiting, has been waiting too long, or was completed, with the date. The contact's page shows the same under *Waiting Update* and *Last Updated*.
+*Up to v4, a contact could be e-mailed a private link to fill in their own details (**Awaiting Update**). The feature was removed in v5.0.*

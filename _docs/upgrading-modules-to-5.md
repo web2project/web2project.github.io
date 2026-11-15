@@ -136,6 +136,8 @@ strJpGraph() | none
 
 w2p_check_url(), findchilddept_comp(), showchilddept_comp(), show_st_project(), find_proj_child(), contextHelp(), w2PcontextHelp(), cleanText(), showFVar(), resource_presave(), resource_postsave(), the clash_* functions (clash_process(), clash_mail(), clash_accept(), clear_clash(), clash_cancel()) and __extract_from_tasks6().
 
+The contact self-update request is gone: `updatecontact.php`, `do_updatecontact.php`, `CContact::getUpdateKey()`, `clearUpdateKey()`, `notify()`, `updateNotify()`, `getContactByUpdatekey()` and `clearOldUpdatekeys()`, `w2p_Output_EmailManager::getContactUpdateNotify()` and `__extract_from_contact_controller()`. Migration 074 drops `contacts.contact_updatekey` and `contacts.contact_updateasked`; `contacts.contact_lastupdate` stays.
+
 ## Other changes that affect modules
 
 ### Form tokens (CSRF)
