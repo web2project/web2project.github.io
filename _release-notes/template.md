@@ -36,7 +36,7 @@ title: vX.X Release Notes (template)
 * Classes: XXX (XXX Concrete, XXX Abstract)
   * Lines of Code/Class: XXX
   * Class Constants: XXX
-  * Methods:XXX (XXX static, XXX non-static)
+  * Methods: XXX (XXX static, XXX non-static)
     * Public: XXX
     * Protected: XXX
     * Private: XXX
