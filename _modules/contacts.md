@@ -21,7 +21,7 @@ Select Contacts in the sidebar to open the module. Contacts are also attached to
 
 ### Creating a Contact (Contact Add/Edit Page)
 
-<a href="/assets/docs/contacts/addedit.png"><img src="/assets/docs/contacts/thumb-addedit.png" /></a>
+<a href="/assets/docs/contacts/addedit.png"><img src="/assets/docs/contacts/thumb-addedit.png" alt="Contacts: add/edit form" /></a>
 
 Creating your first contact is simple. Choose "New Contact" from the "New Item" menu, or select Contacts in the sidebar and then the "New contact" button. A contact doesn't need a login; it is simply an entry in the shared address book.
 
@@ -42,7 +42,7 @@ To create a login for an existing contact, open the contact and select "create u
 
 #### Importing a vCard
 
-<a href="/assets/docs/contacts/vcard_import.png"><img src="/assets/docs/contacts/thumb-vcard_import.png" /></a>
+<a href="/assets/docs/contacts/vcard_import.png"><img src="/assets/docs/contacts/thumb-vcard_import.png" alt="Contacts: vCard import" /></a>
 
 If someone has sent you a vCard – normally attached to an email or available from their website – select "Import vCard" on the Contacts list and upload the `.vcf` file. One file can hold several contacts. Web2project fills in the name, title, birthday, e-mail, phone numbers, address and notes. It doesn't match the vCard's organization to a company; the organization name is added to the end of Address2, so edit the contact afterwards and choose its Company.
 
@@ -54,7 +54,7 @@ Reporting and information sharing with external project stakeholders is absolute
 
 ### View your Contact List (Contact Index Page)
 
-<a href="/assets/docs/contacts/index.png"><img src="/assets/docs/contacts/thumb-index.png" /></a>
+<a href="/assets/docs/contacts/index.png"><img src="/assets/docs/contacts/thumb-index.png" alt="Contacts: list view" /></a>
 
 The Contacts list shows each contact as a card with their name, company, job title, department, address, phone and e-mail address. The tabs across the top are "Recently Updated", one tab per letter A to Z, and "All Contacts".
 
@@ -71,7 +71,7 @@ The contact's page shows all their details and contact methods. The links at the
 
 ### Asking a contact to update their details (Contacts email confirm)
 
-<a href="/assets/docs/contacts/email_confirm.png"><img src="/assets/docs/contacts/thumb-email_confirm.png" /></a>
+<a href="/assets/docs/contacts/email_confirm.png"><img src="/assets/docs/contacts/thumb-email_confirm.png" alt="Contacts: e-mail confirmation" /></a>
 
 You can ask a contact to complete their own contact details for you.
 

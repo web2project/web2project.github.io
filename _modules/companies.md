@@ -25,7 +25,7 @@ Companies may have a tree of [Departments](/modules/departments.html) associated
 
 ### Create a Company
 
-<a href="/assets/docs/companies/addedit.png"><img src="/assets/docs/companies/thumb-addedit.png" /></a>
+<a href="/assets/docs/companies/addedit.png"><img src="/assets/docs/companies/thumb-addedit.png" alt="Companies: add/edit form" /></a>
 
 To create a Company, choose "New Company" from the "New Item" menu at the top of any page, or select Companies in the sidebar and then the "New company" button.
 
@@ -33,7 +33,7 @@ The form has the company's **Name**, **Email**, **Phone1**, **Phone2** and **Fax
 
 ### View a Company
 
-<a href="/assets/docs/companies/view.png"><img src="/assets/docs/companies/thumb-view.png" /></a>
+<a href="/assets/docs/companies/view.png"><img src="/assets/docs/companies/thumb-view.png" alt="Companies: detail view" /></a>
 
 Clicking a company's name opens its page. The top of the page shows the company's details: name, owner, email, phones, fax, address, URL, type, description and custom fields.
 
@@ -53,7 +53,7 @@ Files | The files of the company's projects and tasks, with the same columns and
 
 ### List Companies
 
-<a href="/assets/docs/companies/index.png"><img src="/assets/docs/companies/thumb-index.png" /></a>
+<a href="/assets/docs/companies/index.png"><img src="/assets/docs/companies/thumb-index.png" alt="Companies: list view" /></a>
 
 The Companies list shows the companies you are allowed to see. It has an "All Companies" tab and one tab per company type. The types are the *CompanyType* lookup values in System Admin; a new installation has Not Applicable, Client, Vendor, Supplier, Consultant, Government and Internal.
 

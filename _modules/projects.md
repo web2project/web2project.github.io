@@ -19,7 +19,7 @@ The very essence of web2Project is the ability to effectively manage projects. T
 
 ### Creating a Project
 
-<a href="/assets/docs/projects/addedit.png"><img src="/assets/docs/projects/thumb-addedit.png" /></a>
+<a href="/assets/docs/projects/addedit.png"><img src="/assets/docs/projects/thumb-addedit.png" alt="Projects: add/edit form" /></a>
 
 Select "Projects" in the navigation and then "New Project", or choose "New Project" from the "New Item" menu at the top of any page.
 
@@ -40,7 +40,7 @@ Select "Projects" in the navigation and then "New Project", or choose "New Proje
 
 ### Projects List (Projects Index Page)
 
-<a href="/assets/docs/projects/index.png"><img src="/assets/docs/projects/thumb-index.png" /></a>
+<a href="/assets/docs/projects/index.png"><img src="/assets/docs/projects/thumb-index.png" alt="Projects: list view" /></a>
 
 Selecting Projects from the navigation takes you to the Projects list.
 
@@ -65,7 +65,7 @@ Click a column heading to sort by it. Long lists are split into pages, and the p
 
 ### Viewing a Project (Projects View Page)
 
-<a href="/assets/docs/projects/view.png"><img src="/assets/docs/projects/thumb-view.png" /></a>
+<a href="/assets/docs/projects/view.png"><img src="/assets/docs/projects/thumb-view.png" alt="Projects: detail view" /></a>
 
 Clicking a project's name opens the project view. The links at the top lead back to the projects list, to editing the project, to [Reports](/modules/reports.html) and to ProjectDesigner.
 

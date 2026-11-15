@@ -25,7 +25,7 @@ Note that the module is disabled by default, and must first be enabled. To enabl
 
 You can assign multiple departments to a company, and multiple contacts to a department.  Using departments is another added benefit in helping you manage your contacts and projects.
 
-<a href="/assets/docs/departments/company_tab.png"><img src="/assets/docs/departments/thumb-company_tab.png" /></a>
+<a href="/assets/docs/departments/company_tab.png"><img src="/assets/docs/departments/thumb-company_tab.png" alt="Departments: company tab" /></a>
 
 When you click on the department tab in the view company page you will see a list of available departments. From this tab you can:
 
@@ -35,7 +35,7 @@ When you click on the department tab in the view company page you will see a lis
 
 ### Create a Department
 
-<a href="/assets/docs/departments/addedit.png"><img src="/assets/docs/departments/thumb-addedit.png" /></a>
+<a href="/assets/docs/departments/addedit.png"><img src="/assets/docs/departments/thumb-addedit.png" alt="Departments: add/edit form" /></a>
 
 To add a new department to a company you must first be in the View Company Page and click on the department tab, then click the “New Department” button.
 

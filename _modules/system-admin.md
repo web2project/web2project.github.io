@@ -19,7 +19,7 @@ System Admin is where you control the system's core settings and general mainten
 
 ## System Admin Index
 
-<a href="/assets/docs/system-admin/index.png"><img src="/assets/docs/system-admin/thumb-index.png" /></a>
+<a href="/assets/docs/system-admin/index.png"><img src="/assets/docs/system-admin/thumb-index.png" alt="System Admin: list view" /></a>
 
 The System Admin page is split into these sections:
 
@@ -56,13 +56,13 @@ The System Admin page is split into these sections:
 
 ## Apply System Updates
 
-<a href="/assets/docs/system-admin/upgrade.png"><img src="/assets/docs/system-admin/thumb-upgrade.png" /></a>
+<a href="/assets/docs/system-admin/upgrade.png"><img src="/assets/docs/system-admin/thumb-upgrade.png" alt="System Admin: system update" /></a>
 
 After you upgrade, *Apply System Updates* runs the database migrations that haven't been applied yet. It lists any SQL errors it hits; a clean upgrade reports none. See the [Installation Guide](/docs/installation.html#upgrade-instructions).
 
 ## Translation Management (translate)
 
-<a href="/assets/docs/system-admin/translation.png"><img src="/assets/docs/system-admin/thumb-translation.png" /></a>
+<a href="/assets/docs/system-admin/translation.png"><img src="/assets/docs/system-admin/thumb-translation.png" alt="System Admin: translation editor" /></a>
 
 Translation Management lets you edit the strings of each installed language, module by module. It only saves to languages and modules that are installed, and the `locales/` folder must be writable by the web server while you work. Full details are in [Translation Management](/docs/translation-management.html).
 
@@ -70,7 +70,7 @@ Additional language packs are mostly contributed by users and are available from
 
 ## System Configuration (systemconfig)
 
-<a href="/assets/docs/system-admin/systemconfig_1.png"><img src="/assets/docs/system-admin/thumb-systemconfig_1.png" /></a> <a href="/assets/docs/system-admin/systemconfig_2.png"><img src="/assets/docs/system-admin/thumb-systemconfig_2.png" /></a> <a href="/assets/docs/system-admin/systemconfig_3.png"><img src="/assets/docs/system-admin/thumb-systemconfig_3.png" /></a>
+<a href="/assets/docs/system-admin/systemconfig_1.png"><img src="/assets/docs/system-admin/thumb-systemconfig_1.png" alt="System Admin: system configuration, page 1" /></a> <a href="/assets/docs/system-admin/systemconfig_2.png"><img src="/assets/docs/system-admin/thumb-systemconfig_2.png" alt="System Admin: system configuration, page 2" /></a> <a href="/assets/docs/system-admin/systemconfig_3.png"><img src="/assets/docs/system-admin/thumb-systemconfig_3.png" alt="System Admin: system configuration, page 3" /></a>
 
 The settings are grouped by area. Hover over the (i) icon next to each setting for a short description.
 
@@ -176,7 +176,7 @@ See [Active Directory](#configure-web2project-to-use-active-directory-accounts) 
 
 ## Default User Preferences (addeditpref)
 
-<a href="/assets/docs/system-admin/default_user_preferences.png"><img src="/assets/docs/system-admin/thumb-default_user_preferences.png" /></a>
+<a href="/assets/docs/system-admin/default_user_preferences.png"><img src="/assets/docs/system-admin/thumb-default_user_preferences.png" alt="System Admin: default user preferences" /></a>
 
 These are the preferences new users start with. Changing them doesn't change existing users; each user can change their own under *Preferences* in the user menu at the top right, and an administrator can change them from User Admin.
 
@@ -197,7 +197,7 @@ v5.0 removed the "User Interface Style" preference, because there is now only on
 
 ## System Lookup Keys (keys)
 
-<a href="/assets/docs/system-admin/system_lookup_keys.png"><img src="/assets/docs/system-admin/thumb-system_lookup_keys.png" /></a>
+<a href="/assets/docs/system-admin/system_lookup_keys.png"><img src="/assets/docs/system-admin/thumb-system_lookup_keys.png" alt="System Admin: system lookup keys" /></a>
 
 System Lookup Keys and System Lookup Values are used together to build drop-down lists, tabs and similar pre-set choices.
 
@@ -205,7 +205,7 @@ System Lookup Keys and System Lookup Values are used together to build drop-down
 
 ## System Lookup Values (syskeys)
 
-<a href="/assets/docs/system-admin/system_lookup_values.png"><img src="/assets/docs/system-admin/thumb-system_lookup_values.png" /></a>
+<a href="/assets/docs/system-admin/system_lookup_values.png"><img src="/assets/docs/system-admin/thumb-system_lookup_values.png" alt="System Admin: system lookup values" /></a>
 
 System Lookup Values hold the choices themselves. This includes standard drop-down lists and tabs such as those on the Projects list.
 
@@ -221,7 +221,7 @@ It is strongly recommended you do not modify these settings unless you are comfo
 
 ## Custom Field Editor (customfields)
 
-<a href="/assets/docs/system-admin/cfe_index.png"><img src="/assets/docs/system-admin/thumb-cfe_index.png" /></a> <a href="/assets/docs/system-admin/cfe_addedit.png"><img src="/assets/docs/system-admin/thumb-cfe_addedit.png" /></a>
+<a href="/assets/docs/system-admin/cfe_index.png"><img src="/assets/docs/system-admin/thumb-cfe_index.png" alt="System Admin: custom fields list" /></a> <a href="/assets/docs/system-admin/cfe_addedit.png"><img src="/assets/docs/system-admin/thumb-cfe_addedit.png" alt="System Admin: custom field form" /></a>
 
 The Custom Field Editor lets you add your own fields to Companies, Projects, Tasks, Calendar (events), Contacts and Users without programming.
 
@@ -235,7 +235,7 @@ The new field appears on that module's add/edit form and view.
 
 ## Billing Code Table (billingcode)
 
-<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" /></a>
+<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" alt="System Admin: billing codes" /></a>
 
 Billing codes put a cost on time, mainly when creating a task log. Each code has:
 
@@ -249,13 +249,13 @@ Saved codes appear in the task log's cost code drop-down. This page is only link
 
 ## Setup Budgets (budgeting)
 
-<a href="/assets/docs/system-admin/budgeting.png"><img src="/assets/docs/system-admin/thumb-budgeting.png" /></a>
+<a href="/assets/docs/system-admin/budgeting.png"><img src="/assets/docs/system-admin/thumb-budgeting.png" alt="System Admin: budgeting" /></a>
 
 Sets budget amounts per company, period and billing category. See [Project Budgeting](/docs/project-budgeting.html).
 
 ## View Modules (modules)
 
-<a href="/assets/docs/system-admin/view_modules.png"><img src="/assets/docs/system-admin/thumb-view_modules.png" /></a>
+<a href="/assets/docs/system-admin/view_modules.png"><img src="/assets/docs/system-admin/thumb-view_modules.png" alt="System Admin: view modules" /></a>
 
 View Modules lists the installed and available modules. From here you can install, activate or disable, upgrade, configure and remove modules, change their order, and choose whether each appears in the navigation.
 
@@ -266,7 +266,7 @@ View Modules lists the installed and available modules. From here you can instal
 
 ## User Roles (roles)
 
-<a href="/assets/docs/system-admin/roles.png"><img src="/assets/docs/system-admin/thumb-roles.png" /></a> <a href="/assets/docs/system-admin/role_permissions.png"><img src="/assets/docs/system-admin/thumb-role_permissions.png" /></a>
+<a href="/assets/docs/system-admin/roles.png"><img src="/assets/docs/system-admin/thumb-roles.png" alt="System Admin: roles tab" /></a> <a href="/assets/docs/system-admin/role_permissions.png"><img src="/assets/docs/system-admin/thumb-role_permissions.png" alt="System Admin: role permissions" /></a>
 
 Roles are an asset to the comprehensive permissions system built into web2Project. You can specify roles for specific types of users or users groups to allow or deny access to various features within web2Project.
 
@@ -290,7 +290,7 @@ Visit the permissions page for more information.
 
 ## System Admin Permissions Result Table (acls_view)
 
-<a href="/assets/docs/system-admin/permissions.png"><img src="/assets/docs/system-admin/thumb-permissions.png" /></a>
+<a href="/assets/docs/system-admin/permissions.png"><img src="/assets/docs/system-admin/thumb-permissions.png" alt="System Admin: permissions" /></a>
 
 The permissions result table gives a more comprehensive look into the permissions for each. You can filter the view by user, module, or by action.
 

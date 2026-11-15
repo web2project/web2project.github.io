@@ -18,7 +18,7 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 
 ## Install Instructions
 
-<a href="/assets/docs/installer/welcome.png"><img src="/assets/docs/installer/thumb-welcome.png" /></a> <a href="/assets/docs/installer/requirements.png"><img src="/assets/docs/installer/thumb-requirements.png" /></a> <a href="/assets/docs/installer/database.png"><img src="/assets/docs/installer/thumb-database.png" /></a> <a href="/assets/docs/installer/finished.png"><img src="/assets/docs/installer/thumb-finished.png" /></a>
+<a href="/assets/docs/installer/welcome.png"><img src="/assets/docs/installer/thumb-welcome.png" alt="Installer: welcome screen" /></a> <a href="/assets/docs/installer/requirements.png"><img src="/assets/docs/installer/thumb-requirements.png" alt="Installer: requirements check" /></a> <a href="/assets/docs/installer/database.png"><img src="/assets/docs/installer/thumb-database.png" alt="Installer: database settings" /></a> <a href="/assets/docs/installer/finished.png"><img src="/assets/docs/installer/thumb-finished.png" alt="Installer: finished screen" /></a>
 
 1. Download the latest release from [GitHub](https://github.com/web2project/web2project/releases) and uncompress it.
 1. Upload the resulting folder to a web-accessible directory on your web server. Note the resulting URL as this will be your new web2project installation.
@@ -45,7 +45,7 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 
 ## Upgrade Instructions
 
-<a href="/assets/docs/system-admin/upgrade.png"><img src="/assets/docs/system-admin/thumb-upgrade.png" /></a>
+<a href="/assets/docs/system-admin/upgrade.png"><img src="/assets/docs/system-admin/thumb-upgrade.png" alt="System Admin: system update" /></a>
 
 1. Back up your database and `files` folder. You can never have too many backups.
 2. Download the latest release from [GitHub](https://github.com/web2project/web2project/releases) and uncompress it.

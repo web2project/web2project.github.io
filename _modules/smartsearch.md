@@ -25,7 +25,7 @@ If you'd rather not show SmartSearch in the sidebar, set it to “hidden” unde
 
 ### Understanding the Interface
 
-<a href="/assets/docs/smartsearch/index.png"><img src="/assets/docs/smartsearch/thumb-index.png" /></a>
+<a href="/assets/docs/smartsearch/index.png"><img src="/assets/docs/smartsearch/thumb-index.png" alt="SmartSearch: list view" /></a>
 
 After you perform your initial search the SmartSearch Module will display the results for each module that has data related to your criteria.
 
@@ -39,7 +39,7 @@ What happens if the module displays too many results? The SmartSearch Module all
 
 You can specify words and even choose to only search specific modules; in addition you can perform an advanced search to narrow down your results even more.
 
-<a href="/assets/docs/smartsearch/options.png"><img src="/assets/docs/smartsearch/thumb-options.png" /></a>
+<a href="/assets/docs/smartsearch/options.png"><img src="/assets/docs/smartsearch/thumb-options.png" alt="SmartSearch: search options" /></a>
 
 When you click in the Modules selection checkbox an array of checkboxes will appear, with “Select all” and “Deselect all” buttons. Click on the modules you wish to narrow your search to.
 

@@ -21,7 +21,7 @@ This is particularly useful to store client or vendor websites, but can be used 
 
 ### Links List View (Links Index)
 
-<a href="/assets/docs/links/index.png"><img src="/assets/docs/links/thumb-index.png" /></a>
+<a href="/assets/docs/links/index.png"><img src="/assets/docs/links/thumb-index.png" alt="Links: list view" /></a>
 
 Select Links in the sidebar to see the list. It has an "All Links" tab and one tab per link category. The categories are the *LinkType* lookup values in System Admin; a new installation has Unknown, Document and Application. They help you sort your links so you can find them quickly.
 
@@ -39,7 +39,7 @@ By default the list has these columns:
 
 ### Links Add/Edit (Links addedit)
 
-<a href="/assets/docs/links/addedit.png"><img src="/assets/docs/links/thumb-addedit.png" /></a>
+<a href="/assets/docs/links/addedit.png"><img src="/assets/docs/links/thumb-addedit.png" alt="Links: add/edit form" /></a>
 
 To add a new link, choose "New Link" from the "New Item" menu, or use the "New link" button on the Links list or on a task's page.
 

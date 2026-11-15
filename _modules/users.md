@@ -19,7 +19,7 @@ Now that you have a Company and a Project in your system, it is time to create y
 
 ### Create a User
 
-<a href="/assets/docs/users/addedit.png"><img src="/assets/docs/users/thumb-addedit.png" /></a>
+<a href="/assets/docs/users/addedit.png"><img src="/assets/docs/users/thumb-addedit.png" alt="Users: add/edit form" /></a>
 
 Creating your first User can be a confusing experience if you do not understand the process in the beginning. Select “User Admin” in the sidebar (under *Administration*) and then the “New user” button.
 
@@ -33,7 +33,7 @@ Before a new User can log in, they must be assigned a Role in the User Administr
 
 ### Assign Roles
 
-<a href="/assets/docs/users/roles.png"><img src="/assets/docs/users/thumb-roles.png" /></a>
+<a href="/assets/docs/users/roles.png"><img src="/assets/docs/users/thumb-roles.png" alt="Users: roles tab" /></a>
 
 To let the User log in for the first time, he must be assigned a Role, either on the new user form or on the Roles tab of the User's page. The four base roles at installation are Administrator, Project worker, Guest, and Anonymous and grant progressively more and more restrictive permissions.
 
@@ -44,7 +44,7 @@ To let the User log in for the first time, he must be assigned a Role, either on
 
 ### Add / Deny Permissions
 
-<a href="/assets/docs/users/permissions.png"><img src="/assets/docs/users/thumb-permissions.png" /></a>
+<a href="/assets/docs/users/permissions.png"><img src="/assets/docs/users/thumb-permissions.png" alt="Users: permissions" /></a>
 
 There are five attributes which can be connected with any Module to expand or limit these basic Roles as needed. The attributes are Access, Add, Delete, Edit, and View and can be assigned to the Module as a whole or to specific aspects of the Module. For example, a Resource Manager type user might have a Project worker role supplemented with Allow permissions to Access, Add, View in the User Admin. This would give him access to create new users as necessary without the ability to delete users. To further safeguard against abuse of this account, the System Administrator could add Deny permissions to anything done by the Resource Manager user to the System Administrator account.
 
@@ -56,7 +56,7 @@ User Admin has four tabs: Active Users, Inactive Users, User Log and Active Sess
 
 #### Active Users
 
-<a href="/assets/docs/users/active.png"><img src="/assets/docs/users/thumb-active.png" /></a>
+<a href="/assets/docs/users/active.png"><img src="/assets/docs/users/thumb-active.png" alt="Users: active users" /></a>
 
 The Active Users tab lists the Users who have a Role. By default the columns are:
 
@@ -71,7 +71,7 @@ Department | The User's department
 
 #### Inactive Users
 
-<a href="/assets/docs/users/inactive.png"><img src="/assets/docs/users/thumb-inactive.png" /></a>
+<a href="/assets/docs/users/inactive.png"><img src="/assets/docs/users/thumb-inactive.png" alt="Users: inactive users" /></a>
 
 Inactive users are users who do not have a Role assigned to them. When a person signs up from the login page they start here, and the system administrator receives an e-mail asking them to assign a Role. New LDAP users also start here.
 
@@ -79,13 +79,13 @@ Inactive users are users who do not have a Role assigned to them. When a person 
 
 #### User Log
 
-<a href="/assets/docs/users/userlog.png"><img src="/assets/docs/users/thumb-userlog.png" /></a>
+<a href="/assets/docs/users/userlog.png"><img src="/assets/docs/users/thumb-userlog.png" alt="Users: user log" /></a>
 
 The User Log tab shows the login history for all users or one user over a date range you choose with the two calendars. Each row shows the First Name, Last Name, Internet Address and the times the session started and ended (Date Time IN and Date Time OUT). A login stays open until the user logs out or the session expires.
 
 #### Active Sessions
 
-<a href="/assets/docs/users/sessions.png"><img src="/assets/docs/users/thumb-sessions.png" /></a>
+<a href="/assets/docs/users/sessions.png"><img src="/assets/docs/users/thumb-sessions.png" alt="Users: sessions" /></a>
 
 The Active Sessions tab lists everyone logged in now, with their Login Name, Real Name, Company, login time and Internet Address. For each one you can **end user session**, which closes that one login, or **force user logout**, which closes every session that user has open.
 
@@ -99,7 +99,7 @@ Passwords aren't changed on this form. Instead, open the User's page and select 
 
 ### View a User
 
-<a href="/assets/docs/users/view.png"><img src="/assets/docs/users/thumb-view.png" /></a>
+<a href="/assets/docs/users/view.png"><img src="/assets/docs/users/thumb-view.png" alt="Users: detail view" /></a>
 
 Click the User's login name in User Admin to open their page. The links at the top lead back to the user list and let you change the password, edit the user, edit their contact record, edit their preferences or delete the user.
 
@@ -114,6 +114,6 @@ Below that are the tabs:
 
 ### Edit User Preferences
 
-<a href="/assets/docs/users/user_prefs.png"><img src="/assets/docs/users/thumb-user_prefs.png" /></a>
+<a href="/assets/docs/users/user_prefs.png"><img src="/assets/docs/users/thumb-user_prefs.png" alt="Users: user preferences" /></a>
 
 Each User's preferences override the [Default User Preferences](/modules/system-admin.html). To change them for a User, select “edit preferences” on the User's page. Users change their own under *Preferences* in the user menu.

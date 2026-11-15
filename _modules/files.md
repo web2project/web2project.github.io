@@ -35,7 +35,7 @@ There are three ways to get to the upload form and they are all effectively the 
 
 ### Files List (Files Index)
 
-<a href="/assets/docs/files/index.png"><img src="/assets/docs/files/thumb-index.png" /></a>
+<a href="/assets/docs/files/index.png"><img src="/assets/docs/files/thumb-index.png" alt="Files: list view" /></a>
 
 When you select "Files" from the main navigation you will see the Files list.
 
@@ -65,7 +65,7 @@ Downloads go through `fileviewer.php`, which checks that you are logged in and a
 
 ### Add or Edit a File (Files addedit)
 
-<a href="/assets/docs/files/addedit.png"><img src="/assets/docs/files/thumb-addedit.png" /></a>
+<a href="/assets/docs/files/addedit.png"><img src="/assets/docs/files/thumb-addedit.png" alt="Files: add/edit form" /></a>
 
 The form has these fields:
 

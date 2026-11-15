@@ -21,7 +21,7 @@ Tasks define a [Project's](/modules/projects.html) scope and represent the actua
 
 ### Creating Tasks
 
-<a href="/assets/docs/tasks/addedit_1.png"><img src="/assets/docs/tasks/thumb-addedit_1.png" /></a> <a href="/assets/docs/tasks/addedit_2.png"><img src="/assets/docs/tasks/thumb-addedit_2.png" /></a> <a href="/assets/docs/tasks/addedit_3.png"><img src="/assets/docs/tasks/thumb-addedit_3.png" /></a> <a href="/assets/docs/tasks/addedit_4.png"><img src="/assets/docs/tasks/thumb-addedit_4.png" /></a>
+<a href="/assets/docs/tasks/addedit_1.png"><img src="/assets/docs/tasks/thumb-addedit_1.png" alt="Tasks: add/edit form, Details tab" /></a> <a href="/assets/docs/tasks/addedit_2.png"><img src="/assets/docs/tasks/thumb-addedit_2.png" alt="Tasks: add/edit form, Dates tab" /></a> <a href="/assets/docs/tasks/addedit_3.png"><img src="/assets/docs/tasks/thumb-addedit_3.png" alt="Tasks: add/edit form, Dependencies tab" /></a> <a href="/assets/docs/tasks/addedit_4.png"><img src="/assets/docs/tasks/thumb-addedit_4.png" alt="Tasks: add/edit form, Human Resources tab" /></a>
 
 On a project or task page, select "New Task", or choose "New Task" from the "New Item" menu at the top of any page. The top of the form always shows the task's **Name**, **Status**, **Priority**, **Progress** and **Milestone** settings. Below it are four tabs:
 
@@ -32,7 +32,7 @@ On a project or task page, select "New Task", or choose "New Task" from the "New
 
 If the Resources module is active, there is also an **Other resources** tab for assigning equipment, rooms and other [Resources](/modules/resources.html).
 
-<a href="/assets/docs/tasks/addedit_5.png"><img src="/assets/docs/tasks/thumb-addedit_5.png" /></a>
+<a href="/assets/docs/tasks/addedit_5.png"><img src="/assets/docs/tasks/thumb-addedit_5.png" alt="Tasks: add/edit form, Other resources tab" /></a>
 
 The options on the Dependencies tab create four types of tasks which are denoted distinctly throughout the system. Some of these automatically handle quite a few things for you while some do not. All of them appear on the Calendar and on the assignees' task lists.
 
@@ -55,7 +55,7 @@ The third is the task reminder. When *Send Task Reminders* is on (System Admin �
 
 ### Tasks List (Tasks index page)
 
-<a href="/assets/docs/tasks/index.png"><img src="/assets/docs/tasks/thumb-index.png" /></a>
+<a href="/assets/docs/tasks/index.png"><img src="/assets/docs/tasks/thumb-index.png" alt="Tasks: list view" /></a>
 
 Select Tasks from the navigation to see the Tasks list. There are a number of filters at the top of the page.
 
@@ -98,7 +98,7 @@ Each row is colour-coded by its dates and progress. The key below the list shows
 
 ### Viewing a Task (Task View Page)
 
-<a href="/assets/docs/tasks/view.png"><img src="/assets/docs/tasks/thumb-view.png" /></a>
+<a href="/assets/docs/tasks/view.png"><img src="/assets/docs/tasks/thumb-view.png" alt="Tasks: detail view" /></a>
 
 Clicking a task's name opens the task view. The buttons at the top add a new task log, link, file or subtask, and the links lead to the project, to editing or deleting the task, and, for a task that represents a subproject, to that subproject.
 
@@ -124,7 +124,7 @@ Other resources | The resources assigned to the task, when the Resources module 
 
 ### Gantt Charts
 
-<a href="/assets/docs/tasks/gantt.png"><img src="/assets/docs/tasks/thumb-gantt.png" /></a>
+<a href="/assets/docs/tasks/gantt.png"><img src="/assets/docs/tasks/thumb-gantt.png" alt="Tasks: Gantt chart" /></a>
 
 The Gantt Chart is the center of nearly every project management system. As you create tasks and dependencies, the system handles the display and ordering to create the traditional waterfall pattern. To view the Gantt Chart, open a project and select the Gantt Chart tab. The charts need PHP's `gd` extension and *Enable Gantt Charts* turned on in System Configuration.
 
@@ -139,7 +139,7 @@ To keep a copy of a chart, use your browser's *Print → Save as PDF*; v5.0 remo
 
 ### Task Logs / Reporting {#reporting-module}
 
-<a href="/assets/docs/tasks/log.png"><img src="/assets/docs/tasks/thumb-log.png" /></a>
+<a href="/assets/docs/tasks/log.png"><img src="/assets/docs/tasks/thumb-log.png" alt="Tasks: task log" /></a>
 
 Whenever a User wishes to log time against the task, they can open the task and select "New Log" or the Log tab, or select the log icon on a task list. Either route gives a simple form to record the **Date**, **Progress**, **Hours Worked** (with a Start/Stop timer if you want to time the work), a **Billing Code**, a **Summary**, a **Description**, a **Reference** and a **URL**, and to update the **Task end date**. The e-mail options decide who gets the update, as described under Email Notifications above.
 
@@ -149,13 +149,13 @@ For organizations which require extensive reporting or accountability – especi
 
 ### My Tasks (Todo List)
 
-<a href="/assets/docs/tasks/todo_tasks.png"><img src="/assets/docs/tasks/thumb-todo_tasks.png" /></a> <a href="/assets/docs/tasks/todo_gantt.png"><img src="/assets/docs/tasks/thumb-todo_gantt.png" /></a>
+<a href="/assets/docs/tasks/todo_tasks.png"><img src="/assets/docs/tasks/thumb-todo_tasks.png" alt="Tasks: My Tasks list" /></a> <a href="/assets/docs/tasks/todo_gantt.png"><img src="/assets/docs/tasks/thumb-todo_gantt.png" alt="Tasks: My Tasks Gantt chart" /></a>
 
 *My Tasks* in the header, or "my todo" on the Tasks list, shows the open tasks assigned to you. Each row has the edit, pin and log icons, then the percent complete, the task's priority (P), your own priority (U), the task name, the project name, the start date, the duration, the finish date and how many days the task is **Due In**. The dates are colour-coded with the same key as the Tasks list, which is an efficient way to monitor all your open tasks and deadlines across projects. With the proper permissions, you can also view other users' lists.
 
 ### Costcode Management
 
-<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" /></a>
+<a href="/assets/docs/system-admin/billing_code.png"><img src="/assets/docs/system-admin/thumb-billing_code.png" alt="System Admin: billing codes" /></a>
 
 Costcodes – called Billing Codes, Project Codes, etc by some organizations – are a simple method of allowing different users to track their time against specific types of tasks on individual task log entries. Some of this information can be used to track the type of work performed – such as administrative work versus development work – or even between different developers with differing billing rates. The [Billing Code Table](/modules/system-admin.html#billing-code-table-billingcode) in System Admin is where you set them up, and [Project Budgeting](/docs/project-budgeting.html) explains how they feed the budget figures.
 
