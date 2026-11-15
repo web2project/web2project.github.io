@@ -97,7 +97,7 @@ The settings are grouped by area. Hover over the (i) icon next to each setting f
 
 ### User Authentication Settings
 
-* **User Authentication Method**: "Standard web2Project" (the web2project database), "LDAP" or "PostNuke".
+* **User Authentication Method**: "Standard web2project" (the web2project database), "LDAP" or "PostNuke".
 * **Postnuke login also allows Standard Login**: with PostNuke authentication, also accept web2project logins.
 
 ### Budgeting
@@ -154,7 +154,7 @@ See [Active Directory](#configure-web2project-to-use-active-directory-accounts) 
 
 ### Session Handling Settings
 
-* **Session Handler**: "web2Project Extended Sessions" stores sessions in the database (the default); "PHP Default" uses PHP's own sessions.
+* **Session Handler**: "web2project Extended Sessions" stores sessions in the database (the default); "PHP Default" uses PHP's own sessions.
 * **Session Idle Time** (default `2d`) and **Session Maximum Lifetime** (default `1m`): in seconds unless followed by `h`, `d`, `m` or `y`. Only one letter is allowed, so `28h` is valid and `2d4h` is not.
 * **Scan Event Queue on Session Garbage Collection**: processes the event queue when old sessions are cleaned up, as an alternative to cron.
 
@@ -211,7 +211,9 @@ System Lookup Values hold the choices themselves. This includes standard drop-do
 
 For example the Projects list tabs come from the "ProjectStatus" values:
 
-    0|Not Defined 1|Proposed 2|In Planning 3|In Progress 4|On Hold 5|Complete 6|Template
+```
+0|Not Defined 1|Proposed 2|In Planning 3|In Progress 4|On Hold 5|Complete 6|Template
+```
 
 Changing these values changes the tabs, but you can't change the "All Projects", "All Active" or "Archived" tabs, which are built in.
 
@@ -268,7 +270,7 @@ View Modules lists the installed and available modules. From here you can instal
 
 <a href="/assets/docs/system-admin/roles.png"><img src="/assets/docs/system-admin/thumb-roles.png" alt="System Admin: roles tab" /></a> <a href="/assets/docs/system-admin/role_permissions.png"><img src="/assets/docs/system-admin/thumb-role_permissions.png" alt="System Admin: role permissions" /></a>
 
-Roles are an asset to the comprehensive permissions system built into web2Project. You can specify roles for specific types of users or users groups to allow or deny access to various features within web2Project.
+Roles are an asset to the comprehensive permissions system built into web2project. You can specify roles for specific types of users or users groups to allow or deny access to various features within web2project.
 
 Roles make it easier to apply permissions to a user or set of users rather than applying individual permissions to each user.
 

@@ -7,8 +7,8 @@ category: "module building guide"
 
 As of v3.0, as long as you've followed our conventions in your module configuration, you probably don't need to write your own store() method. Calling store() on any object that extends ``w2p_Core_BaseObject`` will automatically trigger this flow;
 
-*  When an object is ready to be stored, it simply has the store() method called.
-*  If the object doesn't have its own store(), it defaults to the w2p_Core_BaseObject method:
+* When an object is ready to be stored, it simply has the store() method called.
+* If the object doesn't have its own store(), it defaults to the w2p_Core_BaseObject method:
   * First, all previous errors are cleared via clearErrors().
   * Next, a ``preStoreEvent`` notification is published which triggers any hook_preStore() methods for that object are called. This is where you can set default values, apply business rules, or send other notifications. Any return values from hook_preStore() are ignored.
   * Next, the isValid() method is called. This is where you can perform data validation specific to the object. For example, it will make sure all Projects have Owners, that Link Urls actually have value, and new Users have unique Usernames.
@@ -27,7 +27,7 @@ As of v3.0, as long as you've followed our conventions in your module configurat
 
 While this seems incredibly complicated, it is all handled behind the scenes for you automagically by simply calling store() on your object.
 
-*  In the vast majority of cases, you will only have to write an isValid() method for your module.
-*  In some cases, you will need your own hooks into preStore, preCreate, preUpdate, postCreate, postUpdate, or postStore.
-*  In rare circumstances when you have module-specific permission requirements, you may also need custom canCreate(), canEdit() methods.
-*  Only in *very* exceptional cases will you still have to write your own store() method. Within core web2project, this is required in exactly one place in the CSystem_SysVal class (./modules/system/sysvals.class.php).
+* In the vast majority of cases, you will only have to write an isValid() method for your module.
+* In some cases, you will need your own hooks into preStore, preCreate, preUpdate, postCreate, postUpdate, or postStore.
+* In rare circumstances when you have module-specific permission requirements, you may also need custom canCreate(), canEdit() methods.
+* Only in *very* exceptional cases will you still have to write your own store() method. Within core web2project, this is required in exactly one place in the CSystem_SysVal class (./modules/system/sysvals.class.php).

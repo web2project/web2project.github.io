@@ -15,7 +15,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-Now that you have a Company and a Project in your system, it is time to create your a User. Remember that more than anything Web2project is a collaborative tool and the goal of it is to share information. However, it is quite common that you will need to keep certain aspects private to protect the confidential or proprietary information of your customers. Therefore, the creation of Users and setting their permissions become some of the most important aspects of its day to day usage. Unfortunately, it can also be quite difficult to understand at first glance. The basics of Permissions are covered here, but for a more rigorous discussion, please review [Permissions 201](/howto/permissions-201.html) on the System Admin page.
+Now that you have a Company and a Project in your system, it is time to create your a User. Remember that more than anything web2project is a collaborative tool and the goal of it is to share information. However, it is quite common that you will need to keep certain aspects private to protect the confidential or proprietary information of your customers. Therefore, the creation of Users and setting their permissions become some of the most important aspects of its day to day usage. Unfortunately, it can also be quite difficult to understand at first glance. The basics of Permissions are covered here, but for a more rigorous discussion, please review [Permissions 201](/howto/permissions-201.html) on the System Admin page.
 
 ### Create a User
 
@@ -25,9 +25,9 @@ Creating your first User can be a confusing experience if you do not understand 
 
 The form asks for the **Login Name**, **Password** and **Confirm Password** (with a strength meter), the User's **Name**, **Company**, **Department**, **Email** and **Email Signature**, and any custom fields set up for Users. The Company does not determine any permissions, but it does begin to build the associations. If you are allowed to, you can also choose the **User Role** here, and tick **Inform new user of account details?** to e-mail them their login.
 
-Once you save, the User account is created along with the corresponding Contact record. If you didn't choose a Role, the User has no permissions and can therefore do nothing, not even log into Web2project.
+Once you save, the User account is created along with the corresponding Contact record. If you didn't choose a Role, the User has no permissions and can therefore do nothing, not even log into web2project.
 
-{% include icon-question.html %} The Web2project permissions system assigns zero privileges by default.
+{% include icon-question.html %} The web2project permissions system assigns zero privileges by default.
 
 Before a new User can log in, they must be assigned a Role in the User Administration Module.
 

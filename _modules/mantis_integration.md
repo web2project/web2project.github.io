@@ -23,7 +23,7 @@ This module was distributed through the old web2project forums, which are offlin
 
 Within W2P, you will find a Tab called Mantis when looking at a given project. For each W2P project, a Mantis project will be created (if it does not yet exist) when the first issue is added.
 
-Creation of Projects in mantis can be automatic or by using a custom field within Web2Project. In case defined as automatic, Projects in Mantis will be created with a special name :
+Creation of Projects in mantis can be automatic or by using a custom field within web2project. In case defined as automatic, Projects in Mantis will be created with a special name :
 
 * Prefix as defined in config.php
 * W2P-project-id
@@ -67,4 +67,4 @@ All other activity is left within Mantis.
 
 ### Development Status
 
-*  v0.9 Release: March 2010 - Initial release, converted from DP. In addition this version is only suitable for Mantis version 1.2.0 and above.
+* v0.9 Release: March 2010 - Initial release, converted from DP. In addition this version is only suitable for Mantis version 1.2.0 and above.

@@ -5,7 +5,7 @@ title: Translation Management
 
 **Applies to**: v5.0.0 and later
 
-web2project ships with several translations in the `locales` folder. More are in the [locales repository](https://github.com/web2project/locales). To use one, copy its folder into `locales/` and choose the language under *Preferences* in the user menu, or set it for everyone with the *Host Locale* setting and the default user preferences in System Admin.
+Web2project ships with several translations in the `locales` folder. More are in the [locales repository](https://github.com/web2project/locales). To use one, copy its folder into `locales/` and choose the language under *Preferences* in the user menu, or set it for everyone with the *Host Locale* setting and the default user preferences in System Admin.
 
 ## Creating a translation
 
@@ -37,8 +37,10 @@ The editor only saves to languages that already have a folder in `locales/` and 
 
 Since v5.0, translation (`.inc`) files are read as data, not run as PHP. Each line is a quoted English string, `=>`, and the quoted translation, followed by a comma:
 
-    'Add a Todo'=>'Ajouter une tâche',
-    "Task Name"=>"Nom de la tâche",
+```
+'Add a Todo'=>'Ajouter une tâche',
+"Task Name"=>"Nom de la tâche",
+```
 
 Single or double quotes both work, and comments are allowed. An entry that contains anything else, such as a variable, a function call or text joined with `.`, is skipped, and that string shows in English. Translation files written for older versions usually work unchanged; check any that built strings with PHP code.
 

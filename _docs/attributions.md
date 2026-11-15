@@ -3,7 +3,7 @@ layout: page
 title: Attributions
 ---
 
-All code, libraries, icons, graphics, and children are property of their respective owners. Unless noted otherwise, Web2project only licenses and does not own any of it.  
+All code, libraries, icons, graphics, and children are property of their respective owners. Unless noted otherwise, web2project only licenses and does not own any of it.  
 
 
 ## Graphics

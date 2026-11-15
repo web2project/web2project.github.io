@@ -41,21 +41,21 @@ The module adds two tabs.
 
 ### Updated in 1.1
 
-*  Removed numerous methods that are now implemented in core
-*  Minor improvements to layout and CSS
+* Removed numerous methods that are now implemented in core
+* Minor improvements to layout and CSS
 
 ### Updated in 1.0
 
-*  Initial release for web2project
+* Initial release for web2project
 
 ### Open Issues:
 
-1.  No known issues.
+1. No known issues.
 
 ### Development Status
 
-*  v1.0 Conversion to web2project: May 2011
-*  <s>v0.2 Original Development for dotproject: December 2008</s>
+* v1.0 Conversion to web2project: May 2011
+* <s>v0.2 Original Development for dotproject: December 2008</s>
 
 ## Additional Notes
 

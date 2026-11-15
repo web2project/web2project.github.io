@@ -15,7 +15,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-The very essence of web2Project is the ability to effectively manage projects. The Project Module is the foundation for [Tasks](/modules/tasks.html) and the heart of the system. Almost every other module in the system uses the project module in some sort of capacity to pull or share information.
+The very essence of web2project is the ability to effectively manage projects. The Project Module is the foundation for [Tasks](/modules/tasks.html) and the heart of the system. Almost every other module in the system uses the project module in some sort of capacity to pull or share information.
 
 ### Creating a Project
 

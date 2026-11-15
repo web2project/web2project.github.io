@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Installing and Upgrading Web2project
+title: Installing and Upgrading web2project
 ---
 
-Installing Web2project is the same as installing any other PHP project and has minimal requirements. The definitive version of this [Installation Guide](https://docs.web2project.net/docs/installation.html) is available online but this section should be the same.
+Installing web2project is the same as installing any other PHP project and has minimal requirements. The definitive version of this [Installation Guide](https://docs.web2project.net/docs/installation.html) is available online but this section should be the same.
 
 **Requirements:**
 
@@ -55,7 +55,7 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 6. From the command line within the new folder, run `composer install --no-dev`.
 7. Rename the old folder.
 8. Rename the new folder to the old folder's previous name.
-9. Point your web browser to your Web2project folder.
+9. Point your web browser to your web2project folder.
 10. Log in with an Administrator account.
 11. Select the System Admin module and choose "Apply System Updates"
 12. The Installer will handle applying all updates. It lists any errors it hits; a clean upgrade reports none.
@@ -81,8 +81,8 @@ The [v5.0 release notes](/release-notes/5.0.0-rc1.html) list every change.
 2. Download the latest release from [GitHub](https://github.com/web2project/web2project/releases) and uncompress it.
 3. Upload the resulting folder to your web server. Note the resulting URL as this will be your new web2project installation.
 4. From the command line within the web2project folder, run `composer install --no-dev`.
-5. Copy your `files` folder from your dotProject folder to your Web2project folder.
-6. Copy your `includes/config.php` file from your dotProject folder to your Web2project folder.
+5. Copy your `files` folder from your dotProject folder to your web2project folder.
+6. Copy your `includes/config.php` file from your dotProject folder to your web2project folder.
 7. Point your browser to your web2project folder.
 8. The Installer will detect the dotProject configuration and apply database updates, data transformations, and update the `config.php`. *This may take a while depending on how big your database is.*
 9. Log into your system with your existing username and password.

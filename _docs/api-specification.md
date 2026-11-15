@@ -6,7 +6,7 @@ category: proposal
 status: draft
 ---
 
-Web2project is a full project management system that allows for a well-informed user to accomplish things ranging from simple time logging to complex inter-project dependency management. Currently all of the functionality of the Web2project system is contained and only accessible through the web interface provided. The goal of this project is to allow access to all of the Web2project system via a RESTful interface while enforcing all the rules and dependencies that are enforced in the web interface.
+Web2project is a full project management system that allows for a well-informed user to accomplish things ranging from simple time logging to complex inter-project dependency management. Currently all of the functionality of the web2project system is contained and only accessible through the web interface provided. The goal of this project is to allow access to all of the web2project system via a RESTful interface while enforcing all the rules and dependencies that are enforced in the web interface.
 
 ## Considerations
 

@@ -13,18 +13,20 @@ The general pattern is ```web2project/index.php?m={modulename}&a={action}&id={id
 
 In this section, we'll use the relatively simple Company to walk through the mechanics. This is a list of all the files within the module directory:
 
-    /companies/
-       addedit.php
-       companies.class.php
-       do_company_aed.php
-       index.html
-       index.php
-       view.php
-       vw_companies.php
-       vw_contacts.php
-       vw_depts.php
-       vw_projects.php
-       vw_users.php
+```
+/companies/
+   addedit.php
+   companies.class.php
+   do_company_aed.php
+   index.html
+   index.php
+   view.php
+   vw_companies.php
+   vw_contacts.php
+   vw_depts.php
+   vw_projects.php
+   vw_users.php
+```
 
 **Note:** *Under no circumstances can you navigate to these files directly. All files are accessed through the central index.php which performs permissions check, logging, data validation, and a variety of other functions.*
 
@@ -48,9 +50,9 @@ Url  | Maps to | Description
 
 #### Autoloader
 
-web2project implements [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) from the PHP Framework Interoperability Group therefore all classes are structured as w2p_Namespace_Class with the '.class.php' suffix. For example, the class **w2p_Core_BaseObject** will be found in *classes/w2p/Core/BaseObject.class.php* while **w2p_Database_Query** will be found in *classes/w2p/Database/Query.class.php*.
+Web2project implements [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) from the PHP Framework Interoperability Group therefore all classes are structured as w2p_Namespace_Class with the '.class.php' suffix. For example, the class **w2p_Core_BaseObject** will be found in *classes/w2p/Core/BaseObject.class.php* while **w2p_Database_Query** will be found in *classes/w2p/Database/Query.class.php*.
 
-It is unlikely that you will need to add core classes to Web2project but if you follow our naming convention, they will automatically be loaded without any additional effort or configuration.
+It is unlikely that you will need to add core classes to web2project but if you follow our naming convention, they will automatically be loaded without any additional effort or configuration.
 
 #### Modules
 

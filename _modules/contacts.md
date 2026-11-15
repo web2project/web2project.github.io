@@ -50,7 +50,7 @@ Each contact also has an "export vCard" icon on the list, to download that conta
 
 ### Attach Contacts to Projects / Tasks
 
-Reporting and information sharing with external project stakeholders is absolutely required for successful project management. To facilitate this, Web2project lets you attach Contacts to specific projects, on the project form, or to individual Tasks, on the task form's Details tab. When someone logs time on a task, they can tick *Email Task Contacts* or *Email Project Contacts* to send the update to those people. Which boxes start ticked is set by each user's *Task Log Email Defaults* preference, with the default for new users set in System Admin → Default User Preferences.
+Reporting and information sharing with external project stakeholders is absolutely required for successful project management. To facilitate this, web2project lets you attach Contacts to specific projects, on the project form, or to individual Tasks, on the task form's Details tab. When someone logs time on a task, they can tick *Email Task Contacts* or *Email Project Contacts* to send the update to those people. Which boxes start ticked is set by each user's *Task Log Email Defaults* preference, with the default for new users set in System Admin → Default User Preferences.
 
 ### View your Contact List (Contact Index Page)
 

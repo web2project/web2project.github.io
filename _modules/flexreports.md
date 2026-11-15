@@ -16,5 +16,5 @@ module_download: https://github.com/sasquatch58/modules-flexreports/archive/mast
 
 Objectives
 
-1. To provide the capability to create and store report models including virtually any information (data field) stored in the Web2Project project database (projects, tasks, logs, users).
+1. To provide the capability to create and store report models including virtually any information (data field) stored in the web2project project database (projects, tasks, logs, users).
 1. To provide tools to define access rights to different report depending on company, project, user.

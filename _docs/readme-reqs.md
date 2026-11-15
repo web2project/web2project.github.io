@@ -9,10 +9,10 @@ This file gives an overview of the purpose and status of the module. Further, si
 
 ### Overview
 
-*  What is the purpose of this module?
-*  Does it compare to another piece of software?
-*  What features or functionality does it provide?
-*  Does this module require any other software? Does it require specific versions?
+* What is the purpose of this module?
+* Does it compare to another piece of software?
+* What features or functionality does it provide?
+* Does this module require any other software? Does it require specific versions?
 
 ### Install Instructions
 
@@ -20,29 +20,29 @@ Most of the time, these should be exactly the same as any other module: download
 
 ### Usage Instructions
 
-*  How does the user get started?
-*  Are there configuration steps or additional permissions required?
-*  Are there nuances or specific things a user should know about the user interface or workflow?
+* How does the user get started?
+* Are there configuration steps or additional permissions required?
+* Are there nuances or specific things a user should know about the user interface or workflow?
 
 ### Open/Known Issues
 
-*  Are there known issues with the module?
-*  Are there incomplete features or functionality gaps?
-*  Are there oddities in UI, functionality, or features the user should be aware of?
+* Are there known issues with the module?
+* Are there incomplete features or functionality gaps?
+* Are there oddities in UI, functionality, or features the user should be aware of?
 
 ### Changelog
 
-*  These should be broken out by version and clearly describe the fix or improvement.
-*  What bugs were fixed?
-*  What improvements were made?
-*  Why did you make that change?
+* These should be broken out by version and clearly describe the fix or improvement.
+* What bugs were fixed?
+* What improvements were made?
+* Why did you make that change?
 
 ### Release History
 
-*  This should be a list of each version and when it was released.
-*  Any deprecated versions should be marked with a ~~strikethrough~~ so the reader knows to avoid them.
+* This should be a list of each version and when it was released.
+* Any deprecated versions should be marked with a ~~strikethrough~~ so the reader knows to avoid them.
 
 ### Additional Notes (optional)
 
-*  Are there other users, companies, or organizations that deserve credit?
-*  Were you inspired by a blog post, forum thread, or user?
+* Are there other users, companies, or organizations that deserve credit?
+* Were you inspired by a blog post, forum thread, or user?

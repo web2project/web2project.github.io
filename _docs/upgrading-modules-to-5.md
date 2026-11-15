@@ -7,7 +7,7 @@ category: "module building guide"
 
 **Applies to**: v5.0.0 and later
 
-web2project v5.0 removes code that has been deprecated since the v2.x and v3.x releases. Most of it has logged "has been deprecated" notices for years. An Add On module that still uses any of it will stop with an error such as `Call to undefined function db_exec()` or `Class "CAppUI" not found`.
+Web2project v5.0 removes code that has been deprecated since the v2.x and v3.x releases. Most of it has logged "has been deprecated" notices for years. An Add On module that still uses any of it will stop with an error such as `Call to undefined function db_exec()` or `Class "CAppUI" not found`.
 
 This page lists what was removed and what to use instead, plus the other v5.0 changes that affect modules.
 
@@ -15,9 +15,11 @@ This page lists what was removed and what to use instead, plus the other v5.0 ch
 
 From your module's folder, these searches find the most common problems:
 
-    grep -rnE "\b(db_[a-z_]+|w2Psession[A-Za-z]+|showtask(_pd|_pr)?|findchild(_pd|_pr)?|w2PgetUsername(FromID)?|getProjects|canTaskAccess)\s*\(" .
-    grep -rnE "\b(CAppUI|CDate|DBQuery|CTitleBlock|CTabBox_core|CInfoTabBox|CConfig|CPreferences|CustomFields|CW2pObject|Mail|w2Pacl|CTaskLog|CForumMessage|CFileFolder|CRole|CSysKey|CSysVal|CCalendar|CAdmin_User)\b" .
-    grep -rn "w2p_Core_\(Config\|Dispatcher\|Event\|EventQueue\|HookHandler\|Module\|Preferences\|Setup\|UpgradeManager\)\|w2p_API_iCalendar" .
+```
+grep -rnE "\b(db_[a-z_]+|w2Psession[A-Za-z]+|showtask(_pd|_pr)?|findchild(_pd|_pr)?|w2PgetUsername(FromID)?|getProjects|canTaskAccess)\s*\(" .
+grep -rnE "\b(CAppUI|CDate|DBQuery|CTitleBlock|CTabBox_core|CInfoTabBox|CConfig|CPreferences|CustomFields|CW2pObject|Mail|w2Pacl|CTaskLog|CForumMessage|CFileFolder|CRole|CSysKey|CSysVal|CCalendar|CAdmin_User)\b" .
+grep -rn "w2p_Core_\(Config\|Dispatcher\|Event\|EventQueue\|HookHandler\|Module\|Preferences\|Setup\|UpgradeManager\)\|w2p_API_iCalendar" .
+```
 
 Then replace each match using the tables below.
 
@@ -72,9 +74,11 @@ The file `includes/deprecated_functions.php` held 66 functions. Use the replacem
 
 `w2p_Database_Connection` replaces the `db_*` helpers. Create one from the global ADODB connection:
 
-    $connection = new w2p_Database_Connection($GLOBALS['db']);
-    $connection->exec($sql);
-    $id = $connection->insert_id();
+```
+$connection = new w2p_Database_Connection($GLOBALS['db']);
+$connection->exec($sql);
+$id = $connection->insert_id();
+```
 
 Removed | Use instead
 ----- | -----
@@ -149,8 +153,10 @@ The reports, Gantt charts and forums no longer produce PDFs; their old entry poi
 
 `locales/*/*.inc` and `modules/<module>/locales/*.inc` files are no longer run with `eval()`. A small parser reads them, and it accepts only quoted strings, `=>`, commas, whitespace and comments. An entry that contains anything else (a variable, a function call, concatenation) is skipped, not run, so that string falls back to English.
 
-    "Todo List"=>"Todo List",
-    "Add a Todo"=>"Add a Todo",
+```
+"Todo List"=>"Todo List",
+"Add a Todo"=>"Add a Todo",
+```
 
 ### Delete hooks only run when the delete is allowed
 

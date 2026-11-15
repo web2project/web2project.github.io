@@ -21,11 +21,13 @@ This is the page which provides an HTML form to create or edit items. It is usua
 
 This is the controller which handles processing the data submitted from the addedit.php form. It is rare that you'd see it directly, but is in the forms themselves:
 
-    <form name="uploadFrm" action="?m=links" method="post" accept-charset="utf-8">
-        <input type="hidden" name="dosql" value="do_link_aed" />
-        <input type="hidden" name="del" value="0" />
-        <input type="hidden" name="link_id" value="<?php echo $link_id; ?>" />
-        <input type="hidden" name="link_owner" value="<?php echo $AppUI->user_id; ?>" />
+```
+<form name="uploadFrm" action="?m=links" method="post" accept-charset="utf-8">
+    <input type="hidden" name="dosql" value="do_link_aed" />
+    <input type="hidden" name="del" value="0" />
+    <input type="hidden" name="link_id" value="<?php echo $link_id; ?>" />
+    <input type="hidden" name="link_owner" value="<?php echo $AppUI->user_id; ?>" />
+```
 
 ### view.php
 

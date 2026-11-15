@@ -50,6 +50,6 @@ The form has these fields:
 * **Category**: puts the link on one of the list's tabs
 * **Project** and **Task**: optional; attach the link to a project and one of its tasks
 * **Description**
-* **URL**: the address. If you leave off the `http://` or `https://`, Web2project adds `http://`.
+* **URL**: the address. If you leave off the `http://` or `https://`, web2project adds `http://`.
 
 When you edit a link, the "delete link" link at the top of the form removes it.

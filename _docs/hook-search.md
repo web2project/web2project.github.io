@@ -30,50 +30,54 @@ Each of the fields is relatively self-explanatory:
 
 A simple example from the [Links Module](https://github.com/web2project/web2project/blob/master/modules/links/links.class.php#L92)
 
-    public function hook_search()
-    {
-        $search['table'] = 'links';
-        $search['table_alias'] = 'l';
-        $search['table_module'] = 'links';
-        $search['table_key'] = 'link_id'; // primary key in searched table
-        $search['table_link'] = 'index.php?m=links&a=addedit&link_id='; // first part of link
-        $search['table_title'] = 'Links';
-        $search['table_orderby'] = 'link_name';
-        $search['search_fields'] = array('l.link_name', 'l.link_url', 'l.link_description');
-        $search['display_fields'] = $search['search_fields'];
+```
+public function hook_search()
+{
+    $search['table'] = 'links';
+    $search['table_alias'] = 'l';
+    $search['table_module'] = 'links';
+    $search['table_key'] = 'link_id'; // primary key in searched table
+    $search['table_link'] = 'index.php?m=links&a=addedit&link_id='; // first part of link
+    $search['table_title'] = 'Links';
+    $search['table_orderby'] = 'link_name';
+    $search['search_fields'] = array('l.link_name', 'l.link_url', 'l.link_description');
+    $search['display_fields'] = $search['search_fields'];
 
-        return $search;
-    }
+    return $search;
+}
+```
 
 
 A more complex example from the [Project Module](https://github.com/web2project/web2project/blob/master/modules/projects/projects.class.php#L915):
 
-    public function hook_search() {
-        $search['table'] = 'projects';
-        $search['table_alias'] = 'p';
-        $search['table_module'] = 'projects';
-        $search['table_key'] = 'p.project_id'; // primary key in searched table
-        $search['table_link'] = 'index.php?m=projects&a=view&project_id='; // first part of link
-        $search['table_title'] = 'Projects';
-        $search['table_orderby'] = 'project_name';
-        $search['search_fields'] = array(
-            'p.project_id', 'p.project_name',
-            'p.project_short_name', 'p.project_location', 'p.project_description',
-            'p.project_url', 'p.project_demo_url'
-        );
-        $search['display_fields'] = $search['search_fields'];
-        $search['table_joins'] = array(
-            array(
-                'table' => 'project_contacts',
-                'alias' => 'pc',
-                'join' => 'p.project_id = pc.project_id'
-            )
-        );
+```
+public function hook_search() {
+    $search['table'] = 'projects';
+    $search['table_alias'] = 'p';
+    $search['table_module'] = 'projects';
+    $search['table_key'] = 'p.project_id'; // primary key in searched table
+    $search['table_link'] = 'index.php?m=projects&a=view&project_id='; // first part of link
+    $search['table_title'] = 'Projects';
+    $search['table_orderby'] = 'project_name';
+    $search['search_fields'] = array(
+        'p.project_id', 'p.project_name',
+        'p.project_short_name', 'p.project_location', 'p.project_description',
+        'p.project_url', 'p.project_demo_url'
+    );
+    $search['display_fields'] = $search['search_fields'];
+    $search['table_joins'] = array(
+        array(
+            'table' => 'project_contacts',
+            'alias' => 'pc',
+            'join' => 'p.project_id = pc.project_id'
+        )
+    );
 
-        return $search;
-    }
+    return $search;
+}
+```
 
-As you should be able to tell, this code does not perform the search.  Instead, it simply tells the calling code how to search this module.
+As you should be able to tell, this code does not perform the search. Instead, it simply tells the calling code how to search this module.
 
 Assuming this method exists and includes the proper values, the [SmartSearch](/modules/smartsearch.html) module will automatically call this function. No further configuration is necessary.
 

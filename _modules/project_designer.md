@@ -15,11 +15,11 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-The Project Designer Module was designed in Web2project as a means to streamline your daily workflow in part because it contains all the main minimum resources needed to effectively manage your [project](/modules/projects.html) on one page.
+The Project Designer Module was designed in web2project as a means to streamline your daily workflow in part because it contains all the main minimum resources needed to effectively manage your [project](/modules/projects.html) on one page.
 
 It is a panel based interface rather than the core tab interface and it reduces the need to click multiple tabs to accomplish something.
 
-{% include icon-info.html %} ProjectDesigner is active but hidden from the sidebar by default. Open it from a project with the “design this project” link at the top of the project page, or set it to “visible” under System Admin → View Modules. The *Use ProjectDesigner to View Projects by Default.* setting in System Configuration opens every project in ProjectDesigner instead.  In addition its work area is somewhat customizable, and you can perform multiple actions at once.
+{% include icon-info.html %} ProjectDesigner is active but hidden from the sidebar by default. Open it from a project with the “design this project” link at the top of the project page, or set it to “visible” under System Admin → View Modules. The *Use ProjectDesigner to View Projects by Default.* setting in System Configuration opens every project in ProjectDesigner instead. In addition its work area is somewhat customizable, and you can perform multiple actions at once.
 
 For example, you might have a project that needs multiple [Tasks](/modules/tasks.html). Rather than use the core task interface, you can use the project designer to add multiple task with different names at once.
 
@@ -56,7 +56,7 @@ The first panel is the projects panel. This is the same is the core project view
 
 <a href="/assets/docs/projectdesigner/gantt.png"><img src="/assets/docs/projectdesigner/thumb-gantt.png" alt="Project Designer: Gantt chart" /></a>
 
-The second panel is the Gantt Chart for this project. It shows all the task for this project in a date view timeline. For more information on Web2project Gantt Charts see core modules.
+The second panel is the Gantt Chart for this project. It shows all the task for this project in a date view timeline. For more information on web2project Gantt Charts see core modules.
 
 ### Task Panel
 

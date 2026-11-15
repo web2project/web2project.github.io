@@ -11,7 +11,9 @@ One of the things this team has always prided itself on is the overall performan
 
 The tools are Composer development dependencies, so one command installs them all. From the web2project folder:
 
-    composer install
+```
+composer install
+```
 
 That gives you, in `vendor/bin`:
 
@@ -26,7 +28,9 @@ Some of these are *very* memory intensive. You may have to raise `memory_limit` 
 
 The System Metrics section of each set of [release notes](/release-notes/index.html) comes from phploc. Run it from the web2project folder, leaving out the third-party code:
 
-    vendor/bin/phploc . --exclude vendor --exclude lib
+```
+vendor/bin/phploc . --exclude vendor --exclude lib
+```
 
 Then copy the figures into the release notes:
 
@@ -46,7 +50,9 @@ Functions, Constants (the totals) | Functions, Constants
 
 Run the targets from the web2project folder with:
 
-    vendor/bin/phing -f unit_tests/build.xml <target>
+```
+vendor/bin/phing -f unit_tests/build.xml <target>
+```
 
 Reports are written to `unit_tests/reports/`.
 

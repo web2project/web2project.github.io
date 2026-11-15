@@ -5,7 +5,7 @@ title: FAQ
 
 Q & A gleaned from the [community discussions](https://github.com/orgs/web2project/discussions)
 
-Looking for articles/documentation about Web2project? Check out the [Core Modules page](/modules/core.html) which presents documentation for each module.
+Looking for articles/documentation about web2project? Check out the [Core Modules page](/modules/core.html) which presents documentation for each module.
 
 ## Infrastructure
 
@@ -13,11 +13,11 @@ Looking for articles/documentation about Web2project? Check out the [Core Module
 
 Web2project v5.0 needs PHP 8.0 or later and is tested on PHP 8.3. PHP 7 and older are no longer supported. The full list of requirements is in [Server and Database Configuration](/docs/server-configuration.html).
 
-###  The Installer/Upgrader says I don't have GD Support. How do I add it?
+### The Installer/Upgrader says I don't have GD Support. How do I add it?
 
 Install the `gd` extension for your PHP version with your package manager (for example `php8.3-gd` on Debian or Ubuntu, `php-gd` on Fedora or RHEL) and restart your web server or PHP-FPM. Then it should appear in your phpinfo() list as expected. GD is only needed for the Gantt charts.
 
-### Is there any ongoing maintenance I should perform on Web2project?
+### Is there any ongoing maintenance I should perform on web2project?
 
 First, you should make sure to upgrade as we release new versions. That is the best way to make sure any security issues are resolved quickly with minimal risk.
 
@@ -27,7 +27,7 @@ Second, if you are queuing email notifications, you must create a scheduled task
 
 See [Server and Database Configuration](/docs/server-configuration.html#scheduled-tasks-cron) for a command-line alternative.
 
-### How do I back up Web2project safely?
+### How do I back up web2project safely?
 
 To make sure you back up the entire system, you need to back up the database, the file uploads and your `includes/config.php` file.
 
@@ -40,7 +40,7 @@ To make sure you back up the entire system, you need to back up the database, th
 
 ### Why can't my new user log in?
 
-The Web2project permissions system assigns no privileges by default. Before a new User can log in, they must be assigned a Role in the User Administration Module.
+The web2project permissions system assigns no privileges by default. Before a new User can log in, they must be assigned a Role in the User Administration Module.
 
 ### Help! I’ve lost my Company/Project/Task/Event and now I can’t find it on any of the lists!
 
@@ -84,15 +84,15 @@ v5.0 removed the built-in PDF output. Open the report or chart and use your brow
 
 ## Customizing the System
 
-### How can I customize Web2project to match my organization’s theme/style?
+### How can I customize web2project to match my organization’s theme/style?
 
-Since v5.0, Web2project has a single Bootstrap 5.3 theme in `style/bootstrap`. The most commonly changed parts are there: the header and navigation (`header.php`), the footer (`footer.php`), the sign-in page (`login.php`) and the colours and styles (`main.css`). Every other page template lives in `style/_common`; to change one, copy it to the same path under `style/bootstrap` and edit the copy, because Web2project uses the `style/bootstrap` version first.
+Since v5.0, web2project has a single Bootstrap 5.3 theme in `style/bootstrap`. The most commonly changed parts are there: the header and navigation (`header.php`), the footer (`footer.php`), the sign-in page (`login.php`) and the colours and styles (`main.css`). Every other page template lives in `style/_common`; to change one, copy it to the same path under `style/bootstrap` and edit the copy, because web2project uses the `style/bootstrap` version first.
 
 Upgrades replace both folders, so keep a copy of your changes and re-apply them after each upgrade.
 
 ### Where can I find add-on modules, customizations, language packs, etc?
 
-Many add-on modules are available from our [Github project](https://github.com/web2project) and many were written by the Web2project community. All translations are available in our [locales repository](https://github.com/web2project/locales). If you don’t see the translation you need, please consider writing your own and sharing it with the community.
+Many add-on modules are available from our [Github project](https://github.com/web2project) and many were written by the web2project community. All translations are available in our [locales repository](https://github.com/web2project/locales). If you don’t see the translation you need, please consider writing your own and sharing it with the community.
 
 ### My date is in a screwy format! How do I fix it?
 
@@ -120,9 +120,9 @@ Technically, yes, but we don't recommend it. When there are architecture or UI c
 
 ### OMG. I found a bug, what do I do!?
 
-Please visit the [Web2project issue tracker](https://github.com/web2project/web2project/issues) and check to see if the issue has been reported or even resolved. If it's been fixed, the bug report should link to the fix which you may be able to apply yourself. If it has not been reported, please do so and be as descriptive as possible. Remember, if we don't get enough information to reproduce it, we can't fix it. Finally, if it's already been reported and there's not a fix, you can track and monitor any bug report. GitHub will notify you whenever there's a change.
+Please visit the [web2project issue tracker](https://github.com/web2project/web2project/issues) and check to see if the issue has been reported or even resolved. If it's been fixed, the bug report should link to the fix which you may be able to apply yourself. If it has not been reported, please do so and be as descriptive as possible. Remember, if we don't get enough information to reproduce it, we can't fix it. Finally, if it's already been reported and there's not a fix, you can track and monitor any bug report. GitHub will notify you whenever there's a change.
 
-### When I look in the Web2project issue list, it says my issue is fixed in development, but Github master is still broken!
+### When I look in the web2project issue list, it says my issue is fixed in development, but Github master is still broken!
 
 In Github, the master branch is always considered stable and usually identical to the latest release. All development is done on a development branch. The two branches are merged just before the next release. If you *need* these fixes, you may be able to merge them into your master branch, but please be careful.
 
@@ -130,15 +130,15 @@ In Github, the master branch is always considered stable and usually identical t
 
 ## Ongoing Support
 
-### Where else can I get support and help with Web2project?
+### Where else can I get support and help with web2project?
 
-There are a variety of locations available. First and foremost, there are the [Web2project Discussions](https://github.com/orgs/web2project/discussions). Questions and comments can be posted there freely and anyone in the community can answer you. Alternatively, there are many recommendations and explanations available in the [Web2project Documentation](http://docs.web2project.net/). 
+There are a variety of locations available. First and foremost, there are the [web2project Discussions](https://github.com/orgs/web2project/discussions). Questions and comments can be posted there freely and anyone in the community can answer you. Alternatively, there are many recommendations and explanations available in the [web2project Documentation](http://docs.web2project.net/). 
 
 ### Web2project is great! How can I support the project?
 
 There are a variety of ways to show your support:
 
-* You can be an active part of the community by submitting bug reports, sharing patches, testing release candidates, answering questions in the discussions, convincing your boss to evaluate the tool, or generally let us know how you are using Web2project and what we can do to make things even better.
+* You can be an active part of the community by submitting bug reports, sharing patches, testing release candidates, answering questions in the discussions, convincing your boss to evaluate the tool, or generally let us know how you are using web2project and what we can do to make things even better.
 * Finally, you can tell others about the project and get them to do any or all of the above.
 
 ### Web2project is great, but it doesn’t do X. How can I get it to do X?
@@ -147,6 +147,6 @@ Before you do anything else, search in both the [Discussions](https://github.com
 
 ### Why are you writing this manual and what are you getting out of this?
 
-Keith Casey and CaseySoftware, LLC have been deeply involved with Web2project since its inception and led the community effort throughout its lifetime. This manual is one aspect of this effort and will hopefully encourage additional organizations to use Web2project and improve the overall system and the community as a whole. Any and all proceeds from this book will be used to support the project’s infrastructure.
+Keith Casey and CaseySoftware, LLC have been deeply involved with web2project since its inception and led the community effort throughout its lifetime. This manual is one aspect of this effort and will hopefully encourage additional organizations to use web2project and improve the overall system and the community as a whole. Any and all proceeds from this book will be used to support the project’s infrastructure.
 
 If you are interested in additional training, support, or custom development, please feel free to contact us at [CaseySoftware.com](https://caseysoftware.com).

@@ -23,7 +23,7 @@ Note that the module is disabled by default, and must first be enabled. To enabl
 * Click 'View Modules'
 * Change Departments from “disabled” to “active”. Departments are reached from each company's page, so it doesn't need to be “visible” in the sidebar.
 
-You can assign multiple departments to a company, and multiple contacts to a department.  Using departments is another added benefit in helping you manage your contacts and projects.
+You can assign multiple departments to a company, and multiple contacts to a department. Using departments is another added benefit in helping you manage your contacts and projects.
 
 <a href="/assets/docs/departments/company_tab.png"><img src="/assets/docs/departments/thumb-company_tab.png" alt="Departments: company tab" /></a>
 

@@ -15,7 +15,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-The History module keeps a record of what changes in Web2project: each time someone creates, updates or deletes a company, project, task, contact, file, link or other item, it notes when it happened, what kind of item it was, the item's name and who did it. It is useful for answering "who changed this, and when?"
+The History module keeps a record of what changes in web2project: each time someone creates, updates or deletes a company, project, task, contact, file, link or other item, it notes when it happened, what kind of item it was, the item's name and who did it. It is useful for answering "who changed this, and when?"
 
 {% include icon-info.html %} The History module is active but hidden from the sidebar by default. Changes are recorded whenever the module is active. To open it from the sidebar, go to System Admin → View Modules and set History to "visible"; it then appears under *Tools*. To stop recording changes, disable the module there. The *Log Changes* setting in System Configuration is no longer used.
 

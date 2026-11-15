@@ -15,7 +15,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-After you have your first Project, the next thing to do is begin creating the Tasks. This is where the real features of Web2project begin to come into play. The simplest and most direct route is to simply create all the tasks with start and end dates and be done with it. Alternatively, dependencies can be meticulously planned, late task reminders activated, dynamic tasks used extensively for rollup reporting, and task logs used for time tracking to turn Web2project into a centralized project management and collaboration hub. Depending on the needs of your organization, you can choose either of these alternatives or anywhere in between.
+After you have your first Project, the next thing to do is begin creating the Tasks. This is where the real features of web2project begin to come into play. The simplest and most direct route is to simply create all the tasks with start and end dates and be done with it. Alternatively, dependencies can be meticulously planned, late task reminders activated, dynamic tasks used extensively for rollup reporting, and task logs used for time tracking to turn web2project into a centralized project management and collaboration hub. Depending on the needs of your organization, you can choose either of these alternatives or anywhere in between.
 
 Tasks define a [Project's](/modules/projects.html) scope and represent the actual work. One project usually has many tasks. The Tasks module helps you track and maintain your time and cost.
 
@@ -41,17 +41,17 @@ The options on the Dependencies tab create four types of tasks which are denoted
 * Next, there are dynamic or rollup tasks. Each of these represents all of its child tasks in a single line with a "summary" of the lower-level data: the sum of all durations, the earliest start date, and the latest end date. As child tasks are edited, moved to another parent or project, or shift based on dependencies, the dynamic tasks shift accordingly. Instead of having to monitor or report on each of the individual tasks, the higher level task can be used, and the detailed tasks are still available for review.
 * Finally, there are milestones. Most organizations associate milestones with special events such as delivery dates, launch dates, or specific meetings. A milestone is normally simply complete or not complete and isn't tracked in the same detail as other tasks. Web2project sets the duration of milestones to zero hours.
 
-{% include icon-discussion.html %} One of the open questions within project management circles and within Web2project itself is "What does it mean when a user is 50% assigned to a task?" This could mean either that the person should perform 50% of the work or that the person should spend 50% of their time on the task. This question can have a major impact on scheduling and timelines. Web2project makes no distinction either way and leaves it up to you to decide which practice to follow.
+{% include icon-discussion.html %} One of the open questions within project management circles and within web2project itself is "What does it mean when a user is 50% assigned to a task?" This could mean either that the person should perform 50% of the work or that the person should spend 50% of their time on the task. This question can have a major impact on scheduling and timelines. Web2project makes no distinction either way and leaves it up to you to decide which practice to follow.
 
 ### Email Notifications
 
-There are three types of email notifications based on Web2project Tasks.
+There are three types of email notifications based on web2project Tasks.
 
 The first is the notification sent when a task is created or edited with *Notify Assignees of Task by Email* ticked. It contains the task description, the due date, and a link back to the task. By default it goes to all task assignees other than the task owner; each user can change that with the *Task Notification Method* preference.
 
 The second comes when someone logs time against a task. The task log form lets the user choose who gets the update: the task creator, the task assignees, the task contacts, the project contacts, the user assigned to the log, and any extra recipients. When collaboration is necessary on a task, this is a simple way for people to coordinate and share information without requiring the other team members to log in. The boxes that start ticked come from the *Task Log Email Defaults* preference.
 
-The third is the task reminder. When *Send Task Reminders* is on (System Admin → System Configuration), Web2project e-mails the assignees before a task is due and every day it is overdue, up to the *Maximum number of reminders to send* (100 by default). It applies to all users on all tasks. Since reminders aren't triggered by a user's action, the `queuescanner.php` cron job must be running; see [Server and Database Configuration](/docs/server-configuration.html#scheduled-tasks-cron).
+The third is the task reminder. When *Send Task Reminders* is on (System Admin → System Configuration), web2project e-mails the assignees before a task is due and every day it is overdue, up to the *Maximum number of reminders to send* (100 by default). It applies to all users on all tasks. Since reminders aren't triggered by a user's action, the `queuescanner.php` cron job must be running; see [Server and Database Configuration](/docs/server-configuration.html#scheduled-tasks-cron).
 
 ### Tasks List (Tasks index page)
 
@@ -128,7 +128,7 @@ Other resources | The resources assigned to the task, when the Resources module 
 
 The Gantt Chart is the center of nearly every project management system. As you create tasks and dependencies, the system handles the display and ordering to create the traditional waterfall pattern. To view the Gantt Chart, open a project and select the Gantt Chart tab. The charts need PHP's `gd` extension and *Enable Gantt Charts* turned on in System Configuration.
 
-There are four key aspects to all Gantt Charts within Web2project:
+There are four key aspects to all Gantt Charts within web2project:
 
 * Tasks – A task appears as a bar from its start to its end date. As the percent complete is updated, a progress bar fills more and more of it.
 * Dynamic Tasks – A dynamic task represents a series of other tasks as a rollup. It is drawn as a thin black bar with a triangle at each end, above the tasks it contains.
@@ -159,4 +159,4 @@ For organizations which require extensive reporting or accountability – especi
 
 Costcodes – called Billing Codes, Project Codes, etc by some organizations – are a simple method of allowing different users to track their time against specific types of tasks on individual task log entries. Some of this information can be used to track the type of work performed – such as administrative work versus development work – or even between different developers with differing billing rates. The [Billing Code Table](/modules/system-admin.html#billing-code-table-billingcode) in System Admin is where you set them up, and [Project Budgeting](/docs/project-budgeting.html) explains how they feed the budget figures.
 
-{% include icon-discussion.html %} There has been quite a bit of discussion and development towards supporting detailed budget tracking and concepts such as Earned Value Management within Web2project. Consistent use of Costcodes is vital to tracking the relevant information.
+{% include icon-discussion.html %} There has been quite a bit of discussion and development towards supporting detailed budget tracking and concepts such as Earned Value Management within web2project. Consistent use of Costcodes is vital to tracking the relevant information.

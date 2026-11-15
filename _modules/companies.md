@@ -17,7 +17,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 The companies module lets you provide information regarding the organization who owns the [Projects](/modules/projects.html).
 
-Creating companies is one of the most important but often misinterpreted aspects within the system. In most Web2project installations, you will have a single company and manage all of their projects from there. This is by far the simplest set up and a reasonable way to get started for many organizations where information security requirements are relatively simple and straightforward.
+Creating companies is one of the most important but often misinterpreted aspects within the system. In most web2project installations, you will have a single company and manage all of their projects from there. This is by far the simplest set up and a reasonable way to get started for many organizations where information security requirements are relatively simple and straightforward.
 
 For organizations who have stricter information security requirements such as those who perform services for other companies, you'll need a more complex model quickly. In that scenario, it is usually better to create a distinct Company for each customer. These Companies then serve as the foundation for permissions and information protection throughout the system.
 

@@ -52,15 +52,19 @@ Then check that `http://{web2project-install}/files/` returns 403 Forbidden. Log
 
 Task reminders, queued email notifications and the modules' maintenance hooks run from `queuescanner.php`. Run it every few minutes, either through the web server:
 
-    */10 * * * * wget -O - -q http://{web2project-install}/queuescanner.php
+```
+*/10 * * * * wget -O - -q http://{web2project-install}/queuescanner.php
+```
 
 or from the command line, which works even if the web server blocks the URL:
 
-    */10 * * * * cd /path/to/web2project && php queuescanner.php
+```
+*/10 * * * * cd /path/to/web2project && php queuescanner.php
+```
 
 ## Sessions
 
-Sessions are stored in the database by default (System Admin → System Configuration → *Session Handler*: "web2Project Extended Sessions"). Two settings control how long they last:
+Sessions are stored in the database by default (System Admin → System Configuration → *Session Handler*: "web2project Extended Sessions"). Two settings control how long they last:
 
 * **Session Idle Time** (default `2d`): logs a user out after this long without a request.
 * **Session Maximum Lifetime** (default `1m`): logs a user out this long after logging in, active or not.

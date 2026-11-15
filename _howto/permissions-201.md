@@ -1,4 +1,4 @@
 ---
 layout: page
-title: Permissions 201 for Web2project
+title: Permissions 201 for web2project
 ---

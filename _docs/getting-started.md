@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Getting Started with Web2project
+title: Getting Started with web2project
 ---
 
 **Applies to**: v5.0.0 and later
@@ -36,7 +36,7 @@ While you're there, set the *Server Timezone* under System Admin → System Conf
 
 Now create your first company. The fastest way is to choose "New Company" from the *New Item* menu at the top of any page. Alternatively, select Companies in the sidebar and then the "New Company" button. The next screen is where you fill in basic information on your organization. Nearly everything in the system – Projects, Users, Contacts, Files, Forums, and even Permissions – is attached to a Company.
 
-Within CaseySoftware, much of the work is for other organizations. Creating a Company entry for each organization is a simple way of organizing Projects and limiting Permissions to respect privacy and confidentiality requirements. Before you deploy Web2project for your organization, you should carefully consider your information security needs.
+Within CaseySoftware, much of the work is for other organizations. Creating a Company entry for each organization is a simple way of organizing Projects and limiting Permissions to respect privacy and confidentiality requirements. Before you deploy web2project for your organization, you should carefully consider your information security needs.
 
 Once you save, you can continue. At any time, you can select Companies in the sidebar to see all companies in the system and optionally filter by Company Owner.
 
@@ -48,7 +48,7 @@ Once you save, you can continue. At any time, you can select Companies in the si
 
 Now that we have a Company, we can create new Users. Creating a User is a two step process. First, you must create the User in User Admin (in the sidebar under Administration). You give them a Login Name (case insensitive), a password, and fill in basic profile information including their Company. Clicking “submit” at this point will create the User.
 
-Next, you must activate the User by assigning a specific set of Roles on the Roles tab of the user's page. Think of a Role as a permissions template which can be supplemented with Company or Project-specific permissions. The default Roles within Web2project are sufficient for the vast majority of organizations but you can add or refine those as necessary. Project worker is the most commonly used Role in most organizations as it allows a User to have complete access to all non-administration modules.
+Next, you must activate the User by assigning a specific set of Roles on the Roles tab of the user's page. Think of a Role as a permissions template which can be supplemented with Company or Project-specific permissions. The default Roles within web2project are sufficient for the vast majority of organizations but you can add or refine those as necessary. Project worker is the most commonly used Role in most organizations as it allows a User to have complete access to all non-administration modules.
 
 For example, if you have a contractor working on a single project and you wish to deny access to all other projects, you can apply the Project worker Role and then add the description “Deny on All Projects” and “Allow” to the specific project. More information and detailed explanations of Roles and Permissions are found in [Permissions 201](/howto/permissions-201.html).
 
@@ -92,4 +92,4 @@ The most commonly used Report is "Task Log with Cost Codes". It gives you a sing
 
 The next most common report is "Project Statistics". This gives an overview of a the status of a project including completed, in progress, and overdue tasks. In addition, it shows a simple breakdown of everyone’s hours on the project. This is a simple way of monitoring the overall health of a project – or all projects – without having to review each one.
 
-There are numerous other reports available within Web2project. Some of them may suit your organization’s requirements but many will not. Therefore, we recommend evaluating your reporting needs to determine which of the existing Reports work for your organization. A deeper discussion of reporting is available in the [Reporting Module](/modules/reports.html) section.
+There are numerous other reports available within web2project. Some of them may suit your organization’s requirements but many will not. Therefore, we recommend evaluating your reporting needs to determine which of the existing Reports work for your organization. A deeper discussion of reporting is available in the [Reporting Module](/modules/reports.html) section.

@@ -33,12 +33,16 @@ The test runs in this release used an empty server `sql_mode`. Test under your s
 
 From the `unit_tests` folder, run PHPUnit with the bundled configuration:
 
-    cd unit_tests
-    ../vendor/bin/phpunit -c phpunit.xml
+```
+cd unit_tests
+../vendor/bin/phpunit -c phpunit.xml
+```
 
 To run one file or folder, add its path:
 
-    ../vendor/bin/phpunit -c phpunit.xml classes/w2p/Utilities
+```
+../vendor/bin/phpunit -c phpunit.xml classes/w2p/Utilities
+```
 
 This takes a little while and gives you the results on your system. The names of the tests should be pretty self-explanatory, and any errors that come up give you details on where to look.
 
@@ -48,27 +52,39 @@ At the v5.0 release the suite runs 509 tests with 7 errors and 15 failures; thos
 
 If you would like to dig deeper into the unit tests and possibly contribute, below is the directory and file structure. Each test class extends `CommonSetup`, which loads web2project, logs in as `admin` and extends PHPUnit's `TestCase`.
 
-    unit_tests/CommonSetup.php
-    unit_tests/phpunit.xml
+```
+unit_tests/CommonSetup.php
+unit_tests/phpunit.xml
+```
 
 The bootstrap and the PHPUnit configuration. `phpunit.xml` runs every test below the `unit_tests` folder.
 
-    unit_tests/classes/w2p/
+```
+unit_tests/classes/w2p/
+```
 
 Tests for the core classes in `classes/w2p`, in folders that match the class names (for example `Utilities` for `w2p_Utilities_*`). `Mocks` holds the mock objects the tests share.
 
-    unit_tests/modules/
+```
+unit_tests/modules/
+```
 
 Tests for the module classes, one folder per module (`companies`, `projects`, `tasks` and so on).
 
-    unit_tests/includes/
+```
+unit_tests/includes/
+```
 
 Tests for `includes/main_functions.php` and `includes/cleanup_functions.php`.
 
-    unit_tests/src/
+```
+unit_tests/src/
+```
 
 Tests for the e-mail classes (`w2p_Output_EmailManager` and the e-mail templates).
 
-    unit_tests/build.xml
+```
+unit_tests/build.xml
+```
 
 The Phing build file for code metrics and release packaging. See [Overall Code Metrics](/docs/code-metrics.html) and the [Release Checklist](/release-notes/checklist.html).

@@ -25,13 +25,13 @@ The base view of the Calendar Module is a simple month view similar to Outlook o
 
 The links at the top of each calendar page switch between the year, month, week and day views.
 
-{% include icon-info.html %} Every user has a private *Calendar Feed* link on their page in User Admin (open *My Info* from the user menu to find yours). Calendar applications such as Google Calendar, Apple Calendar or Outlook can subscribe to it to show your Web2project events and tasks. If the link is shared by mistake, select “regenerate feed url” to replace it.
+{% include icon-info.html %} Every user has a private *Calendar Feed* link on their page in User Admin (open *My Info* from the user menu to find yours). Calendar applications such as Google Calendar, Apple Calendar or Outlook can subscribe to it to show your web2project events and tasks. If the link is shared by mistake, select “regenerate feed url” to replace it.
 
 From the Month View, a user can click on the button on the far left of any line. This will take the User to a Week View based on the selected Company. It breaks down the week into a simple layout similar to a weekly planner. The Company and Event filters are available here too.
 
 ### Creating an Event / Recurring Events
 
-Creating an Event in Web2project can be done at anytime from anywhere in the system by selecting “New Event” from the *New Item* menu at the top of the page, or with the “New event” button on any calendar view. You simply name the event, give a brief description, select the relevant project, invite people, and set the recurrence schedule. Invited people see the event on their calendars, and if you tick *Mail Attendees* they receive an e-mail about it.
+Creating an Event in web2project can be done at anytime from anywhere in the system by selecting “New Event” from the *New Item* menu at the top of the page, or with the “New event” button on any calendar view. You simply name the event, give a brief description, select the relevant project, invite people, and set the recurrence schedule. Invited people see the event on their calendars, and if you tick *Mail Attendees* they receive an e-mail about it.
 
 Events attached to a project appear on that project's Events tab, and a company's events on the company's Events tab.
 
