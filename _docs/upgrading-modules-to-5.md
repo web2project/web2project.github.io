@@ -149,6 +149,12 @@ Every `dosql` POST and every `a=do_*` / `a=domodsql` request must carry the sess
 * **GET links that change data:** append `&__nonce=` plus the token, or better, make them POST forms.
 * **Handlers that change data outside `dosql`/`do_*`**, for example a configure page that saves on POST, must call `$AppUI->checkFormToken()` themselves.
 
+### Module access is checked before your handler runs
+
+`index.php` now refuses a request unless the module is active and the user can access it (`$AppUI->isActiveModule($m) && canAccess($m)`). This applies to `dosql` POSTs, `a=do_*` requests and ordinary page loads, and a refused request is redirected to the access-denied page. A user who can't open your module can no longer reach its handlers or its pages, and an add-on that never called `canAccess()` itself is no longer open to everyone. Only the public pages, the `m=admin` and `m=calendar` stubs and a few self-service handlers (a user changing their own details or preferences) are exempt.
+
+This is a gate and not a replacement for your own checks. Keep calling `canEdit()`, `canCreate()` and `canDelete()` on the object in every handler, and check that your module's permissions are set up in `setup.php`, because a role without access to the module now stops at the door.
+
 ### One theme: Bootstrap 5.3
 
 The w2p-snowball and wps-redmond themes, the per-user "User Interface Style" preference and the system `host_style` setting are gone. The interface style is always `bootstrap` (the `W2P_UISTYLE` constant in `base.php`).
@@ -186,6 +192,8 @@ The reports, Gantt charts and forums no longer produce PDFs; their old entry poi
 ### Custom fields
 
 The Custom Field Editor offers Companies, Projects, Tasks, Calendar (events), Contacts and Users. Custom fields are looked up by module directory (`events`, not `Calendar`). Add On modules can't add their own custom fields through the editor yet.
+
+`store()` only saves custom fields that were given a value. The add/edit form passes its posted values as before, but a `store()` from anywhere else (a bulk update, cron job, import or API call) now leaves the existing values alone, where it used to reset them to 0. If you store an object outside its form and want to set custom fields, call `setCustomFields(array('field_name' => $value))` before `store()`. Fields you leave out keep their values.
 
 ### Task trees
 
