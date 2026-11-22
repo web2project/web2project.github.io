@@ -198,3 +198,50 @@ The Custom Field Editor offers Companies, Projects, Tasks, Calendar (events), Co
 ### Task trees
 
 `CTask::getTaskTree($project_id, $task_id = 0, $task_status = 0)` takes a status. Pass `null` for tasks of every status.
+
+### Escape what you print
+
+`bind()` still runs `htmlentities()` on posted values, but the value is decoded again before it is saved, so the database holds the text as typed. Since v5.0 `bind()` and `w2PHTMLDecode()` use the same flags, so apostrophes are no longer saved as `&#039;`; migration 075 cleans up rows saved that way. Escape every name, title or other user text when you print it:
+
+```
+echo htmlspecialchars($todo->todo_title, ENT_QUOTES, 'UTF-8');
+```
+
+The core list and view helpers (`w2p_Output_HTMLHelper`, `w2p_Output_ListTable` and the view helper) now escape object names, owner names and project colours themselves. If your module put markup into a value that one of them prints, it now shows as text.
+
+`w2PtoolTip($header, $tip)` builds a native `title=""` tooltip, which browsers show as plain text. Markup in the tip is turned into lines of text (a line per `<br>`, `<div>`, `<p>` or `<li>`, and "Label: value" for `<dt>`/`<dd>`), and the header is used as plain text.
+
+### Search terms and sort orders
+
+Don't put a request value into SQL by joining strings:
+
+- For a search, use `w2p_Database_Query::quoteLike()`. It quotes the term and escapes `%` and `_`, so they match themselves: `$q->addWhere('todo_title LIKE ' . $q->quoteLike($search));`. Pass `'starts'` as the second argument for a starts-with match.
+- For a sort column taken from the request, use `w2PsafeOrderBy($value, $default)`. It returns the value only when it is a column name (optionally `table.column`) with an optional `ASC` or `DESC`, and `$default` otherwise: `$q->addOrder(w2PsafeOrderBy(w2PgetParam($_GET, 'orderby', ''), 'todo_title'));`.
+- Use `$q->quote()` for any other string, and cast ids with `(int)`.
+
+### Restoring a failed save
+
+When a save fails, the controller keeps the object in the session and the next edit page shows it again. Pass your page's own object to `$AppUI->restoreObject()`. It returns the held object only when it is the same class and id, so a failed save of one record is never shown, or saved again, on another record's form:
+
+```
+$obj = $AppUI->restoreObject($object);
+if ($obj) {
+    $object = $obj;
+    $object_id = $object->getId();
+} else {
+    $object->load($object_id);
+}
+```
+
+Called with no argument, it returns whatever is held, as before.
+
+### Signature and behaviour changes
+
+- `w2p_Core_BaseObject::loadFull($notUsed, $object_id)`: both parameters are required. Overrides need the same signature.
+- `arraySelect()` and `arraySelectTree()` take the list by value, so you can pass an expression such as `arrayMerge(array(-1 => 'All'), $list)`. The selected option is matched as a string.
+- `w2p_Database_Query::insertObject()` and `insertArray()` now write `0`, `false` (as 0) and `''` (for text columns). Only `null` is left out so the column default applies. Before, all of them were dropped, so an insert could differ from an update of the same object.
+- `w2p_Core_BaseObject::$_event` is protected rather than private.
+- `w2p_Output_ListTable::addDividers('<prefix>_project')` prints a project heading for any key ending in `_project`, using the row's `project_name` and `project_color_identifier`, and "Not attached to a project" for 0. Before, only `file_project` worked.
+- A `contacts_tab.view.<name>.php` file in your module now adds a tab to the contact page, as the other `*_tab.view.*` files do for their pages. Before, the contact page never showed them.
+- Login names are unique (migration 077). `CUser::store()` reports a duplicate as "this user already exists" instead of a database error.
+- `CForum_Message::canEdit()` and `canDelete()` allow only the message's author or a user with edit rights on System. On save, a new message always gets the current user as its author, and an edited one keeps its stored author.

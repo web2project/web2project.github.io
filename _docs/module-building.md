@@ -298,7 +298,7 @@ This public method simply returns the object with only the fields from the corre
 
 #### public method: loadFull()
 
-This method fully loads the specific object with all of the fields provided by joins, lookups, etc. Due to the joins and lookups, it will be slower than the simple load() method and should be used sparingly if possible. It is also optional.
+This method fully loads the specific object with all of the fields provided by joins, lookups, etc. Due to the joins and lookups, it will be slower than the simple load() method and should be used sparingly if possible. It is also optional. Its signature is `loadFull($notUsed, $object_id)`, and since v5.0 both parameters are required, so an override must declare both.
 
 #### Other methods
 
