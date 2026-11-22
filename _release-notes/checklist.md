@@ -27,7 +27,7 @@ This process assumes that our release criteria have been met, specifically this 
 
 ## Post Release
 
-* Generate the Release Notes from the [template](/release-notes/template.html), including the [code metrics](/docs/code-metrics.html), and add them to the [Release Notes](/release-notes/index.html).
+* Generate the Release Notes from the [template](/release-notes/template.html), including the [code metrics](/docs/code-metrics.html), and add them to the [Release Notes](/release-notes/index.html). Set `release_date` in their front matter (and `prerelease: true` for a release candidate). The sidebar's "Current Release Notes" link and [/release-notes/current.html](/release-notes/current.html) then point at the newest final release on their own, so there's nothing else to edit.
 * Update the docs site for anything the release changed: the [Installation Guide](/docs/installation.html), the module pages and the [FAQ](/docs/faq.html).
 * Close or relabel the GitHub issues fixed in the release, with a link to the release.
 * Post an announcement in [GitHub Discussions](https://github.com/orgs/web2project/discussions).

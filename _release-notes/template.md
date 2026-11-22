@@ -1,6 +1,9 @@
 ---
 layout: page
 title: vX.X Release Notes (template)
+# release_date: YYYY-MM-DD   (set it when the release is out; the newest dated,
+#                             non-prerelease notes become the "Current Release Notes")
+# prerelease: true          (release candidates only)
 ---
 
 **Release Date:** XXXX

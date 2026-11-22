@@ -1,0 +1,18 @@
+---
+layout: null
+sitemap: false
+---
+{% include current-release.html %}<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Current Release Notes</title>
+    <link rel="canonical" href="{{ current_release.url }}">
+    <meta http-equiv="refresh" content="0; url={{ current_release.url }}">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <p>The current release is <a href="{{ current_release.url }}">{{ current_release.title }}</a>.</p>
+    <script>location.replace("{{ current_release.url }}");</script>
+</body>
+</html>

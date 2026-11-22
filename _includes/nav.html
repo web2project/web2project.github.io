@@ -6,7 +6,7 @@
     <li><a href="/docs/getting-started.html"{% if page.url == '/docs/getting-started.html' %} class="active"{% endif %}>Getting Started</a></li>
     <li><a href="/docs/server-configuration.html"{% if page.url == '/docs/server-configuration.html' %} class="active"{% endif %}>Server Configuration</a></li>
     <li><a href="/docs/security-notes.html"{% if page.url == '/docs/security-notes.html' %} class="active"{% endif %}>Security Notes</a></li>
-    <li><a href="/release-notes/5.0.0-rc3.html"{% if page.url == '/release-notes/5.0.0-rc3.html' %} class="active"{% endif %}>v5.0.0 RC3 Release Notes</a></li>
+    {% include current-release.html %}<li><a href="{{ current_release.url }}"{% if page.url == current_release.url %} class="active"{% endif %}>Current Release Notes</a></li>
     <li><a href="/modules/core.html"{% if page.url == '/modules/core.html' %} class="active"{% endif %}>Core Modules</a></li>
     <li><a href="/modules/add-on.html"{% if page.url == '/modules/add-on.html' %} class="active"{% endif %}>Add On Modules</a></li>
     <li><a href="/docs/module-building-guide.html"{% if page.url == '/docs/module-building-guide.html' %} class="active"{% endif %}>Module Building Guide</a></li>

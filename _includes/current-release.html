@@ -1,0 +1,6 @@
+{% comment %}
+  Finds the current release: the release notes with the latest release_date
+  that aren't a prerelease. Sets current_release for the page that includes
+  this. Pages without a release_date (the index, checklist and template, and
+  releases before 5.0.0) are skipped.
+{% endcomment %}{% assign current_release = nil %}{% for r in site.release-notes %}{% if r.release_date and r.prerelease != true %}{% if current_release == nil or r.release_date > current_release.release_date %}{% assign current_release = r %}{% endif %}{% endif %}{% endfor %}
