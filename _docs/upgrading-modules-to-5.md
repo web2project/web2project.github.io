@@ -237,7 +237,7 @@ Called with no argument, it returns whatever is held, as before.
 
 ### Signature and behaviour changes
 
-- `w2p_Core_BaseObject::loadFull($notUsed, $object_id)`: both parameters are required. Overrides need the same signature.
+- `w2p_Core_BaseObject::loadFull($notUsed, $object_id)`: both parameters are required, which ends the PHP 8 deprecation logged on every request. An override must accept two parameters; it may give them defaults, as `CUser::loadFull($userId, $notUsed = null)` does. An older override with one parameter, such as `loadFull($riskId)`, is a fatal error on PHP 8, and because SmartSearch loads every active module's main class it breaks the header search for everyone. Rename such a method (for example to `loadWithDetails()`) and update its callers.
 - `arraySelect()` and `arraySelectTree()` take the list by value, so you can pass an expression such as `arrayMerge(array(-1 => 'All'), $list)`. The selected option is matched as a string.
 - `w2p_Database_Query::insertObject()` and `insertArray()` now write `0`, `false` (as 0) and `''` (for text columns). Only `null` is left out so the column default applies. Before, all of them were dropped, so an insert could differ from an update of the same object.
 - `w2p_Core_BaseObject::$_event` is protected rather than private.

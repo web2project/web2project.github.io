@@ -20,7 +20,7 @@ As this guide becomes standardized, functionality will be added in the core syst
 
 ## File Structure
 
-Building a proper module in web2project requires a handful of key files in a particular structure. Each of which serve a specific purpose in the operation of the system. For a module called "Todos" - *available from the [http://sourceforge.net/projects/web2project-mod/ web2project Modules]* - we would have the following file structure (filenames are case sensitive):
+Building a proper module in web2project requires a handful of key files in a particular structure. Each of which serve a specific purpose in the operation of the system. For a module called "Todos" - *available from [GitHub](https://github.com/web2project/modules-todos)* - we would have the following file structure (filenames are case sensitive):
 
 Filename  | Status | Description | Notes
 ----- |:-----:| ----- | -----
@@ -298,7 +298,7 @@ This public method simply returns the object with only the fields from the corre
 
 #### public method: loadFull()
 
-This method fully loads the specific object with all of the fields provided by joins, lookups, etc. Due to the joins and lookups, it will be slower than the simple load() method and should be used sparingly if possible. It is also optional. Its signature is `loadFull($notUsed, $object_id)`, and since v5.0 both parameters are required, so an override must declare both.
+This method fully loads the specific object with all of the fields provided by joins, lookups, etc. Due to the joins and lookups, it will be slower than the simple load() method and should be used sparingly if possible. It is also optional. Its signature is `loadFull($notUsed, $object_id)`, and since v5.0 both parameters are required. An override must accept two parameters (it may give them defaults); one with a single parameter is a fatal error on PHP 8, so rename it instead.
 
 #### Other methods
 
