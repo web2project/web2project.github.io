@@ -35,7 +35,7 @@ New accounts have no role, so they can't log in until an administrator assigns o
 
 ## Fixed in v5.0
 
-For the record, v5.0 fixed these security problems. See the [release notes](/release-notes/5.0.0-rc1.html) for the full list.
+For the record, v5.0 fixed these security problems. See the [release notes](/release-notes/5.0.0.html) for the full list.
 
 * Script injection (XSS) through the selector pop-up and drop-down labels.
 * SQL injection through the e-mail address on the public sign-up form.

@@ -113,5 +113,5 @@ If you already upgraded to 3.0.0 and see that error, install 3.0.1 and click **u
 
 Report bugs and requests at [github.com/web2project/modules-todos/issues](https://github.com/web2project/modules-todos/issues).
 
-* On web2project 5.0.0-rc3 and earlier, the Todolist tab doesn't appear on a Contact's page, because the Contact page didn't show other modules' tabs. This is fixed on web2project's `master` for the next release ([web2project#561](https://github.com/web2project/web2project/issues/561)). Todos linked to a contact still show the contact's name in the lists.
+* On web2project 5.0.0-rc3 and earlier, the Todolist tab doesn't appear on a Contact's page, because the Contact page didn't show other modules' tabs. This is fixed in web2project 5.0.0 ([web2project#561](https://github.com/web2project/web2project/issues/561)). Todos linked to a contact still show the contact's name in the lists.
 * The module shows the generic icon in the sidebar until web2project lets add-on modules choose their own ([web2project#434](https://github.com/web2project/web2project/issues/434)).

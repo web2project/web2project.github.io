@@ -75,7 +75,7 @@ v5.0 is a major release. Read this before you upgrade an existing system.
 * **Database server.** MySQL 8's default `sql_mode` now works without changes.
 * **Translations.** Translation (`.inc`) files are now read as data, not run as PHP. Custom translation files that contain anything other than quoted strings will lose those entries; see [Translation Management](/docs/translation-management.html).
 
-The [v5.0 release notes](/release-notes/5.0.0-rc1.html) list every change.
+The [v5.0 release notes](/release-notes/5.0.0.html) list every change.
 
 ## Convert from dotProject
 

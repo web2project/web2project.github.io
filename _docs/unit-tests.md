@@ -46,7 +46,7 @@ To run one file or folder, add its path:
 
 This takes a little while and gives you the results on your system. The names of the tests should be pretty self-explanatory, and any errors that come up give you details on where to look.
 
-At the v5.0 release the suite runs 509 tests with 7 errors and 15 failures; those are known and listed in the [release notes](/release-notes/5.0.0-rc1.html). A change shouldn't add to them.
+At the v5.0.0 release the suite runs 587 tests (120 skipped) with 6 errors and 8 failures; those are known and listed in the [release notes](/release-notes/5.0.0.html). A change shouldn't add to them.
 
 ## Test Structure
 
