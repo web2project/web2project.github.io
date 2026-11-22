@@ -91,7 +91,7 @@ The settings are grouped by area. Hover over the (i) icon next to each setting f
 
 ### Users
 
-* **Activate External User Creation**: shows a sign-up link on the sign-in page. It is on by default; see [Security Notes](/docs/security-notes.html#public-sign-up-has-no-spam-protection) before you leave it on.
+* **Activate External User Creation**: shows a sign-up link on the sign-in page. It is on by default; see [Security Notes](/docs/security-notes.html#public-sign-up-is-on-by-default) before you leave it on.
 * **Admin Username**: the login name of the administrative user.
 * **Minimum Password Length** and **Minimum Username Length**.
 

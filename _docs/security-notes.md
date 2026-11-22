@@ -25,21 +25,13 @@ Uploaded files are saved in `files/` under the web2project folder. The only thin
 
 A configurable storage location outside the web root is planned ([#394](https://github.com/web2project/web2project/issues/394), [#395](https://github.com/web2project/web2project/issues/395)).
 
-### Public sign-up has no spam protection
+### Public sign-up is on by default
 
-When *Activate External User Creation* is on (System Admin → System Configuration), which is the default, anyone can create an account from the login page. There is no captcha, hidden-field trap or rate limit, so the form can be scripted. New accounts have no role, so they can't log in until an administrator assigns one, but they still fill up the Inactive Users list and send the administrator an email each. The confirmation email sent to the new user also contains their password in plain text.
+When *Activate External User Creation* is on (System Admin → System Configuration), which is the default, anyone can create an account from the login page. The form has its own bot protection: the browser has to solve a small proof-of-work puzzle, a hidden field catches form-filling bots, and a form sent less than 3 seconds or more than an hour after it was shown is refused. It is not a captcha, so a determined script can still get through.
 
-**What to do:** turn *Activate External User Creation* off unless you need self-service sign-up, and create accounts from User Admin instead. Tracked in [#363](https://github.com/web2project/web2project/issues/363).
+New accounts have no role, so they can't log in until an administrator assigns one, but each one appears in the Inactive Users list and sends the administrator an e-mail. Sign-up login names may only contain letters and digits. The confirmation e-mail doesn't include the password.
 
-### Some names are shown without HTML escaping
-
-Company, project, task and similar names are escaped in drop-down lists and the selector pop-up, but not yet everywhere: the Companies, Projects and Tasks lists, calendar views, and some page titles print them as entered. A user who can create or rename those items could put HTML or script in a name, and it would run in other users' browsers.
-
-**What to do:** only give *add* and *edit* rights on Companies, Projects, Tasks and Events to trusted users until this is fixed.
-
-### Logout links are plain links
-
-Logging out, and an administrator ending another user's session from the Active Sessions tab, are ordinary links (GET requests) without a security token. Another website could log a user out by making their browser load the link. This can't be used to read or change data.
+**What to do:** turn *Activate External User Creation* off unless you need self-service sign-up, and create accounts from User Admin instead.
 
 ## Fixed in v5.0
 
@@ -51,3 +43,12 @@ For the record, v5.0 fixed these security problems. See the [release notes](/rel
 * Password checks that never matched and passwords re-hashed on save ([#386](https://github.com/web2project/web2project/issues/386)).
 * A refused delete that still removed related data (for example a user's login and preferences).
 * The Active Sessions tab passing the session id into SQL unchecked.
+* Names (companies, projects, tasks, contacts, users and others) printed without HTML escaping in lists, view pages, calendars and tooltips ([#546](https://github.com/web2project/web2project/issues/546)), and forum messages printed without escaping ([#533](https://github.com/web2project/web2project/issues/533)).
+* SQL injection through search boxes ([GHSA-98hj-h8rw-w56m](https://github.com/web2project/web2project/security/advisories/GHSA-98hj-h8rw-w56m), [GHSA-mj5m-6227-52vv](https://github.com/web2project/web2project/security/advisories/GHSA-mj5m-6227-52vv)), preferences, the Users list and sort parameters.
+* Role changes that didn't check the account or the role, so a user could make themselves an Administrator ([GHSA-qqx6-f7cc-3wf2](https://github.com/web2project/web2project/security/advisories/GHSA-qqx6-f7cc-3wf2)), and profile saves that accepted fields the form doesn't show ([GHSA-65x8-6jcq-fc5r](https://github.com/web2project/web2project/security/advisories/GHSA-65x8-6jcq-fc5r)).
+* Task log edits and deletes checked against the posted creator instead of the stored log ([GHSA-xcpx-p68j-gm7w](https://github.com/web2project/web2project/security/advisories/GHSA-xcpx-p68j-gm7w)).
+* Bulk task actions that didn't check each task and its project ([GHSA-48ww-5h48-vwx9](https://github.com/web2project/web2project/security/advisories/GHSA-48ww-5h48-vwx9)).
+* Forum watches, topic links and replies that reached forums the user can't see ([GHSA-qp43-fcwc-p3j3](https://github.com/web2project/web2project/security/advisories/GHSA-qp43-fcwc-p3j3)), and forum messages that anyone with Forums edit or delete rights could change or delete. Only the author or an administrator can now.
+* Pages of inactive modules, or of modules the user can't access, opening by URL ([#547](https://github.com/web2project/web2project/issues/547)).
+* Logout and ending another user's session as plain links without the session's security token.
+* Public sign-up without bot protection, and a confirmation e-mail that contained the password.
