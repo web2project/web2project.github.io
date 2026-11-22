@@ -15,7 +15,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 ## Module Overview
 
-Now that you have a Company and a Project in your system, it is time to create your a User. Remember that more than anything web2project is a collaborative tool and the goal of it is to share information. However, it is quite common that you will need to keep certain aspects private to protect the confidential or proprietary information of your customers. Therefore, the creation of Users and setting their permissions become some of the most important aspects of its day to day usage. Unfortunately, it can also be quite difficult to understand at first glance. The basics of Permissions are covered here, but for a more rigorous discussion, please review [Permissions 201](/howto/permissions-201.html) on the System Admin page.
+Now that you have a Company and a Project in your system, it is time to create your a User. Remember that more than anything web2project is a collaborative tool and the goal of it is to share information. However, it is quite common that you will need to keep certain aspects private to protect the confidential or proprietary information of your customers. Therefore, the creation of Users and setting their permissions become some of the most important aspects of its day to day usage. Unfortunately, it can also be quite difficult to understand at first glance. The sections below cover Roles, which work on whole modules, and Permissions, which allow or deny individual items, with an example of keeping a User to the projects they work on.
 
 ### Create a User
 
@@ -50,7 +50,9 @@ Changing a User's roles needs edit rights on that User. Without edit rights on S
 
 There are five attributes which can be connected with any Module to expand or limit these basic Roles as needed. The attributes are Access, Add, Delete, Edit, and View and can be assigned to the Module as a whole or to specific aspects of the Module. For example, a Resource Manager type user might have a Project worker role supplemented with Allow permissions to Access, Add, View in the User Admin. This would give him access to create new users as necessary without the ability to delete users. To further safeguard against abuse of this account, the System Administrator could add Deny permissions to anything done by the Resource Manager user to the System Administrator account.
 
-Permissions are set on the Permissions tab of the User's page. For more details and examples, please read [Permissions 201](/howto/permissions-201.html).
+Permissions are set on the Permissions tab of the User's page, under *Add Permissions*. Choose the **Module** (or all modules), then the **Item**: leave it as "all" for every item in the module, or use the "..." button to pick one company, project or other item. Then choose **allow** or **deny** in **Access**, tick the actions it covers, and select "add". The table above the form lists the User's permissions, and each one can be edited or deleted there.
+
+A permission on an item also covers what belongs to it: a company that is denied hides its projects, and those projects' tasks, files and events. A specific item wins over "all", so a few items can be allowed inside a module that is otherwise denied. For example, to keep a contractor to the one project they work on, give them the Project worker role, add a deny on all Projects for View, Add, Edit and Delete, and then an allow on their project for the actions they need. Leave Access unticked on the deny: denying Access closes the whole Projects module, including the project you allow. Changes apply from the User's next page; if they still see the old permissions, ask them to log out and back in.
 
 ### The User List
 

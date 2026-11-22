@@ -50,7 +50,7 @@ Now that we have a Company, we can create new Users. Creating a User is a two st
 
 Next, you must activate the User by assigning a specific set of Roles on the Roles tab of the user's page. Think of a Role as a permissions template which can be supplemented with Company or Project-specific permissions. The default Roles within web2project are sufficient for the vast majority of organizations but you can add or refine those as necessary. Project worker is the most commonly used Role in most organizations as it allows a User to have complete access to all non-administration modules.
 
-For example, if you have a contractor working on a single project and you wish to deny access to all other projects, you can apply the Project worker Role and then add the description “Deny on All Projects” and “Allow” to the specific project. More information and detailed explanations of Roles and Permissions are found in [Permissions 201](/howto/permissions-201.html).
+For example, if you have a contractor working on a single project and you wish to deny access to all other projects, you can apply the Project worker Role and then add the description “Deny on All Projects” and “Allow” to the specific project. [User Admin](/modules/users.html#add--deny-permissions) explains Roles and Permissions in more detail.
 
 {% include icon-question.html %} If you create a new User and they can't log in, the most common issue is they don't have a Role. Double check their Roles and assign at least one.
 
