@@ -23,7 +23,7 @@ Now that you have a Company and a Project in your system, it is time to create y
 
 Creating your first User can be a confusing experience if you do not understand the process in the beginning. Select “User Admin” in the sidebar (under *Administration*) and then the “New user” button.
 
-The form asks for the **Login Name**, **Password** and **Confirm Password** (with a strength meter), the User's **Name**, **Company**, **Department**, **Email** and **Email Signature**, and any custom fields set up for Users. The Company does not determine any permissions, but it does begin to build the associations. If you are allowed to, you can also choose the **User Role** here, and tick **Inform new user of account details?** to e-mail them their login.
+The form asks for the **Login Name**, **Password** and **Confirm Password** (with a strength meter), the User's **Name**, **Company**, **Department**, **Email** and **Email Signature**, and any custom fields set up for Users. The Company does not determine any permissions, but it does begin to build the associations. Login names are unique, whatever their capitalisation. If you are allowed to, you can also choose the **User Role** here, and tick **Inform new user of account details?** to e-mail them their login.
 
 Once you save, the User account is created along with the corresponding Contact record. If you didn't choose a Role, the User has no permissions and can therefore do nothing, not even log into web2project.
 
@@ -38,9 +38,11 @@ Before a new User can log in, they must be assigned a Role in the User Administr
 To let the User log in for the first time, he must be assigned a Role, either on the new user form or on the Roles tab of the User's page. The four base roles at installation are Administrator, Project worker, Guest, and Anonymous and grant progressively more and more restrictive permissions.
 
 * Administrator – An Administrator can do anything they choose within the system. This includes creating, editing or deleting any information along with assigning Tasks, changing Users’ passwords, or even creating other Administrators.
-* Project worker – A Project worker can create, edit, or delete any non-administrative information throughout the system. They can create Companies or Projects, assign Tasks, and log time against any task in the system. Most users will be a variation of this role.
+* Project worker – A Project worker can view, create and edit any non-administrative information throughout the system. They can create Companies or Projects, assign Tasks, and log time against any task in the system. On a new installation the role doesn't include Delete; add it to the role if your Project workers should delete things too. Most users will be a variation of this role.
 * Guest – A Guest can view any non-administrative information. They cannot create, edit, or delete anything and therefore this works well as a basis for a Customer Role.
 * Anonymous – An Anonymous can see the navigation and nothing else. While this role may seem silly at first glance, it can serve as a reasonable basis for highly limited Users who should only view specific Tasks. By assigning this role as a start, no existing information in the system is made available whatsoever.
+
+Changing a User's roles needs edit rights on that User. Without edit rights on System, a User can't change their own roles, can't give or take away the Administrator role, and can't change the roles of someone who has it.
 
 ### Add / Deny Permissions
 
@@ -73,9 +75,9 @@ Department | The User's department
 
 <a href="/assets/docs/users/inactive.png"><img src="/assets/docs/users/thumb-inactive.png" alt="Users: inactive users" /></a>
 
-Inactive users are users who do not have a Role assigned to them. When a person signs up from the login page they start here, and the system administrator receives an e-mail asking them to assign a Role. New LDAP users also start here.
+Inactive users are users who do not have a Role assigned to them. When a person signs up from the login page they start here, and the system administrator receives an e-mail asking them to assign a Role. A login name chosen at sign-up may only contain letters and digits, must be at least the *Minimum Username Length* (System Admin → System Configuration) and is stored in lower case. New LDAP users also start here.
 
-{% include icon-warn.html %} Public sign-up is on by default and has no spam protection. See [Security Notes](/docs/security-notes.html) before you leave it on.
+{% include icon-warn.html %} Public sign-up is on by default. It has bot protection but no captcha; see [Security Notes](/docs/security-notes.html#public-sign-up-is-on-by-default) before you leave it on.
 
 #### User Log
 
@@ -93,7 +95,7 @@ The Active Sessions tab lists everyone logged in now, with their Login Name, Rea
 
 To add a new user, select the “New user” button on the User Admin page, as described above. Keep in mind that, unless you turn off *Activate External User Creation*, people can register themselves from the login page.
 
-To edit a user, select the edit icon in the list or “edit this user” on the User's page. The edit form has the same fields as the new user form, without the password and role fields.
+To edit a user, select the edit icon in the list or “edit this user” on the User's page. The edit form has the same fields as the new user form, without the password and role fields. The login name can't be changed here either.
 
 Passwords aren't changed on this form. Instead, open the User's page and select “change password” at the top; a small window lets you set a new password. Users change their own password the same way from *My Info* in the user menu. A user who has forgotten their password can use the lost password link on the login page.
 

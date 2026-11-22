@@ -23,6 +23,8 @@ At the top of every page in web2project you’ll notice a text box called “Glo
 
 If you'd rather not show SmartSearch in the sidebar, set it to “hidden” under System Admin → View Modules; the Global Search box keeps working.
 
+SmartSearch, and the search boxes on the Companies, Contacts, Departments, Links, Tasks and User Admin lists, look for exactly what you type. The characters `%` and `_` match themselves; they aren't wildcards.
+
 ### Understanding the Interface
 
 <a href="/assets/docs/smartsearch/index.png"><img src="/assets/docs/smartsearch/thumb-index.png" alt="SmartSearch: list view" /></a>

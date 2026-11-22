@@ -66,6 +66,6 @@ From this page you can:
 1. Use the icons on each card to edit the contact, export it as a vCard, see the projects it is attached to, or open its user account if it has one.
 1. Click a contact's name to open their page.
 
-The contact's page shows all their details and contact methods. The links at the top lead back to the list and let you edit or delete the contact, or view the user account if there is one. A contact that belongs to a user can't be deleted.
+The contact's page shows all their details and contact methods. The links at the top lead back to the list and let you edit or delete the contact, or view the user account if there is one. A contact that belongs to a user can't be deleted. Tabs from Add On modules, such as the Todos module's list of a contact's todos, appear below the details.
 
 *Up to v4, a contact could be e-mailed a private link to fill in their own details (**Awaiting Update**). The feature was removed in v5.0.*

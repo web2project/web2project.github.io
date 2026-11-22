@@ -17,7 +17,7 @@ module_download: https://github.com/web2project/web2project/releases
 
 The Reports module summarises hours, costs and task status across your projects. Open a project and select the "reports" link at the top of the project view, or use the same link in ProjectDesigner. The Reports module isn't in the main navigation by default; to add it under *Tools*, go to System Admin → View Modules and switch Reports from "hidden" to "visible".
 
-The reports index lists every report with a short description. At the top of every report is a **Projects** drop-down: choose one project or "All". Most reports then ask for a period (**For period** … **to**, with a calendar for each date) and show their results on the page when you select "submit".
+The reports index lists every report with a short description. At the top of every report is a **Projects** drop-down: choose one project or "All". Most reports then ask for a period (**For period** … **to**, with a calendar for each date; it starts as the last two weeks) and show their results on the page when you select "submit".
 
 <a href="/assets/docs/reports/index.png"><img src="/assets/docs/reports/thumb-index.png" alt="Reports: list view" /></a>
 

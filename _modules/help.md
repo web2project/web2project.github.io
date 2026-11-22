@@ -25,4 +25,4 @@ For anything else, select the **Help** icon (a question mark) in the bar at the 
 * [GitHub Discussions](https://github.com/orgs/web2project/discussions), for questions;
 * the [issue tracker](https://github.com/web2project/web2project/issues), for known problems and suggestions.
 
-The Help window's text comes from `locales/{language}/help.php`, so a translation can provide its own version. The Help module is active but hidden from the sidebar by default; the icon in the header works either way.
+The Help window's text comes from `locales/{language}/help.php`, so a translation can provide its own version; English, French and German versions are included. The Help module is active but hidden from the sidebar by default; the icon in the header works either way.

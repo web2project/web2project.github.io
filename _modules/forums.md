@@ -34,7 +34,7 @@ From this page you can:
 * Give the forum a unique **Name**
 * Assign this forum to a **Related Project**
 * Assign an **Owner** to this forum
-* Assign a **Moderator** to this forum
+* Assign a **Moderator** to this forum (for reference only: the moderator has no extra rights over other people's messages)
 * Enter a brief **Description**
 * Go back to the forums list page
 
@@ -49,7 +49,7 @@ The forums list page shows all the available forums in web2project. From this pa
 * View available forums
 * Edit a forum
 * See if a forum has unread topics
-* Choose to watch a forum for updates, then select “update watches”
+* Choose to watch a forum for updates, then select “update watches”. You can only watch forums you're allowed to see.
 * Click on a forum name to enter that forum
 * View who created the forum
 * View how many topics and replies are in the forum
@@ -60,6 +60,14 @@ The forums list page shows all the available forums in web2project. From this pa
 <a href="/assets/docs/forums/view.png"><img src="/assets/docs/forums/thumb-view.png" alt="Forums: detail view" /></a> <a href="/assets/docs/forums/thread.png"><img src="/assets/docs/forums/thumb-thread.png" alt="Forums: thread view" /></a>
 
 The most important aspect of the entire Forum module is the ability to set “Watches”. When an individual sets a watch on a thread or an entire forum, web2project will automatically notify them each and every time there is a new comment. This ensures that the relevant information gets to the interested people as fast as possible with minimal effort. An administrator can also make everyone watch new forums with the module's “configure” link under System Admin → View Modules.
+
+Watch e-mails only go to people who can see the forum: if someone loses access to a forum or its project, they stop getting its e-mails, even if they set the watch earlier or everyone is made to watch.
+
+### Posting, Editing and Deleting Messages
+
+Open a forum and select “start a new topic”, or open a topic and select “Post Reply”. Messages can use BBCode for formatting, such as `[b]bold[/b]`, `[i]italic[/i]` and `[url]...[/url]`. HTML is shown as text, not run.
+
+Only a message's author and administrators (users with edit rights on System) can edit or delete it. The edit and delete icons only appear on messages you're allowed to change. Edits keep the original author and record you as the editor.
 
 Forums attached to a project also appear on that project's Forums tab.
 

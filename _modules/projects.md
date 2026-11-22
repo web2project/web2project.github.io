@@ -23,7 +23,7 @@ The very essence of web2project is the ability to effectively manage projects. T
 
 Select "Projects" in the navigation and then "New Project", or choose "New Project" from the "New Item" menu at the top of any page.
 
-* First, give your Project a distinctive **Name**, a **Short Name** and a **Color Identifier**. These help distinguish it throughout the system for both you and your users.
+* First, give your Project a distinctive **Name**, a **Short Name** and a **Color Identifier** (a six-digit hex colour such as `3A7BD5`; the “change color” link opens a picker). These help distinguish it throughout the system for both you and your users.
 * Next, assign it to a **Company**, and optionally to one or more departments. For many organizations, all projects will be assigned to the customer's company for easier permissions management, but your organization may have different requirements.
 * A **Parent Project** groups this project under another one. See the [FAQ](/docs/faq.html#how-are-parent-projects-different-from-dynamic-tasks) for how this differs from dynamic tasks.
 * Every project has a **Project Owner**. By default this is the person who created the project, but it can be changed to any active user. Being the owner doesn't confer any special permissions.

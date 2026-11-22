@@ -105,7 +105,7 @@ Once you have the task selected choose from a number of options in the actions p
 * Set a dependency
 * Move the task to another project.
 
-Once you click the update button, all the task you selected in the task panel will update all at once.
+Once you click the update button, all the task you selected in the task panel will update all at once. Tasks you aren't allowed to edit are skipped and listed in the message at the top of the page. A new parent or dependency must be a task you can edit, and a parent must be in the same project.
 
 ### Add Task Panel
 
