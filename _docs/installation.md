@@ -9,7 +9,7 @@ Installing web2project is the same as installing any other PHP project and has m
 
 These requirements have been tested and validated. Web2project may work with other versions or systems but they are not formally supported. These requirements apply regardless of whether you're installing, upgrading, or converting.
 
-* PHP 8.0+ (v5.0 is tested on PHP 8.3) with the `mysqli` and `mbstring` extensions; `gd` is needed for Gantt charts
+* PHP 8.3+ with the `ctype`, `filter`, `gd`, `json`, `mysqli` and `session` extensions (and `mbstring` or `iconv`)
 * MySQL 8.x+ or MariaDB 10.x+
 * Apache 2.4+ or nginx, or IIS 7.x+
 * [Composer](https://getcomposer.org/)
@@ -26,7 +26,7 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 1. From the command line within the web2project folder, run `composer install --no-dev` or the equivalent for your system.
 1. Point your browser to the URL noted above.
 1. The Installer should detect that you are creating a fresh installation.
-1. Confirm that your web server meets the minimum requirements. If it does not, resolve those issues. If it does, continue.
+1. Confirm that your web server meets the minimum requirements. The first step lists the PHP version, file uploads, each PHP extension (marked required or optional, with what it's used for) and the folders that need to be writable. If anything required fails, resolve it and reload the page. If it passes, continue.
 1. Use the database name and credentials from above to configure the database connection.
 1. Select "Install Db & Write Cfg." The system should create all database tables and configure the base system.
 1. If the Installer could not create the `config.php` file, copy and paste it to create your own.
@@ -65,7 +65,9 @@ More detail on each of these is in [Server and Database Configuration](/docs/ser
 
 v5.0 is a major release. Read this before you upgrade an existing system.
 
-* **Back up first.** v5.0 adds database migrations 063–068, which change permissions, contacts, custom fields, the access log and the Resources tables. *Apply System Updates* runs them all.
+* **Back up first.** v5.0 adds database migrations 063–078. They change permissions, contacts, custom fields, the access log, the history and the Resources tables, and clean up data that older versions stored: apostrophes saved as `&#039;` (075), zero dates in the login log (076) and project colours that aren't six-digit hex codes (078). *Apply System Updates* runs them all, and stops at the first statement that fails with the full error. Once you've fixed the cause, run it again.
+* **Login names must be unique.** Migration 077 adds a unique index on login names, compared without regard to case. Where two or more users share a login name, the oldest account keeps it and the others are renamed to `<name>-<user id>` (for example `jsmith-42`). Each rename is recorded in the History module. Tell those users their new login name.
+* **Module access is enforced.** A module's pages and forms now open only when the module is active and the user has Access to it. Users who reached a module by its URL without that permission are now refused, so check your roles if someone loses a page they need.
 * **One theme.** The interface is now Bootstrap 5.3 only. The w2p-snowball and wps-redmond themes, theme selection and the per-user "User Interface Style" preference are gone, so a custom theme folder will no longer load. Template overrides go in `style/bootstrap/`.
 * **Removed features.** PDF output (reports, Gantt charts and forums; use your browser's *Print → Save as PDF*), file check-in/check-out, file versions and file e-mail notifications.
 * **Add On modules.** v5.0 removes long-deprecated functions and class names. Modules that still use them will stop with errors. Check each module against [Updating Add On Modules for v5.0](/docs/upgrading-modules-to-5.html) before upgrading, and disable any that aren't updated.

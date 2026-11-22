@@ -9,13 +9,14 @@ This page collects the server-side settings web2project depends on. For the step
 
 ## PHP
 
-* **Version:** PHP 8.0 or later. v5.0 is tested on PHP 8.3.
-* **Required extensions:** `mysqli` and `mbstring`.
-* **Recommended extensions:** `gd` (Gantt charts), `zlib` (some Add On modules) and `ldap` (only if you use LDAP logins).
+* **Version:** PHP 8.3 or later. The installer won't continue on an older version.
+* **Required extensions:** `ctype`, `filter`, `gd` (Gantt charts), `json`, `mysqli` and `session`.
+* **Optional extensions:** `mbstring` (multi-byte text; without it web2project falls back to the slower `iconv`, so have at least one of the two), `zlib` (output compression; some Add On modules need it), `curl` (outgoing HTTP requests; there is a slower fallback) and `ldap` (only if you use LDAP logins).
+* **File uploads:** `file_uploads` must be on in `php.ini` to upload files. `upload_max_filesize` and `post_max_size` set the largest file you can upload.
 * **Composer:** run `composer install --no-dev` in the web2project folder after unpacking or updating it. It installs the libraries in `vendor/`.
 * **Errors:** web2project hides PHP errors from the browser by default. See [Turn on Debugging](/docs/turn-on-debugging.html) to show them.
 
-The installer checks the PHP version and the `mysqli`, `gd`, `zlib` and `ldap` extensions before it creates anything. It doesn't check `mbstring`, so confirm that one yourself (`php -m`).
+The installer's first step checks the PHP version, `file_uploads`, each of these extensions and MySQL support before it creates anything, and shows what each extension is used for. A missing required extension stops the install. A missing optional extension, or `file_uploads` turned off, only shows a warning. To see what your server has, run `php -m`.
 
 ## Database
 
