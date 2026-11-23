@@ -41,6 +41,17 @@ The options on the Dependencies tab create four types of tasks which are denoted
 * Next, there are dynamic or rollup tasks. Each of these represents all of its child tasks in a single line with a "summary" of the lower-level data: the sum of all durations, the earliest start date, and the latest end date. As child tasks are edited, moved to another parent or project, or shift based on dependencies, the dynamic tasks shift accordingly. Instead of having to monitor or report on each of the individual tasks, the higher level task can be used, and the detailed tasks are still available for review.
 * Finally, there are milestones. Most organizations associate milestones with special events such as delivery dates, launch dates, or specific meetings. A milestone is normally simply complete or not complete and isn't tracked in the same detail as other tasks. Web2project sets the duration of milestones to zero hours.
 
+### Task Access
+
+The **Access** setting on the Details tab decides who can see a task:
+
+* **Public**: everyone who can see the project.
+* **Protected**: the task owner, and the assigned users who belong to the owner's company.
+* **Participant**: the task owner and the assigned users.
+* **Private**: the task owner only.
+
+Users who can view System Admin see every task. A task hidden from you by its access setting is left out of the task lists, the project's Tasks tabs, Project Designer, the Calendar, the Gantt charts and search. Its page, its task logs, and the files and links attached to it are refused, and you can't edit, log time on, reassign or delete it. In the **Task Parent** and **Dependencies** lists of other tasks it shows as "Private Task". That way, when someone else saves a task that depends on it, the dependency is kept.
+
 {% include icon-discussion.html %} One of the open questions within project management circles and within web2project itself is "What does it mean when a user is 50% assigned to a task?" This could mean either that the person should perform 50% of the work or that the person should spend 50% of their time on the task. This question can have a major impact on scheduling and timelines. Web2project makes no distinction either way and leaves it up to you to decide which practice to follow.
 
 ### Email Notifications
