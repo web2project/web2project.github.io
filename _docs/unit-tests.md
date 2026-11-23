@@ -52,7 +52,7 @@ To run one file or folder, add its path:
 
 This takes a little while and gives you the results on your system. The names of the tests should be pretty self-explanatory, and any errors that come up give you details on where to look.
 
-At the v5.0.0 release the suite runs 588 tests (1759 assertions) with no errors or failures; 120 are skipped or marked incomplete. A change shouldn't add an error or failure. See the [release notes](/release-notes/5.0.0.html).
+At the v5.0.0 release the suite runs 597 tests (1796 assertions) with no errors or failures; 120 are skipped or marked incomplete. A change shouldn't add an error or failure. See the [release notes](/release-notes/5.0.0.html).
 
 ## Test Structure
 

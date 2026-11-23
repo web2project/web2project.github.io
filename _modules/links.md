@@ -46,7 +46,7 @@ To add a new link, choose "New Link" from the "New Item" menu, or use the "New l
 The form has these fields:
 
 * **Link Name**: what is shown in the list
-* **Created By**: the link's owner
+* **Created By**: the user who added the link. It is shown, not chosen.
 * **Category**: puts the link on one of the list's tabs
 * **Project** and **Task**: optional; attach the link to a project and one of its tasks
 * **Description**
