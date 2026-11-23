@@ -11,6 +11,11 @@ Web2project v5.0 removes code that has been deprecated since the v2.x and v3.x r
 
 This page lists what was removed and what to use instead, plus the other v5.0 changes that affect modules.
 
+## Requirements
+
+- PHP 8.3 is the minimum. Test your module on PHP 8.3 with error reporting on, since notices that were silent on PHP 7 are warnings or errors now.
+- After upgrading web2project, run `composer install --no-dev`. Carbon moves to 3.x and `ircmaxell/password-compat` is removed, so use PHP's own `password_hash()` and `password_verify()`.
+
 ## Find what your module uses
 
 From your module's folder, these searches find the most common problems:
@@ -241,6 +246,7 @@ Called with no argument, it returns whatever is held, as before.
 - `arraySelect()` and `arraySelectTree()` take the list by value, so you can pass an expression such as `arrayMerge(array(-1 => 'All'), $list)`. The selected option is matched as a string.
 - `w2p_Database_Query::insertObject()` and `insertArray()` now write `0`, `false` (as 0) and `''` (for text columns). Only `null` is left out so the column default applies. Before, all of them were dropped, so an insert could differ from an update of the same object.
 - `w2p_Core_BaseObject::$_event` is protected rather than private.
+- `w2p_Exception_FileSystem` is now `w2p_Exceptions_FileSystem`, matching its folder. Catch the new name; the old one no longer exists.
 - `w2p_Output_ListTable::addDividers('<prefix>_project')` prints a project heading for any key ending in `_project`, using the row's `project_name` and `project_color_identifier`, and "Not attached to a project" for 0. Before, only `file_project` worked.
 - A `contacts_tab.view.<name>.php` file in your module now adds a tab to the contact page, as the other `*_tab.view.*` files do for their pages. Before, the contact page never showed them.
 - Login names are unique (migration 077). `CUser::store()` reports a duplicate as "this user already exists" instead of a database error.
