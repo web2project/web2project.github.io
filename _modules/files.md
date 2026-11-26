@@ -24,6 +24,7 @@ In the Files module you can:
 * Upload files in any format
 * Put each file in a category
 * Attach files to a project or a task
+* Organise files into folders and subfolders
 * Filter the list by project, owner and category
 * See who uploaded each file and when
 
@@ -39,13 +40,13 @@ There are three ways to get to the upload form and they are all effectively the 
 
 When you select "Files" from the main navigation you will see the Files list.
 
-At the top of the page are the "New File" button and three filters:
+At the top of the page are the "New File" and "New Folder" buttons and three filters:
 
 * **Project** shows only the files attached to that project.
 * **Owner** shows only the files uploaded by that user.
 * **Category** jumps to that category's tab.
 
-Below them is a row of tabs: "All Files" and one tab per file category, each with the number of files it holds. The counts follow the Project and Owner filters, so you can combine a project with a category. You can define the categories to meet your own needs in System Admin under the *FileType* lookup values.
+Below them is a row of tabs: "All Files", one tab per file category, each with the number of files it holds, and a Folders tab at the end (see Folders below). The counts follow the Project and Owner filters, so you can combine a project with a category. You can define the categories to meet your own needs in System Admin under the *FileType* lookup values.
 
 The files are listed under a heading for the project they belong to. You only see files from the projects and tasks you are allowed to see.
 
@@ -72,10 +73,29 @@ The form has these fields:
 * **File Name, Type, Size and Uploaded By** are shown when you edit an existing file. They come from the uploaded file and can't be changed here.
 * **Category** puts the file under one of the category tabs on the Files list.
 * **Project** attaches the file to a project. Adding the file from a project's or task's Files tab fills this in for you.
+* **Folder** puts the file in a folder, or in Root for none. Adding a file from a folder fills this in for you. Choose another folder to move the file.
 * **Task** attaches the file to one of that project's tasks. Use the "select task..." button to pick it.
 * **Description** lets you add notes about the file.
 * **Upload File** lets you choose the file on your computer. When you edit a file, choosing a new one replaces the file attached to this entry. Changing the project moves the stored file to the new project's folder.
 
 ### Folders
 
-Earlier versions also let you organise files into folders. In v5.0 the Files list no longer shows folders or offers the "New Folder" button, so files are organised by project and category instead. Folder records in an upgraded database are kept but aren't used.
+Folders let you organise files in a tree of your own, alongside projects and categories. A folder isn't tied to a project, so one folder can hold files from several projects.
+
+The **Folders** tab, the last tab on the Files list, shows the folder tree starting at Root:
+
+* The current folder's name and description are shown at the top, with its files listed underneath. The home and back icons return to Root or to the parent folder.
+* Each subfolder shows how many files it holds. Click the count to show or hide those files, or click the folder's name to open it.
+* Beside each folder are icons to add a subfolder, add a new file to that folder, edit the folder, and delete it.
+
+The "New Folder" button, and the edit icon on a folder, open the folder form:
+
+* **Subfolder of** sets where the folder sits in the tree. Choose Root for a top-level folder. A folder can't be moved into itself or into one of its own subfolders.
+* **Folder Name**
+* **Description**
+
+A folder can only be deleted once it has no subfolders and no files. Move or delete its contents first.
+
+Folders have no permissions of their own. Everyone who can see the Files module sees every folder, but inside a folder you still only see files from the projects and tasks you are allowed to see. Creating and editing folders uses the Files module's Add and Edit permissions.
+
+The Files tabs on companies, projects and tasks show a plain list, without folders.
